@@ -560,7 +560,7 @@ Book.values = () => Object.values(Book.properties);
 Book.byYear = (year) => {
   const books = Object.values(Book.properties);
   const filterFunction = (book) => {
-    const year0 = parseInt(book.meeting.substring(0, 4), 10);
+    const year0 = book.meeting ? parseInt(book.meeting.substring(0, 4), 10) : 0;
 
     return year0 === year;
   };

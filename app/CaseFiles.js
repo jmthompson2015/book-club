@@ -61,7 +61,7 @@ const createRow = (book, author) => `
 const CaseFiles = {
   report: (year) => {
     const books = Book.byYear(year);
-    // books.sort(WikiUtils.compareByMeeting(true));
+    books.sort(WikiUtils.compareByMeeting(true));
     const reduceFunction = (accum, book) => {
       const author = Person.properties[book.authorKey];
 

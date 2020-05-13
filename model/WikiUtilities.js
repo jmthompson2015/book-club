@@ -4,33 +4,17 @@ const Person = require("../artifact/Person.js");
 const WikiUtilities = {};
 
 WikiUtilities.compareByMeeting = (ascending) => (bookA, bookB) => {
+  const meetingA = bookA.meeting || "";
+  const meetingB = bookB.meeting || "";
   let answer = ascending ? -1 : 1;
 
-  if (bookA.meeting === bookB.meeting) {
+  if (meetingA === meetingB) {
     answer = 0;
-  } else if (bookA.meeting > bookB.meeting) {
+  } else if (meetingA > meetingB) {
     answer = ascending ? 1 : -1;
   }
 
   return answer;
-};
-
-WikiUtilities.createPersonText = (author) => {
-  let authorPrefix;
-  let authorLabel;
-
-  if (author.middle) {
-    authorPrefix = `data-sort-value="${author.last}, ${author.first} ${author.middle}"|`;
-    authorLabel = `${author.first} ${author.middle} ${author.last}`;
-  } else {
-    authorPrefix = `data-sort-value="${author.last}, ${author.first}"|`;
-    authorLabel = `${author.first} ${author.last}`;
-  }
-
-  const wikiUrl = Person.wikiUrl(author);
-  const authorUrl = wikiUrl ? `[${wikiUrl} ${authorLabel}]` : authorLabel;
-
-  return `${authorPrefix} ${authorUrl}`;
 };
 
 WikiUtilities.createBookText = (book) => {
@@ -49,13 +33,51 @@ WikiUtilities.createBookText = (book) => {
 };
 
 WikiUtilities.createMeetingText1 = (book) => {
-  const meetingLabel = book.meeting.substring(0, book.meeting.lastIndexOf("."));
+  let answer = "";
 
-  return `[[${book.meeting} Meeting Notes|${meetingLabel}]]`;
+  if (book.meeting) {
+    answer = WikiUtilities.wikilink(
+      `${book.meeting} Meeting Notes`,
+      book.meeting
+    );
+  }
+
+  return answer;
 };
 
-WikiUtilities.createMeetingText2 = (book) =>
-  `[[${book.meeting} Meeting Notes]]`;
+WikiUtilities.createMeetingText2 = (book) => {
+  let answer = "";
+
+  if (book.meeting) {
+    answer = `[[${book.meeting} Meeting Notes]]`;
+  }
+
+  return answer;
+};
+
+WikiUtilities.createPersonText = (author) => {
+  let authorPrefix;
+  let authorLabel;
+
+  if (author.middle) {
+    authorPrefix = `data-sort-value="${author.last}, ${author.first} ${author.middle}"|`;
+    authorLabel = `${author.first} ${author.middle} ${author.last}`;
+  } else {
+    authorPrefix = `data-sort-value="${author.last}, ${author.first}"|`;
+    authorLabel = `${author.first} ${author.last}`;
+  }
+
+  const wikiUrl = Person.wikiUrl(author);
+  const authorUrl = wikiUrl
+    ? WikiUtilities.hyperlink(wikiUrl, authorLabel)
+    : authorLabel;
+
+  return `${authorPrefix} ${authorUrl}`;
+};
+
+WikiUtilities.hyperlink = (href, label) => `[${href} ${label}]`;
+
+WikiUtilities.wikilink = (page, label) => `[[${page} | ${label}]]`;
 
 Object.freeze(WikiUtilities);
 
