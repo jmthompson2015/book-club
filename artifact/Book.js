@@ -143,6 +143,7 @@ const Book = {
       title: "Darkly Dreaming Dexter",
       authorKey: Person.JEFF_LINDSAY,
       series: "Dexter #1",
+      dcl: "656271114",
     },
     darkSacredNight: {
       title: "Dark Sacred Night",
@@ -177,7 +178,11 @@ const Book = {
       dcl: "1430689114",
       meeting: "2020.01.27",
     },
-    goneGirl: { title: "Gone Girl", authorKey: Person.GILLIAN_FLYNN },
+    goneGirl: {
+      title: "Gone Girl",
+      authorKey: Person.GILLIAN_FLYNN,
+      dcl: "1033248114",
+    },
     hellbent: {
       title: "Hellbent",
       authorKey: Person.GREGG_HURWITZ,
@@ -263,7 +268,11 @@ const Book = {
       meeting: "2015.01.26",
       dcl: "1215092114",
     },
-    neverGoBack: { title: "Never Go Back", authorKey: Person.LEE_CHILD },
+    neverGoBack: {
+      title: "Never Go Back",
+      authorKey: Person.LEE_CHILD,
+      dcl: "1137507114",
+    },
     ninePerfectStrangers: {
       title: "Nine Perfect Strangers",
       authorKey: Person.LIANE_MORIARTY,
@@ -277,7 +286,11 @@ const Book = {
       meeting: "2015.07.27",
       dcl: "1211996114",
     },
-    oneShot: { title: "One Shot", authorKey: Person.LEE_CHILD },
+    oneShot: {
+      title: "One Shot",
+      authorKey: Person.LEE_CHILD,
+      dcl: "962840114",
+    },
     orphanX: {
       title: "Orphan X",
       authorKey: Person.GREGG_HURWITZ,
@@ -313,6 +326,7 @@ const Book = {
     sharpObjects: {
       title: "Sharp Objects",
       authorKey: Person.GILLIAN_FLYNN,
+      dcl: "767353114",
     },
     stoneCold: {
       title: "Stone Cold",
