@@ -1,8 +1,10 @@
 /* eslint no-console: ["error", { allow: ["log"] }] */
 
+const QUnit = require("../node_modules/qunit/qunit/qunit.js");
+const R = require("../node_modules/ramda/dist/ramda.js");
+
 const Book = require("./Book.js");
 const Person = require("./Person.js");
-const QUnit = require("../node_modules/qunit/qunit/qunit.js");
 
 QUnit.module("Book");
 
@@ -12,13 +14,15 @@ QUnit.test("authorKey", (assert) => {
 
   // Verify.
   assert.ok(result);
-  result.forEach((book) => {
+  const forEachFunction = (book) => {
+    assert.ok(book.authorKey, `book.authorKey = ${book.authorKey}`);
     const author = Person.properties[book.authorKey];
     assert.ok(
       author,
       `Missing author for book.title = ${book.title} book.authorKey = ${book.authorKey}`
     );
-  });
+  };
+  R.forEach(forEachFunction, result);
 });
 
 QUnit.test("keys and values", (assert) => {
@@ -27,18 +31,20 @@ QUnit.test("keys and values", (assert) => {
   const ownPropertyNames = Object.getOwnPropertyNames(Book);
 
   // Verify.
-  ownPropertyNames.forEach((key) => {
+  const forEachFunction1 = (key) => {
     const key2 = Book[key];
 
     if (key !== "properties" && typeof key2 === "string") {
       assert.ok(Book.properties[key2], `Missing value for key = ${key}`);
     }
-  });
+  };
+  R.forEach(forEachFunction1, ownPropertyNames);
 
-  result.forEach((value) => {
+  const forEachFunction2 = (value) => {
     const p = ownPropertyNames.filter((key) => Book[key] === value);
     assert.equal(p.length, 1, `Missing key for value = ${value}`);
-  });
+  };
+  R.forEach(forEachFunction2, result);
 });
 
 QUnit.test("Book.keys()", (assert) => {
@@ -47,10 +53,10 @@ QUnit.test("Book.keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const length = 72;
+  const length = 75;
   assert.equal(result.length, length);
-  assert.equal(result[0], Book.A_CHRISTMAS_PARTY);
-  assert.equal(result[length - 1], Book.WHERE_THE_CRAWDADS_SING);
+  assert.equal(R.head(result), Book.A_CHRISTMAS_PARTY);
+  assert.equal(R.last(result), Book.WHERE_THE_CRAWDADS_SING);
 });
 
 const BookTest = {};

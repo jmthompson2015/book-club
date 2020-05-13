@@ -1,7 +1,9 @@
 /* eslint no-console: ["error", { allow: ["log"] }] */
 
-const Person = require("./Person.js");
 const QUnit = require("../node_modules/qunit/qunit/qunit.js");
+const R = require("../node_modules/ramda/dist/ramda.js");
+
+const Person = require("./Person.js");
 
 QUnit.module("Person");
 
@@ -11,18 +13,20 @@ QUnit.test("keys and values", (assert) => {
   const ownPropertyNames = Object.getOwnPropertyNames(Person);
 
   // Verify.
-  ownPropertyNames.forEach((key) => {
+  const forEachFunction1 = (key) => {
     const key2 = Person[key];
 
     if (key !== "properties" && typeof key2 === "string") {
       assert.ok(Person.properties[key2], `Missing value for key = ${key}`);
     }
-  });
+  };
+  R.forEach(forEachFunction1, ownPropertyNames);
 
-  result.forEach((value) => {
+  const forEachFunction2 = (value) => {
     const p = ownPropertyNames.filter((key) => Person[key] === value);
     assert.equal(p.length, 1, `Missing key for value = ${value}`);
-  });
+  };
+  R.forEach(forEachFunction2, result);
 });
 
 QUnit.test("Person.keys()", (assert) => {
@@ -31,10 +35,10 @@ QUnit.test("Person.keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const length = 49;
+  const length = 61;
   assert.equal(result.length, length);
-  assert.equal(result[0], Person.AJ_FINN);
-  assert.equal(result[length - 1], Person.TESS_GERRITSEN);
+  assert.equal(R.head(result), Person.AJ_FINN);
+  assert.equal(R.last(result), Person.TOM_CRUISE);
 });
 
 const PersonTest = {};

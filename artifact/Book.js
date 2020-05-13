@@ -1,3 +1,5 @@
+const R = require("../node_modules/ramda/dist/ramda.js");
+
 const Person = require("./Person.js");
 
 const DCL_PREFIX = "https://dcl.bibliocommons.com/item/show/";
@@ -17,6 +19,7 @@ const Book = {
   EVERY_LAST_LIE: "everyLastLie",
   FOOL_ME_ONCE: "foolMeOnce",
   FORCE_OF_NATURE: "forceOfNature",
+  GONE_GIRL: "goneGirl",
   HELLBENT: "hellbent",
   HOME: "home",
   I_KNOW_A_SECRET: "iKnowASecret",
@@ -30,8 +33,10 @@ const Book = {
   MAKE_ME: "makeMe",
   MARKED_FOR_LIFE: "markedForLife",
   MEAN_STREAK: "meanStreak",
+  NEVER_GO_BACK: "neverGoBack",
   NINE_PERFECT_STRANGERS: "ninePerfectStrangers",
   ONE_KICK: "oneKick",
+  ONE_SHOT: "oneShot",
   ORPHAN_X: "orphanX",
   PERSONAL: "personal",
   PIECES_OF_HER: "piecesOfHer",
@@ -165,6 +170,7 @@ const Book = {
       dcl: "1430689114",
       meeting: "2020.01.27",
     },
+    goneGirl: { title: "Gone Girl", authorKey: Person.GILLIAN_FLYNN },
     hellbent: {
       title: "Hellbent",
       authorKey: Person.GREGG_HURWITZ,
@@ -250,6 +256,7 @@ const Book = {
       meeting: "2015.01.26",
       dcl: "1215092114",
     },
+    neverGoBack: { title: "Never Go Back", authorKey: Person.LEE_CHILD },
     ninePerfectStrangers: {
       title: "Nine Perfect Strangers",
       authorKey: Person.LIANE_MORIARTY,
@@ -263,6 +270,7 @@ const Book = {
       meeting: "2015.07.27",
       dcl: "1211996114",
     },
+    oneShot: { title: "One Shot", authorKey: Person.LEE_CHILD },
     orphanX: {
       title: "Orphan X",
       authorKey: Person.GREGG_HURWITZ,
@@ -548,6 +556,7 @@ Book.keys = () => Object.keys(Book.properties);
 
 Book.values = () => Object.values(Book.properties);
 
+// /////////////////////////////////////////////////////////////////////////////
 Book.byYear = (year) => {
   const books = Object.values(Book.properties);
   const filterFunction = (book) => {
@@ -556,7 +565,7 @@ Book.byYear = (year) => {
     return year0 === year;
   };
 
-  return books.filter(filterFunction);
+  return R.filter(filterFunction, books);
 };
 
 Book.dclUrl = (book) => (book.dcl ? `${DCL_PREFIX}${book.dcl}` : null);
