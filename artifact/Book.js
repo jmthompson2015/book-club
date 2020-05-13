@@ -14,6 +14,7 @@ const Book = {
   CRAZY_LOVE_YOU: "crazyLoveYou",
   CRIME_AT_CHRISTMAS: "crimeAtChristmas",
   CRIME_SCENE: "crimeScene",
+  DARKLY_DREAMING_DEXTER: "darklyDreamingDexter",
   DARK_SACRED_NIGHT: "darkSacredNight",
   EIGHT_PERFECT_MURDERS: "eightPerfectMurders",
   EVERY_LAST_LIE: "everyLastLie",
@@ -42,6 +43,7 @@ const Book = {
   PIECES_OF_HER: "piecesOfHer",
   RECONSTRUCTING_AMELIA: "reconstructingAmelia",
   REDEMPTION_ROAD: "redemptionRoad",
+  SHARP_OBJECTS: "sharpObjects",
   STONE_COLD: "stoneCold",
   SWEET_LITTLE_LIES: "sweetLittleLies",
   THAT_NIGHT: "thatNight",
@@ -136,6 +138,11 @@ const Book = {
       series: "Clay Edison #1",
       meeting: "2018.05.21",
       dcl: "1407385114",
+    },
+    darklyDreamingDexter: {
+      title: "Darkly Dreaming Dexter",
+      authorKey: Person.JEFF_LINDSAY,
+      series: "Dexter #1",
     },
     darkSacredNight: {
       title: "Dark Sacred Night",
@@ -302,6 +309,10 @@ const Book = {
       authorKey: Person.JOHN_HART,
       meeting: "2016.11.28",
       dcl: "1316552114",
+    },
+    sharpObjects: {
+      title: "Sharp Objects",
+      authorKey: Person.GILLIAN_FLYNN,
     },
     stoneCold: {
       title: "Stone Cold",

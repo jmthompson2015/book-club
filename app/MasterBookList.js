@@ -1,3 +1,5 @@
+const R = require("../node_modules/ramda/dist/ramda.js");
+
 const FileWriter = require("../util/FileWriter.js");
 
 const Book = require("../artifact/Book.js");
@@ -7,7 +9,7 @@ const WikiUtils = require("../model/WikiUtilities.js");
 
 const OUTPUT_FILE = "MasterBookList.txt";
 const TABLE_PREFIX = `{| class="wikitable sortable"
-!Meeting 
+!Meeting
 !Book
 !Author`;
 const TABLE_SUFFIX = `
@@ -29,7 +31,7 @@ const MasterBookList = {
       return `${accum}${createRow(book, author)}`;
     };
 
-    const tableRows = books.reduce(reduceFunction, "");
+    const tableRows = R.reduce(reduceFunction, "", books);
 
     return `${TABLE_PREFIX}${tableRows}${TABLE_SUFFIX}`;
   },

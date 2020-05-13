@@ -35,7 +35,7 @@ QUnit.test("Person.keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const length = 61;
+  const length = 68;
   assert.equal(result.length, length);
   assert.equal(R.head(result), Person.AJ_FINN);
   assert.equal(R.last(result), Person.TOM_CRUISE);
