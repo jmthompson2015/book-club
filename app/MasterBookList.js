@@ -17,7 +17,7 @@ const TABLE_SUFFIX = `
 
 const createRow = (book, author) => `
 |-
-| ${WikiUtils.createMeetingText1(book)}
+| ${book ? WikiUtils.createMeetingText1(book.meeting) : ""}
 | ${WikiUtils.createBookText(book)}
 | ${WikiUtils.createPersonText(author)}`;
 

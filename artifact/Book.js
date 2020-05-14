@@ -63,6 +63,7 @@ const Book = {
   THE_HEIST: "theHeist",
   THE_HUSH: "theHush",
   THE_KILLER_NEXT_DOOR: "theKillerNextDoor",
+  THE_KILLINGS_AT_BADGERS_DRIFT: "theKillingsAtBadgersDrift",
   THE_LAST_PAINTING_OF_SARA_DE_VOS: "theLastPaintingOfSaraDeVos",
   THE_LATE_SHOW: "theLateShow",
   THE_LOST_MAN: "theLostMan",
@@ -454,6 +455,11 @@ const Book = {
       authorKey: Person.ALEX_MARWOOD,
       meeting: "2016.03.28",
       dcl: "1233151114",
+    },
+    theKillingsAtBadgersDrift: {
+      title: "The Killings at Badger's Drift",
+      authorKey: Person.CAROLINE_GRAHAM,
+      series: "Barnaby #1",
     },
     theLastPaintingOfSaraDeVos: {
       title: "The Last Painting of Sara de Vos",

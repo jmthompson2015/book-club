@@ -20,6 +20,7 @@ const TVSeries = {
     midsomerMurders: {
       title: "Midsomer Murders (1997-?)",
       castKeys: [Person.JOHN_NETTLES, Person.NEIL_DUDGEON],
+      bookKey: Book.THE_KILLINGS_AT_BADGERS_DRIFT,
       imdb: "tt0118401",
     },
     sharpObjects: {

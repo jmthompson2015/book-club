@@ -52,11 +52,11 @@ const createNavigationTable = (year) => {
 
 const createRow = (book, author) => `
 |-
-| ${createDate(book.meeting)}
+| ${book ? createDate(book.meeting) : ""}
 | ${WikiUtils.createBookText(book)}
 | ${WikiUtils.createPersonText(author)}
 | ${book.series || ""}
-| ${WikiUtils.createMeetingText2(book)}`;
+| ${book ? WikiUtils.createMeetingText2(book.meeting) : ""}`;
 
 const CaseFiles = {
   report: (year) => {

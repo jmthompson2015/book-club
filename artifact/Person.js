@@ -10,6 +10,7 @@ const Person = {
   BA_PARIS: "baParis",
   BEN_AFFLECK: "benAffleck",
   BRIDGET_FONDA: "bridgetFonda",
+  CAROLINE_GRAHAM: "carolineGraham",
   CAZ_FREAR: "cazFrear",
   CHB_KITCHIN: "chbKitchin",
   CHELSEA_CAIN: "chelseaCain",
@@ -93,6 +94,11 @@ const Person = {
     baParis: { first: "B.A.", last: "Paris" },
     benAffleck: { first: "Ben", last: "Affleck", wiki: "Ben_Affleck" },
     bridgetFonda: { first: "Bridget", last: "Fonda", wiki: "Bridget_Fonda" },
+    carolineGraham: {
+      first: "Caroline",
+      last: "Graham",
+      wiki: "Caroline_Graham",
+    },
     cazFrear: { first: "Caz", last: "Frear" },
     chbKitchin: { first: "C.H.B.", last: "Kitchin", wiki: "C._H._B._Kitchin" },
     chelseaCain: { first: "Chelsea", last: "Cain", wiki: "Chelsea_Cain" },
@@ -104,7 +110,7 @@ const Person = {
       last: "Mackintosh",
       wiki: "Clare_Mackintosh",
     },
-    cobieSmulders: { first: "Cobie", last: "Smulders" },
+    cobieSmulders: { first: "Cobie", last: "Smulders", wiki: "Cobie_Smulders" },
     danielSilva: {
       first: "Daniel",
       last: "Silva",
@@ -205,8 +211,8 @@ Person.keys = () => Object.keys(Person.properties);
 Person.values = () => Object.values(Person.properties);
 
 // /////////////////////////////////////////////////////////////////////////////
-Person.wikiUrl = (author) =>
-  author.wiki ? `${WIKI_PREFIX}${author.wiki}` : null;
+Person.wikiUrl = (person) =>
+  person.wiki ? `${WIKI_PREFIX}${person.wiki}` : null;
 
 Object.freeze(Person);
 
