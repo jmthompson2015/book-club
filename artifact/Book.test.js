@@ -54,10 +54,10 @@ QUnit.test("Book.keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const length = 136;
+  const length = 147;
   assert.equal(result.length, length);
   assert.equal(R.head(result), Book._206_BONES);
-  assert.equal(R.last(result), Book.WHISPERS_OF_THE_DEAD);
+  assert.equal(R.last(result), Book.WICKED_PREY);
 });
 
 const BookTest = {};
