@@ -7,6 +7,9 @@ const DCL_PREFIX = "https://dcl.bibliocommons.com/item/show/";
 const Book = {
   A_CHRISTMAS_PARTY: "aChristmasParty",
   A_MAN_LAY_DEAD: "aManLayDead",
+  AND_THEN_THERE_WERE_NONE: "andThenThereWereNone",
+  A_TAP_ON_THE_WINDOW: "aTapOnTheWindow",
+  A_WANTED_MAN: "aWantedMan",
   BLOOD_ON_SNOW: "bloodOnSnow",
   BRING_ME_BACK: "bringMeBack",
   CAMINO_WINDS: "caminoWinds",
@@ -20,6 +23,7 @@ const Book = {
   EVERY_LAST_LIE: "everyLastLie",
   FOOL_ME_ONCE: "foolMeOnce",
   FORCE_OF_NATURE: "forceOfNature",
+  GHOSTMAN: "ghostman",
   GONE_GIRL: "goneGirl",
   HELLBENT: "hellbent",
   HOME: "home",
@@ -30,10 +34,12 @@ const Book = {
   I_SEE_YOU: "iSeeYou",
   KILL_FEE: "killFee",
   LETHAL_WHITE: "lethalWhite",
+  LIVE_BY_NIGHT: "liveByNight",
   MAGPIE_MURDERS: "magpieMurders",
   MAKE_ME: "makeMe",
   MARKED_FOR_LIFE: "markedForLife",
   MEAN_STREAK: "meanStreak",
+  MISSING_YOU: "missingYou",
   NEVER_GO_BACK: "neverGoBack",
   NINE_PERFECT_STRANGERS: "ninePerfectStrangers",
   ONE_KICK: "oneKick",
@@ -45,7 +51,9 @@ const Book = {
   REDEMPTION_ROAD: "redemptionRoad",
   SHARP_OBJECTS: "sharpObjects",
   STONE_COLD: "stoneCold",
+  SUSPECT: "suspect",
   SWEET_LITTLE_LIES: "sweetLittleLies",
+  SYCAMORE_ROW: "sycamoreRow",
   THAT_NIGHT: "thatNight",
   THE_BLACK_WIDOW: "theBlackWidow",
   THE_COUPLE_NEXT_DOOR: "theCoupleNextDoor",
@@ -55,6 +63,7 @@ const Book = {
   THE_DRY: "theDry",
   THE_ENGLISH_SPY: "theEnglishSpy",
   THE_ESCAPE_ROOM: "theEscapeRoom",
+  THE_EXPATS: "theExpats",
   THE_FALLEN: "theFallen",
   THE_FAMILY_UPSTAIRS: "theFamilyUpstairs",
   THE_GODS_OF_GUILT: "theGodsOfGuilt",
@@ -70,6 +79,7 @@ const Book = {
   THE_NOWHERE_MAN: "theNowhereMan",
   THE_PROMISE: "thePromise",
   THE_SANTA_KLAUS_MURDER: "theSantaKlausMurder",
+  THE_SHADOW_TRACER: "theShadowTracer",
   THE_SILENT_PATIENT: "theSilentPatient",
   THE_STRANGER: "theStranger",
   THE_TRAVELERS: "theTravelers",
@@ -82,6 +92,7 @@ const Book = {
   TWO_KINDS_OF_TRUTH: "twoKindsOfTruth",
   UNDER_MY_SKIN: "underMySkin",
   VANISHING_GAMES: "vanishingGames",
+  WAITING_FOR_WEDNESDAY: "waitingForWednesday",
   WHERE_THE_CRAWDADS_SING: "whereTheCrawdadsSing",
 
   properties: {
@@ -93,9 +104,25 @@ const Book = {
     aManLayDead: {
       title: "A Man Lay Dead",
       authorKey: Person.NGAIO_MARSH,
-      series: "Inspector Alleyn 1",
+      series: "Inspector Alleyn #1",
       meeting: "2015.12.17",
       dcl: "1294793114",
+    },
+    andThenThereWereNone: {
+      title: "And Then There Were None",
+      authorKey: Person.AGATHA_CHRISTIE,
+      meeting: "2014.12.18",
+    },
+    aTapOnTheWindow: {
+      title: "A Tap on the Window",
+      authorKey: Person.LINWOOD_BARCLAY,
+      meeting: "2014.04.28",
+    },
+    aWantedMan: {
+      title: "A Wanted Man",
+      authorKey: Person.LEE_CHILD,
+      series: "Jack Reacher #17",
+      meeting: "2014.03.24",
     },
     bloodOnSnow: {
       title: "Blood On Snow",
@@ -179,6 +206,11 @@ const Book = {
       dcl: "1430689114",
       meeting: "2020.01.27",
     },
+    ghostman: {
+      title: "Ghostman",
+      authorKey: Person.ROGER_HOBBS,
+      meeting: "2014.07.28",
+    },
     goneGirl: {
       title: "Gone Girl",
       authorKey: Person.GILLIAN_FLYNN,
@@ -243,6 +275,12 @@ const Book = {
       dcl: "1493220114",
       meeting: "2019.10.28",
     },
+    liveByNight: {
+      title: "Live by Night",
+      authorKey: Person.DENNIS_LEHANE,
+      series: "Coughlin #2",
+      meeting: "2014.06.23",
+    },
     magpieMurders: {
       title: "Magpie Murders",
       authorKey: Person.ANTHONY_HOROWITZ,
@@ -268,6 +306,11 @@ const Book = {
       authorKey: Person.SANDRA_BROWN,
       meeting: "2015.01.26",
       dcl: "1215092114",
+    },
+    missingYou: {
+      title: "Missing You",
+      authorKey: Person.HARLAN_COBEN,
+      meeting: "2014.10.27",
     },
     neverGoBack: {
       title: "Never Go Back",
@@ -336,12 +379,23 @@ const Book = {
       meeting: "2015.09.28",
       dcl: "1180990114",
     },
+    suspect: {
+      title: "Suspect",
+      authorKey: Person.ROBERT_CRAIS,
+      meeting: "2014.01.27",
+    },
     sweetLittleLies: {
       title: "Sweet Little Lies",
       authorKey: Person.CAZ_FREAR,
       series: "Cat Kinsella #1",
       dcl: "1466868114",
       meeting: "2019.11.18",
+    },
+    sycamoreRow: {
+      title: "Sycamore Row",
+      authorKey: Person.JOHN_GRISHAM,
+      series: "Jake Brigance #2",
+      meeting: "2014.11.24",
     },
     thatNight: {
       title: "That Night",
@@ -401,6 +455,11 @@ const Book = {
       authorKey: Person.MEGAN_GOLDIN,
       dcl: "1565306114",
       meeting: "2020.02.24",
+    },
+    theExpats: {
+      title: "The Expats",
+      authorKey: Person.CHRIS_PAVONE,
+      meeting: "2014.02.24",
     },
     theFallen: {
       title: "The Fallen",
@@ -499,6 +558,11 @@ const Book = {
       authorKey: Person.MAVIS_DORIEL_HAY,
       meeting: "2019.12.13",
     },
+    theShadowTracer: {
+      title: "The Shadow Tracer",
+      authorKey: Person.MEG_GARDINER,
+      meeting: "2014.05.19",
+    },
     theSilentPatient: {
       title: "The Silent Patient",
       authorKey: Person.ALEX_MICHAELIDES,
@@ -573,6 +637,12 @@ const Book = {
       series: "Jack the Ghostman 2",
       meeting: "2016.05.23",
       dcl: "1283492114",
+    },
+    waitingForWednesday: {
+      title: "Waiting for Wednesday",
+      authorKey: Person.NICCI_FRENCH,
+      series: "Frieda Klein #3",
+      meeting: "2014.09.22",
     },
     whereTheCrawdadsSing: {
       title: "Where the Crawdads Sing",

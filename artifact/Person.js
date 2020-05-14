@@ -1,6 +1,7 @@
 const WIKI_PREFIX = "https://en.wikipedia.org/wiki/";
 
 const Person = {
+  AGATHA_CHRISTIE: "agathaChristie",
   AJ_FINN: "ajFinn",
   ALEX_MARWOOD: "alexMarwood",
   ALEX_MICHAELIDES: "alexMichaelides",
@@ -22,6 +23,7 @@ const Person = {
   DANIEL_SILVA: "danielSilva",
   DAVID_BALDACCI: "davidBaldacci",
   DELIA_OWENS: "deliaOwens",
+  DENNIS_LEHANE: "dennisLehane",
   DOMINIC_SMITH: "dominicSmith",
   ELLERY_QUEEN: "elleryQueen",
   EMELIE_SCHEPP: "emelieSchepp",
@@ -46,16 +48,19 @@ const Person = {
   LEE_CHILD: "leeChild",
   LENA_OLIN: "lenaOlin",
   LIANE_MORIARTY: "lianeMoriarty",
+  LINWOOD_BARCLAY: "linwoodBarclay",
   LISA_JEWELL: "lisaJewell",
   LISA_UNGER: "lisaUnger",
   LUC_BESSON: "lucBesson",
   MARY_KUBICA: "maryKubica",
   MAVIS_DORIEL_HAY: "mavisDorielHay",
   MEGAN_GOLDIN: "meganGoldin",
+  MEG_GARDINER: "megGardiner",
   MICHAEL_C_HALL: "michaelCHall",
   MICHAEL_CONNELLY: "michaelConnelly",
   NEIL_DUDGEON: "neilDudgeon",
   NGAIO_MARSH: "ngaioMarsh",
+  NICCI_FRENCH: "nicciFrench",
   OWEN_LAUKKANEN: "owenLaukkanen",
   PATRICIA_CLARKSON: "patriciaClarkson",
   PETER_SWANSON: "peterSwanson",
@@ -72,6 +77,11 @@ const Person = {
   TOM_CRUISE: "tomCruise",
 
   properties: {
+    agathaChristie: {
+      first: "Agatha",
+      last: "Christie",
+      wiki: "Agatha_Christie",
+    },
     ajFinn: { first: "A.J.", last: "Finn", wiki: "A._J._Finn" },
     alexMarwood: { first: "Alex", last: "Marwood", wiki: "Serena_Mackesy" },
     alexMichaelides: {
@@ -118,6 +128,7 @@ const Person = {
     },
     davidBaldacci: { first: "David", last: "Baldacci", wiki: "David_Baldacci" },
     deliaOwens: { first: "Delia", last: "Owens", wiki: "Delia_Owens" },
+    dennisLehane: { first: "Dennis", last: "Lehane", wiki: "Dennis_Lehane" },
     dominicSmith: {
       first: "Dominic",
       last: "Smith",
@@ -142,7 +153,11 @@ const Person = {
     harlanCoben: { first: "Harlan", last: "Coben", wiki: "Harlan_Coben" },
     harveyKeitel: { first: "Harvey", last: "Keitel", wiki: "Harvey_Keitel" },
     janeHarper: { first: "Jane", last: "Harper", wiki: "Jane_Harper" },
-    jeffLindsay: { first: "Jeff", last: "Lindsay" },
+    jeffLindsay: {
+      first: "Jeff",
+      last: "Lindsay",
+      wiki: "Jeff_Lindsay_(writer)",
+    },
     jenniferCarpenter: { first: "Jennifer", last: "Carpenter" },
     johnGrisham: { first: "John", last: "Grisham", wiki: "John_Grisham" },
     johnHart: { first: "John", last: "Hart", wiki: "John_Hart_(author)" },
@@ -166,6 +181,11 @@ const Person = {
     leeChild: { first: "Lee", last: "Child", wiki: "Lee_Child" },
     lenaOlin: { first: "Lena", last: "Olin", wiki: "Lena_Olin" },
     lianeMoriarty: { first: "Liane", last: "Moriarty", wiki: "Liane_Moriarty" },
+    linwoodBarclay: {
+      first: "Linwood",
+      last: "Barclay",
+      wiki: "Linwood_Barclay",
+    },
     lisaJewell: { first: "Lisa", last: "Jewell", wiki: "Lisa_Jewell" },
     lisaUnger: { first: "Lisa", last: "Unger", wiki: "Lisa_Unger" },
     lucBesson: { first: "Luc", last: "Besson", wiki: "Luc_Besson" },
@@ -177,6 +197,7 @@ const Person = {
       wiki: "Mavis_Doriel_Hay",
     },
     meganGoldin: { first: "Megan", last: "Goldin" },
+    megGardiner: { first: "Meg", last: "Gardiner", wiki: "Meg_Gardiner" },
     michaelCHall: { first: "Michael", middle: "C.", last: "Hall" },
     michaelConnelly: {
       first: "Michael",
@@ -185,6 +206,7 @@ const Person = {
     },
     neilDudgeon: { first: "Neil", last: "Dudgeon" },
     ngaioMarsh: { first: "Ngaio", last: "Marsh", wiki: "Ngaio_Marsh" },
+    nicciFrench: { first: "Nicci", last: "French", wiki: "Nicci_French" },
     owenLaukkanen: { first: "Owen", last: "Laukkanen", wiki: "Owen_Laukkanen" },
     patriciaClarkson: { first: "Patricia", last: "Clarkson" },
     peterSwanson: { first: "Peter", last: "Swanson", wiki: "Peter_Swanson" },
