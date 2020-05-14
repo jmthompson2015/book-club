@@ -1,5 +1,5 @@
 /* eslint no-console: ["error", { allow: ["log"] }] */
-/* eslint no-underscore-dangle: ["error", { "allow": ["_61_HOURS"] }] */
+/* eslint no-underscore-dangle: ["error", { "allow": ["_206_BONES", "_61_HOURS"] }] */
 
 const QUnit = require("../node_modules/qunit/qunit/qunit.js");
 const R = require("../node_modules/ramda/dist/ramda.js");
@@ -54,10 +54,10 @@ QUnit.test("Book.keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const length = 124;
+  const length = 136;
   assert.equal(result.length, length);
-  assert.equal(R.head(result), Book._61_HOURS);
-  assert.equal(R.last(result), Book.WHERE_THE_CRAWDADS_SING);
+  assert.equal(R.head(result), Book._206_BONES);
+  assert.equal(R.last(result), Book.WHISPERS_OF_THE_DEAD);
 });
 
 const BookTest = {};
