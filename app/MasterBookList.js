@@ -11,7 +11,8 @@ const OUTPUT_FILE = "MasterBookList.txt";
 const TABLE_PREFIX = `{| class="wikitable sortable"
 !Meeting
 !Book
-!Author`;
+!Author
+!Series`;
 const TABLE_SUFFIX = `
 |}`;
 
@@ -19,7 +20,8 @@ const createRow = (book, author) => `
 |-
 | ${book ? WikiUtils.createMeetingText1(book.meeting) : ""}
 | ${WikiUtils.createBookText(book)}
-| ${WikiUtils.createPersonText(author)}`;
+| ${WikiUtils.createPersonText(author)}
+| ${book && book.series ? book.series : ""}`;
 
 const MasterBookList = {
   report: () => {
