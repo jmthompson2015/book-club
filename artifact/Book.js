@@ -14,6 +14,7 @@ const Book = {
   A_PLAGUE_OF_SECRETS: "aPlagueOfSecrets",
   A_STUDY_IN_SCARLET: "aStudyInScarlet",
   A_TAP_ON_THE_WINDOW: "aTapOnTheWindow",
+  A_TEST_OF_WILLS: "aTestOfWills",
   A_TOAST_TO_MURDER: "aToastToMurder",
   A_WANTED_MAN: "aWantedMan",
   BLOOD_ON_SNOW: "bloodOnSnow",
@@ -74,6 +75,7 @@ const Book = {
   NEW_TRICKS: "newTricks",
   NINE_PERFECT_STRANGERS: "ninePerfectStrangers",
   NOTHING_TO_LOSE: "nothingToLose",
+  ODD_THOMAS: "oddThomas",
   ONE_GOOD_TURN: "oneGoodTurn",
   ONE_KICK: "oneKick",
   ONE_SHOT: "oneShot",
@@ -92,6 +94,7 @@ const Book = {
   SYCAMORE_ROW: "sycamoreRow",
   THAT_NIGHT: "thatNight",
   THE_BLACK_WIDOW: "theBlackWidow",
+  THE_BONE_PARADE: "theBoneParade",
   THE_BRASS_VERDICT: "theBrassVerdict",
   THE_BRIDE_COLLECTOR: "theBrideCollector",
   THE_BROKEN_WINDOW: "theBrokenWindow",
@@ -107,6 +110,7 @@ const Book = {
   THE_FALLEN: "theFallen",
   THE_FAMILY_UPSTAIRS: "theFamilyUpstairs",
   THE_FIFTH_WITNESS: "theFifthWitness",
+  THE_FINAL_SOLUTION: "theFinalSolution",
   THE_GIRL_WHO_KICKED_THE_HORNETS_NEST: "theGirlWhoKickedTheHornetsNest",
   THE_GIRL_WHO_PLAYED_WITH_FIRE: "theGirlWhoPlayedWithFire",
   THE_GIRL_WITH_THE_DRAGON_TATTOO: "theGirlWithTheDragonTattoo",
@@ -114,6 +118,8 @@ const Book = {
   THE_GREEK_COFFIN_MYSTERY: "theGreekCoffinMystery",
   THE_GUILTY: "theGuilty",
   THE_HEIST: "theHeist",
+  THE_HOUND_OF_THE_BASKERVILLES: "theHoundOfTheBaskervilles",
+  THE_HUNT_CLUB: "theHuntClub",
   THE_HUSH: "theHush",
   THE_INNOCENT_MAN: "theInnocentMan",
   THE_KEEPSAKE: "theKeepsake",
@@ -140,6 +146,7 @@ const Book = {
   THE_SILENT_PATIENT: "theSilentPatient",
   THE_SNOWMAN: "theSnowman",
   THE_STRANGER: "theStranger",
+  THE_STUPIDEST_ANGEL: "theStupidestAngel",
   THE_SWEETNESS_AT_THE_BOTTOM_OF_THE_PIE: "theSweetnessAtTheBottomOfThePie",
   THE_THIN_MAN: "theThinMan",
   THE_TRAVELERS: "theTravelers",
@@ -161,6 +168,7 @@ const Book = {
   VICTIMS: "victims",
   WAITING_FOR_WEDNESDAY: "waitingForWednesday",
   WHAT_THE_DEAD_KNOW: "whatTheDeadKnow",
+  WHEN_THE_WIND_BLOWS: "whenTheWindBlows",
   WHERE_THE_CRAWDADS_SING: "whereTheCrawdadsSing",
   WHISPERS_OF_THE_DEAD: "whispersOfTheDead",
   WICKED_PREY: "wickedPrey",
@@ -191,6 +199,7 @@ const Book = {
       authorKey: Person.MC_BEATON,
       series: "Hamish Macbeth #16",
       meeting: "2008.12.22",
+      dcl: "1084060114",
     },
     aManLayDead: {
       title: "A Man Lay Dead",
@@ -224,6 +233,12 @@ const Book = {
       authorKey: Person.LINWOOD_BARCLAY,
       meeting: "2014.04.28",
       dcl: "1153565114",
+    },
+    aTestOfWills: {
+      title: "A Test of Wills",
+      authorKey: Person.CHARLES_TODD,
+      meeting: "2007.04.23",
+      dcl: "1228464114",
     },
     aToastToMurder: {
       title: "A Toast to Murder",
@@ -306,11 +321,13 @@ const Book = {
       authorKey: Person.STUART_WOODS,
       series: "Stone Barrington #12",
       meeting: "2009.06.22",
+      dcl: "741038114",
     },
     darklyDreamingDexter: {
       title: "Darkly Dreaming Dexter",
       authorKey: Person.JEFF_LINDSAY,
       series: "Dexter #1",
+      meeting: "2007.02.26",
       dcl: "656271114",
     },
     darkOfTheMoon: {
@@ -338,6 +355,7 @@ const Book = {
       authorKey: Person.JEFF_LINDSAY,
       series: "Dexter #2",
       meeting: "2008.02.25",
+      dcl: "700955114",
     },
     defendingJacob: {
       title: "Defending Jacob",
@@ -363,6 +381,7 @@ const Book = {
       title: "Dirty Blonde",
       authorKey: Person.LISA_SCOTTOLINE,
       meeting: "2008.03.24",
+      dcl: "742156114",
     },
     dontBlink: {
       title: "Don't Blink",
@@ -419,6 +438,7 @@ const Book = {
       authorKey: Person.CHELSEA_CAIN,
       series: "Gretchen Lowell #1",
       meeting: "2008.05.26",
+      dcl: "816231114",
     },
     heatLightning: {
       title: "Heat Lightning",
@@ -534,6 +554,7 @@ const Book = {
       title: "Love Kills",
       authorKey: Person.EDNA_BUCHANAN,
       meeting: "2008.08.25",
+      dcl: "849764114",
     },
     magpieMurders: {
       title: "Magpie Murders",
@@ -552,6 +573,7 @@ const Book = {
       title: "Malice",
       authorKey: Person.LISA_JACKSON,
       meeting: "2009.10.26",
+      dcl: "1084081114",
     },
     markedForLife: {
       title: "Marked for Life",
@@ -602,11 +624,20 @@ const Book = {
       authorKey: Person.LEE_CHILD,
       series: "Jack Reacher #12",
       meeting: "2009.09.28",
+      dcl: "849387114",
+    },
+    oddThomas: {
+      title: "Odd Thomas",
+      authorKey: Person.DEAN_KOONTZ,
+      series: "Odd Thomas #1",
+      meeting: "2007.07.23",
+      dcl: "1231369114",
     },
     oneGoodTurn: {
       title: "One Good Turn",
       authorKey: Person.KATE_ATKINSON,
       meeting: "2008.10.27",
+      dcl: "1554992114",
     },
     oneKick: {
       title: "One Kick",
@@ -717,6 +748,11 @@ const Book = {
       meeting: "2017.06.26",
       dcl: "1317748114",
     },
+    theBoneParade: {
+      title: "The Bone Parade",
+      authorKey: Person.MARK_NYKANEN,
+      meeting: "2007.05.21",
+    },
     theBrassVerdict: {
       title: "The Brass Verdict",
       authorKey: Person.MICHAEL_CONNELLY,
@@ -734,6 +770,7 @@ const Book = {
       authorKey: Person.JEFFERY_DEAVER,
       series: "Lincoln Rhyme #8",
       meeting: "2009.08.24",
+      dcl: "856637114",
     },
     theBrutalTelling: {
       title: "The Brutal Telling",
@@ -814,6 +851,11 @@ const Book = {
       meeting: "2013.04.22",
       dcl: "985297114",
     },
+    theFinalSolution: {
+      title: "The Final Solution",
+      authorKey: Person.MICHAEL_CHABON,
+      meeting: "2007.03.26",
+    },
     theGirlWhoKickedTheHornetsNest: {
       title: "The Girl Who Kicked the Hornet's Nest",
       authorKey: Person.STIEG_LARSSON,
@@ -833,6 +875,7 @@ const Book = {
       authorKey: Person.STIEG_LARSSON,
       series: "Millennium #1",
       meeting: "2009.07.27",
+      dcl: "1087244114",
     },
     theGodsOfGuilt: {
       title: "The Gods Of Guilt",
@@ -862,6 +905,18 @@ const Book = {
       meeting: "2015.10.26",
       dcl: "1211991114",
     },
+    theHoundOfTheBaskervilles: {
+      title: "The Hound of the Baskervilles",
+      authorKey: Person.ARTHUR_CONAN_DOYLE,
+      series: "Sherlock Holmes",
+      meeting: "2007.10.22",
+      dcl: "1007856114",
+    },
+    theHuntClub: {
+      title: "The Hunt Club",
+      authorKey: Person.JOHN_LESCROART,
+      meeting: "2007.09.24",
+    },
     theHush: {
       title: "The Hush",
       authorKey: Person.JOHN_HART,
@@ -873,11 +928,13 @@ const Book = {
       title: "The Innocent Man",
       authorKey: Person.JOHN_GRISHAM,
       meeting: "2008.01.28",
+      dcl: "767190114",
     },
     theKeepsake: {
       title: "The Keepsake",
       authorKey: Person.TESS_GERRITSEN,
       meeting: "2009.11.23",
+      dcl: "1018803114",
     },
     theKillerNextDoor: {
       title: "The Killer Next Door",
@@ -948,6 +1005,7 @@ const Book = {
       authorKey: Person.MICHAEL_CONNELLY,
       series: "Harry Bosch #10",
       meeting: "2009.05.18",
+      dcl: "648301114",
     },
     theNightSeason: {
       title: "The Night Season",
@@ -974,6 +1032,7 @@ const Book = {
       authorKey: Person.STEPHEN_WHITE,
       series: "Dr. Alan Gregory #9",
       meeting: "2008.06.23",
+      dcl: "1382906114",
     },
     thePromise: {
       title: "The Promise",
@@ -1026,6 +1085,12 @@ const Book = {
       meeting: "2016.04.25",
       dcl: "1245665114",
     },
+    theStupidestAngel: {
+      title: "The Stupidest Angel",
+      authorKey: Person.CHRISTOPHER_MOORE,
+      meeting: "2007.12.17",
+      dcl: "1257000114",
+    },
     theSweetnessAtTheBottomOfThePie: {
       title: "The Sweetness at the Bottom of the Pie",
       authorKey: Person.ALAN_BRADLEY,
@@ -1037,6 +1102,7 @@ const Book = {
       title: "The Thin Man",
       authorKey: Person.DASHIELL_HAMMETT,
       meeting: "2009.02.23",
+      dcl: "811460114",
     },
     theTravelers: {
       title: "The Travelers",
@@ -1054,6 +1120,7 @@ const Book = {
       title: "The Two Minute Rule",
       authorKey: Person.ROBERT_CRAIS,
       meeting: "2008.04.28",
+      dcl: "1260719114",
     },
     theWatchman: {
       title: "The Watchman",
@@ -1084,6 +1151,7 @@ const Book = {
       title: "The Woods",
       authorKey: Person.HARLAN_COBEN,
       meeting: "2008.09.22",
+      dcl: "1615407114",
     },
     theWordIsMurder: {
       title: "The Word is Murder",
@@ -1108,11 +1176,13 @@ const Book = {
       title: "TripTych",
       authorKey: Person.KARIN_SLAUGHTER,
       meeting: "2009.01.26",
+      dcl: "755715114",
     },
     trueEvil: {
       title: "True Evil",
       authorKey: Person.GREG_ILES,
       meeting: "2009.04.27",
+      dcl: "1075138114",
     },
     twoKindsOfTruth: {
       title: "Two Kinds of Truth",
@@ -1152,6 +1222,13 @@ const Book = {
       title: "What the Dead Know",
       authorKey: Person.LAURA_LIPPMAN,
       meeting: "2008.07.28",
+      dcl: "801592114",
+    },
+    whenTheWindBlows: {
+      title: "When the Wind Blows",
+      authorKey: Person.JAMES_PATTERSON,
+      meeting: "2007.10.22",
+      dcl: "1243797114",
     },
     whereTheCrawdadsSing: {
       title: "Where the Crawdads Sing",
@@ -1170,6 +1247,7 @@ const Book = {
       authorKey: Person.JOHN_SANDFORD,
       series: "Prey #19",
       meeting: "2009.12.28",
+      dcl: "902064114",
     },
   },
 };
