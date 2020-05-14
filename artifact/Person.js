@@ -49,6 +49,7 @@ const Person = {
   LENA_OLIN: "lenaOlin",
   LIANE_MORIARTY: "lianeMoriarty",
   LINWOOD_BARCLAY: "linwoodBarclay",
+  LISA_JACKSON: "lisaJackson",
   LISA_JEWELL: "lisaJewell",
   LISA_UNGER: "lisaUnger",
   LUC_BESSON: "lucBesson",
@@ -75,6 +76,7 @@ const Person = {
   TANA_FRENCH: "tanaFrench",
   TESS_GERRITSEN: "tessGerritsen",
   TOM_CRUISE: "tomCruise",
+  WILLIAM_LANDAY: "williamLanday",
 
   properties: {
     agathaChristie: {
@@ -186,6 +188,11 @@ const Person = {
       last: "Barclay",
       wiki: "Linwood_Barclay",
     },
+    lisaJackson: {
+      first: "Lisa",
+      last: "Jackson",
+      wiki: "Lisa_Jackson_(author)",
+    },
     lisaJewell: { first: "Lisa", last: "Jewell", wiki: "Lisa_Jewell" },
     lisaUnger: { first: "Lisa", last: "Unger", wiki: "Lisa_Unger" },
     lucBesson: { first: "Luc", last: "Besson", wiki: "Luc_Besson" },
@@ -225,6 +232,7 @@ const Person = {
     tanaFrench: { first: "Tana", last: "French", wiki: "Tana_French" },
     tessGerritsen: { first: "Tess", last: "Gerritsen", wiki: "Tess_Gerritsen" },
     tomCruise: { first: "Tom", last: "Cruise", wiki: "Tom_Cruise" },
+    williamLanday: { first: "William", last: "Landay", wiki: "William_Landay" },
   },
 };
 
