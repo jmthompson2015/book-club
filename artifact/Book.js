@@ -5,6 +5,7 @@ const Person = require("./Person.js");
 const DCL_PREFIX = "https://dcl.bibliocommons.com/item/show/";
 
 const Book = {
+  _61_HOURS: "_61Hours",
   A_CHRISTMAS_PARTY: "aChristmasParty",
   A_MAN_LAY_DEAD: "aManLayDead",
   AND_THEN_THERE_WERE_NONE: "andThenThereWereNone",
@@ -13,16 +14,21 @@ const Book = {
   A_WANTED_MAN: "aWantedMan",
   BLOOD_ON_SNOW: "bloodOnSnow",
   BRING_ME_BACK: "bringMeBack",
+  BROKEN: "broken",
   CAMINO_WINDS: "caminoWinds",
+  CAUGHT: "caught",
   CHASING_DARKNESS: "chasingDarkness",
   CHRISTMAS_CRIMES_AT_PUZZEL_MANOR: "christmasCrimesAtPuzzelManor",
   CRAZY_LOVE_YOU: "crazyLoveYou",
   CRIME_AT_CHRISTMAS: "crimeAtChristmas",
   CRIME_SCENE: "crimeScene",
   DARKLY_DREAMING_DEXTER: "darklyDreamingDexter",
+  DARK_OF_THE_MOON: "darkOfTheMoon",
   DARK_SACRED_NIGHT: "darkSacredNight",
   DEFENDING_JACOB: "defendingJacob",
+  DEXTER_BY_DESIGN: "dexterByDesign",
   DEXTER_IS_DELICIOUS: "dexterIsDelicious",
+  DONT_BLINK: "dontBlink",
   EIGHT_PERFECT_MURDERS: "eightPerfectMurders",
   EVERY_LAST_LIE: "everyLastLie",
   FOOL_ME_ONCE: "foolMeOnce",
@@ -42,12 +48,14 @@ const Book = {
   I_SEE_YOU: "iSeeYou",
   KILL_FEE: "killFee",
   LETHAL_WHITE: "lethalWhite",
+  LIARS_LULLABY: "liarsLullaby",
   LIVE_BY_NIGHT: "liveByNight",
   MAGPIE_MURDERS: "magpieMurders",
   MAKE_ME: "makeMe",
   MARKED_FOR_LIFE: "markedForLife",
   MEAN_STREAK: "meanStreak",
   MISSING_YOU: "missingYou",
+  MYSTERY: "mystery",
   NEVER_GO_BACK: "neverGoBack",
   NINE_PERFECT_STRANGERS: "ninePerfectStrangers",
   ONE_KICK: "oneKick",
@@ -79,6 +87,7 @@ const Book = {
   THE_FALLEN: "theFallen",
   THE_FAMILY_UPSTAIRS: "theFamilyUpstairs",
   THE_FIFTH_WITNESS: "theFifthWitness",
+  THE_GIRL_WHO_KICKED_THE_HORNETS_NEST: "theGirlWhoKickedTheHornetsNest",
   THE_GODS_OF_GUILT: "theGodsOfGuilt",
   THE_GREEK_COFFIN_MYSTERY: "theGreekCoffinMystery",
   THE_GUILTY: "theGuilty",
@@ -90,11 +99,13 @@ const Book = {
   THE_LAST_PAINTING_OF_SARA_DE_VOS: "theLastPaintingOfSaraDeVos",
   THE_LATE_SHOW: "theLateShow",
   THE_LEOPARD: "theLeopard",
+  THE_LINCOLN_LAWYER: "theLincolnLawyer",
   THE_LOST_MAN: "theLostMan",
   THE_MOST_DANGEROUS_THING: "theMostDangerousThing",
   THE_MYSTERIOUS_AFFAIR_AT_STYLES: "theMysteriousAffairAtStyles",
   THE_NIGHT_SEASON: "theNightSeason",
   THE_NOWHERE_MAN: "theNowhereMan",
+  THE_PALLBEARERS: "thePallbearers",
   THE_PROMISE: "thePromise",
   THE_REMBRANDT_AFFAIR: "theRembrandtAffair",
   THE_REVERSAL: "theReversal",
@@ -111,6 +122,7 @@ const Book = {
   THE_WOMAN_IN_THE_WINDOW: "theWomanInTheWindow",
   THE_WORD_IS_MURDER: "theWordIsMurder",
   THE_WRONG_SIDE_OF_GOODBYE: "theWrongSideOfGoodbye",
+  TRAIL_OF_BLOOD: "trailOfBlood",
   TWO_KINDS_OF_TRUTH: "twoKindsOfTruth",
   UNDER_MY_SKIN: "underMySkin",
   VANISHING_GAMES: "vanishingGames",
@@ -119,6 +131,12 @@ const Book = {
   WHERE_THE_CRAWDADS_SING: "whereTheCrawdadsSing",
 
   properties: {
+    _61Hours: {
+      title: "61 Hours",
+      authorKey: Person.LEE_CHILD,
+      series: "Jack Reacher #14",
+      meeting: "2011.03.28",
+    },
     aChristmasParty: {
       title: "A Christmas Party",
       authorKey: Person.GEORGETTE_HEYER,
@@ -169,12 +187,23 @@ const Book = {
       dcl: "1446735114",
       meeting: "2019.02.25",
     },
+    broken: {
+      title: "Broken",
+      authorKey: Person.KARIN_SLAUGHTER,
+      series: "Georgia #2",
+      meeting: "2011.10.24",
+    },
     caminoWinds: {
       title: "Camino Winds",
       authorKey: Person.JOHN_GRISHAM,
       series: "Camino Island #2",
       dcl: "1636922114",
       meeting: "2020.09.28",
+    },
+    caught: {
+      title: "Caught",
+      authorKey: Person.HARLAN_COBEN,
+      meeting: "2011.02.28",
     },
     chasingDarkness: {
       title: "Chasing Darkness",
@@ -213,6 +242,12 @@ const Book = {
       series: "Dexter #1",
       dcl: "656271114",
     },
+    darkOfTheMoon: {
+      title: "Dark of the Moon",
+      authorKey: Person.JOHN_SANDFORD,
+      series: "Virgil Flowers #1",
+      meeting: "2011.08.22",
+    },
     darkSacredNight: {
       title: "Dark Sacred Night",
       authorKey: Person.MICHAEL_CONNELLY,
@@ -226,11 +261,22 @@ const Book = {
       meeting: "2013.06.24",
       dcl: "1021979114",
     },
+    dexterByDesign: {
+      title: "Dexter by Design",
+      authorKey: Person.JEFF_LINDSAY,
+      series: "Dexter #4",
+      meeting: "2011.04.25",
+    },
     dexterIsDelicious: {
       title: "Dexter is Delicious",
       authorKey: Person.JEFF_LINDSAY,
       series: "Dexter #5",
       meeting: "2012.05.29",
+    },
+    dontBlink: {
+      title: "Don't Blink",
+      authorKey: Person.JAMES_PATTERSON,
+      meeting: "2011.11.28",
     },
     eightPerfectMurders: {
       title: "Eight Perfect Murders",
@@ -352,6 +398,12 @@ const Book = {
       dcl: "1493220114",
       meeting: "2019.10.28",
     },
+    liarsLullaby: {
+      title: "Liar's Lullaby",
+      authorKey: Person.MEG_GARDINER,
+      series: "Jo Beckett #3",
+      meeting: "2011.06.27",
+    },
     liveByNight: {
       title: "Live by Night",
       authorKey: Person.DENNIS_LEHANE,
@@ -390,6 +442,12 @@ const Book = {
       authorKey: Person.HARLAN_COBEN,
       meeting: "2014.10.27",
       dcl: "1615407114",
+    },
+    mystery: {
+      title: "Mystery",
+      authorKey: Person.JONATHAN_KELLERMAN,
+      series: "Alex Delaware #26",
+      meeting: "2011.12.12",
     },
     neverGoBack: {
       title: "Never Go Back",
@@ -588,6 +646,12 @@ const Book = {
       meeting: "2013.04.22",
       dcl: "985297114",
     },
+    theGirlWhoKickedTheHornetsNest: {
+      title: "The Girl Who Kicked the Hornet's Nest",
+      authorKey: Person.STIEG_LARSSON,
+      series: "Millennium #3",
+      meeting: "2011.07.25",
+    },
     theGodsOfGuilt: {
       title: "The Gods Of Guilt",
       authorKey: Person.MICHAEL_CONNELLY,
@@ -660,6 +724,12 @@ const Book = {
       meeting: "2013.03.25",
       dcl: "1020521114",
     },
+    theLincolnLawyer: {
+      title: "The Lincoln Lawyer",
+      authorKey: Person.MICHAEL_CONNELLY,
+      series: "Mickey Haller #1",
+      meeting: "2011.09.26",
+    },
     theLostMan: {
       title: "The Lost Man",
       authorKey: Person.JANE_HARPER,
@@ -690,6 +760,12 @@ const Book = {
       series: "Evan Smoak #2",
       meeting: "2017.11.27",
       dcl: "1364629114",
+    },
+    thePallbearers: {
+      title: "The Pallbearers",
+      authorKey: Person.STEPHEN_J_CANNELL,
+      series: "Shane Scully #9",
+      meeting: "2011.01.24",
     },
     thePromise: {
       title: "The Promise",
@@ -788,6 +864,11 @@ const Book = {
       series: "Harry Bosch #19",
       meeting: "2017.09.25",
       dcl: "1337567114",
+    },
+    trailOfBlood: {
+      title: "Trail of Blood",
+      authorKey: Person.LISA_BLACK,
+      meeting: "2011.05.23",
     },
     twoKindsOfTruth: {
       title: "Two Kinds of Truth",
