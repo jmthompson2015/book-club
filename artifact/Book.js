@@ -111,6 +111,7 @@ const Book = {
       title: "A Christmas Party",
       authorKey: Person.GEORGETTE_HEYER,
       meeting: "2017.12.15",
+      dcl: "1444035114",
     },
     aManLayDead: {
       title: "A Man Lay Dead",
@@ -237,6 +238,7 @@ const Book = {
       title: "Ghostman",
       authorKey: Person.ROGER_HOBBS,
       meeting: "2014.07.28",
+      dcl: "1218653114",
     },
     goneGirl: {
       title: "Gone Girl",
