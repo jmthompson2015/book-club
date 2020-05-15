@@ -132,6 +132,7 @@ const Person = {
     alexMichaelides: {
       first: "Alex",
       last: "Michaelides",
+      imdb: "nm1955863",
       wiki: "Alex_Michaelides",
     },
     alexanderMcCallSmith: {
@@ -149,6 +150,7 @@ const Person = {
     anthonyHorowitz: {
       first: "Anthony",
       last: "Horowitz",
+      imdb: "nm0395275",
       wiki: "Anthony_Horowitz",
     },
     arthurConanDoyle: {
@@ -404,6 +406,7 @@ const Person = {
     michaelConnelly: {
       first: "Michael",
       last: "Connelly",
+      imdb: "nm0175093",
       wiki: "Michael_Connelly",
     },
     micheleScott: { first: "Michele", last: "Scott" },
@@ -445,6 +448,7 @@ const Person = {
       first: "Stephen",
       middle: "J.",
       last: "Cannell",
+      imdb: "nm0004798",
       wiki: "Stephen_J._Cannell",
     },
     stephenWhite: {

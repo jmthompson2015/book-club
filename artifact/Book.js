@@ -263,6 +263,7 @@ const Book = {
       title: "Bring Me Back",
       authorKey: Person.BA_PARIS,
       dcl: "1446735114",
+      lt: "20629560",
       meeting: "2019.02.25",
     },
     broken: {
@@ -351,6 +352,7 @@ const Book = {
       authorKey: Person.MICHAEL_CONNELLY,
       series: "Renee Ballard #2, Harry Bosch #21",
       dcl: "1475392114",
+      lt: "21016230",
       meeting: "2019.06.24",
     },
     dearlyDevotedDexter: {
@@ -537,6 +539,7 @@ const Book = {
       authorKey: Person.ROBERT_GALBRAITH,
       series: "Cormoran Strike #4",
       dcl: "1493220114",
+      lt: "17525753",
       meeting: "2019.10.28",
     },
     liarsLullaby: {
@@ -697,6 +700,7 @@ const Book = {
       title: "Pieces of Her",
       authorKey: Person.KARIN_SLAUGHTER,
       dcl: "1460952114",
+      lt: "20847841",
       meeting: "2019.07.22",
     },
     reconstructingAmelia: {
@@ -747,6 +751,7 @@ const Book = {
       authorKey: Person.CAZ_FREAR,
       series: "Cat Kinsella #1",
       dcl: "1466868114",
+      lt: "19582483",
       meeting: "2019.11.18",
     },
     sycamoreRow: {
@@ -825,6 +830,7 @@ const Book = {
       title: "The Death of Mrs. Westaway",
       authorKey: Person.RUTH_WARE,
       dcl: "1446736114",
+      lt: "20792311",
       meeting: "2019.08.26",
     },
     theDepartmentOfSensitiveCrimes: {
@@ -868,6 +874,7 @@ const Book = {
       authorKey: Person.DAVID_BALDACCI,
       series: "Amos Decker #4",
       dcl: "1441565114",
+      lt: "20582252",
       meeting: "2019.01.28",
     },
     theFamilyUpstairs: {
@@ -1095,6 +1102,7 @@ const Book = {
     theSantaKlausMurder: {
       title: "The Santa Klaus Murder",
       authorKey: Person.MAVIS_DORIEL_HAY,
+      lt: "14422101",
       meeting: "2019.12.13",
     },
     theShadowTracer: {
@@ -1172,6 +1180,7 @@ const Book = {
       title: "The Witch Elm",
       authorKey: Person.TANA_FRENCH,
       dcl: "1483240114",
+      lt: "21676484",
       meeting: "2019.05.20",
     },
     theWomanInCabin10: {
@@ -1235,6 +1244,7 @@ const Book = {
       title: "Under My Skin",
       authorKey: Person.LISA_UNGER,
       dcl: "1483237114",
+      lt: "21404705",
       meeting: "2019.04.22",
     },
     vanishingGames: {
@@ -1274,6 +1284,7 @@ const Book = {
       title: "Where the Crawdads Sing",
       authorKey: Person.DELIA_OWENS,
       dcl: "1485412114",
+      lt: "21599568",
       meeting: "2019.09.23",
     },
     whispersOfTheDead: {
