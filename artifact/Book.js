@@ -277,6 +277,7 @@ const Book = {
       authorKey: Person.JOHN_GRISHAM,
       series: "Camino Island #2",
       dcl: "1636922114",
+      lt: "24158942",
       meeting: "2020.09.28",
     },
     caught: {
@@ -307,6 +308,7 @@ const Book = {
       title: "Crime at Christmas",
       authorKey: Person.CHB_KITCHIN,
       series: "Malcolm Warren #2",
+      lt: "997859",
       meeting: "2020.12.18",
     },
     crimeScene: {
@@ -394,6 +396,7 @@ const Book = {
       authorKey: Person.PETER_SWANSON,
       series: "Malcolm Kershaw #1",
       dcl: "1615636114",
+      lt: "23575042",
       meeting: "2020.06.22",
     },
     everyLastLie: {
@@ -420,6 +423,7 @@ const Book = {
       authorKey: Person.JANE_HARPER,
       series: "Aaron Falk #2",
       dcl: "1430689114",
+      lt: "19768930",
       meeting: "2020.01.27",
     },
     ghostman: {
@@ -626,6 +630,7 @@ const Book = {
       title: "Nine Perfect Strangers",
       authorKey: Person.LIANE_MORIARTY,
       dcl: "1518027114",
+      lt: "21901086",
       meeting: "2020.10.26",
     },
     nothingToLose: {
@@ -821,6 +826,7 @@ const Book = {
       authorKey: Person.ALEXANDER_MCCALL_SMITH,
       series: "Detective Varg #1",
       dcl: "1535041114",
+      lt: "22451389",
       meeting: "2020.07.27",
     },
     theDry: {
@@ -841,6 +847,7 @@ const Book = {
       title: "The Escape Room",
       authorKey: Person.MEGAN_GOLDIN,
       dcl: "1565306114",
+      lt: "22043625",
       meeting: "2020.02.24",
     },
     theExpats: {
@@ -860,6 +867,7 @@ const Book = {
       title: "The Family Upstairs",
       authorKey: Person.LISA_JEWELL,
       dcl: "1595383114",
+      lt: "23187308",
       meeting: "2020.08.24",
     },
     theFifthWitness: {
@@ -1003,6 +1011,7 @@ const Book = {
       title: "The Lost Man",
       authorKey: Person.JANE_HARPER,
       dcl: "1523223114",
+      lt: "21919798",
       meeting: "2020.05.20",
     },
     theMostDangerousThing: {
@@ -1088,6 +1097,7 @@ const Book = {
       title: "The Silent Patient",
       authorKey: Person.ALEX_MICHAELIDES,
       dcl: "1531671114",
+      lt: "21942360",
       meeting: "2020.03.23",
     },
     theSnowman: {
@@ -1132,6 +1142,7 @@ const Book = {
       title: "The Turn of the Key",
       authorKey: Person.RUTH_WARE,
       dcl: "1576431114",
+      lt: "22533612",
       meeting: "2020.11.16",
     },
     theTwoMinuteRule: {
@@ -1175,6 +1186,7 @@ const Book = {
       title: "The Word is Murder",
       authorKey: Person.ANTHONY_HOROWITZ,
       dcl: "1456731114",
+      lt: "19570511",
       meeting: "2020.04.27",
     },
     theWrongSideOfGoodbye: {
