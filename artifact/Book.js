@@ -331,6 +331,7 @@ const Book = {
       series: "Dexter #1",
       meeting: "2007.02.26",
       dcl: "656271114",
+      lt: "93729",
     },
     darkOfTheMoon: {
       title: "Dark of the Moon",
@@ -437,6 +438,7 @@ const Book = {
       title: "Gone Girl",
       authorKey: Person.GILLIAN_FLYNN,
       dcl: "1033248114",
+      lt: "11234211",
     },
     heartsick: {
       title: "Heartsick",
@@ -605,6 +607,7 @@ const Book = {
       authorKey: Person.AGATHA_CHRISTIE,
       series: "Hercule Poirot #10",
       dcl: "792491114",
+      lt: "2742",
     },
     mystery: {
       title: "Mystery",
@@ -618,6 +621,7 @@ const Book = {
       authorKey: Person.LEE_CHILD,
       series: "Jack Reacher #18",
       dcl: "1137507114",
+      lt: "13480915",
     },
     newTricks: {
       title: "New Tricks",
@@ -711,6 +715,7 @@ const Book = {
       title: "Sharp Objects",
       authorKey: Person.GILLIAN_FLYNN,
       dcl: "767353114",
+      lt: "1117152",
     },
     sixYears: {
       title: "Six Years",
@@ -762,6 +767,7 @@ const Book = {
       authorKey: Person.MICHAEL_CONNELLY,
       series: "Harry Bosch #1",
       dcl: "871416114",
+      lt: "84315",
     },
     theBlackWidow: {
       title: "The Black Widow",
@@ -834,6 +840,7 @@ const Book = {
       authorKey: Person.JANE_HARPER,
       series: "Aaron Falk #1",
       dcl: "1364617114",
+      lt: "17442790",
       meeting: "2019.03.25",
     },
     theEnglishSpy: {
@@ -972,6 +979,7 @@ const Book = {
       title: "The Killings at Badger's Drift",
       authorKey: Person.CAROLINE_GRAHAM,
       series: "Barnaby #1",
+      lt: "270034",
     },
     theLastChild: {
       title: "The Last Child",
@@ -1006,6 +1014,7 @@ const Book = {
       series: "Mickey Haller #1",
       meeting: "2011.09.26",
       dcl: "985297114",
+      lt: "25501",
     },
     theLostMan: {
       title: "The Lost Man",
@@ -1026,6 +1035,7 @@ const Book = {
       series: "Hercule Poirot #1",
       meeting: "2013.12.16",
       dcl: "783597114",
+      lt: "2921950",
     },
     theNarrows: {
       title: "The Narrows",
