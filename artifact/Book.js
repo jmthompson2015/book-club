@@ -2,8 +2,6 @@ const R = require("../node_modules/ramda/dist/ramda.js");
 
 const Person = require("./Person.js");
 
-const DCL_PREFIX = "https://dcl.bibliocommons.com/item/show/";
-
 const Book = {
   _206_BONES: "_206Bones",
   _61_HOURS: "_61Hours",
@@ -663,6 +661,7 @@ const Book = {
       series: "Jack Reacher #9",
       meeting: "2009.03.23",
       dcl: "962840114",
+      lt: "156525",
     },
     orphanX: {
       title: "Orphan X",
@@ -1286,8 +1285,6 @@ Book.byYear = (year) => {
 
   return R.filter(filterFunction, books);
 };
-
-Book.dclUrl = (book) => (book.dcl ? `${DCL_PREFIX}${book.dcl}` : null);
 
 Object.freeze(Book);
 

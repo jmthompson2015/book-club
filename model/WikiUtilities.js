@@ -1,10 +1,26 @@
 const R = require("../node_modules/ramda/dist/ramda.js");
 
-const Book = require("../artifact/Book.js");
-const Movie = require("../artifact/Movie.js");
 const Person = require("../artifact/Person.js");
 
 const WikiUtilities = {};
+
+const ICON_SIZE = "20px";
+
+const DCL_IMAGE = "DouglasCountyLibraries418.png";
+const IMDB_IMAGE = "IMDb256.png";
+const LT_IMAGE = "LibraryThing180.png";
+const WIKIPEDIA_IMAGE = "Wikipedia128.png";
+
+const DCL_PREFIX = "https://dcl.bibliocommons.com/item/show/";
+const IMDB_PREFIX = "https://www.imdb.com/title/";
+const LT_PREFIX = "https://www.librarything.com/work/";
+const WIKIPEDIA_PREFIX = "https://en.wikipedia.org/wiki/";
+
+const dclUrl = (item) => (item.dcl ? `${DCL_PREFIX}${item.dcl}` : null);
+
+const imdbUrl = (item) => (item.imdb ? `${IMDB_PREFIX}${item.imdb}` : null);
+
+const libraryThingUrl = (item) => (item.lt ? `${LT_PREFIX}${item.lt}` : null);
 
 const trimTitle = (item) => {
   let answer = null;
@@ -22,6 +38,15 @@ const trimTitle = (item) => {
   return answer;
 };
 
+const wikilink = (page, label) => `[[${page} | ${label}]]`;
+
+const wikilinkedImage = (href, image) =>
+  href ? `[[Image:${image}|${ICON_SIZE}|link=${href}]]` : "";
+
+const wikipediaUrl = (item) =>
+  item.wiki ? `${WIKIPEDIA_PREFIX}${item.wiki}` : null;
+
+// /////////////////////////////////////////////////////////////////////////////
 WikiUtilities.compareByMeeting = (ascending) => (bookA, bookB) => {
   const meetingA = bookA.meeting || "";
   const meetingB = bookB.meeting || "";
@@ -68,13 +93,11 @@ WikiUtilities.createBookText = (book) => {
       bookPrefix = `data-sort-value="${book.title.substring("The ".length)}"| `;
     }
 
-    const dclUrl = Book.dclUrl(book);
-    const bookUrl = dclUrl ? `[${dclUrl} ${book.title}]` : book.title;
-
-    answer = `${bookPrefix}${bookUrl}`;
+    const linkedImages = WikiUtilities.linkedImages(book);
+    answer = `${bookPrefix} ${book.title} ${linkedImages}`;
   }
 
-  return answer;
+  return answer.trim();
 };
 
 WikiUtilities.createCastText = (castKeys) => {
@@ -83,12 +106,13 @@ WikiUtilities.createCastText = (castKeys) => {
   if (castKeys) {
     const mapFunction = (castKey) => {
       const person = Person.properties[castKey];
+      const personLabel = WikiUtilities.createPersonLabel(person);
+      const linkedImages = WikiUtilities.linkedImages(person);
 
-      return WikiUtilities.createPersonLink(person);
+      return `${personLabel} ${linkedImages}`;
     };
 
     const castLinks = R.map(mapFunction, castKeys);
-
     answer = castLinks.join(", ");
   }
 
@@ -99,7 +123,7 @@ WikiUtilities.createMeetingText1 = (meeting) => {
   let answer = "";
 
   if (meeting) {
-    answer = WikiUtilities.wikilink(`${meeting} Meeting Notes`, meeting);
+    answer = wikilink(`${meeting} Meeting Notes`, meeting);
   }
 
   return answer;
@@ -129,13 +153,11 @@ WikiUtilities.createMovieText = (movie) => {
       )}"| `;
     }
 
-    const imdbUrl = Movie.imdbUrl(movie);
-    const movieUrl = imdbUrl ? `[${imdbUrl} ${movie.title}]` : movie.title;
-
-    answer = `${moviePrefix}${movieUrl}`;
+    const linkedImages = WikiUtilities.linkedImages(movie);
+    answer = `${moviePrefix} ${movie.title} ${linkedImages}`;
   }
 
-  return answer;
+  return answer.trim();
 };
 
 WikiUtilities.createPersonLabel = (person) => {
@@ -145,21 +167,6 @@ WikiUtilities.createPersonLabel = (person) => {
     answer = `${person.first} ${person.middle} ${person.last}`;
   } else {
     answer = `${person.first} ${person.last}`;
-  }
-
-  return answer;
-};
-
-WikiUtilities.createPersonLink = (person) => {
-  let answer = "";
-
-  if (person) {
-    const wikiUrl = Person.wikiUrl(person);
-    const personLabel = WikiUtilities.createPersonLabel(person);
-
-    answer = wikiUrl
-      ? WikiUtilities.hyperlink(wikiUrl, personLabel)
-      : personLabel;
   }
 
   return answer;
@@ -182,12 +189,12 @@ WikiUtilities.createPersonText = (person) => {
 
   if (person) {
     const personPrefix = WikiUtilities.createPersonPrefix(person);
-    const personLink = WikiUtilities.createPersonLink(person);
-
-    answer = `${personPrefix} ${personLink}`;
+    const personLabel = WikiUtilities.createPersonLabel(person);
+    const linkedImages = WikiUtilities.linkedImages(person);
+    answer = `${personPrefix} ${personLabel} ${linkedImages}`;
   }
 
-  return answer;
+  return answer.trim();
 };
 
 WikiUtilities.createTVSeriesText = (tvSeries) => {
@@ -206,20 +213,21 @@ WikiUtilities.createTVSeriesText = (tvSeries) => {
       )}"| `;
     }
 
-    const imdbUrl = Movie.imdbUrl(tvSeries);
-    const movieUrl = imdbUrl
-      ? `[${imdbUrl} ${tvSeries.title}]`
-      : tvSeries.title;
-
-    answer = `${tvSeriesPrefix}${movieUrl}`;
+    const linkedImages = WikiUtilities.linkedImages(tvSeries);
+    answer = `${tvSeriesPrefix} ${tvSeries.title} ${linkedImages}`;
   }
 
-  return answer;
+  return answer.trim();
 };
 
-WikiUtilities.hyperlink = (href, label) => `[${href} ${label}]`;
+WikiUtilities.linkedImages = (item) => {
+  const dclLink = wikilinkedImage(dclUrl(item), DCL_IMAGE);
+  const imdbLink = wikilinkedImage(imdbUrl(item), IMDB_IMAGE);
+  const libraryThingLink = wikilinkedImage(libraryThingUrl(item), LT_IMAGE);
+  const wikipediaLink = wikilinkedImage(wikipediaUrl(item), WIKIPEDIA_IMAGE);
 
-WikiUtilities.wikilink = (page, label) => `[[${page} | ${label}]]`;
+  return `${dclLink} ${imdbLink} ${libraryThingLink} ${wikipediaLink}`;
+};
 
 Object.freeze(WikiUtilities);
 

@@ -3,8 +3,6 @@ const R = require("../node_modules/ramda/dist/ramda.js");
 const Book = require("./Book.js");
 const Person = require("./Person.js");
 
-const IMDB_PREFIX = "https://www.imdb.com/title/";
-
 const Movie = {
   GONE_GIRL: "goneGirl",
   JACK_REACHER: "jackReacher",
@@ -82,8 +80,6 @@ Movie.keys = () => Object.keys(Movie.properties);
 Movie.values = () => Object.values(Movie.properties);
 
 // /////////////////////////////////////////////////////////////////////////////
-Movie.imdbUrl = (movie) => (movie.imdb ? `${IMDB_PREFIX}${movie.imdb}` : null);
-
 Movie.withBook = () => {
   const movies = Movie.values();
   const filterFunction = (movie) => movie.bookKey !== undefined;

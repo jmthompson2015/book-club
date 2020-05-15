@@ -88,7 +88,7 @@ QUnit.test("createBookText()", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    "[https://dcl.bibliocommons.com/item/show/1033248114 Gone Girl]"
+    "Gone Girl [[Image:DouglasCountyLibraries418.png|20px|link=https://dcl.bibliocommons.com/item/show/1033248114]]"
   );
 });
 
@@ -114,7 +114,7 @@ QUnit.test("createCastText()", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    "[https://en.wikipedia.org/wiki/Ben_Affleck Ben Affleck], [https://en.wikipedia.org/wiki/Rosamund_Pike Rosamund Pike]"
+    "Ben Affleck    [[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Ben_Affleck]], Rosamund Pike  [[Image:IMDb256.png|20px|link=https://www.imdb.com/title/nm0683253]]  [[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Rosamund_Pike]]"
   );
 });
 
@@ -188,7 +188,7 @@ QUnit.test("createMovieText()", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    "[https://www.imdb.com/title/tt2267998 Gone Girl (2014)]"
+    "Gone Girl (2014)  [[Image:IMDb256.png|20px|link=https://www.imdb.com/title/tt2267998]]"
   );
 });
 
@@ -215,7 +215,7 @@ QUnit.test("createPersonText()", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    'data-sort-value="Child, Lee"| [https://en.wikipedia.org/wiki/Lee_Child Lee Child]'
+    'data-sort-value="Child, Lee"| Lee Child    [[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Lee_Child]]'
   );
 });
 
@@ -241,7 +241,7 @@ QUnit.test("createTVSeriesText()", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    "[https://www.imdb.com/title/tt0118401 Midsomer Murders (1997-?)]"
+    "Midsomer Murders (1997-?)  [[Image:IMDb256.png|20px|link=https://www.imdb.com/title/tt0118401]]"
   );
 });
 

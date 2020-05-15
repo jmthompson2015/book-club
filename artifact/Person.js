@@ -1,5 +1,3 @@
-const WIKI_PREFIX = "https://en.wikipedia.org/wiki/";
-
 const Person = {
   AGATHA_CHRISTIE: "agathaChristie",
   AJ_FINN: "ajFinn",
@@ -346,7 +344,12 @@ const Person = {
     },
     robertCrais: { first: "Robert", last: "Crais", wiki: "Robert_Crais" },
     rogerHobbs: { first: "Roger", last: "Hobbs", wiki: "Roger_Hobbs" },
-    rosamundPike: { first: "Rosamund", last: "Pike", wiki: "Rosamund_Pike" },
+    rosamundPike: {
+      first: "Rosamund",
+      last: "Pike",
+      imdb: "nm0683253",
+      wiki: "Rosamund_Pike",
+    },
     ruthWare: { first: "Ruth", last: "Ware", wiki: "Ruth_Ware" },
     sandraBrown: { first: "Sandra", last: "Brown", wiki: "Sandra_Brown" },
     shariLapena: { first: "Shari", last: "Lapena", wiki: "Shari_Lapena" },
@@ -377,10 +380,6 @@ const Person = {
 Person.keys = () => Object.keys(Person.properties);
 
 Person.values = () => Object.values(Person.properties);
-
-// /////////////////////////////////////////////////////////////////////////////
-Person.wikiUrl = (person) =>
-  person.wiki ? `${WIKI_PREFIX}${person.wiki}` : null;
 
 Object.freeze(Person);
 
