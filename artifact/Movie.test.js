@@ -111,10 +111,10 @@ QUnit.test("Movie.keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const length = 6;
+  const length = 9;
   assert.equal(result.length, length);
   assert.equal(R.head(result), Movie.GONE_GIRL);
-  assert.equal(R.last(result), Movie.THE_DRY);
+  assert.equal(R.last(result), Movie.THE_LINCOLN_LAWYER);
 });
 
 const MovieTest = {};

@@ -70,6 +70,7 @@ const Book = {
   MARKED_FOR_LIFE: "markedForLife",
   MEAN_STREAK: "meanStreak",
   MISSING_YOU: "missingYou",
+  MURDER_ON_THE_ORIENT_EXPRESS: "murderOnTheOrientExpress",
   MYSTERY: "mystery",
   NEVER_GO_BACK: "neverGoBack",
   NEW_TRICKS: "newTricks",
@@ -93,6 +94,7 @@ const Book = {
   SWEET_LITTLE_LIES: "sweetLittleLies",
   SYCAMORE_ROW: "sycamoreRow",
   THAT_NIGHT: "thatNight",
+  THE_BLACK_ECHO: "theBlackEcho",
   THE_BLACK_WIDOW: "theBlackWidow",
   THE_BONE_PARADE: "theBoneParade",
   THE_BRASS_VERDICT: "theBrassVerdict",
@@ -594,6 +596,11 @@ const Book = {
       meeting: "2014.10.27",
       dcl: "1615407114",
     },
+    murderOnTheOrientExpress: {
+      title: "Murder on the Orient Express",
+      authorKey: Person.AGATHA_CHRISTIE,
+      series: "Hercule Poirot #10",
+    },
     mystery: {
       title: "Mystery",
       authorKey: Person.JONATHAN_KELLERMAN,
@@ -740,6 +747,11 @@ const Book = {
       authorKey: Person.CHEVY_STEVENS,
       meeting: "2015.06.22",
       dcl: "1189725114",
+    },
+    theBlackEcho: {
+      title: "The Black Echo",
+      authorKey: Person.MICHAEL_CONNELLY,
+      series: "Harry Bosch #1",
     },
     theBlackWidow: {
       title: "The Black Widow",

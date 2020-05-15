@@ -13,7 +13,7 @@ QUnit.module("WikiUtilities");
 
 QUnit.test("compareByMeeting()", (assert) => {
   // Setup.
-  const book1 = Book.properties[Book.FORCE_OF_NATURE];
+  const book1 = Book.properties[Book.FORCE_OF_NATURE_2018];
   const book2 = Book.properties[Book.THE_ESCAPE_ROOM];
   const book3 = Book.properties[Book.THE_SILENT_PATIENT];
   const compareByMeeting = WikiUtils.compareByMeeting(true);
@@ -34,7 +34,7 @@ QUnit.test("compareByMeeting()", (assert) => {
 
 QUnit.test("compareByTitle()", (assert) => {
   // Setup.
-  const book1 = Book.properties[Book.FORCE_OF_NATURE];
+  const book1 = Book.properties[Book.FORCE_OF_NATURE_2018];
   const book2 = Book.properties[Book.THE_ESCAPE_ROOM];
   const book3 = Book.properties[Book.THE_SILENT_PATIENT];
 
@@ -117,7 +117,7 @@ QUnit.test("createMeetingText1() undefined", (assert) => {
 
 QUnit.test("createMeetingText1()", (assert) => {
   // Setup.
-  const book = Book.properties[Book.FORCE_OF_NATURE];
+  const book = Book.properties[Book.FORCE_OF_NATURE_2018];
   const { meeting } = book;
 
   // Run.
@@ -141,7 +141,7 @@ QUnit.test("createMeetingText2() undefined", (assert) => {
 
 QUnit.test("createMeetingText2()", (assert) => {
   // Setup.
-  const book = Book.properties[Book.FORCE_OF_NATURE];
+  const book = Book.properties[Book.FORCE_OF_NATURE_2018];
   const { meeting } = book;
 
   // Run.
