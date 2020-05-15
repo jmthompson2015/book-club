@@ -20,6 +20,15 @@ const dclUrl = (item) => (item.dcl ? `${DCL_PREFIX}${item.dcl}` : null);
 
 const imdbUrl = (item) => (item.imdb ? `${IMDB_PREFIX}${item.imdb}` : null);
 
+const labelLinkedImagesTable = (label, linkedImages) => {
+  const style1 = `border:0px; padding:0px;`;
+  const style2 = "float: right;";
+  const cell1 = `<td style="${style1}">${label}</td>`;
+  const cell2 = `<td style="${style1} ${style2}">${linkedImages}</td>`;
+
+  return `<table style="${style1} width:100%;"><tr>${cell1}${cell2}</tr></table>`;
+};
+
 const libraryThingUrl = (item) => (item.lt ? `${LT_PREFIX}${item.lt}` : null);
 
 const trimTitle = (item) => {
@@ -94,7 +103,8 @@ WikiUtilities.createBookText = (book) => {
     }
 
     const linkedImages = WikiUtilities.linkedImages(book);
-    answer = `${bookPrefix} ${book.title} ${linkedImages}`;
+    const table = labelLinkedImagesTable(book.title, linkedImages);
+    answer = `${bookPrefix} ${table}`;
   }
 
   return answer.trim();
@@ -109,11 +119,11 @@ WikiUtilities.createCastText = (castKeys) => {
       const personLabel = WikiUtilities.createPersonLabel(person);
       const linkedImages = WikiUtilities.linkedImages(person);
 
-      return `${personLabel} ${linkedImages}`;
+      return labelLinkedImagesTable(personLabel, linkedImages);
     };
 
     const castLinks = R.map(mapFunction, castKeys);
-    answer = castLinks.join(", ");
+    answer = castLinks.join(" ");
   }
 
   return answer;
@@ -154,7 +164,8 @@ WikiUtilities.createMovieText = (movie) => {
     }
 
     const linkedImages = WikiUtilities.linkedImages(movie);
-    answer = `${moviePrefix} ${movie.title} ${linkedImages}`;
+    const table = labelLinkedImagesTable(movie.title, linkedImages);
+    answer = `${moviePrefix} ${table}`;
   }
 
   return answer.trim();
@@ -191,7 +202,8 @@ WikiUtilities.createPersonText = (person) => {
     const personPrefix = WikiUtilities.createPersonPrefix(person);
     const personLabel = WikiUtilities.createPersonLabel(person);
     const linkedImages = WikiUtilities.linkedImages(person);
-    answer = `${personPrefix} ${personLabel} ${linkedImages}`;
+    const table = labelLinkedImagesTable(personLabel, linkedImages);
+    answer = `${personPrefix} ${table}`;
   }
 
   return answer.trim();
@@ -214,7 +226,8 @@ WikiUtilities.createTVSeriesText = (tvSeries) => {
     }
 
     const linkedImages = WikiUtilities.linkedImages(tvSeries);
-    answer = `${tvSeriesPrefix} ${tvSeries.title} ${linkedImages}`;
+    const table = labelLinkedImagesTable(tvSeries.title, linkedImages);
+    answer = `${tvSeriesPrefix} ${table}`;
   }
 
   return answer.trim();
@@ -223,10 +236,18 @@ WikiUtilities.createTVSeriesText = (tvSeries) => {
 WikiUtilities.linkedImages = (item) => {
   const dclLink = wikilinkedImage(dclUrl(item), DCL_IMAGE);
   const imdbLink = wikilinkedImage(imdbUrl(item), IMDB_IMAGE);
-  const libraryThingLink = wikilinkedImage(libraryThingUrl(item), LT_IMAGE);
+  const ltLink = wikilinkedImage(libraryThingUrl(item), LT_IMAGE);
   const wikipediaLink = wikilinkedImage(wikipediaUrl(item), WIKIPEDIA_IMAGE);
+  const style = "border:0px; padding:0px;";
 
-  return `${dclLink} ${imdbLink} ${libraryThingLink} ${wikipediaLink}`;
+  let answer = `<table style="${style}"><tr>`;
+  answer += dclLink ? `<td style="${style}">${dclLink}</td>` : "";
+  answer += imdbLink ? `<td style="${style}">${imdbLink}</td>` : "";
+  answer += ltLink ? `<td style="${style}">${ltLink}</td>` : "";
+  answer += wikipediaLink ? `<td style="${style}">${wikipediaLink}</td>` : "";
+  answer += "</tr></table>";
+
+  return answer;
 };
 
 Object.freeze(WikiUtilities);
