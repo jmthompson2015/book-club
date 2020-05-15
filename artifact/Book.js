@@ -614,6 +614,7 @@ const Book = {
     neverGoBack: {
       title: "Never Go Back",
       authorKey: Person.LEE_CHILD,
+      series: "Jack Reacher #18",
       dcl: "1137507114",
     },
     newTricks: {
@@ -659,6 +660,7 @@ const Book = {
     oneShot: {
       title: "One Shot",
       authorKey: Person.LEE_CHILD,
+      series: "Jack Reacher #9",
       meeting: "2009.03.23",
       dcl: "962840114",
     },
@@ -925,7 +927,7 @@ const Book = {
     theHoundOfTheBaskervilles: {
       title: "The Hound of the Baskervilles",
       authorKey: Person.ARTHUR_CONAN_DOYLE,
-      series: "Sherlock Holmes",
+      series: "Sherlock Holmes #5",
       meeting: "2007.10.22",
       dcl: "1007856114",
     },
