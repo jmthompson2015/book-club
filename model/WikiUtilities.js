@@ -6,23 +6,45 @@ const Person = require("../artifact/Person.js");
 
 const WikiUtilities = {};
 
+const trimTitle = (item) => {
+  let answer = null;
+
+  if (item) {
+    answer = item.title.trim();
+
+    if (answer.startsWith("A ")) {
+      answer = answer.substring("A ".length);
+    } else if (answer.startsWith("The ")) {
+      answer = answer.substring("The ".length);
+    }
+  }
+
+  return answer;
+};
+
 WikiUtilities.compareByMeeting = (ascending) => (bookA, bookB) => {
   const meetingA = bookA.meeting || "";
   const meetingB = bookB.meeting || "";
-  let answer = ascending ? -1 : 1;
+  const factor = ascending ? 1 : -1;
+  let answer = -factor;
 
   if (meetingA === meetingB) {
     answer = 0;
   } else if (meetingA > meetingB) {
-    answer = ascending ? 1 : -1;
+    answer = factor;
+  }
+
+  if (answer === 0) {
+    answer = WikiUtilities.compareByTitle(bookA, bookB);
   }
 
   return answer;
 };
 
 WikiUtilities.compareByTitle = (itemA, itemB) => {
-  const titleA = itemA.title;
-  const titleB = itemB.title;
+  const titleA = trimTitle(itemA);
+  const titleB = trimTitle(itemB);
+
   let answer = -1;
 
   if (titleA === titleB) {
