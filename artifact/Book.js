@@ -415,6 +415,7 @@ const Book = {
       authorKey: Person.CJ_BOX,
       series: "Joe Picket #12",
       meeting: "2012.11.26",
+      dcl: "1022393114",
     },
     forceOfNature2018: {
       title: "Force of Nature (2018)",
@@ -475,6 +476,7 @@ const Book = {
       authorKey: Person.TESS_GERRITSEN,
       series: "Rizzoli & Isles #8",
       meeting: "2010.11.22",
+      dcl: "1450069114",
     },
     idKnowYouAnywhere: {
       title: "I'd Know You Anywhere",
@@ -600,6 +602,7 @@ const Book = {
       title: "Murder on the Orient Express",
       authorKey: Person.AGATHA_CHRISTIE,
       series: "Hercule Poirot #10",
+      dcl: "792491114",
     },
     mystery: {
       title: "Mystery",
@@ -752,6 +755,7 @@ const Book = {
       title: "The Black Echo",
       authorKey: Person.MICHAEL_CONNELLY,
       series: "Harry Bosch #1",
+      dcl: "871416114",
     },
     theBlackWidow: {
       title: "The Black Widow",
@@ -776,6 +780,7 @@ const Book = {
       title: "The Bride Collector",
       authorKey: Person.TED_DEKKER,
       meeting: "2010.08.23",
+      dcl: "972555114",
     },
     theBrokenWindow: {
       title: "The Broken Window",
