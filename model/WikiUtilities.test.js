@@ -5,6 +5,7 @@ const QUnit = require("../node_modules/qunit/qunit/qunit.js");
 const Book = require("../artifact/Book.js");
 const Movie = require("../artifact/Movie.js");
 const Person = require("../artifact/Person.js");
+const Series = require("../artifact/Series.js");
 const TVSeries = require("../artifact/TVSeries.js");
 
 const WikiUtils = require("./WikiUtilities.js");
@@ -88,7 +89,7 @@ QUnit.test("createBookText()", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    '<table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Gone Girl</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:DouglasCountyLibraries418.png|20px|link=https://dcl.bibliocommons.com/item/show/1033248114]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/work/11234211]]</td></tr></table></td></tr></table>'
+    '<table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Gone Girl</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:DouglasCountyLibraries418.png|20px|link=https://dcl.bibliocommons.com/item/show/1033248114|Douglas County Libraries]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/work/11234211|LibraryThing]]</td></tr></table></td></tr></table>'
   );
 });
 
@@ -114,7 +115,7 @@ QUnit.test("createCastText()", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    '<table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Ben Affleck</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/title/nm0000255]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Ben_Affleck]]</td></tr></table></td></tr></table> <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Rosamund Pike</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/title/nm0683253]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Rosamund_Pike]]</td></tr></table></td></tr></table>'
+    '<table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Ben Affleck</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/title/nm0000255|Internet Movie Database]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Ben_Affleck|Wikipedia]]</td></tr></table></td></tr></table> <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Rosamund Pike</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/title/nm0683253|Internet Movie Database]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Rosamund_Pike|Wikipedia]]</td></tr></table></td></tr></table>'
   );
 });
 
@@ -188,7 +189,7 @@ QUnit.test("createMovieText()", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    '<table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Gone Girl (2014)</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/title/tt2267998]]</td></tr></table></td></tr></table>'
+    '<table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Gone Girl (2014)</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/title/tt2267998|Internet Movie Database]]</td></tr></table></td></tr></table>'
   );
 });
 
@@ -200,7 +201,6 @@ QUnit.test("createPersonText() undefined", (assert) => {
   const result = WikiUtils.createPersonText(person);
 
   // Verify.
-  // assert.ok(result);
   assert.equal(result, "", `result = :${result}:`);
 });
 
@@ -215,7 +215,33 @@ QUnit.test("createPersonText()", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    'data-sort-value="Child, Lee"| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Lee Child</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/title/nm1676193]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Lee_Child]]</td></tr></table></td></tr></table>'
+    'data-sort-value="Child, Lee"| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Lee Child</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/title/nm1676193|Internet Movie Database]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Lee_Child|Wikipedia]]</td></tr></table></td></tr></table>'
+  );
+});
+
+QUnit.test("createSeriesText() undefined", (assert) => {
+  // Setup.
+  const seriesObj = undefined;
+
+  // Run.
+  const result = WikiUtils.createSeriesText(seriesObj);
+
+  // Verify.
+  assert.equal(result, "", `result = :${result}:`);
+});
+
+QUnit.test("createSeriesText()", (assert) => {
+  // Setup.
+  const seriesObj = { key: Series.JACK_REACHER, entry: 12 };
+
+  // Run.
+  const result = WikiUtils.createSeriesText(seriesObj);
+
+  // Verify.
+  assert.ok(result);
+  assert.equal(
+    result,
+    '<table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Jack Reacher #12</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Jack+Reacher|LibraryThing]]</td></tr></table></td></tr></table>'
   );
 });
 
@@ -241,7 +267,7 @@ QUnit.test("createTVSeriesText()", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    '<table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Midsomer Murders (1997-?)</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/title/tt0118401]]</td></tr></table></td></tr></table>'
+    '<table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Midsomer Murders (1997-?)</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/title/tt0118401|Internet Movie Database]]</td></tr></table></td></tr></table>'
   );
 });
 

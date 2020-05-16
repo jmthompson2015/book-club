@@ -55,7 +55,7 @@ const createRow = (book, author) => `
 | ${book ? createDate(book.meeting) : ""}
 | ${WikiUtils.createBookText(book)}
 | ${WikiUtils.createPersonText(author)}
-| ${book.series || ""}
+| ${book ? WikiUtils.createSeriesText(book.series) : ""}
 | ${book ? WikiUtils.createMeetingText2(book.meeting) : ""}`;
 
 const CaseFiles = {

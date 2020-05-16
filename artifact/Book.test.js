@@ -1,5 +1,5 @@
 /* eslint no-console: ["error", { allow: ["log"] }] */
-/* eslint no-underscore-dangle: ["error", { "allow": ["_206_BONES", "_61_HOURS"] }] */
+/* eslint no-underscore-dangle: ["error", { "allow": ["_206_BONES"] }] */
 
 const QUnit = require("../node_modules/qunit/qunit/qunit.js");
 const R = require("../node_modules/ramda/dist/ramda.js");

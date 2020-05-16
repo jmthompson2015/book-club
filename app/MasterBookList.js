@@ -21,7 +21,7 @@ const createRow = (book, author) => `
 | ${book ? WikiUtils.createMeetingText1(book.meeting) : ""}
 | ${WikiUtils.createBookText(book)}
 | ${WikiUtils.createPersonText(author)}
-| ${book && book.series ? book.series : ""}`;
+| ${book ? WikiUtils.createSeriesText(book.series) : ""}`;
 
 const MasterBookList = {
   report: () => {

@@ -1,0 +1,84 @@
+{| class="wikitable sortable"
+!Date
+!Book
+!Author
+!Series
+!Meeting Notes
+|-
+| January 27
+| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Force of Nature (2018)</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:DouglasCountyLibraries418.png|20px|link=https://dcl.bibliocommons.com/item/show/1430689114|Douglas County Libraries]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/work/19768930|LibraryThing]]</td></tr></table></td></tr></table>
+| data-sort-value="Harper, Jane"| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Jane Harper</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/harperjane-1|LibraryThing]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Jane_Harper|Wikipedia]]</td></tr></table></td></tr></table>
+| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Aaron Falk #2</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Aaron+Falk|LibraryThing]]</td></tr></table></td></tr></table>
+| [[2020.01.27 Meeting Notes]]
+|-
+| February 24
+| data-sort-value="Escape Room"|  <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">The Escape Room</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:DouglasCountyLibraries418.png|20px|link=https://dcl.bibliocommons.com/item/show/1565306114|Douglas County Libraries]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/work/22043625|LibraryThing]]</td></tr></table></td></tr></table>
+| data-sort-value="Goldin, Megan"| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Megan Goldin</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/goldinmegan|LibraryThing]]</td></tr></table></td></tr></table>
+| 
+| [[2020.02.24 Meeting Notes]]
+|-
+| March 23
+| data-sort-value="Silent Patient"|  <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">The Silent Patient</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:DouglasCountyLibraries418.png|20px|link=https://dcl.bibliocommons.com/item/show/1531671114|Douglas County Libraries]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/work/21942360|LibraryThing]]</td></tr></table></td></tr></table>
+| data-sort-value="Michaelides, Alex"| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Alex Michaelides</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/title/nm1955863|Internet Movie Database]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/michaelidesalex|LibraryThing]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Alex_Michaelides|Wikipedia]]</td></tr></table></td></tr></table>
+| 
+| [[2020.03.23 Meeting Notes]]
+|-
+| April 27
+| data-sort-value="Word is Murder"|  <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">The Word is Murder</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:DouglasCountyLibraries418.png|20px|link=https://dcl.bibliocommons.com/item/show/1456731114|Douglas County Libraries]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/work/19570511|LibraryThing]]</td></tr></table></td></tr></table>
+| data-sort-value="Horowitz, Anthony"| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Anthony Horowitz</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/title/nm0395275|Internet Movie Database]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/horowitzanthony|LibraryThing]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Anthony_Horowitz|Wikipedia]]</td></tr></table></td></tr></table>
+| 
+| [[2020.04.27 Meeting Notes]]
+|-
+| May 20
+| data-sort-value="Lost Man"|  <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">The Lost Man</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:DouglasCountyLibraries418.png|20px|link=https://dcl.bibliocommons.com/item/show/1523223114|Douglas County Libraries]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/work/21919798|LibraryThing]]</td></tr></table></td></tr></table>
+| data-sort-value="Harper, Jane"| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Jane Harper</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/harperjane-1|LibraryThing]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Jane_Harper|Wikipedia]]</td></tr></table></td></tr></table>
+| 
+| [[2020.05.20 Meeting Notes]]
+|-
+| June 22
+| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Eight Perfect Murders</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:DouglasCountyLibraries418.png|20px|link=https://dcl.bibliocommons.com/item/show/1615636114|Douglas County Libraries]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/work/23575042|LibraryThing]]</td></tr></table></td></tr></table>
+| data-sort-value="Swanson, Peter"| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Peter Swanson</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/swansonpeter-1|LibraryThing]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Peter_Swanson|Wikipedia]]</td></tr></table></td></tr></table>
+| 
+| [[2020.06.22 Meeting Notes]]
+|-
+| July 27
+| data-sort-value="Department of Sensitive Crimes"|  <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">The Department of Sensitive Crimes</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:DouglasCountyLibraries418.png|20px|link=https://dcl.bibliocommons.com/item/show/1535041114|Douglas County Libraries]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/work/22451389|LibraryThing]]</td></tr></table></td></tr></table>
+| data-sort-value="Smith, Alexander McCall"| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Alexander McCall Smith</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/mccallsmithalexander|LibraryThing]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Alexander_McCall_Smith|Wikipedia]]</td></tr></table></td></tr></table>
+| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Detective Varg #1</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Detective+Varg|LibraryThing]]</td></tr></table></td></tr></table>
+| [[2020.07.27 Meeting Notes]]
+|-
+| August 24
+| data-sort-value="Family Upstairs"|  <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">The Family Upstairs</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:DouglasCountyLibraries418.png|20px|link=https://dcl.bibliocommons.com/item/show/1595383114|Douglas County Libraries]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/work/23187308|LibraryThing]]</td></tr></table></td></tr></table>
+| data-sort-value="Jewell, Lisa"| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Lisa Jewell</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/jewelllisa|LibraryThing]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Lisa_Jewell|Wikipedia]]</td></tr></table></td></tr></table>
+| 
+| [[2020.08.24 Meeting Notes]]
+|-
+| September 28
+| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Camino Winds</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:DouglasCountyLibraries418.png|20px|link=https://dcl.bibliocommons.com/item/show/1636922114|Douglas County Libraries]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/work/24158942|LibraryThing]]</td></tr></table></td></tr></table>
+| data-sort-value="Grisham, John"| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">John Grisham</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/grishamjohn|LibraryThing]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/John_Grisham|Wikipedia]]</td></tr></table></td></tr></table>
+| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Camino Island #2</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Camino+Island|LibraryThing]]</td></tr></table></td></tr></table>
+| [[2020.09.28 Meeting Notes]]
+|-
+| October 26
+| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Nine Perfect Strangers</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:DouglasCountyLibraries418.png|20px|link=https://dcl.bibliocommons.com/item/show/1518027114|Douglas County Libraries]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/work/21901086|LibraryThing]]</td></tr></table></td></tr></table>
+| data-sort-value="Moriarty, Liane"| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Liane Moriarty</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/moriartyliane|LibraryThing]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Liane_Moriarty|Wikipedia]]</td></tr></table></td></tr></table>
+| 
+| [[2020.10.26 Meeting Notes]]
+|-
+| November 16
+| data-sort-value="Turn of the Key"|  <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">The Turn of the Key</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:DouglasCountyLibraries418.png|20px|link=https://dcl.bibliocommons.com/item/show/1576431114|Douglas County Libraries]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/work/22533612|LibraryThing]]</td></tr></table></td></tr></table>
+| data-sort-value="Ware, Ruth"| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Ruth Ware</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/wareruth|LibraryThing]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Ruth_Ware|Wikipedia]]</td></tr></table></td></tr></table>
+| 
+| [[2020.11.16 Meeting Notes]]
+|-
+| December 18
+| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Crime at Christmas</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/work/997859|LibraryThing]]</td></tr></table></td></tr></table>
+| data-sort-value="Kitchin, C.H.B."| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">C.H.B. Kitchin</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/kitchinchb|LibraryThing]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/C._H._B._Kitchin|Wikipedia]]</td></tr></table></td></tr></table>
+| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Malcolm Warren #2</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Malcolm+Warren|LibraryThing]]</td></tr></table></td></tr></table>
+| [[2020.12.18 Meeting Notes]]
+|}
+
+{| style="width: 100%;"
+| style="text-align: left;" | [[Case Files 2019 | &larr; Case Files 2019]]
+| style="text-align: right;" | [[Case Files 2021 | Case Files 2021 &rarr;]]
+|}

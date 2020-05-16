@@ -3,6 +3,7 @@ const R = require("../node_modules/ramda/dist/ramda.js");
 const HtmlUtils = require("../util/HtmlUtilities.js");
 
 const Person = require("../artifact/Person.js");
+const Series = require("../artifact/Series.js");
 
 const WikiUtilities = {};
 
@@ -208,6 +209,43 @@ WikiUtilities.createPersonText = (person) => {
     const linkedImages = WikiUtilities.linkedImages(person);
     const table = labelLinkedImagesTable(personLabel, linkedImages);
     answer = `${personPrefix} ${table}`;
+  }
+
+  return answer.trim();
+};
+
+WikiUtilities.createSeriesLabel = (seriesObj) => {
+  let answer = "";
+
+  if (seriesObj) {
+    const series = Series.properties[seriesObj.key];
+    answer = `${series.title} #${seriesObj.entry}`;
+  }
+
+  return answer;
+};
+
+WikiUtilities.createSeriesText = (seriesObj) => {
+  let answer = "";
+
+  if (seriesObj) {
+    if (Array.isArray(seriesObj)) {
+      const mapFunction = (seriesObject) => {
+        const series = Series.properties[seriesObject.key];
+        const seriesLabel = WikiUtilities.createSeriesLabel(seriesObject);
+        const linkedImages = WikiUtilities.linkedImages(series);
+
+        return labelLinkedImagesTable(seriesLabel, linkedImages);
+      };
+
+      const seriesLinks = R.map(mapFunction, seriesObj);
+      answer = seriesLinks.join(" ");
+    } else {
+      const series = Series.properties[seriesObj.key];
+      const seriesLabel = WikiUtilities.createSeriesLabel(seriesObj);
+      const linkedImages = WikiUtilities.linkedImages(series);
+      answer = labelLinkedImagesTable(seriesLabel, linkedImages);
+    }
   }
 
   return answer.trim();
