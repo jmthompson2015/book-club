@@ -111,10 +111,10 @@ QUnit.test("TVSeries.keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const length = 5;
+  const length = 8;
   assert.equal(result.length, length);
   assert.equal(R.head(result), TVSeries.BOSCH);
-  assert.equal(R.last(result), TVSeries.SHARP_OBJECTS);
+  assert.equal(R.last(result), TVSeries.WIRE_IN_THE_BLOOD);
 });
 
 const TVSeriesTest = {};

@@ -6,9 +6,12 @@ const Person = require("./Person.js");
 const TVSeries = {
   BOSCH: "bosch",
   DEXTER: "dexter",
+  HAPPY_VALLEY: "happyValley",
   MIDSOMER_MURDERS: "midsomerMurders",
   POIROT: "poirot",
   SHARP_OBJECTS: "sharpObjects",
+  THE_FALL: "theFall",
+  WIRE_IN_THE_BLOOD: "wireInTheBlood",
 
   properties: {
     bosch: {
@@ -22,6 +25,11 @@ const TVSeries = {
       castKeys: [Person.MICHAEL_C_HALL, Person.JENNIFER_CARPENTER],
       bookKey: Book.DARKLY_DREAMING_DEXTER,
       imdb: "tt0773262",
+    },
+    happyValley: {
+      title: "Happy Valley (2014-?)",
+      castKeys: [Person.SARAH_LANCASHIRE, Person.JAMES_NORTON],
+      imdb: "tt3428912",
     },
     midsomerMurders: {
       title: "Midsomer Murders (1997-?)",
@@ -40,6 +48,16 @@ const TVSeries = {
       castKeys: [Person.AMY_ADAMS, Person.PATRICIA_CLARKSON],
       bookKey: Book.SHARP_OBJECTS,
       imdb: "tt2649356",
+    },
+    theFall: {
+      title: "The Fall (2013-2016)",
+      castKeys: [Person.GILLIAN_ANDERSON, Person.JAMIE_DORNAN],
+      imdb: "tt2294189",
+    },
+    wireInTheBlood: {
+      title: "Wire in the Blood (2002-2009)",
+      castKeys: [Person.ROBSON_GREEN],
+      imdb: "tt0337792",
     },
   },
 };
