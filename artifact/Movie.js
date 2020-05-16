@@ -36,6 +36,7 @@ const Movie = {
     },
     knivesOut: {
       title: "Knives Out (2019)",
+      directorKey: Person.RIAN_JOHNSON,
       writerKey: Person.RIAN_JOHNSON,
       castKeys: [Person.DANIEL_CRAIG, Person.CHRIS_EVANS],
       imdb: "tt8946378",
@@ -82,23 +83,16 @@ Movie.keys = () => Object.keys(Movie.properties);
 Movie.values = () => Object.values(Movie.properties);
 
 // /////////////////////////////////////////////////////////////////////////////
-Movie.withBook = () => {
+Movie.valuesWithBook = () => {
   const movies = Movie.values();
   const filterFunction = (movie) => movie.bookKey !== undefined;
 
   return R.filter(filterFunction, movies);
 };
 
-Movie.withDirector = () => {
+Movie.valuesWithoutBook = () => {
   const movies = Movie.values();
-  const filterFunction = (movie) => movie.directorKey !== undefined;
-
-  return R.filter(filterFunction, movies);
-};
-
-Movie.withWriter = () => {
-  const movies = Movie.values();
-  const filterFunction = (movie) => movie.writerKey !== undefined;
+  const filterFunction = (movie) => movie.bookKey === undefined;
 
   return R.filter(filterFunction, movies);
 };
