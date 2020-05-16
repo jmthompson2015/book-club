@@ -53,8 +53,8 @@ const trimTitle = (item) => {
 
 const wikilink = (page, label) => `[[${page} | ${label}]]`;
 
-const wikilinkedImage = (href, image) =>
-  href ? `[[Image:${image}|${ICON_SIZE}|link=${href}]]` : "";
+const wikilinkedImage = (href, image, tooltip) =>
+  href ? `[[Image:${image}|${ICON_SIZE}|link=${href}|${tooltip}]]` : "";
 
 const wikipediaUrl = (item) =>
   item.wiki ? `${WIKIPEDIA_PREFIX}${item.wiki}` : null;
@@ -238,10 +238,26 @@ WikiUtilities.createTVSeriesText = (tvSeries) => {
 };
 
 WikiUtilities.linkedImages = (item) => {
-  const dclLink = wikilinkedImage(dclUrl(item), DCL_IMAGE);
-  const imdbLink = wikilinkedImage(imdbUrl(item), IMDB_IMAGE);
-  const ltLink = wikilinkedImage(libraryThingUrl(item), LT_IMAGE);
-  const wikiLink = wikilinkedImage(wikipediaUrl(item), WIKIPEDIA_IMAGE);
+  const dclLink = wikilinkedImage(
+    dclUrl(item),
+    DCL_IMAGE,
+    "Douglas County Libraries"
+  );
+  const imdbLink = wikilinkedImage(
+    imdbUrl(item),
+    IMDB_IMAGE,
+    "Internet Movie Database"
+  );
+  const ltLink = wikilinkedImage(
+    libraryThingUrl(item),
+    LT_IMAGE,
+    "LibraryThing"
+  );
+  const wikiLink = wikilinkedImage(
+    wikipediaUrl(item),
+    WIKIPEDIA_IMAGE,
+    "Wikipedia"
+  );
   const style = "border:0px; padding:0px;";
 
   const cell1 = dclLink ? HtmlUtils.td(dclLink, style) : "";
