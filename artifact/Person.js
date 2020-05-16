@@ -99,6 +99,7 @@ const Person = {
   PATRICIA_CLARKSON: "patriciaClarkson",
   PENELOPE_CRUZ: "penelopeCruz",
   PETER_SWANSON: "peterSwanson",
+  RIAN_JOHNSON: "rianJohnson",
   ROBERT_CRAIS: "robertCrais",
   ROBERT_GALBRAITH: "robertGalbraith",
   ROBSON_GREEN: "robsonGreen",
@@ -447,6 +448,7 @@ const Person = {
       wiki: "Penélope_Cruz",
     },
     peterSwanson: { first: "Peter", last: "Swanson", wiki: "Peter_Swanson" },
+    rianJohnson: { first: "Rian", last: "Johnson", imdb: "nm0426059" },
     robertGalbraith: {
       first: "Robert",
       last: "Galbraith",

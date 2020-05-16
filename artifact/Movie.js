@@ -17,6 +17,7 @@ const Movie = {
   properties: {
     goneGirl: {
       title: "Gone Girl (2014)",
+      writerKey: Person.GILLIAN_FLYNN,
       castKeys: [Person.BEN_AFFLECK, Person.ROSAMUND_PIKE],
       bookKey: Book.GONE_GIRL,
       imdb: "tt2267998",
@@ -35,6 +36,7 @@ const Movie = {
     },
     knivesOut: {
       title: "Knives Out (2019)",
+      writerKey: Person.RIAN_JOHNSON,
       castKeys: [Person.DANIEL_CRAIG, Person.CHRIS_EVANS],
       imdb: "tt8946378",
     },
@@ -56,8 +58,8 @@ const Movie = {
     },
     theDevilYouKnow: {
       title: "The Devil You Know (2013)",
-      castKeys: [Person.ROSAMUND_PIKE, Person.LENA_OLIN],
       writerKey: Person.ALEX_MICHAELIDES,
+      castKeys: [Person.ROSAMUND_PIKE, Person.LENA_OLIN],
       imdb: "tt0463960",
     },
     theDry: {
