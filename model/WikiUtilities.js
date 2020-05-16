@@ -1,5 +1,7 @@
 const R = require("../node_modules/ramda/dist/ramda.js");
 
+const HtmlUtils = require("../util/HtmlUtilities.js");
+
 const Person = require("../artifact/Person.js");
 
 const WikiUtilities = {};
@@ -22,11 +24,13 @@ const imdbUrl = (item) => (item.imdb ? `${IMDB_PREFIX}${item.imdb}` : null);
 
 const labelLinkedImagesTable = (label, linkedImages) => {
   const style1 = `border:0px; padding:0px;`;
-  const style2 = "float: right;";
-  const cell1 = `<td style="${style1}">${label}</td>`;
-  const cell2 = `<td style="${style1} ${style2}">${linkedImages}</td>`;
+  const style2 = `${style1} float: right;`;
+  const style3 = `${style1} width:100%;`;
+  const cell1 = HtmlUtils.td(label, style1);
+  const cell2 = HtmlUtils.td(linkedImages, style2);
+  const row = HtmlUtils.tr(`${cell1}${cell2}`);
 
-  return `<table style="${style1} width:100%;"><tr>${cell1}${cell2}</tr></table>`;
+  return HtmlUtils.table(row, style3);
 };
 
 const libraryThingUrl = (item) => (item.lt ? `${LT_PREFIX}${item.lt}` : null);
@@ -237,17 +241,16 @@ WikiUtilities.linkedImages = (item) => {
   const dclLink = wikilinkedImage(dclUrl(item), DCL_IMAGE);
   const imdbLink = wikilinkedImage(imdbUrl(item), IMDB_IMAGE);
   const ltLink = wikilinkedImage(libraryThingUrl(item), LT_IMAGE);
-  const wikipediaLink = wikilinkedImage(wikipediaUrl(item), WIKIPEDIA_IMAGE);
+  const wikiLink = wikilinkedImage(wikipediaUrl(item), WIKIPEDIA_IMAGE);
   const style = "border:0px; padding:0px;";
 
-  let answer = `<table style="${style}"><tr>`;
-  answer += dclLink ? `<td style="${style}">${dclLink}</td>` : "";
-  answer += imdbLink ? `<td style="${style}">${imdbLink}</td>` : "";
-  answer += ltLink ? `<td style="${style}">${ltLink}</td>` : "";
-  answer += wikipediaLink ? `<td style="${style}">${wikipediaLink}</td>` : "";
-  answer += "</tr></table>";
+  const cell1 = dclLink ? HtmlUtils.td(dclLink, style) : "";
+  const cell2 = imdbLink ? HtmlUtils.td(imdbLink, style) : "";
+  const cell3 = ltLink ? HtmlUtils.td(ltLink, style) : "";
+  const cell4 = wikiLink ? HtmlUtils.td(wikiLink, style) : "";
+  const row = HtmlUtils.tr(`${cell1}${cell2}${cell3}${cell4}`);
 
-  return answer;
+  return HtmlUtils.table(row, style);
 };
 
 Object.freeze(WikiUtilities);
