@@ -15,7 +15,7 @@ const WIKIPEDIA_IMAGE = "Wikipedia128.png";
 
 const DCL_PREFIX = "https://dcl.bibliocommons.com/item/show/";
 const IMDB_PREFIX = "https://www.imdb.com/title/";
-const LT_PREFIX = "https://www.librarything.com/work/";
+const LT_PREFIX = "https://www.librarything.com/";
 const WIKIPEDIA_PREFIX = "https://en.wikipedia.org/wiki/";
 
 const dclUrl = (item) => (item.dcl ? `${DCL_PREFIX}${item.dcl}` : null);
