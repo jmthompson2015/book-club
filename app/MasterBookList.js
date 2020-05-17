@@ -3,7 +3,6 @@ const R = require("../node_modules/ramda/dist/ramda.js");
 const FileWriter = require("../util/FileWriter.js");
 
 const Book = require("../artifact/Book.js");
-const Person = require("../artifact/Person.js");
 
 const WikiUtils = require("../model/WikiUtilities.js");
 
@@ -16,23 +15,18 @@ const TABLE_PREFIX = `{| class="wikitable sortable"
 const TABLE_SUFFIX = `
 |}`;
 
-const createRow = (book, author) => `
+const createRow = (book) => `
 |-
 | ${book ? WikiUtils.createMeetingText1(book.meeting) : ""}
 | ${WikiUtils.createBookText(book)}
-| ${WikiUtils.createPersonText(author)}
+| ${book ? WikiUtils.createPersonText(book.authorKey) : ""}
 | ${book ? WikiUtils.createSeriesText(book.series) : ""}`;
 
 const MasterBookList = {
   report: () => {
     const books = Book.values();
     books.sort(WikiUtils.compareByMeeting(false));
-    const reduceFunction = (accum, book) => {
-      const author = Person.properties[book.authorKey];
-
-      return `${accum}${createRow(book, author)}`;
-    };
-
+    const reduceFunction = (accum, book) => `${accum}${createRow(book)}`;
     const tableRows = R.reduce(reduceFunction, "", books);
 
     return `${TABLE_PREFIX}${tableRows}${TABLE_SUFFIX}`;

@@ -56,6 +56,7 @@ const Person = {
   JEFF_LINDSAY: "jeffLindsay",
   JEFFERY_DEAVER: "jefferyDeaver",
   JENNIFER_CARPENTER: "jenniferCarpenter",
+  JESSE_KELLERMAN: "jesseKellerman",
   JOHN_GRISHAM: "johnGrisham",
   JOHN_HART: "johnHart",
   JOHN_LESCROART: "johnLescroart",
@@ -393,6 +394,11 @@ const Person = {
       first: "Jennifer",
       last: "Carpenter",
       imdb: "name/nm1358539",
+    },
+    jesseKellerman: {
+      first: "Jesse",
+      last: "Kellerman",
+      lt: "author/kellermanjesse",
     },
     johnGrisham: {
       first: "John",

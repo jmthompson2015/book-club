@@ -2,7 +2,6 @@ const R = require("../node_modules/ramda/dist/ramda.js");
 
 const FileWriter = require("../util/FileWriter.js");
 
-const Person = require("../artifact/Person.js");
 const Series = require("../artifact/Series.js");
 const TVSeries = require("../artifact/TVSeries.js");
 
@@ -17,12 +16,12 @@ const TABLE_PREFIX = `{| class="wikitable sortable"
 const TABLE_SUFFIX = `
 |}`;
 
-const createRow = (tvSeries, series, author) => `
+const createRow = (tvSeries, series) => `
 |-
 | ${WikiUtils.createTVSeriesText(tvSeries)}
-| ${tvSeries ? WikiUtils.createCastText(tvSeries.castKeys) : ""}
-| ${series ? WikiUtils.createSeriesText(series) : ""}
-| ${WikiUtils.createPersonText(author)}`;
+| ${tvSeries ? WikiUtils.createPersonText(tvSeries.castKeys) : ""}
+| ${WikiUtils.createSeriesText(series)}
+| ${series ? WikiUtils.createPersonText(series.authorKey) : ""}`;
 
 const TVSeriesFromBookList = {
   report: () => {
@@ -30,9 +29,8 @@ const TVSeriesFromBookList = {
     tvSerieses.sort(WikiUtils.compareByTitle);
     const reduceFunction = (accum, tvSeries) => {
       const series = Series.properties[tvSeries.seriesKey];
-      const author = Person.properties[series.authorKey];
 
-      return `${accum}${createRow(tvSeries, series, author)}`;
+      return `${accum}${createRow(tvSeries, series)}`;
     };
 
     const tableRows = R.reduce(reduceFunction, "", tvSerieses);

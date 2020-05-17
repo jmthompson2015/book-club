@@ -16,7 +16,7 @@ const TABLE_SUFFIX = `
 const createRow = (tvSeries) => `
 |-
 | ${WikiUtils.createTVSeriesText(tvSeries)}
-| ${tvSeries ? WikiUtils.createCastText(tvSeries.castKeys) : ""}`;
+| ${tvSeries ? WikiUtils.createPersonText(tvSeries.castKeys) : ""}`;
 
 const NotableTVSeriesList = {
   report: () => {

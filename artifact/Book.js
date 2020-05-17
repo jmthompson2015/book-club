@@ -311,10 +311,11 @@ const Book = {
     },
     crimeScene: {
       title: "Crime Scene",
-      authorKey: Person.JONATHAN_KELLERMAN,
+      authorKey: [Person.JONATHAN_KELLERMAN, Person.JESSE_KELLERMAN],
       series: { key: Series.CLAY_EDISON, entry: 1 },
       meeting: "2018.05.21",
       dcl: "1407385114",
+      lt: "work/18796542",
     },
     darkHarbor: {
       title: "Dark Harbor",

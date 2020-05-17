@@ -115,25 +115,6 @@ WikiUtilities.createBookText = (book) => {
   return answer.trim();
 };
 
-WikiUtilities.createCastText = (castKeys) => {
-  let answer = "";
-
-  if (castKeys) {
-    const mapFunction = (castKey) => {
-      const person = Person.properties[castKey];
-      const personLabel = WikiUtilities.createPersonLabel(person);
-      const linkedImages = WikiUtilities.linkedImages(person);
-
-      return labelLinkedImagesTable(personLabel, linkedImages);
-    };
-
-    const castLinks = R.map(mapFunction, castKeys);
-    answer = castLinks.join(" ");
-  }
-
-  return answer;
-};
-
 WikiUtilities.createMeetingText1 = (meeting) => {
   let answer = "";
 
@@ -200,18 +181,37 @@ WikiUtilities.createPersonPrefix = (person) => {
   return answer;
 };
 
-WikiUtilities.createPersonText = (person) => {
+WikiUtilities.createPersonText = (personObj) => {
   let answer = "";
 
-  if (person) {
-    const personPrefix = WikiUtilities.createPersonPrefix(person);
-    const personLabel = WikiUtilities.createPersonLabel(person);
-    const linkedImages = WikiUtilities.linkedImages(person);
-    const table = labelLinkedImagesTable(personLabel, linkedImages);
-    answer = `${personPrefix} ${table}`;
+  if (personObj) {
+    if (Array.isArray(personObj)) {
+      const mapFunction = (personKey) => {
+        const myPerson = Person.properties[personKey];
+        const personLabel = WikiUtilities.createPersonLabel(myPerson);
+        const linkedImages = WikiUtilities.linkedImages(myPerson);
+
+        return labelLinkedImagesTable(personLabel, linkedImages);
+      };
+
+      const personLinks = R.map(mapFunction, personObj);
+      answer = personLinks.join(" ");
+    } else {
+      const person = Person.properties[personObj];
+
+      if (person) {
+        const personPrefix = WikiUtilities.createPersonPrefix(person);
+        const personLabel = WikiUtilities.createPersonLabel(person);
+        const linkedImages = WikiUtilities.linkedImages(person);
+        const table = labelLinkedImagesTable(personLabel, linkedImages);
+        answer = `${personPrefix} ${table}`;
+      } else {
+        throw new Error(`Missing person for personObj = :${personObj}:`);
+      }
+    }
   }
 
-  return answer.trim();
+  return answer;
 };
 
 WikiUtilities.createSeriesLabel = (seriesObj) => {

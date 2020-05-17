@@ -3,7 +3,6 @@ const R = require("../node_modules/ramda/dist/ramda.js");
 const FileWriter = require("../util/FileWriter.js");
 
 const Movie = require("../artifact/Movie.js");
-const Person = require("../artifact/Person.js");
 
 const WikiUtils = require("../model/WikiUtilities.js");
 
@@ -16,24 +15,18 @@ const TABLE_PREFIX = `{| class="wikitable sortable"
 const TABLE_SUFFIX = `
 |}`;
 
-const createRow = (movie, director, writer) => `
+const createRow = (movie) => `
 |-
 | ${WikiUtils.createMovieText(movie)}
-| ${WikiUtils.createPersonText(director)}
-| ${WikiUtils.createPersonText(writer)}
-| ${movie ? WikiUtils.createCastText(movie.castKeys) : ""}`;
+| ${movie ? WikiUtils.createPersonText(movie.directorKey) : ""}
+| ${movie ? WikiUtils.createPersonText(movie.writerKey) : ""}
+| ${movie ? WikiUtils.createPersonText(movie.castKeys) : ""}`;
 
 const NotableMovieList = {
   report: () => {
     const movies = Movie.valuesWithoutBook();
     movies.sort(WikiUtils.compareByTitle);
-    const reduceFunction = (accum, movie) => {
-      const director = Person.properties[movie.directorKey];
-      const writer = Person.properties[movie.writerKey];
-
-      return `${accum}${createRow(movie, director, writer)}`;
-    };
-
+    const reduceFunction = (accum, movie) => `${accum}${createRow(movie)}`;
     const tableRows = R.reduce(reduceFunction, "", movies);
 
     return `${TABLE_PREFIX}${tableRows}${TABLE_SUFFIX}`;

@@ -17,11 +17,13 @@ QUnit.test("authorKey", (assert) => {
   assert.ok(result);
   const forEachFunction = (book) => {
     assert.ok(book.authorKey, `book.authorKey = ${book.authorKey}`);
-    const author = Person.properties[book.authorKey];
-    assert.ok(
-      author,
-      `Missing author for book.title = ${book.title} book.authorKey = ${book.authorKey}`
-    );
+    if (!Array.isArray(book.authorKey)) {
+      const author = Person.properties[book.authorKey];
+      assert.ok(
+        author,
+        `Missing author for book.title = ${book.title} book.authorKey = ${book.authorKey}`
+      );
+    }
   };
   R.forEach(forEachFunction, result);
 });

@@ -93,32 +93,6 @@ QUnit.test("createBookText()", (assert) => {
   );
 });
 
-QUnit.test("createCastText() undefined", (assert) => {
-  // Setup.
-  const castKeys = undefined;
-
-  // Run.
-  const result = WikiUtils.createCastText(castKeys);
-
-  // Verify.
-  assert.equal(result, "", `result = :${result}:`);
-});
-
-QUnit.test("createCastText()", (assert) => {
-  // Setup.
-  const movie = Movie.properties[Movie.GONE_GIRL];
-
-  // Run.
-  const result = WikiUtils.createCastText(movie.castKeys);
-
-  // Verify.
-  assert.ok(result);
-  assert.equal(
-    result,
-    '<table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Ben Affleck</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/name/nm0000255|Internet Movie Database]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Ben_Affleck|Wikipedia]]</td></tr></table></td></tr></table> <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Rosamund Pike</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/name/nm0683253|Internet Movie Database]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Rosamund_Pike|Wikipedia]]</td></tr></table></td></tr></table>'
-  );
-});
-
 QUnit.test("createMeetingText1() undefined", (assert) => {
   // Setup.
   const meeting = undefined;
@@ -206,7 +180,7 @@ QUnit.test("createPersonText() undefined", (assert) => {
 
 QUnit.test("createPersonText()", (assert) => {
   // Setup.
-  const person = Person.properties[Person.LEE_CHILD];
+  const person = Person.LEE_CHILD;
 
   // Run.
   const result = WikiUtils.createPersonText(person);
@@ -216,6 +190,21 @@ QUnit.test("createPersonText()", (assert) => {
   assert.equal(
     result,
     'data-sort-value="Child, Lee"| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Lee Child</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/name/nm1676193|Internet Movie Database]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/childlee|LibraryThing]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Lee_Child|Wikipedia]]</td></tr></table></td></tr></table>'
+  );
+});
+
+QUnit.test("createPersonText() array", (assert) => {
+  // Setup.
+  const personKeys = [Person.LEE_CHILD, Person.JANE_HARPER];
+
+  // Run.
+  const result = WikiUtils.createPersonText(personKeys);
+
+  // Verify.
+  assert.ok(result);
+  assert.equal(
+    result,
+    '<table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Lee Child</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/name/nm1676193|Internet Movie Database]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/childlee|LibraryThing]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Lee_Child|Wikipedia]]</td></tr></table></td></tr></table> <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Jane Harper</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/harperjane-1|LibraryThing]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Jane_Harper|Wikipedia]]</td></tr></table></td></tr></table>'
   );
 });
 

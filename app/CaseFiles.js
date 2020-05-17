@@ -1,6 +1,5 @@
 const FileWriter = require("../util/FileWriter.js");
 
-const Person = require("../artifact/Person.js");
 const Book = require("../artifact/Book.js");
 
 const WikiUtils = require("../model/WikiUtilities.js");
@@ -50,11 +49,11 @@ const createNavigationTable = (year) => {
 `;
 };
 
-const createRow = (book, author) => `
+const createRow = (book) => `
 |-
 | ${book ? createDate(book.meeting) : ""}
 | ${WikiUtils.createBookText(book)}
-| ${WikiUtils.createPersonText(author)}
+| ${book ? WikiUtils.createPersonText(book.authorKey) : ""}
 | ${book ? WikiUtils.createSeriesText(book.series) : ""}
 | ${book ? WikiUtils.createMeetingText2(book.meeting) : ""}`;
 
@@ -62,12 +61,7 @@ const CaseFiles = {
   report: (year) => {
     const books = Book.byYear(year);
     books.sort(WikiUtils.compareByMeeting(true));
-    const reduceFunction = (accum, book) => {
-      const author = Person.properties[book.authorKey];
-
-      return `${accum}${createRow(book, author)}`;
-    };
-
+    const reduceFunction = (accum, book) => `${accum}${createRow(book)}`;
     const tableRows = books.reduce(reduceFunction, "");
 
     return `${TABLE_PREFIX}${tableRows}${TABLE_SUFFIX}

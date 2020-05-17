@@ -4,7 +4,6 @@ const FileWriter = require("../util/FileWriter.js");
 
 const Book = require("../artifact/Book.js");
 const Movie = require("../artifact/Movie.js");
-const Person = require("../artifact/Person.js");
 
 const WikiUtils = require("../model/WikiUtilities.js");
 
@@ -18,13 +17,13 @@ const TABLE_PREFIX = `{| class="wikitable sortable"
 const TABLE_SUFFIX = `
 |}`;
 
-const createRow = (movie, book, author) => `
+const createRow = (movie, book) => `
 |-
 | ${WikiUtils.createMovieText(movie)}
-| ${movie ? WikiUtils.createCastText(movie.castKeys) : ""}
+| ${movie ? WikiUtils.createPersonText(movie.castKeys) : ""}
 | ${book ? WikiUtils.createMeetingText1(book.meeting) : ""}
 | ${WikiUtils.createBookText(book)}
-| ${WikiUtils.createPersonText(author)}`;
+| ${book ? WikiUtils.createPersonText(book.authorKey) : ""}`;
 
 const MovieFromBookList = {
   report: () => {
@@ -32,9 +31,8 @@ const MovieFromBookList = {
     movies.sort(WikiUtils.compareByTitle);
     const reduceFunction = (accum, movie) => {
       const book = Book.properties[movie.bookKey];
-      const author = Person.properties[book.authorKey];
 
-      return `${accum}${createRow(movie, book, author)}`;
+      return `${accum}${createRow(movie, book)}`;
     };
 
     const tableRows = R.reduce(reduceFunction, "", movies);
