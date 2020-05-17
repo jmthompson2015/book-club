@@ -15,7 +15,7 @@ const LT_IMAGE = "LibraryThing180.png";
 const WIKIPEDIA_IMAGE = "Wikipedia128.png";
 
 const DCL_PREFIX = "https://dcl.bibliocommons.com/item/show/";
-const IMDB_PREFIX = "https://www.imdb.com/title/";
+const IMDB_PREFIX = "https://www.imdb.com/";
 const LT_PREFIX = "https://www.librarything.com/";
 const WIKIPEDIA_PREFIX = "https://en.wikipedia.org/wiki/";
 

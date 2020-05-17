@@ -126,7 +126,7 @@ const Person = {
     agathaChristie: {
       first: "Agatha",
       last: "Christie",
-      imdb: "nm0002005",
+      imdb: "name/nm0002005",
       lt: "author/christieagatha",
       wiki: "Agatha_Christie",
     },
@@ -140,7 +140,7 @@ const Person = {
     alexMichaelides: {
       first: "Alex",
       last: "Michaelides",
-      imdb: "nm1955863",
+      imdb: "name/nm1955863",
       lt: "author/michaelidesalex",
       wiki: "Alex_Michaelides",
     },
@@ -157,11 +157,11 @@ const Person = {
       lt: "author/blanchardalice",
       wiki: "Alice_Blanchard",
     },
-    amyAdams: { first: "Amy", last: "Adams", imdb: "nm0010736" },
+    amyAdams: { first: "Amy", last: "Adams", imdb: "name/nm0010736" },
     anthonyHorowitz: {
       first: "Anthony",
       last: "Horowitz",
-      imdb: "nm0395275",
+      imdb: "name/nm0395275",
       lt: "author/horowitzanthony",
       wiki: "Anthony_Horowitz",
     },
@@ -176,19 +176,19 @@ const Person = {
     benAffleck: {
       first: "Ben",
       last: "Affleck",
-      imdb: "nm0000255",
+      imdb: "name/nm0000255",
       wiki: "Ben_Affleck",
     },
     bridgetFonda: {
       first: "Bridget",
       last: "Fonda",
-      imdb: "nm0000403",
+      imdb: "name/nm0000403",
       wiki: "Bridget_Fonda",
     },
     carolineGraham: {
       first: "Caroline",
       last: "Graham",
-      imdb: "nm0333956",
+      imdb: "name/nm0333956",
       lt: "author/grahamcaroline-1",
       wiki: "Caroline_Graham",
     },
@@ -214,7 +214,7 @@ const Person = {
     chrisEvans: {
       first: "Chris",
       last: "Evans",
-      imdb: "nm0262635",
+      imdb: "name/nm0262635",
       wiki: "Chris_Evans_(actor)",
     },
     chrisPavone: {
@@ -242,13 +242,13 @@ const Person = {
     cobieSmulders: {
       first: "Cobie",
       last: "Smulders",
-      imdb: "nm1130627",
+      imdb: "name/nm1130627",
       wiki: "Cobie_Smulders",
     },
     danielCraig: {
       first: "Daniel",
       last: "Craig",
-      imdb: "nm0185819",
+      imdb: "name/nm0185819",
       wiki: "Daniel_Craig",
     },
     danielSilva: {
@@ -277,7 +277,7 @@ const Person = {
     davidSuchet: {
       first: "David",
       last: "Suchet",
-      imdb: "nm0837064",
+      imdb: "name/nm0837064",
       wiki: "David_Suchet",
     },
     deanKoontz: { first: "Dean", last: "Koontz", wiki: "Dean_Koontz" },
@@ -299,19 +299,19 @@ const Person = {
     ericBana: {
       first: "Eric",
       last: "Bana",
-      imdb: "nm0051509",
+      imdb: "name/nm0051509",
       wiki: "Eric_Bana",
     },
     gabrielByrne: {
       first: "Gabriel",
       last: "Byrne",
-      imdb: "nm0000321",
+      imdb: "name/nm0000321",
       wiki: "Gabriel_Byrne",
     },
     genevieveOReilly: {
       first: "Genevieve",
       last: "O'Reilly",
-      imdb: "nm0642444",
+      imdb: "name/nm0642444",
       wiki: "Genevieve_O%27Reilly",
     },
     georgetteHeyer: {
@@ -319,11 +319,15 @@ const Person = {
       last: "Heyer",
       wiki: "Georgette_Heyer",
     },
-    gillianAnderson: { first: "Gillian", last: "Anderson", imdb: "nm0000096" },
+    gillianAnderson: {
+      first: "Gillian",
+      last: "Anderson",
+      imdb: "name/nm0000096",
+    },
     gillianFlynn: {
       first: "Gillian",
       last: "Flynn",
-      imdb: "nm5058839",
+      imdb: "name/nm5058839",
       lt: "author/flynngillian",
       wiki: "Gillian_Flynn",
     },
@@ -348,27 +352,27 @@ const Person = {
     harveyKeitel: {
       first: "Harvey",
       last: "Keitel",
-      imdb: "nm0000172",
+      imdb: "name/nm0000172",
       wiki: "Harvey_Keitel",
     },
     hughFraser: {
       first: "Hugh",
       last: "Fraser",
-      imdb: "nm0292140",
+      imdb: "name/nm0292140",
       wiki: "Hugh_Fraser_(actor)",
     },
-    jamesNorton: { first: "James", last: "Norton", imdb: "nm3584268" },
+    jamesNorton: { first: "James", last: "Norton", imdb: "name/nm3584268" },
     jamesPatterson: {
       first: "James",
       last: "Patterson",
       lt: "author/pattersonjames-1",
       wiki: "James_Patterson",
     },
-    jamieDornan: { first: "Jamie", last: "Dornan", imdb: "nm1946193" },
+    jamieDornan: { first: "Jamie", last: "Dornan", imdb: "name/nm1946193" },
     jamieHector: {
       first: "Jamie",
       last: "Hector",
-      imdb: "nm0373100",
+      imdb: "name/nm0373100",
       wiki: "Jamie_Hector",
     },
     janeHarper: {
@@ -380,7 +384,7 @@ const Person = {
     jeffLindsay: {
       first: "Jeff",
       last: "Lindsay",
-      imdb: "nm2416255",
+      imdb: "name/nm2416255",
       lt: "author/lindsayjeff",
       wiki: "Jeff_Lindsay_(writer)",
     },
@@ -388,7 +392,7 @@ const Person = {
     jenniferCarpenter: {
       first: "Jennifer",
       last: "Carpenter",
-      imdb: "nm1358539",
+      imdb: "name/nm1358539",
     },
     johnGrisham: {
       first: "John",
@@ -408,7 +412,7 @@ const Person = {
       lt: "author/lescroartjohn",
       wiki: "John_Lescroart",
     },
-    johnNettles: { first: "John", last: "Nettles", imdb: "nm0626719" },
+    johnNettles: { first: "John", last: "Nettles", imdb: "name/nm0626719" },
     johnSandford: {
       first: "John",
       last: "Sandford",
@@ -438,7 +442,7 @@ const Person = {
     kennethBranagh: {
       first: "Kenneth",
       last: "Branagh",
-      imdb: "nm0000110",
+      imdb: "name/nm0000110",
       wiki: "Kenneth_Branagh",
     },
     kimberlyMcCreight: {
@@ -455,14 +459,14 @@ const Person = {
     leeChild: {
       first: "Lee",
       last: "Child",
-      imdb: "nm1676193",
+      imdb: "name/nm1676193",
       lt: "author/childlee",
       wiki: "Lee_Child",
     },
     lenaOlin: {
       first: "Lena",
       last: "Olin",
-      imdb: "nm0000565",
+      imdb: "name/nm0000565",
       wiki: "Lena_Olin",
     },
     lianeMoriarty: {
@@ -504,7 +508,7 @@ const Person = {
     marisaTomei: {
       first: "Marisa",
       last: "Tomei",
-      imdb: "nm0000673",
+      imdb: "name/nm0000673",
       wiki: "Marisa_Tomei",
     },
     markNykanen: {
@@ -517,7 +521,7 @@ const Person = {
     matthewMcConaughey: {
       first: "Matthew",
       last: "McConaughey",
-      imdb: "nm0000190",
+      imdb: "name/nm0000190",
       wiki: "Matthew_McConaughey",
     },
     mavisDorielHay: {
@@ -545,12 +549,12 @@ const Person = {
       first: "Michael",
       middle: "C.",
       last: "Hall",
-      imdb: "nm0355910",
+      imdb: "name/nm0355910",
     },
     michaelConnelly: {
       first: "Michael",
       last: "Connelly",
-      imdb: "nm0175093",
+      imdb: "name/nm0175093",
       lt: "author/connellymichael-1",
       wiki: "Michael_Connelly",
     },
@@ -559,7 +563,7 @@ const Person = {
       last: "Scott",
       lt: "author/scottmichele-1",
     },
-    neilDudgeon: { first: "Neil", last: "Dudgeon", imdb: "nm0240072" },
+    neilDudgeon: { first: "Neil", last: "Dudgeon", imdb: "name/nm0240072" },
     ngaioMarsh: { first: "Ngaio", last: "Marsh", wiki: "Ngaio_Marsh" },
     nicciFrench: {
       first: "Nicci",
@@ -571,12 +575,12 @@ const Person = {
     patriciaClarkson: {
       first: "Patricia",
       last: "Clarkson",
-      imdb: "nm0165101",
+      imdb: "name/nm0165101",
     },
     penelopeCruz: {
       first: "Penélope",
       last: "Cruz",
-      imdb: "nm0004851",
+      imdb: "name/nm0004851",
       wiki: "Penélope_Cruz",
     },
     peterSwanson: {
@@ -585,7 +589,7 @@ const Person = {
       lt: "author/swansonpeter-1",
       wiki: "Peter_Swanson",
     },
-    rianJohnson: { first: "Rian", last: "Johnson", imdb: "nm0426059" },
+    rianJohnson: { first: "Rian", last: "Johnson", imdb: "name/nm0426059" },
     robertGalbraith: {
       first: "Robert",
       last: "Galbraith",
@@ -598,7 +602,7 @@ const Person = {
       lt: "author/craisrobert",
       wiki: "Robert_Crais",
     },
-    robsonGreen: { first: "Robson", last: "Green", imdb: "nm0338292" },
+    robsonGreen: { first: "Robson", last: "Green", imdb: "name/nm0338292" },
     rogerHobbs: {
       first: "Roger",
       last: "Hobbs",
@@ -608,7 +612,7 @@ const Person = {
     rosamundPike: {
       first: "Rosamund",
       last: "Pike",
-      imdb: "nm0683253",
+      imdb: "name/nm0683253",
       wiki: "Rosamund_Pike",
     },
     ruthWare: {
@@ -618,7 +622,11 @@ const Person = {
       wiki: "Ruth_Ware",
     },
     sandraBrown: { first: "Sandra", last: "Brown", wiki: "Sandra_Brown" },
-    sarahLancashire: { first: "Sarah", last: "Lancashire", imdb: "nm0484104" },
+    sarahLancashire: {
+      first: "Sarah",
+      last: "Lancashire",
+      imdb: "name/nm0484104",
+    },
     shariLapena: { first: "Shari", last: "Lapena", wiki: "Shari_Lapena" },
     simonBeckett: {
       first: "Simon",
@@ -636,7 +644,7 @@ const Person = {
       first: "Stephen",
       middle: "J.",
       last: "Cannell",
-      imdb: "nm0004798",
+      imdb: "name/nm0004798",
       wiki: "Stephen_J._Cannell",
     },
     stephenWhite: {
@@ -667,13 +675,13 @@ const Person = {
     titusWelliver: {
       first: "Titus",
       last: "Welliver",
-      imdb: "nm0920038",
+      imdb: "name/nm0920038",
       wiki: "Titus_Welliver",
     },
     tomCruise: {
       first: "Tom",
       last: "Cruise",
-      imdb: "nm0000129",
+      imdb: "name/nm0000129",
       wiki: "Tom_Cruise",
     },
     williamLanday: { first: "William", last: "Landay", wiki: "William_Landay" },
