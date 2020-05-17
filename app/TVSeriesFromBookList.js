@@ -8,7 +8,7 @@ const TVSeries = require("../artifact/TVSeries.js");
 
 const WikiUtils = require("../model/WikiUtilities.js");
 
-const OUTPUT_FILE = "MasterTVSeriesList.txt";
+const OUTPUT_FILE = "TVSeriesFromBookList.txt";
 const TABLE_PREFIX = `{| class="wikitable sortable"
 !TV Series
 !Cast
@@ -24,13 +24,13 @@ const createRow = (tvSeries, series, author) => `
 | ${series ? WikiUtils.createSeriesText(series) : ""}
 | ${WikiUtils.createPersonText(author)}`;
 
-const MasterTVSeriesList = {
+const TVSeriesFromBookList = {
   report: () => {
-    const tvSerieses = TVSeries.values();
+    const tvSerieses = TVSeries.valuesWithSeries();
     tvSerieses.sort(WikiUtils.compareByTitle);
     const reduceFunction = (accum, tvSeries) => {
       const series = Series.properties[tvSeries.seriesKey];
-      const author = series ? Person.properties[series.authorKey] : null;
+      const author = Person.properties[series.authorKey];
 
       return `${accum}${createRow(tvSeries, series, author)}`;
     };
@@ -41,5 +41,5 @@ const MasterTVSeriesList = {
   },
 };
 
-const content = MasterTVSeriesList.report();
+const content = TVSeriesFromBookList.report();
 FileWriter.writeFile(OUTPUT_FILE, content);

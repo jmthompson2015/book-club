@@ -1,7 +1,7 @@
 const R = require("../node_modules/ramda/dist/ramda.js");
 
-const Book = require("./Book.js");
 const Person = require("./Person.js");
+const Series = require("./Series.js");
 
 const TVSeries = {
   BOSCH: "bosch",
@@ -17,13 +17,13 @@ const TVSeries = {
     bosch: {
       title: "Bosch (2014-?)",
       castKeys: [Person.TITUS_WELLIVER, Person.JAMIE_HECTOR],
-      bookKey: Book.THE_BLACK_ECHO,
+      seriesKey: Series.HARRY_BOSCH,
       imdb: "tt3502248",
     },
     dexter: {
       title: "Dexter (2006-2013)",
       castKeys: [Person.MICHAEL_C_HALL, Person.JENNIFER_CARPENTER],
-      bookKey: Book.DARKLY_DREAMING_DEXTER,
+      seriesKey: Series.DEXTER,
       imdb: "tt0773262",
     },
     happyValley: {
@@ -34,19 +34,19 @@ const TVSeries = {
     midsomerMurders: {
       title: "Midsomer Murders (1997-?)",
       castKeys: [Person.JOHN_NETTLES, Person.NEIL_DUDGEON],
-      bookKey: Book.THE_KILLINGS_AT_BADGERS_DRIFT,
+      seriesKey: Series.CHIEF_INSPECTOR_BARNABY_MYSTERIES,
       imdb: "tt0118401",
     },
     poirot: {
       title: "Poirot (1989-2013)",
       castKeys: [Person.DAVID_SUCHET, Person.HUGH_FRASER],
-      bookKey: Book.THE_MYSTERIOUS_AFFAIR_AT_STYLES,
+      seriesKey: Series.HERCULE_POIROT,
       imdb: "tt0094525",
     },
     sharpObjects: {
       title: "Sharp Objects (2018)",
       castKeys: [Person.AMY_ADAMS, Person.PATRICIA_CLARKSON],
-      bookKey: Book.SHARP_OBJECTS,
+      seriesKey: Series.SHARP_OBJECTS,
       imdb: "tt2649356",
     },
     theFall: {
@@ -67,11 +67,18 @@ TVSeries.keys = () => Object.keys(TVSeries.properties);
 TVSeries.values = () => Object.values(TVSeries.properties);
 
 // /////////////////////////////////////////////////////////////////////////////
-TVSeries.withBook = () => {
-  const movies = TVSeries.values();
-  const filterFunction = (movie) => movie.bookKey !== undefined;
+TVSeries.valuesWithSeries = () => {
+  const tvSerieses = TVSeries.values();
+  const filterFunction = (tvSeries) => tvSeries.seriesKey !== undefined;
 
-  return R.filter(filterFunction, movies);
+  return R.filter(filterFunction, tvSerieses);
+};
+
+TVSeries.valuesWithoutSeries = () => {
+  const tvSerieses = TVSeries.values();
+  const filterFunction = (tvSeries) => tvSeries.seriesKey === undefined;
+
+  return R.filter(filterFunction, tvSerieses);
 };
 
 Object.freeze(TVSeries);

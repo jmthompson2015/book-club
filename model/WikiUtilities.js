@@ -218,8 +218,12 @@ WikiUtilities.createSeriesLabel = (seriesObj) => {
   let answer = "";
 
   if (seriesObj) {
-    const series = Series.properties[seriesObj.key];
-    answer = `${series.title} #${seriesObj.entry}`;
+    if (seriesObj.key) {
+      const series = Series.properties[seriesObj.key];
+      answer = `${series.title} #${seriesObj.entry}`;
+    } else {
+      answer = `${seriesObj.title}`;
+    }
   }
 
   return answer;
@@ -240,10 +244,14 @@ WikiUtilities.createSeriesText = (seriesObj) => {
 
       const seriesLinks = R.map(mapFunction, seriesObj);
       answer = seriesLinks.join(" ");
-    } else {
+    } else if (seriesObj.key) {
       const series = Series.properties[seriesObj.key];
       const seriesLabel = WikiUtilities.createSeriesLabel(seriesObj);
       const linkedImages = WikiUtilities.linkedImages(series);
+      answer = labelLinkedImagesTable(seriesLabel, linkedImages);
+    } else {
+      const seriesLabel = WikiUtilities.createSeriesLabel(seriesObj);
+      const linkedImages = WikiUtilities.linkedImages(seriesObj);
       answer = labelLinkedImagesTable(seriesLabel, linkedImages);
     }
   }

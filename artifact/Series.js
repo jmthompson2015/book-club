@@ -1,3 +1,5 @@
+const Person = require("./Person.js");
+
 const Series = {
   AARON_FALK: "aaronFalk",
   ALEX_DELAWARE: "alexDelaware",
@@ -47,6 +49,7 @@ const Series = {
   RIZZOLI_AND_ISLES: "rizzoliAndIsles",
   RODERICK_ALLEYN: "roderickAlleyn",
   SHANE_SCULLY: "shaneScully",
+  SHARP_OBJECTS: "sharpObjects",
   SHERLOCK_HOLMES: "sherlockHolmes",
   STEVENS_AND_WINDERMERE: "stevensAndWindermere",
   STONE_BARRINGTON: "stoneBarrington",
@@ -68,13 +71,18 @@ const Series = {
     },
     chiefInspectorBarnabyMysteries: {
       title: "Chief Inspector Barnaby Mysteries",
+      authorKey: Person.CAROLINE_GRAHAM,
       lt: "series/Chief+Inspector+Barnaby+Mysteries",
     },
     clayEdison: { title: "Clay Edison", lt: "series/Clay+Edison" },
     cormoranStrike: { title: "Cormoran Strike", lt: "series/Cormoran+Strike" },
     davidHunter: { title: "David Hunter", lt: "series/David+Hunter" },
     detectiveVarg: { title: "Detective Varg", lt: "series/Detective+Varg" },
-    dexter: { title: "Dexter", lt: "series/Dexter" },
+    dexter: {
+      title: "Dexter",
+      authorKey: Person.JEFF_LINDSAY,
+      lt: "series/Dexter",
+    },
     dismasHardy: { title: "Dismas Hardy", lt: "series/Dismas+Hardy" },
     drAlanGregory: { title: "Dr. Alan Gregory", lt: "series/Dr.+Alan+Gregory" },
     elleryQueen: { title: "Ellery Queen", lt: "series/Ellery+Queen" },
@@ -87,9 +95,17 @@ const Series = {
     ghostman: { title: "Ghostman", lt: "series/Ghostman" },
     gretchenLowell: { title: "Gretchen Lowell", lt: "series/Gretchen+Lowell" },
     hamishMacbeth: { title: "Hamish Macbeth", lt: "series/Hamish+Macbeth" },
-    harryBosch: { title: "Harry Bosch", lt: "series/Harry+Bosch" },
+    harryBosch: {
+      title: "Harry Bosch",
+      authorKey: Person.MICHAEL_CONNELLY,
+      lt: "series/Harry+Bosch",
+    },
     harryHole: { title: "Harry Hole", lt: "series/Harry+Hole" },
-    herculePoirot: { title: "Hercule Poirot", lt: "series/Hercule+Poirot" },
+    herculePoirot: {
+      title: "Hercule Poirot",
+      authorKey: Person.AGATHA_CHRISTIE,
+      lt: "series/Hercule+Poirot",
+    },
     jackReacher: { title: "Jack Reacher", lt: "series/Jack+Reacher" },
     jakeBrigance: { title: "Jake Brigance", lt: "series/Jake+Brigance" },
     janaBerzelius: { title: "Jana Berzelius", lt: "series/Jana+Berzelius" },
@@ -113,6 +129,11 @@ const Series = {
     },
     roderickAlleyn: { title: "Roderick Alleyn", lt: "series/Roderick+Alleyn" },
     shaneScully: { title: "Shane Scully", lt: "series/Shane+Scully" },
+    sharpObjects: {
+      title: "Sharp Objects",
+      authorKey: Person.GILLIAN_FLYNN,
+      lt: "work/1117152",
+    },
     sherlockHolmes: { title: "Sherlock Holmes", lt: "series/Sherlock+Holmes" },
     stevensAndWindermere: {
       title: "Stevens & Windermere",

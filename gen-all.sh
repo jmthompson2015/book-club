@@ -8,3 +8,5 @@ node ../app/CaseFiles.js
 
 node ../app/MovieFromBookList.js
 node ../app/NotableMovieList.js
+node ../app/TVSeriesFromBookList.js
+node ../app/NotableTVSeriesList.js
