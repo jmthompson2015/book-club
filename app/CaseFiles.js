@@ -69,7 +69,7 @@ ${createNavigationTable(year)}`;
   },
 };
 
-const year = 2020;
+const year = process.argv.length > 2 ? process.argv[2] : 2020;
 const content = CaseFiles.report(year);
 const outputFile = `CaseFiles${year}.txt`;
 FileWriter.writeFile(outputFile, content);
