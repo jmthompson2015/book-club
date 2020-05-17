@@ -22,7 +22,6 @@ const Book = {
   CAMINO_WINDS: "caminoWinds",
   CAUGHT: "caught",
   CHASING_DARKNESS: "chasingDarkness",
-  CHRISTMAS_CRIMES_AT_PUZZEL_MANOR: "christmasCrimesAtPuzzelManor",
   CRAZY_LOVE_YOU: "crazyLoveYou",
   CRIME_AT_CHRISTMAS: "crimeAtChristmas",
   CRIME_SCENE: "crimeScene",
@@ -100,6 +99,7 @@ const Book = {
   THE_BRIDE_COLLECTOR: "theBrideCollector",
   THE_BROKEN_WINDOW: "theBrokenWindow",
   THE_BRUTAL_TELLING: "theBrutalTelling",
+  THE_CHRISTMAS_CRIMES_AT_PUZZEL_MANOR: "theChristmasCrimesAtPuzzelManor",
   THE_COUPLE_NEXT_DOOR: "theCoupleNextDoor",
   THE_CROSSING: "theCrossing",
   THE_DEATH_OF_MRS_WESTAWAY: "theDeathOfMrsWestaway",
@@ -246,6 +246,7 @@ const Book = {
       authorKey: Person.MICHELE_SCOTT,
       series: { key: Series.WINE_LOVERS_MYSTERIES, entry: 6 },
       meeting: "2010.07.26",
+      lt: "work/9739948",
     },
     aWantedMan: {
       title: "A Wanted Man",
@@ -294,11 +295,6 @@ const Book = {
       series: { key: Series.ELVIS_COLE, entry: 12 },
       meeting: "2013.05.20",
       dcl: "861205114",
-    },
-    christmasCrimesAtPuzzelManor: {
-      title: "Christmas Crimes at Puzzel Manor",
-      authorKey: Person.SIMON_BRETT,
-      meeting: "2018.12.14",
     },
     crazyLoveYou: {
       title: "Crazy Love You",
@@ -410,6 +406,7 @@ const Book = {
       authorKey: Person.MARY_KUBICA,
       meeting: "2018.01.22",
       dcl: "1387222114",
+      lt: "work/19062304",
     },
     foolMeOnce: {
       title: "Fool Me Once",
@@ -557,6 +554,7 @@ const Book = {
       title: "Life Sentences",
       authorKey: Person.ALICE_BLANCHARD,
       meeting: "2008.11.24",
+      lt: "work/1359460",
     },
     liveByNight: {
       title: "Live by Night",
@@ -791,6 +789,7 @@ const Book = {
       title: "The Bone Parade",
       authorKey: Person.MARK_NYKANEN,
       meeting: "2007.05.21",
+      lt: "work/359059",
     },
     theBrassVerdict: {
       title: "The Brass Verdict",
@@ -822,6 +821,12 @@ const Book = {
       meeting: "2010.06.28",
       dcl: "932000114",
       lt: "work/8410558",
+    },
+    theChristmasCrimesAtPuzzelManor: {
+      title: "The Christmas Crimes at Puzzel Manor",
+      authorKey: Person.SIMON_BRETT,
+      meeting: "2018.12.14",
+      lt: "work/96153",
     },
     theCoupleNextDoor: {
       title: "The Couple Next Door",
@@ -905,6 +910,7 @@ const Book = {
       title: "The Final Solution",
       authorKey: Person.MICHAEL_CHABON,
       meeting: "2007.03.26",
+      lt: "work/8108",
     },
     theGirlWhoKickedTheHornetsNest: {
       title: "The Girl Who Kicked the Hornet's Nest",
@@ -967,6 +973,7 @@ const Book = {
       title: "The Hunt Club",
       authorKey: Person.JOHN_LESCROART,
       meeting: "2007.09.24",
+      lt: "work/554580",
     },
     theHush: {
       title: "The Hush",
@@ -1067,6 +1074,7 @@ const Book = {
       authorKey: Person.CHELSEA_CAIN,
       series: { key: Series.GRETCHEN_LOWELL, entry: 4 },
       meeting: "2012.10.22",
+      lt: "work/10349831",
     },
     theNowhereMan: {
       title: "The Nowhere Man",
@@ -1234,6 +1242,7 @@ const Book = {
       authorKey: Person.LISA_BLACK,
       meeting: "2011.05.23",
       dcl: "968608114",
+      lt: "work/10216273",
     },
     tripTych: {
       title: "TripTych",
@@ -1306,6 +1315,7 @@ const Book = {
       authorKey: Person.SIMON_BECKETT,
       series: { key: Series.DAVID_HUNTER, entry: 3 },
       meeting: "2010.03.22",
+      lt: "work/7598433",
     },
     wickedPrey: {
       title: "Wicked Prey",
