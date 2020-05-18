@@ -212,7 +212,7 @@ Formatter.linkedImages = (item) => {
   const cell4 = wikiLink ? HtmlUtils.cell(wikiLink, style) : "";
   const row = HtmlUtils.row([cell1, cell2, cell3, cell4]);
 
-  return HtmlUtils.table([row], style);
+  return HtmlUtils.table([row]);
 };
 
 Object.freeze(Formatter);
