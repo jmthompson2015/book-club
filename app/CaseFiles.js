@@ -1,18 +1,15 @@
+const R = require("../node_modules/ramda/dist/ramda.js");
+
 const FileWriter = require("../util/FileWriter.js");
+const WikiUtils = require("../util/WikiUtilities.js");
 
 const Book = require("../artifact/Book.js");
 
 const Comparator = require("../model/Comparator.js");
 const Formatter = require("../model/Formatter.js");
 
-const TABLE_PREFIX = `{| class="wikitable sortable"
-!Date
-!Book
-!Author
-!Series
-!Meeting Notes`;
-const TABLE_SUFFIX = `
-|}`;
+const HEADERS = ["Date", "Book", "Author", "Series", "Meeting Notes"];
+const TABLE_CLASS = "wikitable sortable";
 
 const MONTHS = [
   "January",
@@ -41,32 +38,43 @@ const createDate = (meeting) => {
 const createNavigationTable = (year) => {
   const previous = `Case Files ${year - 1}`;
   const next = `Case Files ${year + 1}`;
+  const cell1 = WikiUtils.cell(
+    `[[${previous} | &larr; ${previous}]]`,
+    "text-align: left;"
+  );
+  const cell2 = WikiUtils.cell(
+    `[[${next} | ${next} &rarr;]]`,
+    "text-align: right;"
+  );
+  const row = cell1 + cell2;
+  const style2 = "width: 100%;";
 
-  return `
-{| style="width: 100%;"
-| style="text-align: left;" | [[${previous} | &larr; ${previous}]]
-| style="text-align: right;" | [[${next} | ${next} &rarr;]]
-|}
-`;
+  return WikiUtils.table(null, [row], null, style2);
 };
 
-const createRow = (book) => `
-|-
-| ${book ? createDate(book.meeting) : ""}
-| ${Formatter.createBookText(book)}
-| ${book ? Formatter.createPersonText(book.authorKey) : ""}
-| ${book ? Formatter.createSeriesText(book.series) : ""}
-| ${book ? Formatter.createMeetingText2(book.meeting) : ""}`;
+const createRow = (book) => {
+  const value1 = book ? createDate(book.meeting) : "";
+  const value2 = Formatter.createBookText(book);
+  const value3 = book ? Formatter.createPersonText(book.authorKey) : "";
+  const value4 = book ? Formatter.createSeriesText(book.series) : "";
+  const value5 = book ? Formatter.createMeetingText2(book.meeting) : "";
+
+  const values = [value1, value2, value3, value4, value5];
+  const cells = R.map(WikiUtils.cell, values);
+
+  return WikiUtils.row(cells);
+};
 
 const CaseFiles = {
   report: (year) => {
     const books = Book.byYear(year);
     books.sort(Comparator.compareByMeeting(true));
-    const reduceFunction = (accum, book) => `${accum}${createRow(book)}`;
-    const tableRows = books.reduce(reduceFunction, "");
+    const rows = R.map(createRow, books);
 
-    return `${TABLE_PREFIX}${tableRows}${TABLE_SUFFIX}
-${createNavigationTable(year)}`;
+    return `${WikiUtils.table(HEADERS, rows, TABLE_CLASS)}
+
+${createNavigationTable(year)}
+`;
   },
 };
 

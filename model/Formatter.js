@@ -1,6 +1,7 @@
 const R = require("../node_modules/ramda/dist/ramda.js");
 
 const HtmlUtils = require("../util/HtmlUtilities.js");
+const WikiUtils = require("../util/WikiUtilities.js");
 
 const Person = require("../artifact/Person.js");
 const Series = require("../artifact/Series.js");
@@ -71,14 +72,12 @@ const labelLinkedImagesTable = (label, linkedImages) => {
   const style1 = `border:0px; padding:0px;`;
   const style2 = `${style1} float: right;`;
   const style3 = `${style1} width:100%;`;
-  const cell1 = HtmlUtils.td(label, style1);
-  const cell2 = HtmlUtils.td(linkedImages, style2);
-  const row = HtmlUtils.tr(`${cell1}${cell2}`);
+  const cell1 = HtmlUtils.cell(label, style1);
+  const cell2 = HtmlUtils.cell(linkedImages, style2);
+  const row = HtmlUtils.row([cell1, cell2]);
 
-  return HtmlUtils.table(row, style3);
+  return HtmlUtils.table([row], style3);
 };
-
-const wikilink = (page, label) => `[[${page} | ${label}]]`;
 
 const wikilinkedImage = (href, image, tooltip) =>
   href ? `[[Image:${image}|${ICON_SIZE}|link=${href}|${tooltip}]]` : "";
@@ -105,7 +104,7 @@ Formatter.createMeetingText1 = (meeting) => {
   let answer = "";
 
   if (meeting) {
-    answer = wikilink(`${meeting} Meeting Notes`, meeting);
+    answer = WikiUtils.link(`${meeting} Meeting Notes`, meeting);
   }
 
   return answer;
@@ -207,13 +206,13 @@ Formatter.linkedImages = (item) => {
   );
   const style = "border:0px; padding:0px;";
 
-  const cell1 = dclLink ? HtmlUtils.td(dclLink, style) : "";
-  const cell2 = imdbLink ? HtmlUtils.td(imdbLink, style) : "";
-  const cell3 = ltLink ? HtmlUtils.td(ltLink, style) : "";
-  const cell4 = wikiLink ? HtmlUtils.td(wikiLink, style) : "";
-  const row = HtmlUtils.tr(`${cell1}${cell2}${cell3}${cell4}`);
+  const cell1 = dclLink ? HtmlUtils.cell(dclLink, style) : "";
+  const cell2 = imdbLink ? HtmlUtils.cell(imdbLink, style) : "";
+  const cell3 = ltLink ? HtmlUtils.cell(ltLink, style) : "";
+  const cell4 = wikiLink ? HtmlUtils.cell(wikiLink, style) : "";
+  const row = HtmlUtils.row([cell1, cell2, cell3, cell4]);
 
-  return HtmlUtils.table(row, style);
+  return HtmlUtils.table([row], style);
 };
 
 Object.freeze(Formatter);

@@ -1,6 +1,7 @@
 const R = require("../node_modules/ramda/dist/ramda.js");
 
 const FileWriter = require("../util/FileWriter.js");
+const WikiUtils = require("../util/WikiUtilities.js");
 
 const Book = require("../artifact/Book.js");
 
@@ -8,29 +9,28 @@ const Comparator = require("../model/Comparator.js");
 const Formatter = require("../model/Formatter.js");
 
 const OUTPUT_FILE = "MasterBookList.txt";
-const TABLE_PREFIX = `{| class="wikitable sortable"
-!Meeting
-!Book
-!Author
-!Series`;
-const TABLE_SUFFIX = `
-|}`;
+const HEADERS = ["Meeting", "Book", "Author", "Series"];
+const TABLE_CLASS = "wikitable sortable";
 
-const createRow = (book) => `
-|-
-| ${book ? Formatter.createMeetingText1(book.meeting) : ""}
-| ${Formatter.createBookText(book)}
-| ${book ? Formatter.createPersonText(book.authorKey) : ""}
-| ${book ? Formatter.createSeriesText(book.series) : ""}`;
+const createRow = (book) => {
+  const value1 = book ? Formatter.createMeetingText1(book.meeting) : "";
+  const value2 = Formatter.createBookText(book);
+  const value3 = book ? Formatter.createPersonText(book.authorKey) : "";
+  const value4 = book ? Formatter.createSeriesText(book.series) : "";
+
+  const values = [value1, value2, value3, value4];
+  const cells = R.map(WikiUtils.cell, values);
+
+  return WikiUtils.row(cells);
+};
 
 const MasterBookList = {
   report: () => {
     const books = Book.values();
     books.sort(Comparator.compareByMeeting(false));
-    const reduceFunction = (accum, book) => `${accum}${createRow(book)}`;
-    const tableRows = R.reduce(reduceFunction, "", books);
+    const rows = R.map(createRow, books);
 
-    return `${TABLE_PREFIX}${tableRows}${TABLE_SUFFIX}`;
+    return WikiUtils.table(HEADERS, rows, TABLE_CLASS);
   },
 };
 

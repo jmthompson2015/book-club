@@ -4,6 +4,40 @@ const HtmlUtils = require("./HtmlUtilities.js");
 
 QUnit.module("HtmlUtilities");
 
+QUnit.test("cell()", (assert) => {
+  // Setup.
+  const content = "Jack Reacher";
+  const style = "font-weight: bold;";
+
+  // Run.
+  const result = HtmlUtils.cell(content, style);
+
+  // Verify.
+  assert.ok(result, "result !== undefined");
+  assert.equal(
+    result,
+    '<td style="font-weight: bold;">Jack Reacher</td>',
+    `result = :${result}:`
+  );
+});
+
+QUnit.test("row()", (assert) => {
+  // Setup.
+  const cells = ["<td>Jack Reacher</td>", "<td>Lee Child</td>"];
+  const style = "padding: 0px;";
+
+  // Run.
+  const result = HtmlUtils.row(cells, style);
+
+  // Verify.
+  assert.ok(result, "result !== undefined");
+  assert.equal(
+    result,
+    '<tr style="padding: 0px;"><td>Jack Reacher</td><td>Lee Child</td></tr>',
+    `result = :${result}:`
+  );
+});
+
 QUnit.test("span()", (assert) => {
   // Setup.
   const content = "Jack Reacher";
@@ -23,51 +57,18 @@ QUnit.test("span()", (assert) => {
 
 QUnit.test("table()", (assert) => {
   // Setup.
-  const content = "<tr><td>Jack Reacher</td></tr>";
+  const cells = [HtmlUtils.cell("Jack Reacher"), HtmlUtils.cell("Lee Child")];
+  const rows = [HtmlUtils.row(cells)];
   const style = "border: 0px;";
 
   // Run.
-  const result = HtmlUtils.table(content, style);
+  const result = HtmlUtils.table(rows, style);
 
   // Verify.
   assert.ok(result, "result !== undefined");
   assert.equal(
     result,
-    '<table style="border: 0px;"><tr><td>Jack Reacher</td></tr></table>',
-    `result = :${result}:`
-  );
-});
-
-QUnit.test("td()", (assert) => {
-  // Setup.
-  const content = "Jack Reacher";
-  const style = "font-weight: bold;";
-
-  // Run.
-  const result = HtmlUtils.td(content, style);
-
-  // Verify.
-  assert.ok(result, "result !== undefined");
-  assert.equal(
-    result,
-    '<td style="font-weight: bold;">Jack Reacher</td>',
-    `result = :${result}:`
-  );
-});
-
-QUnit.test("tr()", (assert) => {
-  // Setup.
-  const content = "<td>Jack Reacher</td>";
-  const style = "padding: 0px;";
-
-  // Run.
-  const result = HtmlUtils.tr(content, style);
-
-  // Verify.
-  assert.ok(result, "result !== undefined");
-  assert.equal(
-    result,
-    '<tr style="padding: 0px;"><td>Jack Reacher</td></tr>',
+    '<table style="border: 0px;"><tr><td>Jack Reacher</td><td>Lee Child</td></tr></table>',
     `result = :${result}:`
   );
 });

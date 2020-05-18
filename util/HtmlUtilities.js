@@ -19,15 +19,20 @@ HtmlUtilities.tag = (tag, content, style) => {
 };
 
 // /////////////////////////////////////////////////////////////////////////////
+HtmlUtilities.cell = (content, style) =>
+  HtmlUtilities.tag("td", content, style);
+
+HtmlUtilities.row = (cellArray, style) => {
+  const content = cellArray.join("");
+
+  return HtmlUtilities.tag("tr", content, style);
+};
+
 HtmlUtilities.span = (content, style) =>
   HtmlUtilities.tag("span", content, style);
 
-HtmlUtilities.table = (content, style) =>
-  HtmlUtilities.tag("table", content, style);
-
-HtmlUtilities.td = (content, style) => HtmlUtilities.tag("td", content, style);
-
-HtmlUtilities.tr = (content, style) => HtmlUtilities.tag("tr", content, style);
+HtmlUtilities.table = (rowArray, style) =>
+  HtmlUtilities.tag("table", rowArray.join(""), style);
 
 Object.freeze(HtmlUtilities);
 
