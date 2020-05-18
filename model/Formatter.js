@@ -5,9 +5,9 @@ const HtmlUtils = require("../util/HtmlUtilities.js");
 const Person = require("../artifact/Person.js");
 const Series = require("../artifact/Series.js");
 
-const UrlUtils = require("./UrlUtilities.js");
+const UrlGenerator = require("./UrlGenerator.js");
 
-const WikiUtilities = {};
+const Formatter = {};
 
 const ICON_SIZE = "20px";
 
@@ -84,12 +84,12 @@ const wikilinkedImage = (href, image, tooltip) =>
   href ? `[[Image:${image}|${ICON_SIZE}|link=${href}|${tooltip}]]` : "";
 
 // /////////////////////////////////////////////////////////////////////////////
-WikiUtilities.createItemText = (item) => {
+Formatter.createItemText = (item) => {
   let answer = "";
 
   if (item) {
     const itemPrefix = createItemPrefix(item);
-    const linkedImages = WikiUtilities.linkedImages(item);
+    const linkedImages = Formatter.linkedImages(item);
     const table = labelLinkedImagesTable(item.title, linkedImages);
     answer = `${itemPrefix} ${table}`;
   }
@@ -97,12 +97,11 @@ WikiUtilities.createItemText = (item) => {
   return answer.trim();
 };
 
-WikiUtilities.createBookText = (book) => WikiUtilities.createItemText(book);
-WikiUtilities.createMovieText = (movie) => WikiUtilities.createItemText(movie);
-WikiUtilities.createTVSeriesText = (tvSeries) =>
-  WikiUtilities.createItemText(tvSeries);
+Formatter.createBookText = (book) => Formatter.createItemText(book);
+Formatter.createMovieText = (movie) => Formatter.createItemText(movie);
+Formatter.createTVSeriesText = (tvSeries) => Formatter.createItemText(tvSeries);
 
-WikiUtilities.createMeetingText1 = (meeting) => {
+Formatter.createMeetingText1 = (meeting) => {
   let answer = "";
 
   if (meeting) {
@@ -112,7 +111,7 @@ WikiUtilities.createMeetingText1 = (meeting) => {
   return answer;
 };
 
-WikiUtilities.createMeetingText2 = (meeting) => {
+Formatter.createMeetingText2 = (meeting) => {
   let answer = "";
 
   if (meeting) {
@@ -122,7 +121,7 @@ WikiUtilities.createMeetingText2 = (meeting) => {
   return answer;
 };
 
-WikiUtilities.createPersonText = (personObj) => {
+Formatter.createPersonText = (personObj) => {
   let answer = "";
 
   if (personObj) {
@@ -130,7 +129,7 @@ WikiUtilities.createPersonText = (personObj) => {
       const mapFunction = (personKey) => {
         const myPerson = Person.properties[personKey];
         const personLabel = createPersonLabel(myPerson);
-        const linkedImages = WikiUtilities.linkedImages(myPerson);
+        const linkedImages = Formatter.linkedImages(myPerson);
 
         return labelLinkedImagesTable(personLabel, linkedImages);
       };
@@ -143,7 +142,7 @@ WikiUtilities.createPersonText = (personObj) => {
       if (person) {
         const personPrefix = createPersonPrefix(person);
         const personLabel = createPersonLabel(person);
-        const linkedImages = WikiUtilities.linkedImages(person);
+        const linkedImages = Formatter.linkedImages(person);
         const table = labelLinkedImagesTable(personLabel, linkedImages);
         answer = `${personPrefix} ${table}`;
       } else {
@@ -155,7 +154,7 @@ WikiUtilities.createPersonText = (personObj) => {
   return answer;
 };
 
-WikiUtilities.createSeriesText = (seriesObj) => {
+Formatter.createSeriesText = (seriesObj) => {
   let answer = "";
 
   if (seriesObj) {
@@ -163,7 +162,7 @@ WikiUtilities.createSeriesText = (seriesObj) => {
       const mapFunction = (seriesObject) => {
         const series = Series.properties[seriesObject.key];
         const seriesLabel = createSeriesLabel(seriesObject);
-        const linkedImages = WikiUtilities.linkedImages(series);
+        const linkedImages = Formatter.linkedImages(series);
 
         return labelLinkedImagesTable(seriesLabel, linkedImages);
       };
@@ -173,11 +172,11 @@ WikiUtilities.createSeriesText = (seriesObj) => {
     } else if (seriesObj.key) {
       const series = Series.properties[seriesObj.key];
       const seriesLabel = createSeriesLabel(seriesObj);
-      const linkedImages = WikiUtilities.linkedImages(series);
+      const linkedImages = Formatter.linkedImages(series);
       answer = labelLinkedImagesTable(seriesLabel, linkedImages);
     } else {
       const seriesLabel = createSeriesLabel(seriesObj);
-      const linkedImages = WikiUtilities.linkedImages(seriesObj);
+      const linkedImages = Formatter.linkedImages(seriesObj);
       answer = labelLinkedImagesTable(seriesLabel, linkedImages);
     }
   }
@@ -185,24 +184,24 @@ WikiUtilities.createSeriesText = (seriesObj) => {
   return answer.trim();
 };
 
-WikiUtilities.linkedImages = (item) => {
+Formatter.linkedImages = (item) => {
   const dclLink = wikilinkedImage(
-    UrlUtils.dclUrl(item),
+    UrlGenerator.dclUrl(item),
     DCL_IMAGE,
     "Douglas County Libraries"
   );
   const imdbLink = wikilinkedImage(
-    UrlUtils.imdbUrl(item),
+    UrlGenerator.imdbUrl(item),
     IMDB_IMAGE,
     "Internet Movie Database"
   );
   const ltLink = wikilinkedImage(
-    UrlUtils.libraryThingUrl(item),
+    UrlGenerator.libraryThingUrl(item),
     LT_IMAGE,
     "LibraryThing"
   );
   const wikiLink = wikilinkedImage(
-    UrlUtils.wikipediaUrl(item),
+    UrlGenerator.wikipediaUrl(item),
     WIKIPEDIA_IMAGE,
     "Wikipedia"
   );
@@ -217,6 +216,6 @@ WikiUtilities.linkedImages = (item) => {
   return HtmlUtils.table(row, style);
 };
 
-Object.freeze(WikiUtilities);
+Object.freeze(Formatter);
 
-module.exports = WikiUtilities;
+module.exports = Formatter;

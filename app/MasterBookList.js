@@ -5,7 +5,7 @@ const FileWriter = require("../util/FileWriter.js");
 const Book = require("../artifact/Book.js");
 
 const Comparator = require("../model/Comparator.js");
-const WikiUtils = require("../model/WikiUtilities.js");
+const Formatter = require("../model/Formatter.js");
 
 const OUTPUT_FILE = "MasterBookList.txt";
 const TABLE_PREFIX = `{| class="wikitable sortable"
@@ -18,10 +18,10 @@ const TABLE_SUFFIX = `
 
 const createRow = (book) => `
 |-
-| ${book ? WikiUtils.createMeetingText1(book.meeting) : ""}
-| ${WikiUtils.createBookText(book)}
-| ${book ? WikiUtils.createPersonText(book.authorKey) : ""}
-| ${book ? WikiUtils.createSeriesText(book.series) : ""}`;
+| ${book ? Formatter.createMeetingText1(book.meeting) : ""}
+| ${Formatter.createBookText(book)}
+| ${book ? Formatter.createPersonText(book.authorKey) : ""}
+| ${book ? Formatter.createSeriesText(book.series) : ""}`;
 
 const MasterBookList = {
   report: () => {

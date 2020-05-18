@@ -3,7 +3,7 @@ const FileWriter = require("../util/FileWriter.js");
 const Book = require("../artifact/Book.js");
 
 const Comparator = require("../model/Comparator.js");
-const WikiUtils = require("../model/WikiUtilities.js");
+const Formatter = require("../model/Formatter.js");
 
 const TABLE_PREFIX = `{| class="wikitable sortable"
 !Date
@@ -53,10 +53,10 @@ const createNavigationTable = (year) => {
 const createRow = (book) => `
 |-
 | ${book ? createDate(book.meeting) : ""}
-| ${WikiUtils.createBookText(book)}
-| ${book ? WikiUtils.createPersonText(book.authorKey) : ""}
-| ${book ? WikiUtils.createSeriesText(book.series) : ""}
-| ${book ? WikiUtils.createMeetingText2(book.meeting) : ""}`;
+| ${Formatter.createBookText(book)}
+| ${book ? Formatter.createPersonText(book.authorKey) : ""}
+| ${book ? Formatter.createSeriesText(book.series) : ""}
+| ${book ? Formatter.createMeetingText2(book.meeting) : ""}`;
 
 const CaseFiles = {
   report: (year) => {

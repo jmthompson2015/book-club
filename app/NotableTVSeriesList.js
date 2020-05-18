@@ -5,7 +5,7 @@ const FileWriter = require("../util/FileWriter.js");
 const TVSeries = require("../artifact/TVSeries.js");
 
 const Comparator = require("../model/Comparator.js");
-const WikiUtils = require("../model/WikiUtilities.js");
+const Formatter = require("../model/Formatter.js");
 
 const OUTPUT_FILE = "NotableTVSeriesList.txt";
 const TABLE_PREFIX = `{| class="wikitable sortable"
@@ -16,8 +16,8 @@ const TABLE_SUFFIX = `
 
 const createRow = (tvSeries) => `
 |-
-| ${WikiUtils.createTVSeriesText(tvSeries)}
-| ${tvSeries ? WikiUtils.createPersonText(tvSeries.castKeys) : ""}`;
+| ${Formatter.createTVSeriesText(tvSeries)}
+| ${tvSeries ? Formatter.createPersonText(tvSeries.castKeys) : ""}`;
 
 const NotableTVSeriesList = {
   report: () => {

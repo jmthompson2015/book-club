@@ -3,16 +3,16 @@ const QUnit = require("../node_modules/qunit/qunit/qunit.js");
 const Book = require("../artifact/Book.js");
 const Person = require("../artifact/Person.js");
 
-const WikiUtils = require("./UrlUtilities.js");
+const Formatter = require("./UrlGenerator.js");
 
-QUnit.module("UrlUtilities");
+QUnit.module("UrlGenerator");
 
 QUnit.test("dclUrl()", (assert) => {
   // Setup.
   const item = Book.properties[Book.THE_LOST_MAN];
 
   // Run.
-  const result = WikiUtils.dclUrl(item);
+  const result = Formatter.dclUrl(item);
 
   // Verify.
   assert.equal(
@@ -27,7 +27,7 @@ QUnit.test("imdbUrl()", (assert) => {
   const item = Person.properties[Person.ANTHONY_HOROWITZ];
 
   // Run.
-  const result = WikiUtils.imdbUrl(item);
+  const result = Formatter.imdbUrl(item);
 
   // Verify.
   assert.equal(
@@ -42,7 +42,7 @@ QUnit.test("libraryThingUrl()", (assert) => {
   const item = Book.properties[Book.THE_LOST_MAN];
 
   // Run.
-  const result = WikiUtils.libraryThingUrl(item);
+  const result = Formatter.libraryThingUrl(item);
 
   // Verify.
   assert.equal(
@@ -57,7 +57,7 @@ QUnit.test("wikipediaUrl()", (assert) => {
   const item = Person.properties[Person.ANTHONY_HOROWITZ];
 
   // Run.
-  const result = WikiUtils.wikipediaUrl(item);
+  const result = Formatter.wikipediaUrl(item);
 
   // Verify.
   assert.equal(
@@ -67,5 +67,5 @@ QUnit.test("wikipediaUrl()", (assert) => {
   );
 });
 
-const UrlUtilitiesTest = {};
-module.exports = UrlUtilitiesTest;
+const UrlGeneratorTest = {};
+module.exports = UrlGeneratorTest;

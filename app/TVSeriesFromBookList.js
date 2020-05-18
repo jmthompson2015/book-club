@@ -6,7 +6,7 @@ const Series = require("../artifact/Series.js");
 const TVSeries = require("../artifact/TVSeries.js");
 
 const Comparator = require("../model/Comparator.js");
-const WikiUtils = require("../model/WikiUtilities.js");
+const Formatter = require("../model/Formatter.js");
 
 const OUTPUT_FILE = "TVSeriesFromBookList.txt";
 const TABLE_PREFIX = `{| class="wikitable sortable"
@@ -19,10 +19,10 @@ const TABLE_SUFFIX = `
 
 const createRow = (tvSeries, series) => `
 |-
-| ${WikiUtils.createTVSeriesText(tvSeries)}
-| ${tvSeries ? WikiUtils.createPersonText(tvSeries.castKeys) : ""}
-| ${WikiUtils.createSeriesText(series)}
-| ${series ? WikiUtils.createPersonText(series.authorKey) : ""}`;
+| ${Formatter.createTVSeriesText(tvSeries)}
+| ${tvSeries ? Formatter.createPersonText(tvSeries.castKeys) : ""}
+| ${Formatter.createSeriesText(series)}
+| ${series ? Formatter.createPersonText(series.authorKey) : ""}`;
 
 const TVSeriesFromBookList = {
   report: () => {

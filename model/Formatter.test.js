@@ -6,16 +6,16 @@ const Person = require("../artifact/Person.js");
 const Series = require("../artifact/Series.js");
 const TVSeries = require("../artifact/TVSeries.js");
 
-const WikiUtils = require("./WikiUtilities.js");
+const Formatter = require("./Formatter.js");
 
-QUnit.module("WikiUtilities");
+QUnit.module("Formatter");
 
 QUnit.test("createBookText() undefined", (assert) => {
   // Setup.
   const book = undefined;
 
   // Run.
-  const result = WikiUtils.createBookText(book);
+  const result = Formatter.createBookText(book);
 
   // Verify.
   assert.equal(result, "", `result = :${result}:`);
@@ -26,7 +26,7 @@ QUnit.test("createBookText()", (assert) => {
   const book = Book.properties[Book.GONE_GIRL];
 
   // Run.
-  const result = WikiUtils.createBookText(book);
+  const result = Formatter.createBookText(book);
 
   // Verify.
   assert.ok(result);
@@ -41,7 +41,7 @@ QUnit.test("createMeetingText1() undefined", (assert) => {
   const meeting = undefined;
 
   // Run.
-  const result = WikiUtils.createMeetingText1(meeting);
+  const result = Formatter.createMeetingText1(meeting);
 
   // Verify.
   assert.equal(result, "", `result = :${result}:`);
@@ -53,7 +53,7 @@ QUnit.test("createMeetingText1()", (assert) => {
   const { meeting } = book;
 
   // Run.
-  const result = WikiUtils.createMeetingText1(meeting);
+  const result = Formatter.createMeetingText1(meeting);
 
   // Verify.
   assert.ok(result);
@@ -65,7 +65,7 @@ QUnit.test("createMeetingText2() undefined", (assert) => {
   const meeting = undefined;
 
   // Run.
-  const result = WikiUtils.createMeetingText2(meeting);
+  const result = Formatter.createMeetingText2(meeting);
 
   // Verify.
   assert.equal(result, "", `result = :${result}:`);
@@ -77,7 +77,7 @@ QUnit.test("createMeetingText2()", (assert) => {
   const { meeting } = book;
 
   // Run.
-  const result = WikiUtils.createMeetingText2(meeting);
+  const result = Formatter.createMeetingText2(meeting);
 
   // Verify.
   assert.ok(result);
@@ -89,7 +89,7 @@ QUnit.test("createMovieText() undefined", (assert) => {
   const movie = undefined;
 
   // Run.
-  const result = WikiUtils.createMovieText(movie);
+  const result = Formatter.createMovieText(movie);
 
   // Verify.
   assert.equal(result, "");
@@ -100,7 +100,7 @@ QUnit.test("createMovieText()", (assert) => {
   const movie = Movie.properties[Movie.GONE_GIRL];
 
   // Run.
-  const result = WikiUtils.createMovieText(movie);
+  const result = Formatter.createMovieText(movie);
 
   // Verify.
   assert.ok(result);
@@ -115,7 +115,7 @@ QUnit.test("createPersonText() undefined", (assert) => {
   const person = undefined;
 
   // Run.
-  const result = WikiUtils.createPersonText(person);
+  const result = Formatter.createPersonText(person);
 
   // Verify.
   assert.equal(result, "", `result = :${result}:`);
@@ -126,7 +126,7 @@ QUnit.test("createPersonText()", (assert) => {
   const person = Person.LEE_CHILD;
 
   // Run.
-  const result = WikiUtils.createPersonText(person);
+  const result = Formatter.createPersonText(person);
 
   // Verify.
   assert.ok(result);
@@ -141,7 +141,7 @@ QUnit.test("createPersonText() array", (assert) => {
   const personKeys = [Person.LEE_CHILD, Person.JANE_HARPER];
 
   // Run.
-  const result = WikiUtils.createPersonText(personKeys);
+  const result = Formatter.createPersonText(personKeys);
 
   // Verify.
   assert.ok(result);
@@ -156,7 +156,7 @@ QUnit.test("createSeriesText() undefined", (assert) => {
   const seriesObj = undefined;
 
   // Run.
-  const result = WikiUtils.createSeriesText(seriesObj);
+  const result = Formatter.createSeriesText(seriesObj);
 
   // Verify.
   assert.equal(result, "", `result = :${result}:`);
@@ -167,7 +167,7 @@ QUnit.test("createSeriesText()", (assert) => {
   const seriesObj = { key: Series.JACK_REACHER, entry: 12 };
 
   // Run.
-  const result = WikiUtils.createSeriesText(seriesObj);
+  const result = Formatter.createSeriesText(seriesObj);
 
   // Verify.
   assert.ok(result);
@@ -182,7 +182,7 @@ QUnit.test("createTVSeriesText() undefined", (assert) => {
   const tvSeries = undefined;
 
   // Run.
-  const result = WikiUtils.createTVSeriesText(tvSeries);
+  const result = Formatter.createTVSeriesText(tvSeries);
 
   // Verify.
   assert.equal(result, "");
@@ -193,7 +193,7 @@ QUnit.test("createTVSeriesText()", (assert) => {
   const tvSeries = TVSeries.properties[TVSeries.MIDSOMER_MURDERS];
 
   // Run.
-  const result = WikiUtils.createTVSeriesText(tvSeries);
+  const result = Formatter.createTVSeriesText(tvSeries);
 
   // Verify.
   assert.ok(result);
@@ -208,7 +208,7 @@ QUnit.test("linkedImages()", (assert) => {
   const person = Person.properties[Person.MICHAEL_CONNELLY];
 
   // Run.
-  const result = WikiUtils.linkedImages(person);
+  const result = Formatter.linkedImages(person);
 
   // Verify.
   assert.equal(
@@ -218,5 +218,5 @@ QUnit.test("linkedImages()", (assert) => {
   );
 });
 
-const WikiUtilitiesTest = {};
-module.exports = WikiUtilitiesTest;
+const FormatterTest = {};
+module.exports = FormatterTest;

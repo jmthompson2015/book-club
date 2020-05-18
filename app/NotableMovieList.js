@@ -5,7 +5,7 @@ const FileWriter = require("../util/FileWriter.js");
 const Movie = require("../artifact/Movie.js");
 
 const Comparator = require("../model/Comparator.js");
-const WikiUtils = require("../model/WikiUtilities.js");
+const Formatter = require("../model/Formatter.js");
 
 const OUTPUT_FILE = "NotableMovieList.txt";
 const TABLE_PREFIX = `{| class="wikitable sortable"
@@ -18,10 +18,10 @@ const TABLE_SUFFIX = `
 
 const createRow = (movie) => `
 |-
-| ${WikiUtils.createMovieText(movie)}
-| ${movie ? WikiUtils.createPersonText(movie.directorKey) : ""}
-| ${movie ? WikiUtils.createPersonText(movie.writerKey) : ""}
-| ${movie ? WikiUtils.createPersonText(movie.castKeys) : ""}`;
+| ${Formatter.createMovieText(movie)}
+| ${movie ? Formatter.createPersonText(movie.directorKey) : ""}
+| ${movie ? Formatter.createPersonText(movie.writerKey) : ""}
+| ${movie ? Formatter.createPersonText(movie.castKeys) : ""}`;
 
 const NotableMovieList = {
   report: () => {
