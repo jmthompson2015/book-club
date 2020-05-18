@@ -203,5 +203,20 @@ QUnit.test("createTVSeriesText()", (assert) => {
   );
 });
 
+QUnit.test("linkedImages()", (assert) => {
+  // Setup.
+  const person = Person.properties[Person.MICHAEL_CONNELLY];
+
+  // Run.
+  const result = WikiUtils.linkedImages(person);
+
+  // Verify.
+  assert.equal(
+    result,
+    '<table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/name/nm0175093|Internet Movie Database]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/connellymichael-1|LibraryThing]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Michael_Connelly|Wikipedia]]</td></tr></table>',
+    `result = :${result}:`
+  );
+});
+
 const WikiUtilitiesTest = {};
 module.exports = WikiUtilitiesTest;

@@ -5,6 +5,8 @@ const HtmlUtils = require("../util/HtmlUtilities.js");
 const Person = require("../artifact/Person.js");
 const Series = require("../artifact/Series.js");
 
+const UrlUtils = require("./UrlUtilities.js");
+
 const WikiUtilities = {};
 
 const ICON_SIZE = "20px";
@@ -14,14 +16,56 @@ const IMDB_IMAGE = "IMDb256.png";
 const LT_IMAGE = "LibraryThing180.png";
 const WIKIPEDIA_IMAGE = "Wikipedia128.png";
 
-const DCL_PREFIX = "https://dcl.bibliocommons.com/item/show/";
-const IMDB_PREFIX = "https://www.imdb.com/";
-const LT_PREFIX = "https://www.librarything.com/";
-const WIKIPEDIA_PREFIX = "https://en.wikipedia.org/wiki/";
+const createItemPrefix = (item) => {
+  let answer = "";
 
-const dclUrl = (item) => (item.dcl ? `${DCL_PREFIX}${item.dcl}` : null);
+  if (item.title.startsWith("A ")) {
+    answer = `data-sort-value="${item.title.substring("A ".length)}"| `;
+  } else if (item.title.startsWith("The ")) {
+    answer = `data-sort-value="${item.title.substring("The ".length)}"| `;
+  }
 
-const imdbUrl = (item) => (item.imdb ? `${IMDB_PREFIX}${item.imdb}` : null);
+  return answer;
+};
+
+const createPersonLabel = (person) => {
+  let answer;
+
+  if (person.middle) {
+    answer = `${person.first} ${person.middle} ${person.last}`;
+  } else {
+    answer = `${person.first} ${person.last}`;
+  }
+
+  return answer;
+};
+
+const createPersonPrefix = (person) => {
+  let answer;
+
+  if (person.middle) {
+    answer = `data-sort-value="${person.last}, ${person.first} ${person.middle}"|`;
+  } else {
+    answer = `data-sort-value="${person.last}, ${person.first}"|`;
+  }
+
+  return answer;
+};
+
+const createSeriesLabel = (seriesObj) => {
+  let answer = "";
+
+  if (seriesObj) {
+    if (seriesObj.key) {
+      const series = Series.properties[seriesObj.key];
+      answer = `${series.title} #${seriesObj.entry}`;
+    } else {
+      answer = `${seriesObj.title}`;
+    }
+  }
+
+  return answer;
+};
 
 const labelLinkedImagesTable = (label, linkedImages) => {
   const style1 = `border:0px; padding:0px;`;
@@ -34,36 +78,29 @@ const labelLinkedImagesTable = (label, linkedImages) => {
   return HtmlUtils.table(row, style3);
 };
 
-const libraryThingUrl = (item) => (item.lt ? `${LT_PREFIX}${item.lt}` : null);
-
 const wikilink = (page, label) => `[[${page} | ${label}]]`;
 
 const wikilinkedImage = (href, image, tooltip) =>
   href ? `[[Image:${image}|${ICON_SIZE}|link=${href}|${tooltip}]]` : "";
 
-const wikipediaUrl = (item) =>
-  item.wiki ? `${WIKIPEDIA_PREFIX}${item.wiki}` : null;
-
 // /////////////////////////////////////////////////////////////////////////////
-WikiUtilities.createBookText = (book) => {
+WikiUtilities.createItemText = (item) => {
   let answer = "";
 
-  if (book) {
-    let bookPrefix = "";
-
-    if (book.title.startsWith("A ")) {
-      bookPrefix = `data-sort-value="${book.title.substring("A ".length)}"| `;
-    } else if (book.title.startsWith("The ")) {
-      bookPrefix = `data-sort-value="${book.title.substring("The ".length)}"| `;
-    }
-
-    const linkedImages = WikiUtilities.linkedImages(book);
-    const table = labelLinkedImagesTable(book.title, linkedImages);
-    answer = `${bookPrefix} ${table}`;
+  if (item) {
+    const itemPrefix = createItemPrefix(item);
+    const linkedImages = WikiUtilities.linkedImages(item);
+    const table = labelLinkedImagesTable(item.title, linkedImages);
+    answer = `${itemPrefix} ${table}`;
   }
 
   return answer.trim();
 };
+
+WikiUtilities.createBookText = (book) => WikiUtilities.createItemText(book);
+WikiUtilities.createMovieText = (movie) => WikiUtilities.createItemText(movie);
+WikiUtilities.createTVSeriesText = (tvSeries) =>
+  WikiUtilities.createItemText(tvSeries);
 
 WikiUtilities.createMeetingText1 = (meeting) => {
   let answer = "";
@@ -85,52 +122,6 @@ WikiUtilities.createMeetingText2 = (meeting) => {
   return answer;
 };
 
-WikiUtilities.createMovieText = (movie) => {
-  let answer = "";
-
-  if (movie) {
-    let moviePrefix = "";
-
-    if (movie.title.startsWith("A ")) {
-      moviePrefix = `data-sort-value="${movie.title.substring("A ".length)}"| `;
-    } else if (movie.title.startsWith("The ")) {
-      moviePrefix = `data-sort-value="${movie.title.substring(
-        "The ".length
-      )}"| `;
-    }
-
-    const linkedImages = WikiUtilities.linkedImages(movie);
-    const table = labelLinkedImagesTable(movie.title, linkedImages);
-    answer = `${moviePrefix} ${table}`;
-  }
-
-  return answer.trim();
-};
-
-WikiUtilities.createPersonLabel = (person) => {
-  let answer;
-
-  if (person.middle) {
-    answer = `${person.first} ${person.middle} ${person.last}`;
-  } else {
-    answer = `${person.first} ${person.last}`;
-  }
-
-  return answer;
-};
-
-WikiUtilities.createPersonPrefix = (person) => {
-  let answer;
-
-  if (person.middle) {
-    answer = `data-sort-value="${person.last}, ${person.first} ${person.middle}"|`;
-  } else {
-    answer = `data-sort-value="${person.last}, ${person.first}"|`;
-  }
-
-  return answer;
-};
-
 WikiUtilities.createPersonText = (personObj) => {
   let answer = "";
 
@@ -138,7 +129,7 @@ WikiUtilities.createPersonText = (personObj) => {
     if (Array.isArray(personObj)) {
       const mapFunction = (personKey) => {
         const myPerson = Person.properties[personKey];
-        const personLabel = WikiUtilities.createPersonLabel(myPerson);
+        const personLabel = createPersonLabel(myPerson);
         const linkedImages = WikiUtilities.linkedImages(myPerson);
 
         return labelLinkedImagesTable(personLabel, linkedImages);
@@ -150,29 +141,14 @@ WikiUtilities.createPersonText = (personObj) => {
       const person = Person.properties[personObj];
 
       if (person) {
-        const personPrefix = WikiUtilities.createPersonPrefix(person);
-        const personLabel = WikiUtilities.createPersonLabel(person);
+        const personPrefix = createPersonPrefix(person);
+        const personLabel = createPersonLabel(person);
         const linkedImages = WikiUtilities.linkedImages(person);
         const table = labelLinkedImagesTable(personLabel, linkedImages);
         answer = `${personPrefix} ${table}`;
       } else {
         throw new Error(`Missing person for personObj = :${personObj}:`);
       }
-    }
-  }
-
-  return answer;
-};
-
-WikiUtilities.createSeriesLabel = (seriesObj) => {
-  let answer = "";
-
-  if (seriesObj) {
-    if (seriesObj.key) {
-      const series = Series.properties[seriesObj.key];
-      answer = `${series.title} #${seriesObj.entry}`;
-    } else {
-      answer = `${seriesObj.title}`;
     }
   }
 
@@ -186,7 +162,7 @@ WikiUtilities.createSeriesText = (seriesObj) => {
     if (Array.isArray(seriesObj)) {
       const mapFunction = (seriesObject) => {
         const series = Series.properties[seriesObject.key];
-        const seriesLabel = WikiUtilities.createSeriesLabel(seriesObject);
+        const seriesLabel = createSeriesLabel(seriesObject);
         const linkedImages = WikiUtilities.linkedImages(series);
 
         return labelLinkedImagesTable(seriesLabel, linkedImages);
@@ -196,11 +172,11 @@ WikiUtilities.createSeriesText = (seriesObj) => {
       answer = seriesLinks.join(" ");
     } else if (seriesObj.key) {
       const series = Series.properties[seriesObj.key];
-      const seriesLabel = WikiUtilities.createSeriesLabel(seriesObj);
+      const seriesLabel = createSeriesLabel(seriesObj);
       const linkedImages = WikiUtilities.linkedImages(series);
       answer = labelLinkedImagesTable(seriesLabel, linkedImages);
     } else {
-      const seriesLabel = WikiUtilities.createSeriesLabel(seriesObj);
+      const seriesLabel = createSeriesLabel(seriesObj);
       const linkedImages = WikiUtilities.linkedImages(seriesObj);
       answer = labelLinkedImagesTable(seriesLabel, linkedImages);
     }
@@ -209,48 +185,24 @@ WikiUtilities.createSeriesText = (seriesObj) => {
   return answer.trim();
 };
 
-WikiUtilities.createTVSeriesText = (tvSeries) => {
-  let answer = "";
-
-  if (tvSeries) {
-    let tvSeriesPrefix = "";
-
-    if (tvSeries.title.startsWith("A ")) {
-      tvSeriesPrefix = `data-sort-value="${tvSeries.title.substring(
-        "A ".length
-      )}"| `;
-    } else if (tvSeries.title.startsWith("The ")) {
-      tvSeriesPrefix = `data-sort-value="${tvSeries.title.substring(
-        "The ".length
-      )}"| `;
-    }
-
-    const linkedImages = WikiUtilities.linkedImages(tvSeries);
-    const table = labelLinkedImagesTable(tvSeries.title, linkedImages);
-    answer = `${tvSeriesPrefix} ${table}`;
-  }
-
-  return answer.trim();
-};
-
 WikiUtilities.linkedImages = (item) => {
   const dclLink = wikilinkedImage(
-    dclUrl(item),
+    UrlUtils.dclUrl(item),
     DCL_IMAGE,
     "Douglas County Libraries"
   );
   const imdbLink = wikilinkedImage(
-    imdbUrl(item),
+    UrlUtils.imdbUrl(item),
     IMDB_IMAGE,
     "Internet Movie Database"
   );
   const ltLink = wikilinkedImage(
-    libraryThingUrl(item),
+    UrlUtils.libraryThingUrl(item),
     LT_IMAGE,
     "LibraryThing"
   );
   const wikiLink = wikilinkedImage(
-    wikipediaUrl(item),
+    UrlUtils.wikipediaUrl(item),
     WIKIPEDIA_IMAGE,
     "Wikipedia"
   );
