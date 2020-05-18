@@ -5,6 +5,7 @@ const FileWriter = require("../util/FileWriter.js");
 const Book = require("../artifact/Book.js");
 const Movie = require("../artifact/Movie.js");
 
+const Comparator = require("../model/Comparator.js");
 const WikiUtils = require("../model/WikiUtilities.js");
 
 const OUTPUT_FILE = "MasterMovieList.txt";
@@ -30,7 +31,7 @@ const createRow = (movie, book) => `
 const MasterMovieList = {
   report: () => {
     const movies = Movie.values();
-    movies.sort(WikiUtils.compareByTitle);
+    movies.sort(Comparator.compareByTitle);
     const reduceFunction = (accum, movie) => {
       const book = Book.properties[movie.bookKey];
 

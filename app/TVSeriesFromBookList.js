@@ -5,6 +5,7 @@ const FileWriter = require("../util/FileWriter.js");
 const Series = require("../artifact/Series.js");
 const TVSeries = require("../artifact/TVSeries.js");
 
+const Comparator = require("../model/Comparator.js");
 const WikiUtils = require("../model/WikiUtilities.js");
 
 const OUTPUT_FILE = "TVSeriesFromBookList.txt";
@@ -26,7 +27,7 @@ const createRow = (tvSeries, series) => `
 const TVSeriesFromBookList = {
   report: () => {
     const tvSerieses = TVSeries.valuesWithSeries();
-    tvSerieses.sort(WikiUtils.compareByTitle);
+    tvSerieses.sort(Comparator.compareByTitle);
     const reduceFunction = (accum, tvSeries) => {
       const series = Series.properties[tvSeries.seriesKey];
 

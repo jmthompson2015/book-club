@@ -2,6 +2,7 @@ const FileWriter = require("../util/FileWriter.js");
 
 const Book = require("../artifact/Book.js");
 
+const Comparator = require("../model/Comparator.js");
 const WikiUtils = require("../model/WikiUtilities.js");
 
 const TABLE_PREFIX = `{| class="wikitable sortable"
@@ -60,7 +61,7 @@ const createRow = (book) => `
 const CaseFiles = {
   report: (year) => {
     const books = Book.byYear(year);
-    books.sort(WikiUtils.compareByMeeting(true));
+    books.sort(Comparator.compareByMeeting(true));
     const reduceFunction = (accum, book) => `${accum}${createRow(book)}`;
     const tableRows = books.reduce(reduceFunction, "");
 

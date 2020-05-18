@@ -4,6 +4,7 @@ const FileWriter = require("../util/FileWriter.js");
 
 const TVSeries = require("../artifact/TVSeries.js");
 
+const Comparator = require("../model/Comparator.js");
 const WikiUtils = require("../model/WikiUtilities.js");
 
 const OUTPUT_FILE = "NotableTVSeriesList.txt";
@@ -21,7 +22,7 @@ const createRow = (tvSeries) => `
 const NotableTVSeriesList = {
   report: () => {
     const tvSerieses = TVSeries.valuesWithoutSeries();
-    tvSerieses.sort(WikiUtils.compareByTitle);
+    tvSerieses.sort(Comparator.compareByTitle);
     const reduceFunction = (accum, tvSeries) => {
       return `${accum}${createRow(tvSeries)}`;
     };

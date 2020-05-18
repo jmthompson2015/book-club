@@ -4,6 +4,7 @@ const FileWriter = require("../util/FileWriter.js");
 
 const Movie = require("../artifact/Movie.js");
 
+const Comparator = require("../model/Comparator.js");
 const WikiUtils = require("../model/WikiUtilities.js");
 
 const OUTPUT_FILE = "NotableMovieList.txt";
@@ -25,7 +26,7 @@ const createRow = (movie) => `
 const NotableMovieList = {
   report: () => {
     const movies = Movie.valuesWithoutBook();
-    movies.sort(WikiUtils.compareByTitle);
+    movies.sort(Comparator.compareByTitle);
     const reduceFunction = (accum, movie) => `${accum}${createRow(movie)}`;
     const tableRows = R.reduce(reduceFunction, "", movies);
 

@@ -36,22 +36,6 @@ const labelLinkedImagesTable = (label, linkedImages) => {
 
 const libraryThingUrl = (item) => (item.lt ? `${LT_PREFIX}${item.lt}` : null);
 
-const trimTitle = (item) => {
-  let answer = null;
-
-  if (item) {
-    answer = item.title.trim();
-
-    if (answer.startsWith("A ")) {
-      answer = answer.substring("A ".length);
-    } else if (answer.startsWith("The ")) {
-      answer = answer.substring("The ".length);
-    }
-  }
-
-  return answer;
-};
-
 const wikilink = (page, label) => `[[${page} | ${label}]]`;
 
 const wikilinkedImage = (href, image, tooltip) =>
@@ -61,40 +45,6 @@ const wikipediaUrl = (item) =>
   item.wiki ? `${WIKIPEDIA_PREFIX}${item.wiki}` : null;
 
 // /////////////////////////////////////////////////////////////////////////////
-WikiUtilities.compareByMeeting = (ascending) => (bookA, bookB) => {
-  const meetingA = bookA.meeting || "";
-  const meetingB = bookB.meeting || "";
-  const factor = ascending ? 1 : -1;
-  let answer = -factor;
-
-  if (meetingA === meetingB) {
-    answer = 0;
-  } else if (meetingA > meetingB) {
-    answer = factor;
-  }
-
-  if (answer === 0) {
-    answer = WikiUtilities.compareByTitle(bookA, bookB);
-  }
-
-  return answer;
-};
-
-WikiUtilities.compareByTitle = (itemA, itemB) => {
-  const titleA = trimTitle(itemA);
-  const titleB = trimTitle(itemB);
-
-  let answer = -1;
-
-  if (titleA === titleB) {
-    answer = 0;
-  } else if (titleA > titleB) {
-    answer = 1;
-  }
-
-  return answer;
-};
-
 WikiUtilities.createBookText = (book) => {
   let answer = "";
 

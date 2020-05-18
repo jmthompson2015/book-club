@@ -4,6 +4,7 @@ const FileWriter = require("../util/FileWriter.js");
 
 const Book = require("../artifact/Book.js");
 
+const Comparator = require("../model/Comparator.js");
 const WikiUtils = require("../model/WikiUtilities.js");
 
 const OUTPUT_FILE = "MasterBookList.txt";
@@ -25,7 +26,7 @@ const createRow = (book) => `
 const MasterBookList = {
   report: () => {
     const books = Book.values();
-    books.sort(WikiUtils.compareByMeeting(false));
+    books.sort(Comparator.compareByMeeting(false));
     const reduceFunction = (accum, book) => `${accum}${createRow(book)}`;
     const tableRows = R.reduce(reduceFunction, "", books);
 
