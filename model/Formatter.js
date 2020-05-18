@@ -71,7 +71,7 @@ const createSeriesLabel = (seriesObj) => {
 const labelLinkedImagesTable = (label, linkedImages) => {
   const style1 = `border:0px; padding:0px;`;
   const style2 = `${style1} float: right;`;
-  const style3 = `${style1} width:100%;`;
+  const style3 = `width:100%;`;
   const cell1 = HtmlUtils.cell(label, style1);
   const cell2 = HtmlUtils.cell(linkedImages, style2);
   const row = HtmlUtils.row([cell1, cell2]);
