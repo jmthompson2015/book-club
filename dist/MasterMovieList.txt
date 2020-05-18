@@ -1,10 +1,10 @@
 {| class="wikitable sortable"
-!Movie
-!Writer
-!Cast
-!Meeting
-!Book
-!Author
+! Movie
+! Writer
+! Cast
+! Meeting
+! Book
+! Author
 |-
 | data-sort-value="Devil You Know (2013)"|  <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">The Devil You Know (2013)</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/title/tt0463960|Internet Movie Database]]</td></tr></table></td></tr></table>
 | data-sort-value="Michaelides, Alex"| <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Alex Michaelides</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/name/nm1955863|Internet Movie Database]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/michaelidesalex|LibraryThing]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Alex_Michaelides|Wikipedia]]</td></tr></table></td></tr></table>

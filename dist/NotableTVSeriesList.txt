@@ -1,6 +1,6 @@
 {| class="wikitable sortable"
-!TV Series
-!Cast
+! TV Series
+! Cast
 |-
 | data-sort-value="Fall (2013-2016)"|  <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">The Fall (2013-2016)</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/title/tt2294189|Internet Movie Database]]</td></tr></table></td></tr></table>
 | <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Gillian Anderson</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/name/nm0000096|Internet Movie Database]]</td></tr></table></td></tr></table> <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Jamie Dornan</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/name/nm1946193|Internet Movie Database]]</td></tr></table></td></tr></table>

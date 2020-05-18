@@ -1,8 +1,8 @@
 {| class="wikitable sortable"
-!Movie
-!Director
-!Writer
-!Cast
+! Movie
+! Director
+! Writer
+! Cast
 |-
 | data-sort-value="Devil You Know (2013)"|  <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">The Devil You Know (2013)</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/title/tt0463960|Internet Movie Database]]</td></tr></table></td></tr></table>
 | 

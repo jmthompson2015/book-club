@@ -1,8 +1,8 @@
 {| class="wikitable sortable"
-!TV Series
-!Cast
-!Book Series
-!Author
+! TV Series
+! Cast
+! Book Series
+! Author
 |-
 | <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Bosch (2014-?)</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/title/tt3502248|Internet Movie Database]]</td></tr></table></td></tr></table>
 | <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Titus Welliver</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/name/nm0920038|Internet Movie Database]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Titus_Welliver|Wikipedia]]</td></tr></table></td></tr></table> <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Jamie Hector</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/name/nm0373100|Internet Movie Database]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Jamie_Hector|Wikipedia]]</td></tr></table></td></tr></table>

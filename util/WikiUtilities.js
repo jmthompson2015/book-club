@@ -22,7 +22,7 @@ WikiUtilities.headerCell = (content, style) => {
     answer += ` style="${style}" |`;
   }
 
-  answer += `${content}
+  answer += ` ${content}
 `;
 
   return answer;

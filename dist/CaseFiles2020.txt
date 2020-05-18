@@ -1,9 +1,9 @@
 {| class="wikitable sortable"
-!Date
-!Book
-!Author
-!Series
-!Meeting Notes
+! Date
+! Book
+! Author
+! Series
+! Meeting Notes
 |-
 | January 27
 | <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Force of Nature (2018)</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:DouglasCountyLibraries418.png|20px|link=https://dcl.bibliocommons.com/item/show/1430689114|Douglas County Libraries]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/work/19768930|LibraryThing]]</td></tr></table></td></tr></table>

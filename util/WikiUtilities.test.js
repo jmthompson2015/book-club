@@ -33,7 +33,7 @@ QUnit.test("headerCell()", (assert) => {
   assert.ok(result, "result !== undefined");
   assert.equal(
     result,
-    '! style="font-weight: bold;" |Author\n',
+    '! style="font-weight: bold;" | Author\n',
     `result = :${result}:`
   );
 });
@@ -73,7 +73,7 @@ QUnit.test("table()", (assert) => {
   assert.ok(result, "result !== undefined");
   assert.equal(
     result,
-    '{| class="wikitable sortable"\n!One\n!Two\n!Three\n|-\n| Jack Reacher\n| Lee Child\n| 3\n|}',
+    '{| class="wikitable sortable"\n! One\n! Two\n! Three\n|-\n| Jack Reacher\n| Lee Child\n| 3\n|}',
     `result = :${result}:`
   );
 });

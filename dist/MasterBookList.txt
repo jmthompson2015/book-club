@@ -1,8 +1,8 @@
 {| class="wikitable sortable"
-!Meeting
-!Book
-!Author
-!Series
+! Meeting
+! Book
+! Author
+! Series
 |-
 | [[2020.12.18 Meeting Notes | 2020.12.18]]
 | <table style="border:0px; padding:0px; width:100%;"><tr><td style="border:0px; padding:0px;">Crime at Christmas</td><td style="border:0px; padding:0px; float: right;"><table style="border:0px; padding:0px;"><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/work/997859|LibraryThing]]</td></tr></table></td></tr></table>
