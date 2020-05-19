@@ -41,6 +41,48 @@ QUnit.test("compareByMeeting() no meeting", (assert) => {
   assert.equal(compareByMeeting(book2, book2), 0);
 });
 
+QUnit.test("compareString() ascending", (assert) => {
+  // Setup.
+  const string1 = "C";
+  const string2 = "A";
+  const string3 = "B";
+  const compare = Comparator.compareString(true);
+
+  // Run / Verify.
+  assert.equal(compare(string1, string1), 0);
+  assert.equal(compare(string1, string2), 1);
+  assert.equal(compare(string1, string3), 1);
+
+  assert.equal(compare(string2, string1), -1);
+  assert.equal(compare(string2, string2), 0);
+  assert.equal(compare(string2, string3), -1);
+
+  assert.equal(compare(string3, string1), -1);
+  assert.equal(compare(string3, string2), 1);
+  assert.equal(compare(string3, string3), 0);
+});
+
+QUnit.test("compareString() descending", (assert) => {
+  // Setup.
+  const string1 = "C";
+  const string2 = "A";
+  const string3 = "B";
+  const compare = Comparator.compareString(false);
+
+  // Run / Verify.
+  assert.equal(compare(string1, string1), 0);
+  assert.equal(compare(string1, string2), -1);
+  assert.equal(compare(string1, string3), -1);
+
+  assert.equal(compare(string2, string1), 1);
+  assert.equal(compare(string2, string2), 0);
+  assert.equal(compare(string2, string3), 1);
+
+  assert.equal(compare(string3, string1), 1);
+  assert.equal(compare(string3, string2), -1);
+  assert.equal(compare(string3, string3), 0);
+});
+
 QUnit.test("compareByTitle()", (assert) => {
   // Setup.
   const book1 = Book.properties[Book.FORCE_OF_NATURE_2018];
