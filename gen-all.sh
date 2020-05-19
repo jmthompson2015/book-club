@@ -10,3 +10,6 @@ node ../app/MovieFromBookList.js
 node ../app/NotableMovieList.js
 node ../app/TVSeriesFromBookList.js
 node ../app/NotableTVSeriesList.js
+
+node ../app/MostReadAuthorsList.js
+node ../app/MostReadSeriesList.js

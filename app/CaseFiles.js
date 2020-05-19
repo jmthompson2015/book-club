@@ -67,7 +67,7 @@ const createRow = (book) => {
 
 const CaseFiles = {
   report: (year) => {
-    const books = Book.byYear(year);
+    const books = Book.valuesByYear(year);
     books.sort(Comparator.compareByMeeting(true));
     const rows = R.map(createRow, books);
 

@@ -1,0 +1,67 @@
+{| class="wikitable sortable"
+! Series
+! Book Count
+|-
+| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Jack Reacher</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Jack+Reacher|LibraryThing]]</td></tr></table></td></tr></table>
+| style="text-align:right;" | 6
+|-
+| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Harry Bosch</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Harry+Bosch|LibraryThing]]</td></tr></table></td></tr></table>
+| style="text-align:right;" | 6
+|-
+| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Mickey Haller</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Mickey+Haller|LibraryThing]]</td></tr></table></td></tr></table>
+| style="text-align:right;" | 5
+|-
+| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Dexter</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Dexter|LibraryThing]]</td></tr></table></td></tr></table>
+| style="text-align:right;" | 4
+|-
+| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Gabriel Allon</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Gabriel+Allon|LibraryThing]]</td></tr></table></td></tr></table>
+| style="text-align:right;" | 4
+|-
+| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Evan Smoak</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Evan+Smoak|LibraryThing]]</td></tr></table></td></tr></table>
+| style="text-align:right;" | 3
+|-
+| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Harry Hole</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Harry+Hole|LibraryThing]]</td></tr></table></td></tr></table>
+| style="text-align:right;" | 3
+|-
+| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Millennium</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Millennium|LibraryThing]]</td></tr></table></td></tr></table>
+| style="text-align:right;" | 3
+|-
+| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Sherlock Holmes</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Sherlock+Holmes|LibraryThing]]</td></tr></table></td></tr></table>
+| style="text-align:right;" | 2
+|-
+| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Elvis Cole</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Elvis+Cole|LibraryThing]]</td></tr></table></td></tr></table>
+| style="text-align:right;" | 2
+|-
+| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Virgil Flowers</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Virgil+Flowers|LibraryThing]]</td></tr></table></td></tr></table>
+| style="text-align:right;" | 2
+|-
+| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Renée Ballard</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Renée+Ballard|LibraryThing]]</td></tr></table></td></tr></table>
+| style="text-align:right;" | 2
+|-
+| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Joe Pickett</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Joe+Pickett|LibraryThing]]</td></tr></table></td></tr></table>
+| style="text-align:right;" | 2
+|-
+| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Aaron Falk</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Aaron+Falk|LibraryThing]]</td></tr></table></td></tr></table>
+| style="text-align:right;" | 2
+|-
+| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Ghostman</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Ghostman|LibraryThing]]</td></tr></table></td></tr></table>
+| style="text-align:right;" | 2
+|-
+| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Gretchen Lowell</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Gretchen+Lowell|LibraryThing]]</td></tr></table></td></tr></table>
+| style="text-align:right;" | 2
+|-
+| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Hercule Poirot</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Hercule+Poirot|LibraryThing]]</td></tr></table></td></tr></table>
+| style="text-align:right;" | 2
+|-
+| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Rizzoli & Isles</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Rizzoli+%2526+Isles|LibraryThing]]</td></tr></table></td></tr></table>
+| style="text-align:right;" | 2
+|-
+| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Alex Delaware</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Alex+Delaware|LibraryThing]]</td></tr></table></td></tr></table>
+| style="text-align:right;" | 2
+|-
+| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Johnny Merrimon</td><td style="border:0px; padding:0px; float: right;"><table><tr></tr></table></td></tr></table>
+| style="text-align:right;" | 2
+|-
+| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Joe Pike</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Joe+Pike|LibraryThing]]</td></tr></table></td></tr></table>
+| style="text-align:right;" | 2
+|}

@@ -17,6 +17,20 @@ const trimTitle = (item) => {
 };
 
 // /////////////////////////////////////////////////////////////////////////////
+Comparator.compareByCount = (keyToCount) => (keyA, keyB) => {
+  const countA = keyToCount[keyA];
+  const countB = keyToCount[keyB];
+  let answer = 1;
+
+  if (countA === countB) {
+    answer = 0;
+  } else if (countA > countB) {
+    answer = -1;
+  }
+
+  return answer;
+};
+
 Comparator.compareByMeeting = (ascending) => (bookA, bookB) => {
   const meetingA = bookA.meeting || "";
   const meetingB = bookB.meeting || "";
