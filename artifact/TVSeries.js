@@ -10,6 +10,7 @@ const TVSeries = {
   MIDSOMER_MURDERS: "midsomerMurders",
   POIROT: "poirot",
   SHARP_OBJECTS: "sharpObjects",
+  THE_ADVENTURES_OF_SHERLOCK_HOLMES: "theAdventuresOfSherlockHolmes",
   THE_FALL: "theFall",
   WIRE_IN_THE_BLOOD: "wireInTheBlood",
 
@@ -48,6 +49,15 @@ const TVSeries = {
       castKeys: [Person.AMY_ADAMS, Person.PATRICIA_CLARKSON],
       seriesKey: Series.SHARP_OBJECTS,
       imdb: "title/tt2649356",
+    },
+    theAdventuresOfSherlockHolmes: {
+      title: "The Adventures of Sherlock Holmes (1984-1994)",
+      castKeys: [
+        Person.JEREMY_BRETT,
+        Person.DAVID_BURKE,
+        Person.EDWARD_HARDWICKE,
+      ],
+      imdb: "title/tt0086661",
     },
     theFall: {
       title: "The Fall (2013-2016)",

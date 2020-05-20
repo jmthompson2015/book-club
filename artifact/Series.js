@@ -54,6 +54,7 @@ const Series = {
   STEVENS_AND_WINDERMERE: "stevensAndWindermere",
   STONE_BARRINGTON: "stoneBarrington",
   TEMPERANCE_BRENNAN: "temperanceBrennan",
+  THE_CAMEL_CLUB: "theCamelClub",
   VIRGIL_FLOWERS: "virgilFlowers",
   WILL_ROBIE: "willRobie",
   WINE_LOVERS_MYSTERIES: "wineLoversMysteries",
@@ -147,6 +148,7 @@ const Series = {
       title: "Temperance Brennan",
       lt: "series/Temperance+Brennan",
     },
+    theCamelClub: { title: "The Camel Club", lt: "series/The+Camel+Club" },
     virgilFlowers: { title: "Virgil Flowers", lt: "series/Virgil+Flowers" },
     willRobie: { title: "Will Robie", lt: "series/Will+Robie" },
     wineLoversMysteries: {

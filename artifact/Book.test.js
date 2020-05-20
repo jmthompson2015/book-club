@@ -171,7 +171,7 @@ QUnit.test("Book.keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const length = 169;
+  const length = 174;
   assert.equal(result.length, length);
   assert.equal(R.head(result), Book._206_BONES);
   assert.equal(R.last(result), Book.WICKED_PREY);
@@ -185,7 +185,7 @@ QUnit.test("seriesKeyToBooks()", (assert) => {
   assert.ok(result, `result !== undefined`);
   const seriesKeys = Object.keys(result);
   assert.ok(seriesKeys, `seriesKeys !== undefined`);
-  const count = 55;
+  const count = 56;
   assert.equal(
     seriesKeys.length,
     count,

@@ -13,6 +13,7 @@ const Movie = {
   THE_DEVIL_YOU_KNOW: "theDevilYouKnow",
   THE_DRY: "theDry",
   THE_LINCOLN_LAWYER: "theLincolnLawyer",
+  THE_SILENT_PATIENT: "theSilentPatient",
 
   properties: {
     goneGirl: {
@@ -74,6 +75,11 @@ const Movie = {
       castKeys: [Person.MATTHEW_MCCONAUGHEY, Person.MARISA_TOMEI],
       bookKey: Book.THE_LINCOLN_LAWYER,
       imdb: "title/tt1189340",
+    },
+    theSilentPatient: {
+      title: "The Silent Patient (in development)",
+      bookKey: Book.THE_SILENT_PATIENT,
+      imdb: "title/tt9893218",
     },
   },
 };

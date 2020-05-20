@@ -28,6 +28,7 @@ const Person = {
   DANIEL_SILVA: "danielSilva",
   DASHIELL_HAMMETT: "dashiellHammett",
   DAVID_BALDACCI: "davidBaldacci",
+  DAVID_BURKE: "davidBurke",
   DAVID_ROSENFELT: "davidRosenfelt",
   DAVID_SUCHET: "davidSuchet",
   DEAN_KOONTZ: "deanKoontz",
@@ -35,6 +36,7 @@ const Person = {
   DENNIS_LEHANE: "dennisLehane",
   DOMINIC_SMITH: "dominicSmith",
   EDNA_BUCHANAN: "ednaBuchanan",
+  EDWARD_HARDWICKE: "edwardHardwicke",
   ELLERY_QUEEN: "elleryQueen",
   EMELIE_SCHEPP: "emelieSchepp",
   ERIC_BANA: "ericBana",
@@ -56,6 +58,7 @@ const Person = {
   JEFF_LINDSAY: "jeffLindsay",
   JEFFERY_DEAVER: "jefferyDeaver",
   JENNIFER_CARPENTER: "jenniferCarpenter",
+  JEREMY_BRETT: "jeremyBrett",
   JESSE_KELLERMAN: "jesseKellerman",
   JOHN_GRISHAM: "johnGrisham",
   JOHN_HART: "johnHart",
@@ -170,6 +173,7 @@ const Person = {
       first: "Arthur",
       middle: "Conan",
       last: "Doyle",
+      imdb: "name/nm0236279",
       lt: "author/doylearthurconan",
       wiki: "Arthur_Conan_Doyle",
     },
@@ -208,6 +212,7 @@ const Person = {
     chelseaCain: {
       first: "Chelsea",
       last: "Cain",
+      imdb: "name/nm4296249",
       lt: "author/cainchelsea",
       wiki: "Chelsea_Cain",
     },
@@ -221,6 +226,7 @@ const Person = {
     chrisPavone: {
       first: "Chris",
       last: "Pavone",
+      imdb: "name/nm4949595",
       lt: "author/pavonechris",
       wiki: "Chris_Pavone",
     },
@@ -232,6 +238,7 @@ const Person = {
     cjBox: {
       first: "C.J.",
       last: "Box",
+      imdb: "name/nm11353819",
       lt: "author/boxcj",
       wiki: "C._J._Box",
     },
@@ -267,8 +274,15 @@ const Person = {
     davidBaldacci: {
       first: "David",
       last: "Baldacci",
+      imdb: "name/nm0049641",
       lt: "author/baldaccidavid",
       wiki: "David_Baldacci",
+    },
+    davidBurke: {
+      first: "David",
+      last: "Burke",
+      imdb: "name/nm0121651",
+      wiki: "David_Burke_(British_actor)",
     },
     davidRosenfelt: {
       first: "David",
@@ -295,6 +309,12 @@ const Person = {
       wiki: "Dominic_Smith_(author)",
     },
     ednaBuchanan: { first: "Edna", last: "Buchanan", wiki: "Edna_Buchanan" },
+    edwardHardwicke: {
+      first: "Edward",
+      last: "Hardwicke",
+      imdb: "name/nm0362570",
+      wiki: "Edward_Hardwicke",
+    },
     elleryQueen: { first: "Ellery", last: "Queen", wiki: "Ellery_Queen" },
     emelieSchepp: { first: "Emelie", last: "Schepp", wiki: "Emelie_Schepp" },
     ericBana: {
@@ -347,6 +367,7 @@ const Person = {
     harlanCoben: {
       first: "Harlan",
       last: "Coben",
+      imdb: "name/nm1454192",
       lt: "author/cobenharlan",
       wiki: "Harlan_Coben",
     },
@@ -366,6 +387,7 @@ const Person = {
     jamesPatterson: {
       first: "James",
       last: "Patterson",
+      imdb: "name/nm0666248",
       lt: "author/pattersonjames-1",
       wiki: "James_Patterson",
     },
@@ -379,6 +401,7 @@ const Person = {
     janeHarper: {
       first: "Jane",
       last: "Harper",
+      imdb: "name/nm7681091",
       lt: "author/harperjane-1",
       wiki: "Jane_Harper",
     },
@@ -395,6 +418,12 @@ const Person = {
       last: "Carpenter",
       imdb: "name/nm1358539",
     },
+    jeremyBrett: {
+      first: "Jeremy",
+      last: "Brett",
+      imdb: "name/nm0107950",
+      wiki: "Jeremy_Brett",
+    },
     jesseKellerman: {
       first: "Jesse",
       last: "Kellerman",
@@ -403,6 +432,7 @@ const Person = {
     johnGrisham: {
       first: "John",
       last: "Grisham",
+      imdb: "name/nm0001300",
       lt: "author/grishamjohn",
       wiki: "John_Grisham",
     },
@@ -422,24 +452,28 @@ const Person = {
     johnSandford: {
       first: "John",
       last: "Sandford",
+      imdb: "name/nm0761859",
       lt: "author/sandfordjohn-1",
       wiki: "John_Sandford_(novelist)",
     },
     jonathanKellerman: {
       first: "Jonathan",
       last: "Kellerman",
+      imdb: "name/nm0445814",
       lt: "author/kellermanjonathan",
       wiki: "Jonathan_Kellerman",
     },
     joNesbo: {
       first: "Jo",
       last: "Nesbø",
+      imdb: "name/nm1867674",
       lt: "author/nesbojo",
       wiki: "Jo_Nesbø",
     },
     karinSlaughter: {
       first: "Karin",
       last: "Slaughter",
+      imdb: "name/nm4901740",
       lt: "author/slaughterkarin",
       wiki: "Karin_Slaughter",
     },
@@ -459,6 +493,7 @@ const Person = {
     lauraLippman: {
       first: "Laura",
       last: "Lippman",
+      imdb: "name/nm2887908",
       lt: "author/lippmanlaura-1",
       wiki: "Laura_Lippman",
     },
@@ -542,6 +577,7 @@ const Person = {
     megGardiner: {
       first: "Meg",
       last: "Gardiner",
+      imdb: "name/nm3125172",
       lt: "author/gardinermeg",
       wiki: "Meg_Gardiner",
     },
@@ -605,6 +641,7 @@ const Person = {
     robertCrais: {
       first: "Robert",
       last: "Crais",
+      imdb: "name/nm0186101",
       lt: "author/craisrobert",
       wiki: "Robert_Crais",
     },
@@ -624,6 +661,7 @@ const Person = {
     ruthWare: {
       first: "Ruth",
       last: "Ware",
+      imdb: "name/nm3405121",
       lt: "author/wareruth",
       wiki: "Ruth_Ware",
     },
@@ -661,6 +699,7 @@ const Person = {
     stiegLarsson: {
       first: "Stieg",
       last: "Larsson",
+      imdb: "name/nm2297183",
       lt: "author/larssonstieg",
       wiki: "Stieg_Larsson",
     },
@@ -675,6 +714,7 @@ const Person = {
     tessGerritsen: {
       first: "Tess",
       last: "Gerritsen",
+      imdb: "name/nm2446740",
       lt: "author/gerritsentess",
       wiki: "Tess_Gerritsen",
     },
