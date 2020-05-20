@@ -57,6 +57,7 @@ const TVSeries = {
         Person.DAVID_BURKE,
         Person.EDWARD_HARDWICKE,
       ],
+      seriesKey: Series.SHERLOCK_HOLMES,
       imdb: "title/tt0086661",
     },
     theFall: {

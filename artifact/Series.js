@@ -135,7 +135,11 @@ const Series = {
       authorKey: Person.GILLIAN_FLYNN,
       lt: "work/1117152",
     },
-    sherlockHolmes: { title: "Sherlock Holmes", lt: "series/Sherlock+Holmes" },
+    sherlockHolmes: {
+      title: "Sherlock Holmes",
+      authorKey: Person.ARTHUR_CONAN_DOYLE,
+      lt: "series/Sherlock+Holmes",
+    },
     stevensAndWindermere: {
       title: "Stevens & Windermere",
       lt: "series/Stevens+and+Windermere",
@@ -148,7 +152,11 @@ const Series = {
       title: "Temperance Brennan",
       lt: "series/Temperance+Brennan",
     },
-    theCamelClub: { title: "The Camel Club", lt: "series/The+Camel+Club" },
+    theCamelClub: {
+      title: "The Camel Club",
+      authorKey: Person.DAVID_BALDACCI,
+      lt: "series/The+Camel+Club",
+    },
     virgilFlowers: { title: "Virgil Flowers", lt: "series/Virgil+Flowers" },
     willRobie: { title: "Will Robie", lt: "series/Will+Robie" },
     wineLoversMysteries: {
