@@ -33,12 +33,17 @@ const Book = {
   DEARLY_DEVOTED_DEXTER: "dearlyDevotedDexter",
   DEFENDING_JACOB: "defendingJacob",
   DEXTER_BY_DESIGN: "dexterByDesign",
+  DEXTER_IN_THE_DARK: "dexterInTheDark",
+  DEXTER_IS_DEAD: "dexterIsDead",
   DEXTER_IS_DELICIOUS: "dexterIsDelicious",
+  DEXTERS_FINAL_CUT: "dextersFinalCut",
   DIRTY_BLONDE: "dirtyBlonde",
   DIVINE_JUSTICE: "divineJustice",
   DONT_BLINK: "dontBlink",
+  DOUBLE_DEXTER: "doubleDexter",
   EIGHT_PERFECT_MURDERS: "eightPerfectMurders",
   EVERY_LAST_LIE: "everyLastLie",
+  EVIL_AT_HEART: "evilAtHeart",
   FOOL_ME_ONCE: "foolMeOnce",
   FORCE_OF_NATURE_2012: "forceOfNature2012",
   FORCE_OF_NATURE_2018: "forceOfNature2018",
@@ -59,7 +64,9 @@ const Book = {
   IRON_HOUSE: "ironHouse",
   I_SEE_YOU: "iSeeYou",
   KILL_FEE: "killFee",
+  KILL_YOU_TWICE: "killYouTwice",
   LETHAL_WHITE: "lethalWhite",
+  LET_ME_GO: "letMeGo",
   LIARS_LULLABY: "liarsLullaby",
   LIFE_SENTENCES: "lifeSentences",
   LIVE_BY_NIGHT: "liveByNight",
@@ -92,6 +99,7 @@ const Book = {
   STONE_COLD_2007: "stoneCold2007",
   STONE_COLD_2014: "stoneCold2014",
   SUSPECT: "suspect",
+  SWEETHEART: "sweetheart",
   SWEET_LITTLE_LIES: "sweetLittleLies",
   SYCAMORE_ROW: "sycamoreRow",
   THAT_NIGHT: "thatNight",
@@ -381,12 +389,31 @@ const Book = {
       meeting: "2011.04.25",
       dcl: "925270114",
     },
+    dexterInTheDark: {
+      title: "Dexter in the Dark",
+      authorKey: Person.JEFF_LINDSAY,
+      series: { key: Series.DEXTER, entry: 3 },
+      dcl: "811845114",
+      lt: "work/1715003",
+    },
+    dexterIsDead: {
+      title: "Dexter is Dead",
+      authorKey: Person.JEFF_LINDSAY,
+      series: { key: Series.DEXTER, entry: 8 },
+      lt: "work/15687387",
+    },
     dexterIsDelicious: {
       title: "Dexter is Delicious",
       authorKey: Person.JEFF_LINDSAY,
       series: { key: Series.DEXTER, entry: 5 },
       meeting: "2012.05.29",
       dcl: "956551114",
+    },
+    dextersFinalCut: {
+      title: "Dexter's Final Cut",
+      authorKey: Person.JEFF_LINDSAY,
+      series: { key: Series.DEXTER, entry: 7 },
+      lt: "work/13629497",
     },
     dirtyBlonde: {
       title: "Dirty Blonde",
@@ -407,6 +434,12 @@ const Book = {
       meeting: "2011.11.28",
       dcl: "959886114",
     },
+    doubleDexter: {
+      title: "Double Dexter",
+      authorKey: Person.JEFF_LINDSAY,
+      series: { key: Series.DEXTER, entry: 6 },
+      lt: "work/10844880",
+    },
     eightPerfectMurders: {
       title: "Eight Perfect Murders",
       authorKey: Person.PETER_SWANSON,
@@ -420,6 +453,12 @@ const Book = {
       meeting: "2018.01.22",
       dcl: "1387222114",
       lt: "work/19062304",
+    },
+    evilAtHeart: {
+      title: "Evil at Heart",
+      authorKey: Person.CHELSEA_CAIN,
+      series: { key: Series.GRETCHEN_LOWELL, entry: 3 },
+      lt: "work/8101893",
     },
     foolMeOnce: {
       title: "Fool Me Once",
@@ -554,6 +593,12 @@ const Book = {
       meeting: "2015.04.27",
       dcl: "1180980114",
     },
+    killYouTwice: {
+      title: "Kill You Twice",
+      authorKey: Person.CHELSEA_CAIN,
+      series: { key: Series.GRETCHEN_LOWELL, entry: 5 },
+      lt: "work/12244209",
+    },
     lethalWhite: {
       title: "Lethal White",
       authorKey: Person.ROBERT_GALBRAITH,
@@ -561,6 +606,12 @@ const Book = {
       dcl: "1493220114",
       lt: "work/17525753",
       meeting: "2019.10.28",
+    },
+    letMeGo: {
+      title: "Let Me Go",
+      authorKey: Person.CHELSEA_CAIN,
+      series: { key: Series.GRETCHEN_LOWELL, entry: 6 },
+      lt: "work/13216528",
     },
     liarsLullaby: {
       title: "Liar's Lullaby",
@@ -775,6 +826,12 @@ const Book = {
       authorKey: Person.ROBERT_CRAIS,
       meeting: "2014.01.27",
       dcl: "1087642114",
+    },
+    sweetheart: {
+      title: "Sweetheart",
+      authorKey: Person.CHELSEA_CAIN,
+      series: { key: Series.GRETCHEN_LOWELL, entry: 2 },
+      lt: "work/8386014",
     },
     sweetLittleLies: {
       title: "Sweet Little Lies",
@@ -1445,6 +1502,13 @@ Book.valuesByYear = (year) => {
 Book.valuesWithMeeting = () => {
   const books = Object.values(Book.properties);
   const filterFunction = (book) => !R.isNil(book.meeting);
+
+  return R.filter(filterFunction, books);
+};
+
+Book.valuesWithoutMeeting = () => {
+  const books = Object.values(Book.properties);
+  const filterFunction = (book) => R.isNil(book.meeting);
 
   return R.filter(filterFunction, books);
 };

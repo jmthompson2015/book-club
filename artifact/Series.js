@@ -12,6 +12,7 @@ const Series = {
   CLAY_EDISON: "clayEdison",
   CORMORAN_STRIKE: "cormoranStrike",
   DAVID_HUNTER: "davidHunter",
+  DEFENDING_JACOB: "defendingJacob",
   DETECTIVE_VARG: "detectiveVarg",
   DEXTER: "dexter",
   DISMAS_HARDY: "dismasHardy",
@@ -78,6 +79,11 @@ const Series = {
     clayEdison: { title: "Clay Edison", lt: "series/Clay+Edison" },
     cormoranStrike: { title: "Cormoran Strike", lt: "series/Cormoran+Strike" },
     davidHunter: { title: "David Hunter", lt: "series/David+Hunter" },
+    defendingJacob: {
+      title: "Defending Jacob",
+      authorKey: Person.WILLIAM_LANDAY,
+      lt: "work/11491573",
+    },
     detectiveVarg: { title: "Detective Varg", lt: "series/Detective+Varg" },
     dexter: {
       title: "Dexter",

@@ -5,6 +5,7 @@ const Series = require("./Series.js");
 
 const TVSeries = {
   BOSCH: "bosch",
+  DEFENDING_JACOB: "defendingJacob",
   DEXTER: "dexter",
   HAPPY_VALLEY: "happyValley",
   MIDSOMER_MURDERS: "midsomerMurders",
@@ -20,6 +21,12 @@ const TVSeries = {
       castKeys: [Person.TITUS_WELLIVER, Person.JAMIE_HECTOR],
       seriesKey: Series.HARRY_BOSCH,
       imdb: "title/tt3502248",
+    },
+    defendingJacob: {
+      title: "Defending Jacob (2020)",
+      castKeys: [Person.CHRIS_EVANS, Person.MICHELLE_DOCKERY],
+      seriesKey: Series.DEFENDING_JACOB,
+      imdb: "title/tt2304589",
     },
     dexter: {
       title: "Dexter (2006-2013)",

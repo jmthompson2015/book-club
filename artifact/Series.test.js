@@ -33,7 +33,7 @@ QUnit.test("Series.keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const length = 57;
+  const length = 58;
   assert.equal(result.length, length);
   assert.equal(R.head(result), Series.AARON_FALK);
   assert.equal(R.last(result), Series.WINE_LOVERS_MYSTERIES);
