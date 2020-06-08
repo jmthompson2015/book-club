@@ -6,6 +6,7 @@ const Person = {
   ALEX_MICHAELIDES: "alexMichaelides",
   ALEXANDER_MCCALL_SMITH: "alexanderMcCallSmith",
   ALICE_BLANCHARD: "aliceBlanchard",
+  ALLAN_CUBITT: "allanCubitt",
   AMY_ADAMS: "amyAdams",
   ANTHONY_HOROWITZ: "anthonyHorowitz",
   ARTHUR_CONAN_DOYLE: "arthurConanDoyle",
@@ -45,6 +46,7 @@ const Person = {
   GEORGETTE_HEYER: "georgetteHeyer",
   GILLIAN_ANDERSON: "gillianAnderson",
   GILLIAN_FLYNN: "gillianFlynn",
+  GREG_BERLANTI: "gregBerlanti",
   GREGG_HURWITZ: "greggHurwitz",
   GREG_ILES: "gregIles",
   HARLAN_COBEN: "harlanCoben",
@@ -103,6 +105,7 @@ const Person = {
   OWEN_LAUKKANEN: "owenLaukkanen",
   PATRICIA_CLARKSON: "patriciaClarkson",
   PENELOPE_CRUZ: "penelopeCruz",
+  PENN_BADGLEY: "pennBadgley",
   PETER_SWANSON: "peterSwanson",
   RIAN_JOHNSON: "rianJohnson",
   ROBERT_CRAIS: "robertCrais",
@@ -111,6 +114,7 @@ const Person = {
   ROGER_HOBBS: "rogerHobbs",
   ROSAMUND_PIKE: "rosamundPike",
   RUTH_WARE: "ruthWare",
+  SALLY_WAINWRIGHT: "sallyWainwright",
   SANDRA_BROWN: "sandraBrown",
   SARAH_LANCASHIRE: "sarahLancashire",
   SHARI_LAPENA: "shariLapena",
@@ -162,6 +166,7 @@ const Person = {
       lt: "author/blanchardalice",
       wiki: "Alice_Blanchard",
     },
+    allanCubitt: { first: "Allan", last: "Cubitt", imdb: "name/nm0190930" },
     amyAdams: { first: "Amy", last: "Adams", imdb: "name/nm0010736" },
     anthonyHorowitz: {
       first: "Anthony",
@@ -352,6 +357,12 @@ const Person = {
       imdb: "name/nm5058839",
       lt: "author/flynngillian",
       wiki: "Gillian_Flynn",
+    },
+    gregBerlanti: {
+      first: "Greg",
+      last: "Berlanti",
+      imdb: "name/nm0075528",
+      wiki: "Greg_Berlanti",
     },
     greggHurwitz: {
       first: "Gregg",
@@ -631,6 +642,11 @@ const Person = {
       imdb: "name/nm0004851",
       wiki: "Penélope_Cruz",
     },
+    pennBadgley: {
+      first: "Penn",
+      last: "Badgley",
+      imdb: "name/nm0046112",
+    },
     peterSwanson: {
       first: "Peter",
       last: "Swanson",
@@ -670,6 +686,11 @@ const Person = {
       imdb: "name/nm3405121",
       lt: "author/wareruth",
       wiki: "Ruth_Ware",
+    },
+    sallyWainwright: {
+      first: "Sally",
+      last: "Wainwright",
+      imdb: "name/nm0906550",
     },
     sandraBrown: { first: "Sandra", last: "Brown", wiki: "Sandra_Brown" },
     sarahLancashire: {

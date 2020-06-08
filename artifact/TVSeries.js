@@ -10,10 +10,13 @@ const TVSeries = {
   HAPPY_VALLEY: "happyValley",
   MIDSOMER_MURDERS: "midsomerMurders",
   POIROT: "poirot",
+  SAFE: "safe",
   SHARP_OBJECTS: "sharpObjects",
   THE_ADVENTURES_OF_SHERLOCK_HOLMES: "theAdventuresOfSherlockHolmes",
   THE_FALL: "theFall",
+  THE_FIVE: "theFive",
   WIRE_IN_THE_BLOOD: "wireInTheBlood",
+  YOU: "you",
 
   properties: {
     bosch: {
@@ -37,6 +40,7 @@ const TVSeries = {
     happyValley: {
       title: "Happy Valley (2014-?)",
       castKeys: [Person.SARAH_LANCASHIRE, Person.JAMES_NORTON],
+      creatorKeys: [Person.SALLY_WAINWRIGHT],
       imdb: "title/tt3428912",
     },
     midsomerMurders: {
@@ -50,6 +54,12 @@ const TVSeries = {
       castKeys: [Person.DAVID_SUCHET, Person.HUGH_FRASER],
       seriesKey: Series.HERCULE_POIROT,
       imdb: "title/tt0094525",
+    },
+    safe: {
+      title: "Safe (2018)",
+      castKeys: [Person.MICHAEL_C_HALL],
+      creatorKeys: [Person.HARLAN_COBEN],
+      imdb: "title/tt7902072",
     },
     sharpObjects: {
       title: "Sharp Objects (2018)",
@@ -70,12 +80,24 @@ const TVSeries = {
     theFall: {
       title: "The Fall (2013-2016)",
       castKeys: [Person.GILLIAN_ANDERSON, Person.JAMIE_DORNAN],
+      creatorKeys: [Person.ALLAN_CUBITT],
       imdb: "title/tt2294189",
+    },
+    theFive: {
+      title: "The Five (2016)",
+      creatorKeys: [Person.HARLAN_COBEN],
+      imdb: "title/tt4370528",
     },
     wireInTheBlood: {
       title: "Wire in the Blood (2002-2009)",
       castKeys: [Person.ROBSON_GREEN],
       imdb: "title/tt0337792",
+    },
+    you: {
+      title: "You (2018-?)",
+      castKeys: [Person.PENN_BADGLEY],
+      creatorKeys: [Person.GREG_BERLANTI],
+      imdb: "title/tt7335184",
     },
   },
 };

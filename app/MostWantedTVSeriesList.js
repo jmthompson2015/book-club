@@ -11,7 +11,7 @@ const Formatter = require("../model/Formatter.js");
 
 const OUTPUT_FILE = "MostWantedTVSeriesList.txt";
 const HEADERS1 = ["TV Series", "Cast", "Book Series", "Author"];
-const HEADERS2 = ["TV Series", "Cast"];
+const HEADERS2 = ["TV Series", "Cast", "Creator"];
 const TABLE_CLASS = "wikitable sortable";
 
 const createRow1 = (tvSeries) => {
@@ -31,8 +31,11 @@ const createRow1 = (tvSeries) => {
 const createRow2 = (tvSeries) => {
   const value1 = Formatter.createTVSeriesText(tvSeries);
   const value2 = tvSeries ? Formatter.createPersonText(tvSeries.castKeys) : "";
+  const value3 = tvSeries
+    ? Formatter.createPersonText(tvSeries.creatorKeys)
+    : "";
 
-  const values = [value1, value2];
+  const values = [value1, value2, value3];
   const cells = R.map(WikiUtils.cell, values);
 
   return WikiUtils.row(cells);
