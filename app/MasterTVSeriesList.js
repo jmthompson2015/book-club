@@ -10,18 +10,21 @@ const Comparator = require("../model/Comparator.js");
 const Formatter = require("../model/Formatter.js");
 
 const OUTPUT_FILE = "MasterTVSeriesList.txt";
-const HEADERS = ["TV Series", "Cast", "Book Series", "Author"];
+const HEADERS = ["TV Series", "Creator", "Cast", "Book Series", "Author"];
 const TABLE_CLASS = "wikitable sortable";
 
 const createRow = (tvSeries) => {
   const series = tvSeries ? Series.properties[tvSeries.seriesKey] : undefined;
 
   const value1 = Formatter.createTVSeriesText(tvSeries);
-  const value2 = tvSeries ? Formatter.createPersonText(tvSeries.castKeys) : "";
-  const value3 = Formatter.createSeriesText(series);
-  const value4 = series ? Formatter.createPersonText(series.authorKey) : "";
+  const value2 = tvSeries
+    ? Formatter.createPersonText(tvSeries.creatorKeys)
+    : "";
+  const value3 = tvSeries ? Formatter.createPersonText(tvSeries.castKeys) : "";
+  const value4 = Formatter.createSeriesText(series);
+  const value5 = series ? Formatter.createPersonText(series.authorKey) : "";
 
-  const values = [value1, value2, value3, value4];
+  const values = [value1, value2, value3, value4, value5];
   const cells = R.map(WikiUtils.cell, values);
 
   return WikiUtils.row(cells);

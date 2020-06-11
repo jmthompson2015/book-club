@@ -54,6 +54,7 @@ const Series = {
   SHERLOCK_HOLMES: "sherlockHolmes",
   STEVENS_AND_WINDERMERE: "stevensAndWindermere",
   STONE_BARRINGTON: "stoneBarrington",
+  SYDNEY_ROSE_PARNELL: "sydneyRoseParnell",
   TEMPERANCE_BRENNAN: "temperanceBrennan",
   THE_CAMEL_CLUB: "theCamelClub",
   VIRGIL_FLOWERS: "virgilFlowers",
@@ -153,6 +154,10 @@ const Series = {
     stoneBarrington: {
       title: "Stone Barrington",
       lt: "series/Stone+Barrington",
+    },
+    sydneyRoseParnell: {
+      title: "Sydney Rose Parnell",
+      lt: "nseries/48681/Sydney-Rose-Parnell",
     },
     temperanceBrennan: {
       title: "Temperance Brennan",

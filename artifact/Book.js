@@ -17,6 +17,7 @@ const Book = {
   A_TOAST_TO_MURDER: "aToastToMurder",
   A_WANTED_MAN: "aWantedMan",
   BLOOD_ON_SNOW: "bloodOnSnow",
+  BLOOD_ON_THE_TRACKS: "bloodOnTheTracks",
   BRING_ME_BACK: "bringMeBack",
   BROKEN: "broken",
   CAMINO_WINDS: "caminoWinds",
@@ -96,6 +97,7 @@ const Book = {
   SHARP_OBJECTS: "sharpObjects",
   SIX_YEARS: "sixYears",
   STAY_CLOSE: "stayClose",
+  STILL_LIFE: "stillLife",
   STONE_COLD_2007: "stoneCold2007",
   STONE_COLD_2014: "stoneCold2014",
   SUSPECT: "suspect",
@@ -273,6 +275,13 @@ const Book = {
       authorKey: Person.JO_NESBO,
       meeting: "2016.01.25",
       dcl: "1251107114",
+    },
+    bloodOnTheTracks: {
+      title: "Blood on the Tracks",
+      authorKey: Person.BARBARA_NICKLESS,
+      series: { key: Series.SYDNEY_ROSE_PARNELL, entry: 1 },
+      dcl: "1359332114",
+      lt: "work/18319544",
     },
     bringMeBack: {
       title: "Bring Me Back",
@@ -806,6 +815,12 @@ const Book = {
       authorKey: Person.HARLAN_COBEN,
       meeting: "2013.01.28",
       dcl: "1022395114",
+    },
+    stillLife: {
+      title: "Still Life",
+      authorKey: Person.LOUISE_PENNY,
+      series: { key: Series.CHIEF_INSPECTOR_ARMAND_GAMACHE, entry: 1 },
+      lt: "work/544362",
     },
     stoneCold2007: {
       title: "Stone Cold (2007)",
