@@ -37,7 +37,7 @@ QUnit.test("authorKeyToBooks()", (assert) => {
   assert.ok(result, `result !== undefined`);
   const authorKeys = Object.keys(result);
   assert.ok(authorKeys, `authorKeys !== undefined`);
-  const count = 90;
+  const count = 91;
   assert.equal(
     authorKeys.length,
     count,
@@ -171,8 +171,7 @@ QUnit.test("Book.keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const length = 182;
-  assert.equal(result.length, length);
+  assert.equal(result.length, 184);
   assert.equal(R.head(result), Book._206_BONES);
   assert.equal(R.last(result), Book.WICKED_PREY);
 });
@@ -185,7 +184,7 @@ QUnit.test("seriesKeyToBooks()", (assert) => {
   assert.ok(result, `result !== undefined`);
   const seriesKeys = Object.keys(result);
   assert.ok(seriesKeys, `seriesKeys !== undefined`);
-  const count = 56;
+  const count = 57;
   assert.equal(
     seriesKeys.length,
     count,
@@ -285,6 +284,27 @@ QUnit.test("seriesKeyToBooks() meeting only", (assert) => {
     assert.equal(R.head(harryBoschBooks).title, "Dark Sacred Night");
     assert.equal(R.last(harryBoschBooks).title, "Two Kinds of Truth");
   }
+});
+
+QUnit.test("valuesBySeries()", (assert) => {
+  // Setup.
+  const seriesKey = Series.JACK_REACHER;
+
+  // Run.
+  const result = Book.valuesBySeries(seriesKey);
+
+  // Verify.
+  assert.ok(result);
+  assert.equal(result.length, 7, `result.length = ${result.length}`);
+  const forEachFunction = (book) => {
+    assert.ok(book.series, `book.series = ${JSON.stringify(book.series)}`);
+    assert.equal(
+      book.series.key,
+      seriesKey,
+      `book.series.key = ${book.series.key}`
+    );
+  };
+  R.forEach(forEachFunction, result);
 });
 
 const BookTest = {};

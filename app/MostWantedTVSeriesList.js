@@ -6,6 +6,7 @@ const WikiUtils = require("../util/WikiUtilities.js");
 const Series = require("../artifact/Series.js");
 const TVSeries = require("../artifact/TVSeries.js");
 
+const BookUtils = require("../model/BookUtilities.js");
 const Comparator = require("../model/Comparator.js");
 const Formatter = require("../model/Formatter.js");
 
@@ -16,11 +17,12 @@ const TABLE_CLASS = "wikitable sortable";
 
 const createRow1 = (tvSeries) => {
   const series = tvSeries ? Series.properties[tvSeries.seriesKey] : undefined;
+  const authorKey = BookUtils.determineAuthor(tvSeries.seriesKey);
 
   const value1 = Formatter.createTVSeriesText(tvSeries);
   const value2 = tvSeries ? Formatter.createPersonText(tvSeries.castKeys) : "";
   const value3 = Formatter.createSeriesText(series);
-  const value4 = series ? Formatter.createPersonText(series.authorKey) : "";
+  const value4 = Formatter.createPersonText(authorKey);
 
   const values = [value1, value2, value3, value4];
   const cells = R.map(WikiUtils.cell, values);

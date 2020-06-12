@@ -1503,6 +1503,19 @@ Book.seriesKeyToBooks = (isMeeting = false) => {
   return R.reduce(reduceFunction, {}, books);
 };
 
+Book.valuesBySeries = (seriesKey) => {
+  let answer = [];
+
+  if (seriesKey) {
+    const books = Object.values(Book.properties);
+    const filterFunction = (book) =>
+      book.series && book.series.key === seriesKey;
+    answer = R.filter(filterFunction, books);
+  }
+
+  return answer;
+};
+
 Book.valuesByYear = (year) => {
   const books = Object.values(Book.properties);
   const filterFunction = (book) => {

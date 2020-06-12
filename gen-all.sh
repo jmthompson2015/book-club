@@ -3,6 +3,8 @@ cd dist
 
 node ../app/MasterBookList.js
 node ../app/MasterMovieList.js
+node ../app/MasterPersonList.js
+node ../app/MasterSeriesList.js
 node ../app/MasterTVSeriesList.js
 
 node ../app/CaseFiles.js

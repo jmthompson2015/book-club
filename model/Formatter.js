@@ -57,7 +57,7 @@ const createSeriesLabel = (seriesObj) => {
   let answer = "";
 
   if (seriesObj) {
-    if (seriesObj.key) {
+    if (seriesObj.entry) {
       const series = Series.properties[seriesObj.key];
       answer = `${series.title} #${seriesObj.entry}`;
     } else {
@@ -136,7 +136,10 @@ Formatter.createPersonText = (personObj) => {
       const personLinks = R.map(mapFunction, personObj);
       answer = personLinks.join(" ");
     } else {
-      const person = Person.properties[personObj];
+      const person =
+        typeof personObj === "string"
+          ? Person.properties[personObj]
+          : personObj;
 
       if (person) {
         const personPrefix = createPersonPrefix(person);
