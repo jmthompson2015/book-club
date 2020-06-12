@@ -5,6 +5,7 @@ const WikiUtils = require("../util/WikiUtilities.js");
 
 const Person = require("../artifact/Person.js");
 
+const Comparator = require("../model/Comparator.js");
 const Formatter = require("../model/Formatter.js");
 
 const OUTPUT_FILE = "MasterPersonList.txt";
@@ -22,7 +23,9 @@ const createRow = (person) => {
 
 const MasterBookList = {
   report: () => {
-    const persons = Person.values();
+    const personKeys = Person.keys();
+    personKeys.sort(Comparator.comparePersonKey);
+    const persons = R.map((key) => Person.properties[key], personKeys);
     const rows = R.map(createRow, persons);
 
     return WikiUtils.table(HEADERS, rows, TABLE_CLASS);
