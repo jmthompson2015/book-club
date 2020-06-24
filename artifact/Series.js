@@ -15,6 +15,7 @@ const Series = {
   DEXTER: "dexter",
   DISMAS_HARDY: "dismasHardy",
   DR_ALAN_GREGORY: "drAlanGregory",
+  EIGHT_PERFECT_MURDERS: "eightPerfectMurders",
   ELLERY_QUEEN: "elleryQueen",
   ELVIS_COLE: "elvisCole",
   EVAN_SMOAK: "evanSmoak",
@@ -40,6 +41,7 @@ const Series = {
   LINCOLN_RHYME: "lincolnRhyme",
   LUCAS_DAVENPORT: "lucasDavenport",
   MALCOLM_WARREN: "malcolmWarren",
+  MALICE_AFORETHOUGHT: "maliceAforethought",
   MICKEY_HALLER: "mickeyHaller",
   MILLENNIUM: "millennium",
   MYRON_BOLITAR: "myronBolitar",
@@ -139,6 +141,11 @@ const Series = {
       title: "Dr. Alan Gregory",
       lt: "series/Dr.+Alan+Gregory",
       key: "drAlanGregory",
+    },
+    eightPerfectMurders: {
+      title: "Eight Perfect Murders",
+      lt: "work/23575042",
+      key: "eightPerfectMurders",
     },
     elleryQueen: {
       title: "Ellery Queen",
@@ -248,6 +255,11 @@ const Series = {
       title: "Malcolm Warren",
       lt: "series/Malcolm+Warren",
       key: "malcolmWarren",
+    },
+    maliceAforethought: {
+      title: "Malice Aforethought",
+      lt: "work/247583",
+      key: "maliceAforethought",
     },
     mickeyHaller: {
       title: "Mickey Haller",

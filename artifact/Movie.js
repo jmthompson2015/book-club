@@ -4,6 +4,8 @@ const Book = require("./Book.js");
 const Person = require("./Person.js");
 
 const Movie = {
+  DEATHTRAP: "deathtrap",
+  DOUBLE_INDEMNITY: "doubleIndemnity",
   GONE_GIRL: "goneGirl",
   JACK_REACHER: "jackReacher",
   JACK_REACHER_NEVER_GO_BACK: "jackReacherNeverGoBack",
@@ -11,12 +13,33 @@ const Movie = {
   MURDER_ON_THE_ORIENT_EXPRESS: "murderOnTheOrientExpress",
   POINT_OF_NO_RETURN: "pointOfNoReturn",
   STILL_LIFE: "stillLife",
+  STRANGERS_ON_A_TRAIN: "strangersOnATrain",
   THE_DEVIL_YOU_KNOW: "theDevilYouKnow",
   THE_DRY: "theDry",
   THE_LINCOLN_LAWYER: "theLincolnLawyer",
   THE_SILENT_PATIENT: "theSilentPatient",
 
   properties: {
+    deathtrap: {
+      title: "Deathtrap",
+      directorKey: Person.SIDNEY_LUMET,
+      writerKey: Person.IRA_LEVIN,
+      castKeys: [Person.MICHAEL_CAINE, Person.CHRISTOPHER_REEVE],
+      bookKey: Book.DEATHTRAP,
+      imdb: "title/tt0083806",
+    },
+    doubleIndemnity: {
+      title: "Double Indemnity",
+      directorKey: Person.BILLY_WILDER,
+      writerKey: Person.RAYMOND_CHANDLER,
+      castKeys: [
+        Person.FRED_MACMURRAY,
+        Person.BARBARA_STANWYCK,
+        Person.EDWARD_G_ROBINSON,
+      ],
+      bookKey: Book.DOUBLE_INDEMNITY,
+      imdb: "title/tt0036775",
+    },
     goneGirl: {
       title: "Gone Girl (2014)",
       writerKey: Person.GILLIAN_FLYNN,
@@ -63,9 +86,17 @@ const Movie = {
       title: "Still Life (TV 2013)",
       directorKey: Person.PETER_MOSS,
       writerKey: Person.LOUISE_PENNY,
-      bookKey: Book.STILL_LIFE,
       castKeys: [Person.NATHANIEL_PARKER],
+      bookKey: Book.STILL_LIFE,
       imdb: "title/tt2225780",
+    },
+    strangersOnATrain: {
+      title: "Strangers on a Train",
+      directorKey: Person.ALFRED_HITCHCOCK,
+      writerKey: Person.RAYMOND_CHANDLER,
+      castKeys: [Person.FARLEY_GRANGER, Person.ROBERT_WALKER],
+      bookKey: Book.STRANGERS_ON_A_TRAIN,
+      imdb: "title/tt0044079",
     },
     theDevilYouKnow: {
       title: "The Devil You Know (2013)",

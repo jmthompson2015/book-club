@@ -8,6 +8,7 @@ const TVSeries = {
   DEFENDING_JACOB: "defendingJacob",
   DEXTER: "dexter",
   HAPPY_VALLEY: "happyValley",
+  MALICE_AFORETHOUGHT: "maliceAforethought",
   MIDSOMER_MURDERS: "midsomerMurders",
   POIROT: "poirot",
   SAFE: "safe",
@@ -42,6 +43,13 @@ const TVSeries = {
       castKeys: [Person.SARAH_LANCASHIRE, Person.JAMES_NORTON],
       creatorKeys: [Person.SALLY_WAINWRIGHT],
       imdb: "title/tt3428912",
+    },
+    maliceAforethought: {
+      title: "Malice Aforethought (1979)",
+      castKeys: [Person.HYWEL_BENNETT],
+      creatorKeys: [Person.CYRIL_COKE],
+      seriesKey: Series.MALICE_AFORETHOUGHT,
+      imdb: "title/tt0162096",
     },
     midsomerMurders: {
       title: "Midsomer Murders (1997-?)",
