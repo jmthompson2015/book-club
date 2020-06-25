@@ -4,24 +4,35 @@ const Book = require("./Book.js");
 const Person = require("./Person.js");
 
 const Movie = {
+  A_SIMPLE_PLAN: "aSimplePlan",
   DEATHTRAP: "deathtrap",
   DOUBLE_INDEMNITY: "doubleIndemnity",
   GONE_GIRL: "goneGirl",
   JACK_REACHER: "jackReacher",
   JACK_REACHER_NEVER_GO_BACK: "jackReacherNeverGoBack",
   KNIVES_OUT: "knivesOut",
+  LES_DIABOLIQUES: "lesDiaboliques",
   MURDER_ON_THE_ORIENT_EXPRESS: "murderOnTheOrientExpress",
   POINT_OF_NO_RETURN: "pointOfNoReturn",
   STILL_LIFE: "stillLife",
   STRANGERS_ON_A_TRAIN: "strangersOnATrain",
+  THE_AX: "theAx",
   THE_DEVIL_YOU_KNOW: "theDevilYouKnow",
   THE_DRY: "theDry",
   THE_LINCOLN_LAWYER: "theLincolnLawyer",
   THE_SILENT_PATIENT: "theSilentPatient",
+  VERTIGO: "vertigo",
 
   properties: {
+    aSimplePlan: {
+      title: "A Simple Plan (1998)",
+      directorKey: Person.SAM_RAIMI,
+      castKeys: [Person.BILL_PAXTON, Person.BILLY_BOB_THORNTON],
+      bookKey: Book.A_SIMPLE_PLAN,
+      imdb: "title/tt0120324",
+    },
     deathtrap: {
-      title: "Deathtrap",
+      title: "Deathtrap (1982)",
       directorKey: Person.SIDNEY_LUMET,
       writerKey: Person.IRA_LEVIN,
       castKeys: [Person.MICHAEL_CAINE, Person.CHRISTOPHER_REEVE],
@@ -29,7 +40,7 @@ const Movie = {
       imdb: "title/tt0083806",
     },
     doubleIndemnity: {
-      title: "Double Indemnity",
+      title: "Double Indemnity (1944)",
       directorKey: Person.BILLY_WILDER,
       writerKey: Person.RAYMOND_CHANDLER,
       castKeys: [
@@ -66,6 +77,11 @@ const Movie = {
       castKeys: [Person.DANIEL_CRAIG, Person.CHRIS_EVANS],
       imdb: "title/tt8946378",
     },
+    lesDiaboliques: {
+      title: "Les Diaboliques (1955)",
+      bookKey: Book.SHE_WHO_WAS_NO_MORE,
+      imdb: "title/tt0046911",
+    },
     murderOnTheOrientExpress: {
       title: "Murder on the Orient Express (2017)",
       castKeys: [Person.KENNETH_BRANAGH, Person.PENELOPE_CRUZ],
@@ -91,12 +107,18 @@ const Movie = {
       imdb: "title/tt2225780",
     },
     strangersOnATrain: {
-      title: "Strangers on a Train",
+      title: "Strangers on a Train (1951)",
       directorKey: Person.ALFRED_HITCHCOCK,
       writerKey: Person.RAYMOND_CHANDLER,
       castKeys: [Person.FARLEY_GRANGER, Person.ROBERT_WALKER],
       bookKey: Book.STRANGERS_ON_A_TRAIN,
       imdb: "title/tt0044079",
+    },
+    theAx: {
+      title: "The Ax (2005)",
+      bookKey: Book.THE_AX,
+      imdb: "title/tt0422015",
+      wiki: "The_Axe_(film)",
     },
     theDevilYouKnow: {
       title: "The Devil You Know (2013)",
@@ -121,6 +143,13 @@ const Movie = {
       title: "The Silent Patient (in development)",
       bookKey: Book.THE_SILENT_PATIENT,
       imdb: "title/tt9893218",
+    },
+    vertigo: {
+      title: "Vertigo (1958)",
+      directorKey: Person.ALFRED_HITCHCOCK,
+      castKeys: [Person.JAMES_STEWART, Person.KIM_NOVAK],
+      bookKey: Book.VERTIGO,
+      imdb: "title/tt0052357",
     },
   },
 };

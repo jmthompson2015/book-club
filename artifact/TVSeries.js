@@ -4,6 +4,7 @@ const Person = require("./Person.js");
 const Series = require("./Series.js");
 
 const TVSeries = {
+  A_FATAL_INVERSION: "aFatalInversion",
   BOSCH: "bosch",
   DEFENDING_JACOB: "defendingJacob",
   DEXTER: "dexter",
@@ -20,6 +21,11 @@ const TVSeries = {
   YOU: "you",
 
   properties: {
+    aFatalInversion: {
+      title: "A Fatal Inversion (1992)",
+      seriesKey: Series.A_FATAL_INVERSION,
+      imdb: "title/tt0102126",
+    },
     bosch: {
       title: "Bosch (2014-?)",
       castKeys: [Person.TITUS_WELLIVER, Person.JAMIE_HECTOR],
@@ -105,6 +111,7 @@ const TVSeries = {
       title: "You (2018-?)",
       castKeys: [Person.PENN_BADGLEY],
       creatorKeys: [Person.GREG_BERLANTI],
+      seriesKey: Series.YOU,
       imdb: "title/tt7335184",
     },
   },

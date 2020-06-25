@@ -13,6 +13,7 @@ const Formatter = {};
 const ICON_SIZE = "20px";
 
 const DCL_IMAGE = "DouglasCountyLibraries418.png";
+const GR_IMAGE = "Goodreads128.png";
 const IMDB_IMAGE = "IMDb256.png";
 const LT_IMAGE = "LibraryThing180.png";
 const WIKIPEDIA_IMAGE = "Wikipedia128.png";
@@ -24,18 +25,6 @@ const createItemPrefix = (item) => {
     answer = `data-sort-value="${item.title.substring("A ".length)}"| `;
   } else if (item.title.startsWith("The ")) {
     answer = `data-sort-value="${item.title.substring("The ".length)}"| `;
-  }
-
-  return answer;
-};
-
-const createPersonLabel = (person) => {
-  let answer;
-
-  if (person.middle) {
-    answer = `${person.first} ${person.middle} ${person.last}`;
-  } else {
-    answer = `${person.first} ${person.last}`;
   }
 
   return answer;
@@ -120,6 +109,34 @@ Formatter.createMeetingText2 = (meeting) => {
   return answer;
 };
 
+Formatter.createPersonLabel = (person) => {
+  let answer = "";
+
+  if (person) {
+    if (person.first) {
+      answer += person.first;
+    }
+
+    if (person.middle) {
+      if (answer.length > 0) {
+        answer += " ";
+      }
+
+      answer += person.middle;
+    }
+
+    if (person.last) {
+      if (answer.length > 0) {
+        answer += " ";
+      }
+
+      answer += person.last;
+    }
+  }
+
+  return answer;
+};
+
 Formatter.createPersonText = (personObj) => {
   let answer = "";
 
@@ -127,7 +144,7 @@ Formatter.createPersonText = (personObj) => {
     if (Array.isArray(personObj)) {
       const mapFunction = (personKey) => {
         const myPerson = Person.properties[personKey];
-        const personLabel = createPersonLabel(myPerson);
+        const personLabel = Formatter.createPersonLabel(myPerson);
         const linkedImages = Formatter.linkedImages(myPerson);
 
         return labelLinkedImagesTable(personLabel, linkedImages);
@@ -143,7 +160,7 @@ Formatter.createPersonText = (personObj) => {
 
       if (person) {
         const personPrefix = createPersonPrefix(person);
-        const personLabel = createPersonLabel(person);
+        const personLabel = Formatter.createPersonLabel(person);
         const linkedImages = Formatter.linkedImages(person);
         const table = labelLinkedImagesTable(personLabel, linkedImages);
         answer = `${personPrefix} ${table}`;
@@ -192,6 +209,11 @@ Formatter.linkedImages = (item) => {
     DCL_IMAGE,
     "Douglas County Libraries"
   );
+  const grLink = wikilinkedImage(
+    UrlGenerator.goodreadsUrl(item),
+    GR_IMAGE,
+    "Goodreads"
+  );
   const imdbLink = wikilinkedImage(
     UrlGenerator.imdbUrl(item),
     IMDB_IMAGE,
@@ -210,10 +232,11 @@ Formatter.linkedImages = (item) => {
   const style = "border:0px; padding:0px;";
 
   const cell1 = dclLink ? HtmlUtils.cell(dclLink, style) : "";
-  const cell2 = imdbLink ? HtmlUtils.cell(imdbLink, style) : "";
-  const cell3 = ltLink ? HtmlUtils.cell(ltLink, style) : "";
-  const cell4 = wikiLink ? HtmlUtils.cell(wikiLink, style) : "";
-  const row = HtmlUtils.row([cell1, cell2, cell3, cell4]);
+  const cell2 = grLink ? HtmlUtils.cell(grLink, style) : "";
+  const cell3 = imdbLink ? HtmlUtils.cell(imdbLink, style) : "";
+  const cell4 = ltLink ? HtmlUtils.cell(ltLink, style) : "";
+  const cell5 = wikiLink ? HtmlUtils.cell(wikiLink, style) : "";
+  const row = HtmlUtils.row([cell1, cell2, cell3, cell4, cell5]);
 
   return HtmlUtils.table([row]);
 };

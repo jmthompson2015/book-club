@@ -110,6 +110,50 @@ QUnit.test("createMovieText()", (assert) => {
   );
 });
 
+QUnit.test("createPersonLabel() undefined", (assert) => {
+  // Setup.
+  const person = undefined;
+
+  // Run.
+  const result = Formatter.createPersonLabel(person);
+
+  // Verify.
+  assert.equal(result, "", `result = :${result}:`);
+});
+
+QUnit.test("createPersonLabel() first last", (assert) => {
+  // Setup.
+  const person = { first: "Lee", last: "Child" };
+
+  // Run.
+  const result = Formatter.createPersonLabel(person);
+
+  // Verify.
+  assert.equal(result, "Lee Child", `result = :${result}:`);
+});
+
+QUnit.test("createPersonLabel() first middle last", (assert) => {
+  // Setup.
+  const person = { first: "James", middle: "M.", last: "Cain" };
+
+  // Run.
+  const result = Formatter.createPersonLabel(person);
+
+  // Verify.
+  assert.equal(result, "James M. Cain", `result = :${result}:`);
+});
+
+QUnit.test("createPersonLabel() last", (assert) => {
+  // Setup.
+  const person = { last: "Boileau-Narcejac" };
+
+  // Run.
+  const result = Formatter.createPersonLabel(person);
+
+  // Verify.
+  assert.equal(result, "Boileau-Narcejac", `result = :${result}:`);
+});
+
 QUnit.test("createPersonText() undefined", (assert) => {
   // Setup.
   const person = undefined;

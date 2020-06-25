@@ -1,4 +1,5 @@
 const Book = require("../artifact/Book.js");
+const Series = require("../artifact/Series.js");
 
 const BookUtilities = {};
 
@@ -9,9 +10,21 @@ BookUtilities.authorForBook = (bookKey) => {
 };
 
 BookUtilities.authorForSeries = (seriesKey) => {
-  const books = Book.valuesBySeries(seriesKey);
+  const series = Series.properties[seriesKey];
+  let answer;
 
-  return books.length > 0 ? books[0].authorKey : null;
+  if (series) {
+    // if (Object.prototype.hasOwnProperty(series, "authorKey")) {
+    if ("authorKey" in series) {
+      answer = series.authorKey;
+    } else {
+      const books = Book.valuesBySeries(seriesKey);
+
+      answer = books.length > 0 ? books[0].authorKey : null;
+    }
+  }
+
+  return answer;
 };
 
 BookUtilities.determineAuthor = (seriesOrBookKey) =>

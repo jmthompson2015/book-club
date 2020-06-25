@@ -20,7 +20,29 @@ QUnit.test("authorForBook()", (assert) => {
   assert.equal(result, Person.LEE_CHILD);
 });
 
-QUnit.test("authorForSeries()", (assert) => {
+QUnit.test("authorForSeries() undefined", (assert) => {
+  // Setup.
+  const seriesKey = Series.EIGHT_PERFECT_MURDERS;
+
+  // Run.
+  const result = BookUtilities.authorForSeries(seriesKey);
+
+  // Verify.
+  assert.equal(result, undefined, `result = ${result}`);
+});
+
+QUnit.test("authorForSeries() Eight Perfect Murders", (assert) => {
+  // Setup.
+  const seriesKey = Series.EIGHT_PERFECT_MURDERS;
+
+  // Run.
+  const result = BookUtilities.authorForSeries(seriesKey);
+
+  // Verify.
+  assert.equal(result, undefined, `result = ${result}`);
+});
+
+QUnit.test("authorForSeries() Jack Reacher", (assert) => {
   // Setup.
   const seriesKey = Series.JACK_REACHER;
 

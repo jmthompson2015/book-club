@@ -7,10 +7,12 @@ const Book = {
   _206_BONES: "_206Bones",
   _61_HOURS: "_61Hours",
   A_CHRISTMAS_PARTY: "aChristmasParty",
+  A_FATAL_INVERSION: "aFatalInversion",
   A_HIGHLAND_CHRISTMAS: "aHighlandChristmas",
   A_MAN_LAY_DEAD: "aManLayDead",
   AND_THEN_THERE_WERE_NONE: "andThenThereWereNone",
   A_PLAGUE_OF_SECRETS: "aPlagueOfSecrets",
+  A_SIMPLE_PLAN: "aSimplePlan",
   A_STUDY_IN_SCARLET: "aStudyInScarlet",
   A_TAP_ON_THE_WINDOW: "aTapOnTheWindow",
   A_TEST_OF_WILLS: "aTestOfWills",
@@ -57,6 +59,7 @@ const Book = {
   HELLBENT: "hellbent",
   HELLS_CORNER: "hellsCorner",
   HERCULE_POIROTS_CHRISTMAS: "herculePoirotsChristmas",
+  HIDDEN_BODIES: "hiddenBodies",
   HOME: "home",
   ICE_COLD: "iceCold",
   ID_KNOW_YOU_ANYWHERE: "idKnowYouAnywhere",
@@ -74,6 +77,7 @@ const Book = {
   LIFE_SENTENCES: "lifeSentences",
   LIVE_BY_NIGHT: "liveByNight",
   LOVE_KILLS: "loveKills",
+  LUCKY_JIM: "luckyJim",
   MAGPIE_MURDERS: "magpieMurders",
   MAKE_ME: "makeMe",
   MALICE: "malice",
@@ -98,6 +102,7 @@ const Book = {
   RECONSTRUCTING_AMELIA: "reconstructingAmelia",
   REDEMPTION_ROAD: "redemptionRoad",
   SHARP_OBJECTS: "sharpObjects",
+  SHE_WHO_WAS_NO_MORE: "sheWhoWasNoMore",
   SIX_YEARS: "sixYears",
   STAY_CLOSE: "stayClose",
   STILL_LIFE: "stillLife",
@@ -110,6 +115,7 @@ const Book = {
   SYCAMORE_ROW: "sycamoreRow",
   THAT_NIGHT: "thatNight",
   THE_ABC_MURDERS: "theAbcMurders",
+  THE_AX: "theAx",
   THE_BLACK_ECHO: "theBlackEcho",
   THE_BLACK_WIDOW: "theBlackWidow",
   THE_BONE_PARADE: "theBoneParade",
@@ -189,6 +195,7 @@ const Book = {
   TWO_KINDS_OF_TRUTH: "twoKindsOfTruth",
   UNDER_MY_SKIN: "underMySkin",
   VANISHING_GAMES: "vanishingGames",
+  VERTIGO: "vertigo",
   VICTIMS: "victims",
   WAITING_FOR_WEDNESDAY: "waitingForWednesday",
   WHAT_THE_DEAD_KNOW: "whatTheDeadKnow",
@@ -196,6 +203,7 @@ const Book = {
   WHERE_THE_CRAWDADS_SING: "whereTheCrawdadsSing",
   WHISPERS_OF_THE_DEAD: "whispersOfTheDead",
   WICKED_PREY: "wickedPrey",
+  YOU: "you",
 
   properties: {
     _206Bones: {
@@ -217,6 +225,13 @@ const Book = {
       authorKey: Person.GEORGETTE_HEYER,
       meeting: "2017.12.15",
       dcl: "1444035114",
+    },
+    aFatalInversion: {
+      title: "A Fatal Inversion",
+      authorKey: Person.BARBARA_VINE,
+      series: { key: Series.PETER_SWANSON_SUGGESTS, entry: 6 },
+      gr: "book/show/420967.A_Fatal_Inversion",
+      lt: "work/170886",
     },
     aHighlandChristmas: {
       title: "A Highland Christmas",
@@ -244,6 +259,14 @@ const Book = {
       series: { key: Series.DISMAS_HARDY, entry: 11 },
       meeting: "2010.02.22",
       dcl: "908384114",
+    },
+    aSimplePlan: {
+      title: "A Simple Plan",
+      authorKey: Person.SCOTT_B_SMITH,
+      series: { key: Series.PETER_SWANSON_SUGGESTS, entry: 8 },
+      dcl: "1514573114",
+      gr: "book/show/21727.A_Simple_Plan",
+      lt: "work/150141",
     },
     aStudyInScarlet: {
       title: "A Study in Scarlet",
@@ -396,7 +419,7 @@ const Book = {
     deathtrap: {
       title: "Deathtrap",
       authorKey: Person.IRA_LEVIN,
-      series: { key: Series.EIGHT_PERFECT_MURDERS, entry: 7 },
+      series: { key: Series.PERFECT_MURDERS_LIST, entry: 7 },
       lt: "work/124068",
     },
     defendingJacob: {
@@ -466,7 +489,7 @@ const Book = {
     doubleIndemnity: {
       title: "Double Indemnity",
       authorKey: Person.JAMES_M_CAIN,
-      series: { key: Series.EIGHT_PERFECT_MURDERS, entry: 4 },
+      series: { key: Series.PERFECT_MURDERS_LIST, entry: 4 },
       lt: "work/5222842",
     },
     eightPerfectMurders: {
@@ -557,6 +580,17 @@ const Book = {
       series: { key: Series.HERCULE_POIROT, entry: 19 },
       meeting: "2010.12.27",
       dcl: "975256114",
+    },
+    hiddenBodies: {
+      title: "Hidden Bodies",
+      authorKey: Person.CAROLINE_KEPNES,
+      series: [
+        { key: Series.YOU, entry: 2 },
+        { key: Series.PETER_SWANSON_SUGGESTS, entry: 5 },
+      ],
+      dcl: "1273599114",
+      gr: "book/show/29430824-hidden-bodies",
+      lt: "work/15737078",
     },
     home: {
       title: "Home",
@@ -669,6 +703,14 @@ const Book = {
       meeting: "2008.08.25",
       dcl: "849764114",
     },
+    luckyJim: {
+      title: "Lucky Jim",
+      authorKey: Person.KINGSLEY_AMIS,
+      series: { key: Series.PETER_SWANSON_SUGGESTS, entry: 7 },
+      dcl: "1463493114",
+      gr: "book/show/395182.Lucky_Jim",
+      lt: "work/7166",
+    },
     magpieMurders: {
       title: "Magpie Murders",
       authorKey: Person.ANTHONY_HOROWITZ,
@@ -691,7 +733,7 @@ const Book = {
     maliceAforethought: {
       title: "Malice Aforethought",
       authorKey: Person.ANTHONY_BERKELEY_COX,
-      series: { key: Series.EIGHT_PERFECT_MURDERS, entry: 2 },
+      series: { key: Series.PERFECT_MURDERS_LIST, entry: 2 },
       lt: "work/247583",
     },
     markedForLife: {
@@ -830,6 +872,12 @@ const Book = {
       dcl: "767353114",
       lt: "work/1117152",
     },
+    sheWhoWasNoMore: {
+      title: "She Who Was No More",
+      authorKey: Person.BOILEAU_NARCEJAC,
+      series: { key: Series.PETER_SWANSON_SUGGESTS, entry: 2 },
+      gr: "book/show/25241971",
+    },
     sixYears: {
       title: "Six Years",
       authorKey: Person.HARLAN_COBEN,
@@ -865,7 +913,7 @@ const Book = {
     strangersOnATrain: {
       title: "Strangers on a Train",
       authorKey: Person.PATRICIA_HIGHSMITH,
-      series: { key: Series.EIGHT_PERFECT_MURDERS, entry: 5 },
+      series: { key: Series.PERFECT_MURDERS_LIST, entry: 5 },
       lt: "work/126353",
     },
     suspect: {
@@ -905,9 +953,18 @@ const Book = {
     theAbcMurders: {
       title: "The A.B.C. Murders",
       authorKey: Person.AGATHA_CHRISTIE,
-      // series: { key: Series.HERCULE_POIROT, entry: 12 },
-      series: { key: Series.EIGHT_PERFECT_MURDERS, entry: 3 },
+      series: [
+        { key: Series.HERCULE_POIROT, entry: 12 },
+        { key: Series.PERFECT_MURDERS_LIST, entry: 3 },
+      ],
       lt: "work/30637",
+    },
+    theAx: {
+      title: "The Ax",
+      authorKey: Person.DONALD_E_WESTLAKE,
+      series: { key: Series.PETER_SWANSON_SUGGESTS, entry: 3 },
+      gr: "book/show/176811.The_Ax",
+      lt: "work/177297",
     },
     theBlackEcho: {
       title: "The Black Echo",
@@ -1011,7 +1068,7 @@ const Book = {
     theDrowner: {
       title: "The Drowner",
       authorKey: Person.JOHN_D_MACDONALD,
-      series: { key: Series.EIGHT_PERFECT_MURDERS, entry: 6 },
+      series: { key: Series.PERFECT_MURDERS_LIST, entry: 6 },
       lt: "work/842541",
     },
     theDry: {
@@ -1268,7 +1325,7 @@ const Book = {
     theRedHouseMystery: {
       title: "The Red House Mystery",
       authorKey: Person.AA_MILNE,
-      series: { key: Series.EIGHT_PERFECT_MURDERS, entry: 1 },
+      series: { key: Series.PERFECT_MURDERS_LIST, entry: 1 },
       lt: "work/247700",
     },
     theRembrandtAffair: {
@@ -1294,7 +1351,7 @@ const Book = {
     theSecretHistory: {
       title: "The Secret History",
       authorKey: Person.DONNA_TARTT,
-      series: { key: Series.EIGHT_PERFECT_MURDERS, entry: 8 },
+      series: { key: Series.PERFECT_MURDERS_LIST, entry: 8 },
       lt: "work/7221",
     },
     theShadowTracer: {
@@ -1447,6 +1504,13 @@ const Book = {
       meeting: "2016.05.23",
       dcl: "1283492114",
     },
+    vertigo: {
+      title: "Vertigo",
+      authorKey: Person.BOILEAU_NARCEJAC,
+      series: { key: Series.PETER_SWANSON_SUGGESTS, entry: 1 },
+      gr: "book/show/141328.Vertigo",
+      lt: "work/397208",
+    },
     victims: {
       title: "Victims",
       authorKey: Person.JONATHAN_KELLERMAN,
@@ -1493,6 +1557,17 @@ const Book = {
       series: { key: Series.LUCAS_DAVENPORT, entry: 19 },
       meeting: "2009.12.28",
       dcl: "902064114",
+    },
+    you: {
+      title: "You",
+      authorKey: Person.CAROLINE_KEPNES,
+      series: [
+        { key: Series.YOU, entry: 1 },
+        { key: Series.PETER_SWANSON_SUGGESTS, entry: 4 },
+      ],
+      dcl: "1228707114",
+      gr: "book/show/36430011-you",
+      lt: "work/14851657",
     },
   },
 };

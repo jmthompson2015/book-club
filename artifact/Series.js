@@ -1,5 +1,6 @@
 const Series = {
   AARON_FALK: "aaronFalk",
+  A_FATAL_INVERSION: "aFatalInversion",
   ALEX_DELAWARE: "alexDelaware",
   AMOS_DECKER: "amosDecker",
   ANDY_CARPENTER: "andyCarpenter",
@@ -15,7 +16,6 @@ const Series = {
   DEXTER: "dexter",
   DISMAS_HARDY: "dismasHardy",
   DR_ALAN_GREGORY: "drAlanGregory",
-  EIGHT_PERFECT_MURDERS: "eightPerfectMurders",
   ELLERY_QUEEN: "elleryQueen",
   ELVIS_COLE: "elvisCole",
   EVAN_SMOAK: "evanSmoak",
@@ -46,6 +46,8 @@ const Series = {
   MILLENNIUM: "millennium",
   MYRON_BOLITAR: "myronBolitar",
   ODD_THOMAS: "oddThomas",
+  PERFECT_MURDERS_LIST: "perfectMurdersList",
+  PETER_SWANSON_SUGGESTS: "peterSwansonSuggests",
   RENEE_BALLARD: "reneeBallard",
   RIZZOLI_AND_ISLES: "rizzoliAndIsles",
   RODERICK_ALLEYN: "roderickAlleyn",
@@ -60,12 +62,17 @@ const Series = {
   VIRGIL_FLOWERS: "virgilFlowers",
   WILL_ROBIE: "willRobie",
   WINE_LOVERS_MYSTERIES: "wineLoversMysteries",
+  YOU: "you",
 
   properties: {
     aaronFalk: {
       title: "Aaron Falk",
       lt: "series/Aaron+Falk",
       key: "aaronFalk",
+    },
+    aFatalInversion: {
+      title: "A Fatal Inversion",
+      key: "aFatalInversion",
     },
     alexDelaware: {
       title: "Alex Delaware",
@@ -141,11 +148,6 @@ const Series = {
       title: "Dr. Alan Gregory",
       lt: "series/Dr.+Alan+Gregory",
       key: "drAlanGregory",
-    },
-    eightPerfectMurders: {
-      title: "Eight Perfect Murders",
-      lt: "work/23575042",
-      key: "eightPerfectMurders",
     },
     elleryQueen: {
       title: "Ellery Queen",
@@ -281,6 +283,16 @@ const Series = {
       lt: "series/Odd+Thomas",
       key: "oddThomas",
     },
+    perfectMurdersList: {
+      title: "Perfect Murders List",
+      authorKey: undefined,
+      key: "perfectMurdersList",
+    },
+    peterSwansonSuggests: {
+      title: "Peter Swanson Suggests",
+      authorKey: undefined,
+      key: "peterSwansonSuggests",
+    },
     reneeBallard: {
       title: "Renée Ballard",
       lt: "series/Renée+Ballard",
@@ -350,6 +362,11 @@ const Series = {
       title: "Wine Lovers Mysteries",
       lt: "series/Wine+Lovers+Mysteries",
       key: "wineLoversMysteries",
+    },
+    you: {
+      title: "You",
+      lt: "nseries/19732",
+      key: "you",
     },
   },
 };
