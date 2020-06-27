@@ -14,7 +14,7 @@ const TABLE_CLASS = "wikitable sortable";
 
 const createRow = (book) => {
   const value1 = Formatter.createTVSeriesText(book);
-  const value2 = book ? Formatter.createPersonText(book.authorKey) : "";
+  const value2 = book ? Formatter.createPersonText(book.authorKeys) : "";
   const value3 = book ? Formatter.createSeriesText(book.series) : "";
 
   const values = [value1, value2, value3];

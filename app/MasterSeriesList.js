@@ -14,10 +14,10 @@ const HEADERS = ["Series", "Author"];
 const TABLE_CLASS = "wikitable sortable";
 
 const createRow = (series) => {
-  const authorKey = BookUtils.determineAuthor(series.key);
+  const authorKeys = BookUtils.determineAuthor(series.key);
 
   const value1 = Formatter.createBookText(series);
-  const value2 = Formatter.createPersonText(authorKey);
+  const value2 = Formatter.createPersonText(authorKeys);
 
   const values = [value1, value2];
   const cells = R.map(WikiUtils.cell, values);

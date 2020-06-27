@@ -16,7 +16,7 @@ const TABLE_CLASS = "wikitable sortable";
 
 const createRow = (tvSeries) => {
   const series = tvSeries ? Series.properties[tvSeries.seriesKey] : undefined;
-  const authorKey = BookUtils.determineAuthor(tvSeries.seriesKey);
+  const authorKeys = BookUtils.determineAuthor(tvSeries.seriesKey);
 
   const value1 = Formatter.createTVSeriesText(tvSeries);
   const value2 = tvSeries
@@ -24,7 +24,7 @@ const createRow = (tvSeries) => {
     : "";
   const value3 = tvSeries ? Formatter.createPersonText(tvSeries.castKeys) : "";
   const value4 = Formatter.createSeriesText(series);
-  const value5 = Formatter.createPersonText(authorKey);
+  const value5 = Formatter.createPersonText(authorKeys);
 
   const values = [value1, value2, value3, value4, value5];
   const cells = R.map(WikiUtils.cell, values);

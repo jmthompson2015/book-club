@@ -21,7 +21,7 @@ const createRow = (movie) => {
   const value3 = movie ? Formatter.createPersonText(movie.castKeys) : "";
   const value4 = book ? Formatter.createMeetingText1(book.meeting) : "";
   const value5 = Formatter.createBookText(book);
-  const value6 = book ? Formatter.createPersonText(book.authorKey) : "";
+  const value6 = book ? Formatter.createPersonText(book.authorKeys) : "";
 
   const values = [value1, value2, value3, value4, value5, value6];
   const cells = R.map(WikiUtils.cell, values);

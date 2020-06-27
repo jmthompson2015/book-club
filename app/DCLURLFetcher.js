@@ -20,7 +20,7 @@ class DCLURLFetcher {
   }
 
   createUrl() {
-    const author = Person.properties[this.book.authorKey];
+    const author = Person.properties[this.book.authorKeys];
     let searchString = `${this.book.title} by ${author.first} ${author.last}`;
 
     searchString = searchString.replace(/\u00EE/g, "i");

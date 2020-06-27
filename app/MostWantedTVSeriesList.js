@@ -17,12 +17,12 @@ const TABLE_CLASS = "wikitable sortable";
 
 const createRow1 = (tvSeries) => {
   const series = tvSeries ? Series.properties[tvSeries.seriesKey] : undefined;
-  const authorKey = BookUtils.determineAuthor(tvSeries.seriesKey);
+  const authorKeys = BookUtils.determineAuthor(tvSeries.seriesKey);
 
   const value1 = Formatter.createTVSeriesText(tvSeries);
   const value2 = tvSeries ? Formatter.createPersonText(tvSeries.castKeys) : "";
   const value3 = Formatter.createSeriesText(series);
-  const value4 = Formatter.createPersonText(authorKey);
+  const value4 = Formatter.createPersonText(authorKeys);
 
   const values = [value1, value2, value3, value4];
   const cells = R.map(WikiUtils.cell, values);

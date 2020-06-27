@@ -6,7 +6,7 @@ const BookUtilities = {};
 BookUtilities.authorForBook = (bookKey) => {
   const book = Book.properties[bookKey];
 
-  return book ? book.authorKey : null;
+  return book ? book.authorKeys : null;
 };
 
 BookUtilities.authorForSeries = (seriesKey) => {
@@ -14,13 +14,12 @@ BookUtilities.authorForSeries = (seriesKey) => {
   let answer;
 
   if (series) {
-    // if (Object.prototype.hasOwnProperty(series, "authorKey")) {
-    if ("authorKey" in series) {
-      answer = series.authorKey;
+    if ("authorKeys" in series) {
+      answer = series.authorKeys;
     } else {
       const books = Book.valuesBySeries(seriesKey);
 
-      answer = books.length > 0 ? books[0].authorKey : null;
+      answer = books.length > 0 ? books[0].authorKeys : null;
     }
   }
 

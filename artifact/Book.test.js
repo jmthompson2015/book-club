@@ -10,19 +10,19 @@ const Series = require("./Series.js");
 
 QUnit.module("Book");
 
-QUnit.test("authorKey", (assert) => {
+QUnit.test("authorKeys", (assert) => {
   // Run.
   const result = Book.values();
 
   // Verify.
   assert.ok(result);
   const forEachFunction = (book) => {
-    assert.ok(book.authorKey, `book.authorKey = ${book.authorKey}`);
-    if (!Array.isArray(book.authorKey)) {
-      const author = Person.properties[book.authorKey];
+    assert.ok(book.authorKeys, `book.authorKeys = ${book.authorKeys}`);
+    if (!Array.isArray(book.authorKeys)) {
+      const author = Person.properties[book.authorKeys];
       assert.ok(
         author,
-        `Missing author for book.title = ${book.title} book.authorKey = ${book.authorKey}`
+        `Missing author for book.title = ${book.title} book.authorKeys = ${book.authorKeys}`
       );
     }
   };

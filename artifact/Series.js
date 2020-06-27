@@ -291,12 +291,12 @@ const Series = {
     },
     perfectMurdersList: {
       title: "Perfect Murders List",
-      authorKey: undefined,
+      authorKeys: undefined,
       key: "perfectMurdersList",
     },
     peterSwansonSuggests: {
       title: "Peter Swanson Suggests",
-      authorKey: undefined,
+      authorKeys: undefined,
       key: "peterSwansonSuggests",
     },
     reneeBallard: {

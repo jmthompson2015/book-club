@@ -55,7 +55,7 @@ const createNavigationTable = (year) => {
 const createRow = (book) => {
   const value1 = book ? createDate(book.meeting) : "";
   const value2 = Formatter.createBookText(book);
-  const value3 = book ? Formatter.createPersonText(book.authorKey) : "";
+  const value3 = book ? Formatter.createPersonText(book.authorKeys) : "";
   const value4 = book ? Formatter.createSeriesText(book.series) : "";
   const value5 = book ? Formatter.createMeetingText2(book.meeting) : "";
 
