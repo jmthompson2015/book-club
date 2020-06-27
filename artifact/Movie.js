@@ -35,7 +35,7 @@ const Movie = {
     deathtrap: {
       title: "Deathtrap (1982)",
       directorKeys: Person.SIDNEY_LUMET,
-      writerKey: Person.IRA_LEVIN,
+      writerKeys: Person.IRA_LEVIN,
       castKeys: [Person.MICHAEL_CAINE, Person.CHRISTOPHER_REEVE],
       bookKey: Book.DEATHTRAP,
       imdb: "title/tt0083806",
@@ -43,7 +43,7 @@ const Movie = {
     doubleIndemnity: {
       title: "Double Indemnity (1944)",
       directorKeys: Person.BILLY_WILDER,
-      writerKey: Person.RAYMOND_CHANDLER,
+      writerKeys: Person.RAYMOND_CHANDLER,
       castKeys: [
         Person.FRED_MACMURRAY,
         Person.BARBARA_STANWYCK,
@@ -54,7 +54,7 @@ const Movie = {
     },
     goneGirl: {
       title: "Gone Girl (2014)",
-      writerKey: Person.GILLIAN_FLYNN,
+      writerKeys: Person.GILLIAN_FLYNN,
       castKeys: [Person.BEN_AFFLECK, Person.ROSAMUND_PIKE],
       bookKey: Book.GONE_GIRL,
       imdb: "title/tt2267998",
@@ -74,7 +74,7 @@ const Movie = {
     knivesOut: {
       title: "Knives Out (2019)",
       directorKeys: Person.RIAN_JOHNSON,
-      writerKey: Person.RIAN_JOHNSON,
+      writerKeys: Person.RIAN_JOHNSON,
       castKeys: [Person.DANIEL_CRAIG, Person.CHRIS_EVANS],
       imdb: "title/tt8946378",
     },
@@ -102,7 +102,7 @@ const Movie = {
     stillLife: {
       title: "Still Life (TV 2013)",
       directorKeys: Person.PETER_MOSS,
-      writerKey: Person.LOUISE_PENNY,
+      writerKeys: Person.LOUISE_PENNY,
       castKeys: [Person.NATHANIEL_PARKER],
       bookKey: Book.STILL_LIFE,
       imdb: "title/tt2225780",
@@ -110,7 +110,7 @@ const Movie = {
     strangersOnATrain: {
       title: "Strangers on a Train (1951)",
       directorKeys: Person.ALFRED_HITCHCOCK,
-      writerKey: Person.RAYMOND_CHANDLER,
+      writerKeys: Person.RAYMOND_CHANDLER,
       castKeys: [Person.FARLEY_GRANGER, Person.ROBERT_WALKER],
       bookKey: Book.STRANGERS_ON_A_TRAIN,
       imdb: "title/tt0044079",
@@ -124,7 +124,7 @@ const Movie = {
     theDevilYouKnow: {
       title: "The Devil You Know (2013)",
       directorKeys: Person.JAMES_OAKLEY,
-      writerKey: Person.ALEX_MICHAELIDES,
+      writerKeys: Person.ALEX_MICHAELIDES,
       castKeys: [Person.ROSAMUND_PIKE, Person.LENA_OLIN],
       imdb: "title/tt0463960",
     },

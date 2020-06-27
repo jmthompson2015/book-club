@@ -65,15 +65,15 @@ QUnit.test("directorKeys", (assert) => {
   R.forEach(forEachFunction, result);
 });
 
-QUnit.test("writerKey", (assert) => {
+QUnit.test("writerKeys", (assert) => {
   // Run.
   const result = Movie.values();
 
   // Verify.
   assert.ok(result);
   const forEachFunction = (movie) => {
-    if (Object.prototype.hasOwnProperty.call(movie, "writerKey")) {
-      const person = Person.properties[movie.writerKey];
+    if (Object.prototype.hasOwnProperty.call(movie, "writerKeys")) {
+      const person = Person.properties[movie.writerKeys];
       assert.ok(
         person,
         `Missing book for movie.title = ${movie.title} movie.bookKey = ${movie.bookKey}`

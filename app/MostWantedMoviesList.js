@@ -32,7 +32,7 @@ const createRow1 = (movie) => {
 const createRow2 = (movie) => {
   const value1 = Formatter.createMovieText(movie);
   const value2 = movie ? Formatter.createPersonText(movie.directorKeys) : "";
-  const value3 = movie ? Formatter.createPersonText(movie.writerKey) : "";
+  const value3 = movie ? Formatter.createPersonText(movie.writerKeys) : "";
   const value4 = movie ? Formatter.createPersonText(movie.castKeys) : "";
 
   const values = [value1, value2, value3, value4];

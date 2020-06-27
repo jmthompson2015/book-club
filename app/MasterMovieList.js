@@ -17,7 +17,7 @@ const createRow = (movie) => {
   const book = movie ? Book.properties[movie.bookKey] : undefined;
 
   const value1 = Formatter.createMovieText(movie);
-  const value2 = movie ? Formatter.createPersonText(movie.writerKey) : "";
+  const value2 = movie ? Formatter.createPersonText(movie.writerKeys) : "";
   const value3 = movie ? Formatter.createPersonText(movie.castKeys) : "";
   const value4 = book ? Formatter.createMeetingText1(book.meeting) : "";
   const value5 = Formatter.createBookText(book);
