@@ -47,18 +47,18 @@ QUnit.test("castKeys", (assert) => {
   R.forEach(forEachFunction, result);
 });
 
-QUnit.test("directorKey", (assert) => {
+QUnit.test("directorKeys", (assert) => {
   // Run.
   const result = Movie.values();
 
   // Verify.
   assert.ok(result);
   const forEachFunction = (movie) => {
-    if (Object.prototype.hasOwnProperty.call(movie, "directorKey")) {
-      const person = Person.properties[movie.directorKey];
+    if (Object.prototype.hasOwnProperty.call(movie, "directorKeys")) {
+      const person = Person.properties[movie.directorKeys];
       assert.ok(
         person,
-        `Missing director for movie.title = ${movie.title} movie.directorKey = ${movie.directorKey}`
+        `Missing director for movie.title = ${movie.title} movie.directorKeys = ${movie.directorKeys}`
       );
     }
   };

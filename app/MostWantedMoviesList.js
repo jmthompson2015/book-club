@@ -31,7 +31,7 @@ const createRow1 = (movie) => {
 
 const createRow2 = (movie) => {
   const value1 = Formatter.createMovieText(movie);
-  const value2 = movie ? Formatter.createPersonText(movie.directorKey) : "";
+  const value2 = movie ? Formatter.createPersonText(movie.directorKeys) : "";
   const value3 = movie ? Formatter.createPersonText(movie.writerKey) : "";
   const value4 = movie ? Formatter.createPersonText(movie.castKeys) : "";
 
