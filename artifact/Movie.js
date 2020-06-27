@@ -2,6 +2,7 @@ const R = require("../node_modules/ramda/dist/ramda.js");
 
 const Book = require("./Book.js");
 const Person = require("./Person.js");
+const Series = require("./Series.js");
 
 const Movie = {
   A_SIMPLE_PLAN: "aSimplePlan",
@@ -63,12 +64,14 @@ const Movie = {
       title: "Jack Reacher (2012)",
       castKeys: [Person.TOM_CRUISE, Person.ROSAMUND_PIKE],
       bookKey: Book.ONE_SHOT,
+      series: { key: Series.JACK_REACHER, entry: 1 },
       imdb: "title/tt0790724",
     },
     jackReacherNeverGoBack: {
       title: "Jack Reacher: Never Go Back (2016)",
       castKeys: [Person.TOM_CRUISE, Person.COBIE_SMULDERS],
       bookKey: Book.NEVER_GO_BACK,
+      series: { key: Series.JACK_REACHER, entry: 2 },
       imdb: "title/tt3393786",
     },
     knivesOut: {
