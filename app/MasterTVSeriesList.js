@@ -15,8 +15,8 @@ const HEADERS = ["TV Series", "Creator", "Cast", "Book Series", "Author"];
 const TABLE_CLASS = "wikitable sortable";
 
 const createRow = (tvSeries) => {
-  const series = tvSeries ? Series.properties[tvSeries.seriesKey] : undefined;
-  const authorKeys = BookUtils.determineAuthor(tvSeries.seriesKey);
+  const series = tvSeries ? Series.properties[tvSeries.seriesKeys] : undefined;
+  const authorKeys = BookUtils.determineAuthor(tvSeries.seriesKeys);
 
   const value1 = Formatter.createTVSeriesText(tvSeries);
   const value2 = tvSeries
