@@ -111,7 +111,7 @@ QUnit.test("TVSeries.keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result.length, 15);
+  assert.equal(result.length, 24);
   assert.equal(R.head(result), TVSeries.A_FATAL_INVERSION);
   assert.equal(R.last(result), TVSeries.YOU);
 });

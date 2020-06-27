@@ -4,6 +4,7 @@ const Series = {
   ALEX_DELAWARE: "alexDelaware",
   AMOS_DECKER: "amosDecker",
   ANDY_CARPENTER: "andyCarpenter",
+  BROADCHURCH: "broadchurch",
   CAMINO_ISLAND: "caminoIsland",
   CAT_KINSELLA: "catKinsella",
   CHIEF_INSPECTOR_ARMAND_GAMACHE: "chiefInspectorArmandGamache",
@@ -88,6 +89,11 @@ const Series = {
       title: "Andy Carpenter",
       lt: "series/Andy+Carpenter",
       key: "andyCarpenter",
+    },
+    broadchurch: {
+      title: "Broadchurch",
+      lt: "nseries/45966/Broadchurch",
+      key: "broadchurch",
     },
     caminoIsland: {
       title: "Camino Island",

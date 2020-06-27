@@ -19,6 +19,7 @@ const Movie = {
   THE_AX: "theAx",
   THE_DEVIL_YOU_KNOW: "theDevilYouKnow",
   THE_DRY: "theDry",
+  THE_IRISHMAN: "theIrishman",
   THE_LINCOLN_LAWYER: "theLincolnLawyer",
   THE_SILENT_PATIENT: "theSilentPatient",
   VERTIGO: "vertigo",
@@ -132,6 +133,15 @@ const Movie = {
       castKeys: [Person.ERIC_BANA, Person.GENEVIEVE_OREILLY],
       bookKey: Book.THE_DRY,
       imdb: "title/tt5144174",
+    },
+    theIrishman: {
+      title: "The Irishman (2019)",
+      castKeys: [Person.ROBERT_DE_NIRO, Person.AL_PACINO, Person.JOE_PESCI],
+      directorKey: Person.MARTIN_SCORSESE,
+      bookKey: Book.I_HEARD_YOU_PAINT_HOUSES,
+      imdb: "title/tt1302006",
+      wiki: "The_Irishman",
+      key: "theIrishman",
     },
     theLincolnLawyer: {
       title: "The Lincoln Lawyer (2011)",

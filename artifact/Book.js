@@ -21,6 +21,7 @@ const Book = {
   BLOOD_ON_SNOW: "bloodOnSnow",
   BLOOD_ON_THE_TRACKS: "bloodOnTheTracks",
   BRING_ME_BACK: "bringMeBack",
+  BROADCHURCH: "broadchurch",
   BROKEN: "broken",
   CAMINO_WINDS: "caminoWinds",
   CAUGHT: "caught",
@@ -63,6 +64,7 @@ const Book = {
   HOME: "home",
   ICE_COLD: "iceCold",
   ID_KNOW_YOU_ANYWHERE: "idKnowYouAnywhere",
+  I_HEARD_YOU_PAINT_HOUSES: "iHeardYouPaintHouses",
   I_KNOW_A_SECRET: "iKnowASecret",
   IN_A_DARK_DARK_WOOD: "inADarkDarkWood",
   INK_AND_BONE: "inkAndBone",
@@ -320,6 +322,13 @@ const Book = {
       dcl: "1446735114",
       lt: "work/20629560",
       meeting: "2019.02.25",
+    },
+    broadchurch: {
+      title: "Broadchurch",
+      authorKey: [Person.ERIN_KELLY, Person.CHRIS_CHIBNALL],
+      series: { key: Series.BROADCHURCH, entry: 1 },
+      gr: "book/show/19561890-broadchurch",
+      lt: "work/14809117",
     },
     broken: {
       title: "Broken",
@@ -611,6 +620,12 @@ const Book = {
       authorKey: Person.LAURA_LIPPMAN,
       meeting: "2012.01.23",
       dcl: "959899114",
+    },
+    iHeardYouPaintHouses: {
+      title: "I Heard You Paint Houses",
+      authorKey: Person.CHARLES_BRANDT,
+      gr: "book/show/934378.I_Heard_You_Paint_Houses",
+      lt: "work/154023",
     },
     iKnowASecret: {
       title: "I Know a Secret",

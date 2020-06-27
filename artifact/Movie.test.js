@@ -111,7 +111,7 @@ QUnit.test("Movie.keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result.length, 18);
+  assert.equal(result.length, 19);
   assert.equal(R.head(result), Movie.A_SIMPLE_PLAN);
   assert.equal(R.last(result), Movie.VERTIGO);
 });
