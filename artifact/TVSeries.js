@@ -2,6 +2,7 @@ const R = require("../node_modules/ramda/dist/ramda.js");
 
 const Person = require("./Person.js");
 const Series = require("./Series.js");
+const SeriesEntry = require("./SeriesEntry.js");
 
 const TVSeries = {
   A_FATAL_INVERSION: "aFatalInversion",
@@ -32,14 +33,14 @@ const TVSeries = {
   properties: {
     aFatalInversion: {
       title: "A Fatal Inversion (1992)",
-      series: [{ key: Series.A_FATAL_INVERSION }],
+      series: [SeriesEntry.create(Series.A_FATAL_INVERSION)],
       imdb: "title/tt0102126",
       key: "aFatalInversion",
     },
     bosch: {
       title: "Bosch (2014-?)",
       castKeys: [Person.TITUS_WELLIVER, Person.JAMIE_HECTOR],
-      series: [{ key: Series.HARRY_BOSCH }],
+      series: [SeriesEntry.create(Series.HARRY_BOSCH)],
       imdb: "title/tt3502248",
       key: "bosch",
     },
@@ -51,7 +52,7 @@ const TVSeries = {
         Person.JODIE_WHITTAKER,
       ],
       creatorKeys: [Person.CHRIS_CHIBNALL],
-      series: [{ key: Series.BROADCHURCH }],
+      series: [SeriesEntry.create(Series.BROADCHURCH)],
       dcl: "1210369114",
       imdb: "title/tt2249364",
       wiki: "Broadchurch",
@@ -60,14 +61,14 @@ const TVSeries = {
     defendingJacob: {
       title: "Defending Jacob (2020)",
       castKeys: [Person.CHRIS_EVANS, Person.MICHELLE_DOCKERY],
-      series: [{ key: Series.DEFENDING_JACOB }],
+      series: [SeriesEntry.create(Series.DEFENDING_JACOB)],
       imdb: "title/tt2304589",
       key: "defendingJacob",
     },
     dexter: {
       title: "Dexter (2006-2013)",
       castKeys: [Person.MICHAEL_C_HALL, Person.JENNIFER_CARPENTER],
-      series: [{ key: Series.DEXTER }],
+      series: [SeriesEntry.create(Series.DEXTER)],
       imdb: "title/tt0773262",
       key: "dexter",
     },
@@ -95,7 +96,7 @@ const TVSeries = {
       title: "Malice Aforethought (1979)",
       castKeys: [Person.HYWEL_BENNETT],
       creatorKeys: [Person.CYRIL_COKE],
-      series: [{ key: Series.MALICE_AFORETHOUGHT }],
+      series: [SeriesEntry.create(Series.MALICE_AFORETHOUGHT)],
       imdb: "title/tt0162096",
       key: "maliceAforethought",
     },
@@ -110,7 +111,7 @@ const TVSeries = {
     midsomerMurders: {
       title: "Midsomer Murders (1997-?)",
       castKeys: [Person.JOHN_NETTLES, Person.NEIL_DUDGEON],
-      series: [{ key: Series.CHIEF_INSPECTOR_BARNABY_MYSTERIES }],
+      series: [SeriesEntry.create(Series.CHIEF_INSPECTOR_BARNABY_MYSTERIES)],
       imdb: "title/tt0118401",
       key: "midsomerMurders",
     },
@@ -143,7 +144,7 @@ const TVSeries = {
     poirot: {
       title: "Poirot (1989-2013)",
       castKeys: [Person.DAVID_SUCHET, Person.HUGH_FRASER],
-      series: [{ key: Series.HERCULE_POIROT }],
+      series: [SeriesEntry.create(Series.HERCULE_POIROT)],
       imdb: "title/tt0094525",
       key: "poirot",
     },
@@ -157,7 +158,7 @@ const TVSeries = {
     sharpObjects: {
       title: "Sharp Objects (2018)",
       castKeys: [Person.AMY_ADAMS, Person.PATRICIA_CLARKSON],
-      series: [{ key: Series.SHARP_OBJECTS }],
+      series: [SeriesEntry.create(Series.SHARP_OBJECTS)],
       imdb: "title/tt2649356",
       key: "sharpObjects",
     },
@@ -168,7 +169,7 @@ const TVSeries = {
         Person.DAVID_BURKE,
         Person.EDWARD_HARDWICKE,
       ],
-      series: [{ key: Series.SHERLOCK_HOLMES }],
+      series: [SeriesEntry.create(Series.SHERLOCK_HOLMES)],
       imdb: "title/tt0086661",
       key: "theAdventuresOfSherlockHolmes",
     },
@@ -202,7 +203,7 @@ const TVSeries = {
       title: "You (2018-?)",
       castKeys: [Person.PENN_BADGLEY],
       creatorKeys: [Person.GREG_BERLANTI],
-      series: [{ key: Series.YOU }],
+      series: [SeriesEntry.create(Series.YOU)],
       imdb: "title/tt7335184",
       key: "you",
     },
