@@ -3,7 +3,6 @@ const R = require("../node_modules/ramda/dist/ramda.js");
 const FileWriter = require("../util/FileWriter.js");
 const WikiUtils = require("../util/WikiUtilities.js");
 
-const Series = require("../artifact/Series.js");
 const TVSeries = require("../artifact/TVSeries.js");
 
 const BookUtils = require("../model/BookUtilities.js");
@@ -16,12 +15,13 @@ const HEADERS2 = ["TV Series", "Creator", "Cast"];
 const TABLE_CLASS = "wikitable sortable";
 
 const createRow1 = (tvSeries) => {
-  const series = tvSeries ? Series.properties[tvSeries.seriesKeys] : undefined;
-  const authorKeys = BookUtils.determineAuthor(tvSeries.seriesKeys);
+  const authorKeys = tvSeries
+    ? BookUtils.authorForSeriesArray(tvSeries.series)
+    : undefined;
 
   const value1 = Formatter.createTVSeriesText(tvSeries);
   const value2 = tvSeries ? Formatter.createPersonText(tvSeries.castKeys) : "";
-  const value3 = Formatter.createSeriesText(series);
+  const value3 = tvSeries ? Formatter.createSeriesText(tvSeries.series) : "";
   const value4 = Formatter.createPersonText(authorKeys);
 
   const values = [value1, value2, value3, value4];

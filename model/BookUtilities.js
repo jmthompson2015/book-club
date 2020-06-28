@@ -1,3 +1,5 @@
+const R = require("../node_modules/ramda/dist/ramda.js");
+
 const Book = require("../artifact/Book.js");
 const Series = require("../artifact/Series.js");
 
@@ -29,6 +31,22 @@ BookUtilities.authorForSeries = (seriesKey) => {
 BookUtilities.determineAuthor = (seriesOrBookKey) =>
   BookUtilities.authorForSeries(seriesOrBookKey) ||
   BookUtilities.authorForBook(seriesOrBookKey);
+
+BookUtilities.authorForSeriesArray = (series) => {
+  let answer;
+
+  if (series) {
+    const reduceFunction = (accum, seriesObj) => {
+      const authorKey = BookUtilities.determineAuthor(seriesObj.key);
+
+      return authorKey || accum;
+    };
+
+    answer = R.reduce(reduceFunction, [], series);
+  }
+
+  return answer;
+};
 
 Object.freeze(BookUtilities);
 

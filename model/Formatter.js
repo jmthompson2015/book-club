@@ -46,11 +46,12 @@ const createSeriesLabel = (seriesObj) => {
   let answer = "";
 
   if (seriesObj) {
+    const series = Series.properties[seriesObj.key];
+
     if (seriesObj.entry) {
-      const series = Series.properties[seriesObj.key];
       answer = `${series.title} #${seriesObj.entry}`;
     } else {
-      answer = `${seriesObj.title}`;
+      answer = `${series.title}`;
     }
   }
 
