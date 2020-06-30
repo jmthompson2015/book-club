@@ -27,7 +27,7 @@ const MostReadAuthorsList = {
     );
     keys.sort(Comparator.compareByCount(keyToCount));
     const mapFunction = (key) => {
-      const value1 = Formatter.createPersonText(key);
+      const value1 = Formatter.createPersonText([key]);
       const value2 = keyToCount[key];
       const cell1 = WikiUtils.cell(value1);
       const cell2 = WikiUtils.cell(value2, "text-align:right;");

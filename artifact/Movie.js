@@ -29,23 +29,23 @@ const Movie = {
   properties: {
     aSimplePlan: {
       title: "A Simple Plan (1998)",
-      directorKeys: Person.SAM_RAIMI,
+      directorKeys: [Person.SAM_RAIMI],
       castKeys: [Person.BILL_PAXTON, Person.BILLY_BOB_THORNTON],
       bookKey: Book.A_SIMPLE_PLAN,
       imdb: "title/tt0120324",
     },
     deathtrap: {
       title: "Deathtrap (1982)",
-      directorKeys: Person.SIDNEY_LUMET,
-      writerKeys: Person.IRA_LEVIN,
+      directorKeys: [Person.SIDNEY_LUMET],
+      writerKeys: [Person.IRA_LEVIN],
       castKeys: [Person.MICHAEL_CAINE, Person.CHRISTOPHER_REEVE],
       bookKey: Book.DEATHTRAP,
       imdb: "title/tt0083806",
     },
     doubleIndemnity: {
       title: "Double Indemnity (1944)",
-      directorKeys: Person.BILLY_WILDER,
-      writerKeys: Person.RAYMOND_CHANDLER,
+      directorKeys: [Person.BILLY_WILDER],
+      writerKeys: [Person.RAYMOND_CHANDLER],
       castKeys: [
         Person.FRED_MACMURRAY,
         Person.BARBARA_STANWYCK,
@@ -56,7 +56,7 @@ const Movie = {
     },
     goneGirl: {
       title: "Gone Girl (2014)",
-      writerKeys: Person.GILLIAN_FLYNN,
+      writerKeys: [Person.GILLIAN_FLYNN],
       castKeys: [Person.BEN_AFFLECK, Person.ROSAMUND_PIKE],
       bookKey: Book.GONE_GIRL,
       imdb: "title/tt2267998",
@@ -77,8 +77,8 @@ const Movie = {
     },
     knivesOut: {
       title: "Knives Out (2019)",
-      directorKeys: Person.RIAN_JOHNSON,
-      writerKeys: Person.RIAN_JOHNSON,
+      directorKeys: [Person.RIAN_JOHNSON],
+      writerKeys: [Person.RIAN_JOHNSON],
       castKeys: [Person.DANIEL_CRAIG, Person.CHRIS_EVANS],
       imdb: "title/tt8946378",
     },
@@ -95,7 +95,7 @@ const Movie = {
     },
     pointOfNoReturn: {
       title: "Point of No Return (1993)",
-      directorKeys: Person.LUC_BESSON,
+      directorKeys: [Person.LUC_BESSON],
       castKeys: [
         Person.BRIDGET_FONDA,
         Person.GABRIEL_BYRNE,
@@ -105,16 +105,16 @@ const Movie = {
     },
     stillLife: {
       title: "Still Life (TV 2013)",
-      directorKeys: Person.PETER_MOSS,
-      writerKeys: Person.LOUISE_PENNY,
+      directorKeys: [Person.PETER_MOSS],
+      writerKeys: [Person.LOUISE_PENNY],
       castKeys: [Person.NATHANIEL_PARKER],
       bookKey: Book.STILL_LIFE,
       imdb: "title/tt2225780",
     },
     strangersOnATrain: {
       title: "Strangers on a Train (1951)",
-      directorKeys: Person.ALFRED_HITCHCOCK,
-      writerKeys: Person.RAYMOND_CHANDLER,
+      directorKeys: [Person.ALFRED_HITCHCOCK],
+      writerKeys: [Person.RAYMOND_CHANDLER],
       castKeys: [Person.FARLEY_GRANGER, Person.ROBERT_WALKER],
       bookKey: Book.STRANGERS_ON_A_TRAIN,
       imdb: "title/tt0044079",
@@ -127,8 +127,8 @@ const Movie = {
     },
     theDevilYouKnow: {
       title: "The Devil You Know (2013)",
-      directorKeys: Person.JAMES_OAKLEY,
-      writerKeys: Person.ALEX_MICHAELIDES,
+      directorKeys: [Person.JAMES_OAKLEY],
+      writerKeys: [Person.ALEX_MICHAELIDES],
       castKeys: [Person.ROSAMUND_PIKE, Person.LENA_OLIN],
       imdb: "title/tt0463960",
     },
@@ -141,7 +141,7 @@ const Movie = {
     theIrishman: {
       title: "The Irishman (2019)",
       castKeys: [Person.ROBERT_DE_NIRO, Person.AL_PACINO, Person.JOE_PESCI],
-      directorKeys: Person.MARTIN_SCORSESE,
+      directorKeys: [Person.MARTIN_SCORSESE],
       bookKey: Book.I_HEARD_YOU_PAINT_HOUSES,
       imdb: "title/tt1302006",
       wiki: "The_Irishman",
@@ -160,7 +160,7 @@ const Movie = {
     },
     vertigo: {
       title: "Vertigo (1958)",
-      directorKeys: Person.ALFRED_HITCHCOCK,
+      directorKeys: [Person.ALFRED_HITCHCOCK],
       castKeys: [Person.JAMES_STEWART, Person.KIM_NOVAK],
       bookKey: Book.VERTIGO,
       imdb: "title/tt0052357",

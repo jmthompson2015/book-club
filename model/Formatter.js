@@ -138,37 +138,26 @@ Formatter.createPersonLabel = (person) => {
   return answer;
 };
 
-Formatter.createPersonText = (personObj) => {
+Formatter.createPersonText = (personArray) => {
   let answer = "";
 
-  if (personObj) {
-    if (Array.isArray(personObj)) {
-      const mapFunction = (personKey) => {
-        const myPerson = Person.properties[personKey];
-        const personLabel = Formatter.createPersonLabel(myPerson);
-        const linkedImages = Formatter.linkedImages(myPerson);
-
-        return labelLinkedImagesTable(personLabel, linkedImages);
-      };
-
-      const personLinks = R.map(mapFunction, personObj);
-      answer = personLinks.join(" ");
-    } else {
-      const person =
-        typeof personObj === "string"
-          ? Person.properties[personObj]
-          : personObj;
+  if (personArray) {
+    const mapFunction = (personKey) => {
+      const person = Person.properties[personKey];
 
       if (person) {
-        const personPrefix = createPersonPrefix(person);
         const personLabel = Formatter.createPersonLabel(person);
         const linkedImages = Formatter.linkedImages(person);
-        const table = labelLinkedImagesTable(personLabel, linkedImages);
-        answer = `${personPrefix} ${table}`;
-      } else {
-        throw new Error(`Missing person for personObj = :${personObj}:`);
+
+        return labelLinkedImagesTable(personLabel, linkedImages);
       }
-    }
+      throw new Error(`Missing person for key: ${personKey}`);
+    };
+
+    const personLinks = R.map(mapFunction, personArray);
+    const person = Person.properties[personArray[0]];
+    const personPrefix = createPersonPrefix(person);
+    answer = `${personPrefix} ${personLinks.join(" ")}`;
   }
 
   return answer;
@@ -180,10 +169,16 @@ Formatter.createSeriesText = (seriesArray) => {
   if (seriesArray) {
     const mapFunction = (seriesEntry) => {
       const series = Series.properties[seriesEntry.key];
-      const seriesLabel = createSeriesLabel(seriesEntry);
-      const linkedImages = Formatter.linkedImages(series);
 
-      return labelLinkedImagesTable(seriesLabel, linkedImages);
+      if (series) {
+        const seriesLabel = createSeriesLabel(seriesEntry);
+        const linkedImages = Formatter.linkedImages(series);
+
+        return labelLinkedImagesTable(seriesLabel, linkedImages);
+      }
+      throw new Error(
+        `Missing series for seriesEntry: ${JSON.stringify(seriesEntry)}`
+      );
     };
 
     const seriesLinks = R.map(mapFunction, seriesArray);

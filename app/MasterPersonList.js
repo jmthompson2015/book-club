@@ -12,11 +12,9 @@ const OUTPUT_FILE = "MasterPersonList.txt";
 const HEADERS = ["Person"];
 const TABLE_CLASS = "wikitable sortable";
 
-const createRow = (person) => {
-  const value1 = Formatter.createPersonText(person);
-
-  const values = [value1];
-  const cells = R.map(WikiUtils.cell, values);
+const createRow = (personKey) => {
+  const value1 = Formatter.createPersonText([personKey]);
+  const cells = R.map(WikiUtils.cell, [value1]);
 
   return WikiUtils.row(cells);
 };
@@ -25,8 +23,7 @@ const MasterBookList = {
   report: () => {
     const personKeys = Person.keys();
     personKeys.sort(Comparator.comparePersonKey);
-    const persons = R.map((key) => Person.properties[key], personKeys);
-    const rows = R.map(createRow, persons);
+    const rows = R.map(createRow, personKeys);
 
     return WikiUtils.table(HEADERS, rows, TABLE_CLASS);
   },
