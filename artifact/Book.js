@@ -212,14 +212,14 @@ const Book = {
     _206Bones: {
       title: "206 Bones",
       authorKeys: Person.KATHY_REICHS,
-      series: SeriesEntry.create(Series.TEMPERANCE_BRENNAN, 12),
+      series: [SeriesEntry.create(Series.TEMPERANCE_BRENNAN, 12)],
       meeting: "2010.04.26",
       dcl: "911690114",
     },
     _61Hours: {
       title: "61 Hours",
       authorKeys: Person.LEE_CHILD,
-      series: SeriesEntry.create(Series.JACK_REACHER, 14),
+      series: [SeriesEntry.create(Series.JACK_REACHER, 14)],
       meeting: "2011.03.28",
       dcl: "946941114",
     },
@@ -232,21 +232,21 @@ const Book = {
     aFatalInversion: {
       title: "A Fatal Inversion",
       authorKeys: Person.BARBARA_VINE,
-      series: SeriesEntry.create(Series.PETER_SWANSON_SUGGESTS, 6),
+      series: [SeriesEntry.create(Series.PETER_SWANSON_SUGGESTS, 6)],
       gr: "book/show/420967.A_Fatal_Inversion",
       lt: "work/170886",
     },
     aHighlandChristmas: {
       title: "A Highland Christmas",
       authorKeys: Person.MC_BEATON,
-      series: SeriesEntry.create(Series.HAMISH_MACBETH, 16),
+      series: [SeriesEntry.create(Series.HAMISH_MACBETH, 16)],
       meeting: "2008.12.22",
       dcl: "1084060114",
     },
     aManLayDead: {
       title: "A Man Lay Dead",
       authorKeys: Person.NGAIO_MARSH,
-      series: SeriesEntry.create(Series.RODERICK_ALLEYN, 1),
+      series: [SeriesEntry.create(Series.RODERICK_ALLEYN, 1)],
       meeting: "2015.12.17",
       dcl: "1294793114",
     },
@@ -259,14 +259,14 @@ const Book = {
     aPlagueOfSecrets: {
       title: "A Plague of Secrets",
       authorKeys: Person.JOHN_LESCROART,
-      series: SeriesEntry.create(Series.DISMAS_HARDY, 11),
+      series: [SeriesEntry.create(Series.DISMAS_HARDY, 11)],
       meeting: "2010.02.22",
       dcl: "908384114",
     },
     aSimplePlan: {
       title: "A Simple Plan",
       authorKeys: Person.SCOTT_B_SMITH,
-      series: SeriesEntry.create(Series.PETER_SWANSON_SUGGESTS, 8),
+      series: [SeriesEntry.create(Series.PETER_SWANSON_SUGGESTS, 8)],
       dcl: "1514573114",
       gr: "book/show/21727.A_Simple_Plan",
       lt: "work/150141",
@@ -274,7 +274,7 @@ const Book = {
     aStudyInScarlet: {
       title: "A Study in Scarlet",
       authorKeys: Person.ARTHUR_CONAN_DOYLE,
-      series: SeriesEntry.create(Series.SHERLOCK_HOLMES, 1),
+      series: [SeriesEntry.create(Series.SHERLOCK_HOLMES, 1)],
       meeting: "2012.02.27",
       dcl: "1250653114",
     },
@@ -293,14 +293,14 @@ const Book = {
     aToastToMurder: {
       title: "A Toast to Murder",
       authorKeys: Person.MICHELE_SCOTT,
-      series: SeriesEntry.create(Series.WINE_LOVERS_MYSTERIES, 6),
+      series: [SeriesEntry.create(Series.WINE_LOVERS_MYSTERIES, 6)],
       meeting: "2010.07.26",
       lt: "work/9739948",
     },
     aWantedMan: {
       title: "A Wanted Man",
       authorKeys: Person.LEE_CHILD,
-      series: SeriesEntry.create(Series.JACK_REACHER, 17),
+      series: [SeriesEntry.create(Series.JACK_REACHER, 17)],
       meeting: "2014.03.24",
       dcl: "1054861114",
     },
@@ -313,7 +313,7 @@ const Book = {
     bloodOnTheTracks: {
       title: "Blood on the Tracks",
       authorKeys: Person.BARBARA_NICKLESS,
-      series: SeriesEntry.create(Series.SYDNEY_ROSE_PARNELL, 1),
+      series: [SeriesEntry.create(Series.SYDNEY_ROSE_PARNELL, 1)],
       dcl: "1359332114",
       lt: "work/18319544",
     },
@@ -327,21 +327,21 @@ const Book = {
     broadchurch: {
       title: "Broadchurch",
       authorKeys: [Person.ERIN_KELLY, Person.CHRIS_CHIBNALL],
-      series: SeriesEntry.create(Series.BROADCHURCH, 1),
+      series: [SeriesEntry.create(Series.BROADCHURCH, 1)],
       gr: "book/show/19561890-broadchurch",
       lt: "work/14809117",
     },
     broken: {
       title: "Broken",
       authorKeys: Person.KARIN_SLAUGHTER,
-      series: SeriesEntry.create(Series.GEORGIA, 2),
+      series: [SeriesEntry.create(Series.GEORGIA, 2)],
       meeting: "2011.10.24",
       dcl: "952803114",
     },
     caminoWinds: {
       title: "Camino Winds",
       authorKeys: Person.JOHN_GRISHAM,
-      series: SeriesEntry.create(Series.CAMINO_ISLAND, 2),
+      series: [SeriesEntry.create(Series.CAMINO_ISLAND, 2)],
       dcl: "1636922114",
       lt: "work/24158942",
       meeting: "2020.09.28",
@@ -355,7 +355,7 @@ const Book = {
     chasingDarkness: {
       title: "Chasing Darkness",
       authorKeys: Person.ROBERT_CRAIS,
-      series: SeriesEntry.create(Series.ELVIS_COLE, 12),
+      series: [SeriesEntry.create(Series.ELVIS_COLE, 12)],
       meeting: "2013.05.20",
       dcl: "861205114",
     },
@@ -368,14 +368,14 @@ const Book = {
     crimeAtChristmas: {
       title: "Crime at Christmas",
       authorKeys: Person.CHB_KITCHIN,
-      series: SeriesEntry.create(Series.MALCOLM_WARREN, 2),
+      series: [SeriesEntry.create(Series.MALCOLM_WARREN, 2)],
       lt: "work/997859",
       meeting: "2020.12.18",
     },
     crimeScene: {
       title: "Crime Scene",
       authorKeys: [Person.JONATHAN_KELLERMAN, Person.JESSE_KELLERMAN],
-      series: SeriesEntry.create(Series.CLAY_EDISON, 1),
+      series: [SeriesEntry.create(Series.CLAY_EDISON, 1)],
       meeting: "2018.05.21",
       dcl: "1407385114",
       lt: "work/18796542",
@@ -383,14 +383,14 @@ const Book = {
     darkHarbor: {
       title: "Dark Harbor",
       authorKeys: Person.STUART_WOODS,
-      series: SeriesEntry.create(Series.STONE_BARRINGTON, 12),
+      series: [SeriesEntry.create(Series.STONE_BARRINGTON, 12)],
       meeting: "2009.06.22",
       dcl: "741038114",
     },
     darklyDreamingDexter: {
       title: "Darkly Dreaming Dexter",
       authorKeys: Person.JEFF_LINDSAY,
-      series: SeriesEntry.create(Series.DEXTER, 1),
+      series: [SeriesEntry.create(Series.DEXTER, 1)],
       meeting: "2007.02.26",
       dcl: "656271114",
       lt: "work/93729",
@@ -398,7 +398,7 @@ const Book = {
     darkOfTheMoon: {
       title: "Dark of the Moon",
       authorKeys: Person.JOHN_SANDFORD,
-      series: SeriesEntry.create(Series.VIRGIL_FLOWERS, 1),
+      series: [SeriesEntry.create(Series.VIRGIL_FLOWERS, 1)],
       meeting: "2011.08.22",
       dcl: "825315114",
     },
@@ -422,14 +422,14 @@ const Book = {
     dearlyDevotedDexter: {
       title: "Dearly Devoted Dexter",
       authorKeys: Person.JEFF_LINDSAY,
-      series: SeriesEntry.create(Series.DEXTER, 2),
+      series: [SeriesEntry.create(Series.DEXTER, 2)],
       meeting: "2008.02.25",
       dcl: "700955114",
     },
     deathtrap: {
       title: "Deathtrap",
       authorKeys: Person.IRA_LEVIN,
-      series: SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 7),
+      series: [SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 7)],
       lt: "work/124068",
     },
     defendingJacob: {
@@ -441,34 +441,34 @@ const Book = {
     dexterByDesign: {
       title: "Dexter by Design",
       authorKeys: Person.JEFF_LINDSAY,
-      series: SeriesEntry.create(Series.DEXTER, 4),
+      series: [SeriesEntry.create(Series.DEXTER, 4)],
       meeting: "2011.04.25",
       dcl: "925270114",
     },
     dexterInTheDark: {
       title: "Dexter in the Dark",
       authorKeys: Person.JEFF_LINDSAY,
-      series: SeriesEntry.create(Series.DEXTER, 3),
+      series: [SeriesEntry.create(Series.DEXTER, 3)],
       dcl: "811845114",
       lt: "work/1715003",
     },
     dexterIsDead: {
       title: "Dexter is Dead",
       authorKeys: Person.JEFF_LINDSAY,
-      series: SeriesEntry.create(Series.DEXTER, 8),
+      series: [SeriesEntry.create(Series.DEXTER, 8)],
       lt: "work/15687387",
     },
     dexterIsDelicious: {
       title: "Dexter is Delicious",
       authorKeys: Person.JEFF_LINDSAY,
-      series: SeriesEntry.create(Series.DEXTER, 5),
+      series: [SeriesEntry.create(Series.DEXTER, 5)],
       meeting: "2012.05.29",
       dcl: "956551114",
     },
     dextersFinalCut: {
       title: "Dexter's Final Cut",
       authorKeys: Person.JEFF_LINDSAY,
-      series: SeriesEntry.create(Series.DEXTER, 7),
+      series: [SeriesEntry.create(Series.DEXTER, 7)],
       lt: "work/13629497",
     },
     dirtyBlonde: {
@@ -480,7 +480,7 @@ const Book = {
     divineJustice: {
       title: "Divine Justice",
       authorKeys: Person.DAVID_BALDACCI,
-      series: SeriesEntry.create(Series.THE_CAMEL_CLUB, 4),
+      series: [SeriesEntry.create(Series.THE_CAMEL_CLUB, 4)],
       lt: "work/5874884",
       wiki: "Divine_Justice_(novel)",
     },
@@ -493,13 +493,13 @@ const Book = {
     doubleDexter: {
       title: "Double Dexter",
       authorKeys: Person.JEFF_LINDSAY,
-      series: SeriesEntry.create(Series.DEXTER, 6),
+      series: [SeriesEntry.create(Series.DEXTER, 6)],
       lt: "work/10844880",
     },
     doubleIndemnity: {
       title: "Double Indemnity",
       authorKeys: Person.JAMES_M_CAIN,
-      series: SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 4),
+      series: [SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 4)],
       lt: "work/5222842",
     },
     eightPerfectMurders: {
@@ -519,7 +519,7 @@ const Book = {
     evilAtHeart: {
       title: "Evil at Heart",
       authorKeys: Person.CHELSEA_CAIN,
-      series: SeriesEntry.create(Series.GRETCHEN_LOWELL, 3),
+      series: [SeriesEntry.create(Series.GRETCHEN_LOWELL, 3)],
       lt: "work/8101893",
     },
     foolMeOnce: {
@@ -531,14 +531,14 @@ const Book = {
     forceOfNature2012: {
       title: "Force of Nature (2012)",
       authorKeys: Person.CJ_BOX,
-      series: SeriesEntry.create(Series.JOE_PICKETT, 12),
+      series: [SeriesEntry.create(Series.JOE_PICKETT, 12)],
       meeting: "2012.11.26",
       dcl: "1022393114",
     },
     forceOfNature2018: {
       title: "Force of Nature (2018)",
       authorKeys: Person.JANE_HARPER,
-      series: SeriesEntry.create(Series.AARON_FALK, 2),
+      series: [SeriesEntry.create(Series.AARON_FALK, 2)],
       dcl: "1430689114",
       lt: "work/19768930",
       meeting: "2020.01.27",
@@ -546,7 +546,7 @@ const Book = {
     ghostman: {
       title: "Ghostman",
       authorKeys: Person.ROGER_HOBBS,
-      series: SeriesEntry.create(Series.GHOSTMAN, 1),
+      series: [SeriesEntry.create(Series.GHOSTMAN, 1)],
       meeting: "2014.07.28",
       dcl: "1218653114",
     },
@@ -559,35 +559,35 @@ const Book = {
     heartsick: {
       title: "Heartsick",
       authorKeys: Person.CHELSEA_CAIN,
-      series: SeriesEntry.create(Series.GRETCHEN_LOWELL, 1),
+      series: [SeriesEntry.create(Series.GRETCHEN_LOWELL, 1)],
       meeting: "2008.05.26",
       dcl: "816231114",
     },
     heatLightning: {
       title: "Heat Lightning",
       authorKeys: Person.JOHN_SANDFORD,
-      series: SeriesEntry.create(Series.VIRGIL_FLOWERS, 2),
+      series: [SeriesEntry.create(Series.VIRGIL_FLOWERS, 2)],
       meeting: "2012.04.23",
       dcl: "868270114",
     },
     hellbent: {
       title: "Hellbent",
       authorKeys: Person.GREGG_HURWITZ,
-      series: SeriesEntry.create(Series.EVAN_SMOAK, 3),
+      series: [SeriesEntry.create(Series.EVAN_SMOAK, 3)],
       meeting: "2018.06.25",
       dcl: "1431233114",
     },
     hellsCorner: {
       title: "Hell's Corner",
       authorKeys: Person.DAVID_BALDACCI,
-      series: SeriesEntry.create(Series.THE_CAMEL_CLUB, 5),
+      series: [SeriesEntry.create(Series.THE_CAMEL_CLUB, 5)],
       lt: "work/9768778",
       wiki: "Hell%27s_Corner",
     },
     herculePoirotsChristmas: {
       title: "Hercule Poirot's Christmas",
       authorKeys: Person.AGATHA_CHRISTIE,
-      series: SeriesEntry.create(Series.HERCULE_POIROT, 19),
+      series: [SeriesEntry.create(Series.HERCULE_POIROT, 19)],
       meeting: "2010.12.27",
       dcl: "975256114",
     },
@@ -605,14 +605,14 @@ const Book = {
     home: {
       title: "Home",
       authorKeys: Person.HARLAN_COBEN,
-      series: SeriesEntry.create(Series.MYRON_BOLITAR, 11),
+      series: [SeriesEntry.create(Series.MYRON_BOLITAR, 11)],
       meeting: "2017.10.23",
       dcl: "1330605114",
     },
     iceCold: {
       title: "Ice Cold",
       authorKeys: Person.TESS_GERRITSEN,
-      series: SeriesEntry.create(Series.RIZZOLI_AND_ISLES, 8),
+      series: [SeriesEntry.create(Series.RIZZOLI_AND_ISLES, 8)],
       meeting: "2010.11.22",
       dcl: "1450069114",
     },
@@ -631,7 +631,7 @@ const Book = {
     iKnowASecret: {
       title: "I Know a Secret",
       authorKeys: Person.TESS_GERRITSEN,
-      series: SeriesEntry.create(Series.RIZZOLI_AND_ISLES, 12),
+      series: [SeriesEntry.create(Series.RIZZOLI_AND_ISLES, 12)],
       meeting: "2018.07.23",
       dcl: "1407387114",
     },
@@ -668,20 +668,20 @@ const Book = {
     killFee: {
       title: "Kill Fee",
       authorKeys: Person.OWEN_LAUKKANEN,
-      series: SeriesEntry.create(Series.STEVENS_AND_WINDERMERE, 3),
+      series: [SeriesEntry.create(Series.STEVENS_AND_WINDERMERE, 3)],
       meeting: "2015.04.27",
       dcl: "1180980114",
     },
     killYouTwice: {
       title: "Kill You Twice",
       authorKeys: Person.CHELSEA_CAIN,
-      series: SeriesEntry.create(Series.GRETCHEN_LOWELL, 5),
+      series: [SeriesEntry.create(Series.GRETCHEN_LOWELL, 5)],
       lt: "work/12244209",
     },
     lethalWhite: {
       title: "Lethal White",
       authorKeys: Person.ROBERT_GALBRAITH,
-      series: SeriesEntry.create(Series.CORMORAN_STRIKE, 4),
+      series: [SeriesEntry.create(Series.CORMORAN_STRIKE, 4)],
       dcl: "1493220114",
       lt: "work/17525753",
       meeting: "2019.10.28",
@@ -689,13 +689,13 @@ const Book = {
     letMeGo: {
       title: "Let Me Go",
       authorKeys: Person.CHELSEA_CAIN,
-      series: SeriesEntry.create(Series.GRETCHEN_LOWELL, 6),
+      series: [SeriesEntry.create(Series.GRETCHEN_LOWELL, 6)],
       lt: "work/13216528",
     },
     liarsLullaby: {
       title: "Liar's Lullaby",
       authorKeys: Person.MEG_GARDINER,
-      series: SeriesEntry.create(Series.JO_BECKETT, 3),
+      series: [SeriesEntry.create(Series.JO_BECKETT, 3)],
       meeting: "2011.06.27",
       dcl: "955448114",
       lt: "work/9209696",
@@ -709,7 +709,7 @@ const Book = {
     liveByNight: {
       title: "Live by Night",
       authorKeys: Person.DENNIS_LEHANE,
-      series: SeriesEntry.create(Series.JOE_COUGHLIN, 2),
+      series: [SeriesEntry.create(Series.JOE_COUGHLIN, 2)],
       meeting: "2014.06.23",
       dcl: "1060297114",
     },
@@ -722,7 +722,7 @@ const Book = {
     luckyJim: {
       title: "Lucky Jim",
       authorKeys: Person.KINGSLEY_AMIS,
-      series: SeriesEntry.create(Series.PETER_SWANSON_SUGGESTS, 7),
+      series: [SeriesEntry.create(Series.PETER_SWANSON_SUGGESTS, 7)],
       dcl: "1463493114",
       gr: "book/show/395182.Lucky_Jim",
       lt: "work/7166",
@@ -736,7 +736,7 @@ const Book = {
     makeMe: {
       title: "Make Me",
       authorKeys: Person.LEE_CHILD,
-      series: SeriesEntry.create(Series.JACK_REACHER, 20),
+      series: [SeriesEntry.create(Series.JACK_REACHER, 20)],
       meeting: "2016.06.27",
       dcl: "1311811114",
     },
@@ -749,13 +749,13 @@ const Book = {
     maliceAforethought: {
       title: "Malice Aforethought",
       authorKeys: Person.ANTHONY_BERKELEY_COX,
-      series: SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 2),
+      series: [SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 2)],
       lt: "work/247583",
     },
     markedForLife: {
       title: "Marked for Life",
       authorKeys: Person.EMELIE_SCHEPP,
-      series: SeriesEntry.create(Series.JANA_BERZELIUS, 1),
+      series: [SeriesEntry.create(Series.JANA_BERZELIUS, 1)],
       meeting: "2017.03.27",
       dcl: "1329705114",
       lt: "work/15863615",
@@ -775,28 +775,28 @@ const Book = {
     murderOnTheOrientExpress: {
       title: "Murder on the Orient Express",
       authorKeys: Person.AGATHA_CHRISTIE,
-      series: SeriesEntry.create(Series.HERCULE_POIROT, 10),
+      series: [SeriesEntry.create(Series.HERCULE_POIROT, 10)],
       dcl: "792491114",
       lt: "work/2742",
     },
     mystery: {
       title: "Mystery",
       authorKeys: Person.JONATHAN_KELLERMAN,
-      series: SeriesEntry.create(Series.ALEX_DELAWARE, 26),
+      series: [SeriesEntry.create(Series.ALEX_DELAWARE, 26)],
       meeting: "2011.12.12",
       dcl: "1615417114",
     },
     neverGoBack: {
       title: "Never Go Back",
       authorKeys: Person.LEE_CHILD,
-      series: SeriesEntry.create(Series.JACK_REACHER, 18),
+      series: [SeriesEntry.create(Series.JACK_REACHER, 18)],
       dcl: "1137507114",
       lt: "work/13480915",
     },
     newTricks: {
       title: "New Tricks",
       authorKeys: Person.DAVID_ROSENFELT,
-      series: SeriesEntry.create(Series.ANDY_CARPENTER, 7),
+      series: [SeriesEntry.create(Series.ANDY_CARPENTER, 7)],
       meeting: "2010.05.24",
       dcl: "919355114",
     },
@@ -810,14 +810,14 @@ const Book = {
     nothingToLose: {
       title: "Nothing to Lose",
       authorKeys: Person.LEE_CHILD,
-      series: SeriesEntry.create(Series.JACK_REACHER, 12),
+      series: [SeriesEntry.create(Series.JACK_REACHER, 12)],
       meeting: "2009.09.28",
       dcl: "849387114",
     },
     oddThomas: {
       title: "Odd Thomas",
       authorKeys: Person.DEAN_KOONTZ,
-      series: SeriesEntry.create(Series.ODD_THOMAS, 1),
+      series: [SeriesEntry.create(Series.ODD_THOMAS, 1)],
       meeting: "2007.07.23",
       dcl: "1231369114",
     },
@@ -830,14 +830,14 @@ const Book = {
     oneKick: {
       title: "One Kick",
       authorKeys: Person.CHELSEA_CAIN,
-      series: SeriesEntry.create(Series.KICK_LANNIGAN, 1),
+      series: [SeriesEntry.create(Series.KICK_LANNIGAN, 1)],
       meeting: "2015.07.27",
       dcl: "1211996114",
     },
     oneShot: {
       title: "One Shot",
       authorKeys: Person.LEE_CHILD,
-      series: SeriesEntry.create(Series.JACK_REACHER, 9),
+      series: [SeriesEntry.create(Series.JACK_REACHER, 9)],
       meeting: "2009.03.23",
       dcl: "962840114",
       lt: "work/156525",
@@ -845,21 +845,21 @@ const Book = {
     orphanX: {
       title: "Orphan X",
       authorKeys: Person.GREGG_HURWITZ,
-      series: SeriesEntry.create(Series.EVAN_SMOAK, 1),
+      series: [SeriesEntry.create(Series.EVAN_SMOAK, 1)],
       meeting: "2017.05.22",
       dcl: "1613028114",
     },
     personal: {
       title: "Personal",
       authorKeys: Person.LEE_CHILD,
-      series: SeriesEntry.create(Series.JACK_REACHER, 19),
+      series: [SeriesEntry.create(Series.JACK_REACHER, 19)],
       meeting: "2015.08.24",
       dcl: "1381470114",
     },
     phantom: {
       title: "Phantom",
       authorKeys: Person.JO_NESBO,
-      series: SeriesEntry.create(Series.HARRY_HOLE, 9),
+      series: [SeriesEntry.create(Series.HARRY_HOLE, 9)],
       meeting: "2013.11.25",
       dcl: "1061473114",
     },
@@ -891,7 +891,7 @@ const Book = {
     sheWhoWasNoMore: {
       title: "She Who Was No More",
       authorKeys: Person.BOILEAU_NARCEJAC,
-      series: SeriesEntry.create(Series.PETER_SWANSON_SUGGESTS, 2),
+      series: [SeriesEntry.create(Series.PETER_SWANSON_SUGGESTS, 2)],
       gr: "book/show/25241971",
     },
     sixYears: {
@@ -909,27 +909,27 @@ const Book = {
     stillLife: {
       title: "Still Life",
       authorKeys: Person.LOUISE_PENNY,
-      series: SeriesEntry.create(Series.CHIEF_INSPECTOR_ARMAND_GAMACHE, 1),
+      series: [SeriesEntry.create(Series.CHIEF_INSPECTOR_ARMAND_GAMACHE, 1)],
       lt: "work/544362",
     },
     stoneCold2007: {
       title: "Stone Cold (2007)",
       authorKeys: Person.DAVID_BALDACCI,
-      series: SeriesEntry.create(Series.THE_CAMEL_CLUB, 3),
+      series: [SeriesEntry.create(Series.THE_CAMEL_CLUB, 3)],
       lt: "work/3592880",
       wiki: "Stone_Cold_(Baldacci_novel)",
     },
     stoneCold2014: {
       title: "Stone Cold (2014)",
       authorKeys: Person.CJ_BOX,
-      series: SeriesEntry.create(Series.JOE_PICKETT, 14),
+      series: [SeriesEntry.create(Series.JOE_PICKETT, 14)],
       meeting: "2015.09.28",
       dcl: "1180990114",
     },
     strangersOnATrain: {
       title: "Strangers on a Train",
       authorKeys: Person.PATRICIA_HIGHSMITH,
-      series: SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 5),
+      series: [SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 5)],
       lt: "work/126353",
     },
     suspect: {
@@ -941,13 +941,13 @@ const Book = {
     sweetheart: {
       title: "Sweetheart",
       authorKeys: Person.CHELSEA_CAIN,
-      series: SeriesEntry.create(Series.GRETCHEN_LOWELL, 2),
+      series: [SeriesEntry.create(Series.GRETCHEN_LOWELL, 2)],
       lt: "work/8386014",
     },
     sweetLittleLies: {
       title: "Sweet Little Lies",
       authorKeys: Person.CAZ_FREAR,
-      series: SeriesEntry.create(Series.CAT_KINSELLA, 1),
+      series: [SeriesEntry.create(Series.CAT_KINSELLA, 1)],
       dcl: "1466868114",
       lt: "work/19582483",
       meeting: "2019.11.18",
@@ -955,7 +955,7 @@ const Book = {
     sycamoreRow: {
       title: "Sycamore Row",
       authorKeys: Person.JOHN_GRISHAM,
-      series: SeriesEntry.create(Series.JAKE_BRIGANCE, 2),
+      series: [SeriesEntry.create(Series.JAKE_BRIGANCE, 2)],
       meeting: "2014.11.24",
       dcl: "1151120114",
       lt: "work/13638462",
@@ -978,21 +978,21 @@ const Book = {
     theAx: {
       title: "The Ax",
       authorKeys: Person.DONALD_E_WESTLAKE,
-      series: SeriesEntry.create(Series.PETER_SWANSON_SUGGESTS, 3),
+      series: [SeriesEntry.create(Series.PETER_SWANSON_SUGGESTS, 3)],
       gr: "book/show/176811.The_Ax",
       lt: "work/177297",
     },
     theBlackEcho: {
       title: "The Black Echo",
       authorKeys: Person.MICHAEL_CONNELLY,
-      series: SeriesEntry.create(Series.HARRY_BOSCH, 1),
+      series: [SeriesEntry.create(Series.HARRY_BOSCH, 1)],
       dcl: "871416114",
       lt: "work/84315",
     },
     theBlackWidow: {
       title: "The Black Widow",
       authorKeys: Person.DANIEL_SILVA,
-      series: SeriesEntry.create(Series.GABRIEL_ALLON, 16),
+      series: [SeriesEntry.create(Series.GABRIEL_ALLON, 16)],
       meeting: "2017.06.26",
       dcl: "1317748114",
     },
@@ -1021,14 +1021,14 @@ const Book = {
     theBrokenWindow: {
       title: "The Broken Window",
       authorKeys: Person.JEFFERY_DEAVER,
-      series: SeriesEntry.create(Series.LINCOLN_RHYME, 8),
+      series: [SeriesEntry.create(Series.LINCOLN_RHYME, 8)],
       meeting: "2009.08.24",
       dcl: "856637114",
     },
     theBrutalTelling: {
       title: "The Brutal Telling",
       authorKeys: Person.LOUISE_PENNY,
-      series: SeriesEntry.create(Series.CHIEF_INSPECTOR_ARMAND_GAMACHE, 5),
+      series: [SeriesEntry.create(Series.CHIEF_INSPECTOR_ARMAND_GAMACHE, 5)],
       meeting: "2010.06.28",
       dcl: "932000114",
       lt: "work/8410558",
@@ -1036,7 +1036,7 @@ const Book = {
     theCamelClub: {
       title: "The Camel Club",
       authorKeys: Person.DAVID_BALDACCI,
-      series: SeriesEntry.create(Series.THE_CAMEL_CLUB, 1),
+      series: [SeriesEntry.create(Series.THE_CAMEL_CLUB, 1)],
       lt: "work/977305",
       wiki: "The_Camel_Club_(novel)",
     },
@@ -1049,7 +1049,7 @@ const Book = {
     theCollectors: {
       title: "The Collectors",
       authorKeys: Person.DAVID_BALDACCI,
-      series: SeriesEntry.create(Series.THE_CAMEL_CLUB, 2),
+      series: [SeriesEntry.create(Series.THE_CAMEL_CLUB, 2)],
       lt: "work/990503",
       wiki: "The_Collectors_(novel)",
     },
@@ -1062,7 +1062,7 @@ const Book = {
     theCrossing: {
       title: "The Crossing",
       authorKeys: Person.MICHAEL_CONNELLY,
-      series: SeriesEntry.create(Series.HARRY_BOSCH, 18),
+      series: [SeriesEntry.create(Series.HARRY_BOSCH, 18)],
       meeting: "2016.09.26",
       dcl: "1277014114",
     },
@@ -1076,7 +1076,7 @@ const Book = {
     theDepartmentOfSensitiveCrimes: {
       title: "The Department of Sensitive Crimes",
       authorKeys: Person.ALEXANDER_MCCALL_SMITH,
-      series: SeriesEntry.create(Series.DETECTIVE_VARG, 1),
+      series: [SeriesEntry.create(Series.DETECTIVE_VARG, 1)],
       dcl: "1535041114",
       lt: "work/22451389",
       meeting: "2020.07.27",
@@ -1084,13 +1084,13 @@ const Book = {
     theDrowner: {
       title: "The Drowner",
       authorKeys: Person.JOHN_D_MACDONALD,
-      series: SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 6),
+      series: [SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 6)],
       lt: "work/842541",
     },
     theDry: {
       title: "The Dry",
       authorKeys: Person.JANE_HARPER,
-      series: SeriesEntry.create(Series.AARON_FALK, 1),
+      series: [SeriesEntry.create(Series.AARON_FALK, 1)],
       dcl: "1364617114",
       lt: "work/17442790",
       meeting: "2019.03.25",
@@ -1098,7 +1098,7 @@ const Book = {
     theEnglishSpy: {
       title: "The English Spy",
       authorKeys: Person.DANIEL_SILVA,
-      series: SeriesEntry.create(Series.GABRIEL_ALLON, 15),
+      series: [SeriesEntry.create(Series.GABRIEL_ALLON, 15)],
       meeting: "2017.04.24",
       dcl: "1466247114",
     },
@@ -1118,7 +1118,7 @@ const Book = {
     theFallen: {
       title: "The Fallen",
       authorKeys: Person.DAVID_BALDACCI,
-      series: SeriesEntry.create(Series.AMOS_DECKER, 4),
+      series: [SeriesEntry.create(Series.AMOS_DECKER, 4)],
       dcl: "1441565114",
       lt: "work/20582252",
       meeting: "2019.01.28",
@@ -1133,7 +1133,7 @@ const Book = {
     theFifthWitness: {
       title: "The Fifth Witness",
       authorKeys: Person.MICHAEL_CONNELLY,
-      series: SeriesEntry.create(Series.MICKEY_HALLER, 4),
+      series: [SeriesEntry.create(Series.MICKEY_HALLER, 4)],
       meeting: "2013.04.22",
       dcl: "985297114",
     },
@@ -1146,42 +1146,42 @@ const Book = {
     theGirlWhoKickedTheHornetsNest: {
       title: "The Girl Who Kicked the Hornet's Nest",
       authorKeys: Person.STIEG_LARSSON,
-      series: SeriesEntry.create(Series.MILLENNIUM, 3),
+      series: [SeriesEntry.create(Series.MILLENNIUM, 3)],
       meeting: "2011.07.25",
       dcl: "946979114",
     },
     theGirlWhoPlayedWithFire: {
       title: "The Girl Who Played with Fire",
       authorKeys: Person.STIEG_LARSSON,
-      series: SeriesEntry.create(Series.MILLENNIUM, 2),
+      series: [SeriesEntry.create(Series.MILLENNIUM, 2)],
       meeting: "2010.10.25",
       dcl: "1210737114",
     },
     theGirlWithTheDragonTattoo: {
       title: "The Girl with the Dragon Tattoo",
       authorKeys: Person.STIEG_LARSSON,
-      series: SeriesEntry.create(Series.MILLENNIUM, 1),
+      series: [SeriesEntry.create(Series.MILLENNIUM, 1)],
       meeting: "2009.07.27",
       dcl: "1087244114",
     },
     theGodsOfGuilt: {
       title: "The Gods Of Guilt",
       authorKeys: Person.MICHAEL_CONNELLY,
-      series: SeriesEntry.create(Series.MICKEY_HALLER, 5),
+      series: [SeriesEntry.create(Series.MICKEY_HALLER, 5)],
       meeting: "2015.02.23",
       dcl: "1154561114",
     },
     theGreekCoffinMystery: {
       title: "The Greek Coffin Mystery",
       authorKeys: Person.ELLERY_QUEEN,
-      series: SeriesEntry.create(Series.ELLERY_QUEEN, 4),
+      series: [SeriesEntry.create(Series.ELLERY_QUEEN, 4)],
       meeting: "2015.11.23",
       dcl: "1294792114",
     },
     theGuilty: {
       title: "The Guilty",
       authorKeys: Person.DAVID_BALDACCI,
-      series: SeriesEntry.create(Series.WILL_ROBIE, 4),
+      series: [SeriesEntry.create(Series.WILL_ROBIE, 4)],
       meeting: "2016.08.22",
       dcl: "1277015114",
       lt: "work/15802151",
@@ -1189,14 +1189,14 @@ const Book = {
     theHeist: {
       title: "The Heist",
       authorKeys: Person.DANIEL_SILVA,
-      series: SeriesEntry.create(Series.GABRIEL_ALLON, 14),
+      series: [SeriesEntry.create(Series.GABRIEL_ALLON, 14)],
       meeting: "2015.10.26",
       dcl: "1211991114",
     },
     theHoundOfTheBaskervilles: {
       title: "The Hound of the Baskervilles",
       authorKeys: Person.ARTHUR_CONAN_DOYLE,
-      series: SeriesEntry.create(Series.SHERLOCK_HOLMES, 5),
+      series: [SeriesEntry.create(Series.SHERLOCK_HOLMES, 5)],
       meeting: "2007.10.22",
       dcl: "1007856114",
     },
@@ -1209,7 +1209,7 @@ const Book = {
     theHush: {
       title: "The Hush",
       authorKeys: Person.JOHN_HART,
-      series: SeriesEntry.create(Series.JOHNNY_MERRIMON, 2),
+      series: [SeriesEntry.create(Series.JOHNNY_MERRIMON, 2)],
       meeting: "2018.10.22",
       dcl: "1431235114",
     },
@@ -1234,13 +1234,13 @@ const Book = {
     theKillingsAtBadgersDrift: {
       title: "The Killings at Badger's Drift",
       authorKeys: Person.CAROLINE_GRAHAM,
-      series: SeriesEntry.create(Series.CHIEF_INSPECTOR_BARNABY_MYSTERIES, 1),
+      series: [SeriesEntry.create(Series.CHIEF_INSPECTOR_BARNABY_MYSTERIES, 1)],
       lt: "work/270034",
     },
     theLastChild: {
       title: "The Last Child",
       authorKeys: Person.JOHN_HART,
-      series: SeriesEntry.create(Series.JOHNNY_MERRIMON, 1),
+      series: [SeriesEntry.create(Series.JOHNNY_MERRIMON, 1)],
       meeting: "2012.07.23",
       dcl: "1021303114",
     },
@@ -1253,21 +1253,21 @@ const Book = {
     theLateShow: {
       title: "The Late Show",
       authorKeys: Person.MICHAEL_CONNELLY,
-      series: SeriesEntry.create(Series.RENEE_BALLARD, 1),
+      series: [SeriesEntry.create(Series.RENEE_BALLARD, 1)],
       meeting: "2018.04.23",
       dcl: "1402219114",
     },
     theLeopard: {
       title: "The Leopard",
       authorKeys: Person.JO_NESBO,
-      series: SeriesEntry.create(Series.HARRY_HOLE, 8),
+      series: [SeriesEntry.create(Series.HARRY_HOLE, 8)],
       meeting: "2013.03.25",
       dcl: "1020521114",
     },
     theLincolnLawyer: {
       title: "The Lincoln Lawyer",
       authorKeys: Person.MICHAEL_CONNELLY,
-      series: SeriesEntry.create(Series.MICKEY_HALLER, 1),
+      series: [SeriesEntry.create(Series.MICKEY_HALLER, 1)],
       meeting: "2011.09.26",
       dcl: "985297114",
       lt: "work/25501",
@@ -1288,7 +1288,7 @@ const Book = {
     theMysteriousAffairAtStyles: {
       title: "The Mysterious Affair at Styles",
       authorKeys: Person.AGATHA_CHRISTIE,
-      series: SeriesEntry.create(Series.HERCULE_POIROT, 1),
+      series: [SeriesEntry.create(Series.HERCULE_POIROT, 1)],
       meeting: "2013.12.16",
       dcl: "783597114",
       lt: "work/2921950",
@@ -1296,35 +1296,35 @@ const Book = {
     theNarrows: {
       title: "The Narrows",
       authorKeys: Person.MICHAEL_CONNELLY,
-      series: SeriesEntry.create(Series.HARRY_BOSCH, 10),
+      series: [SeriesEntry.create(Series.HARRY_BOSCH, 10)],
       meeting: "2009.05.18",
       dcl: "648301114",
     },
     theNightSeason: {
       title: "The Night Season",
       authorKeys: Person.CHELSEA_CAIN,
-      series: SeriesEntry.create(Series.GRETCHEN_LOWELL, 4),
+      series: [SeriesEntry.create(Series.GRETCHEN_LOWELL, 4)],
       meeting: "2012.10.22",
       lt: "work/10349831",
     },
     theNowhereMan: {
       title: "The Nowhere Man",
       authorKeys: Person.GREGG_HURWITZ,
-      series: SeriesEntry.create(Series.EVAN_SMOAK, 2),
+      series: [SeriesEntry.create(Series.EVAN_SMOAK, 2)],
       meeting: "2017.11.27",
       dcl: "1364629114",
     },
     thePallbearers: {
       title: "The Pallbearers",
       authorKeys: Person.STEPHEN_J_CANNELL,
-      series: SeriesEntry.create(Series.SHANE_SCULLY, 9),
+      series: [SeriesEntry.create(Series.SHANE_SCULLY, 9)],
       meeting: "2011.01.24",
       dcl: "946057114",
     },
     theProgram: {
       title: "The Program",
       authorKeys: Person.STEPHEN_WHITE,
-      series: SeriesEntry.create(Series.DR_ALAN_GREGORY, 9),
+      series: [SeriesEntry.create(Series.DR_ALAN_GREGORY, 9)],
       meeting: "2008.06.23",
       dcl: "1382906114",
     },
@@ -1341,20 +1341,20 @@ const Book = {
     theRedHouseMystery: {
       title: "The Red House Mystery",
       authorKeys: Person.AA_MILNE,
-      series: SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 1),
+      series: [SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 1)],
       lt: "work/247700",
     },
     theRembrandtAffair: {
       title: "The Rembrandt Affair",
       authorKeys: Person.DANIEL_SILVA,
-      series: SeriesEntry.create(Series.GABRIEL_ALLON, 10),
+      series: [SeriesEntry.create(Series.GABRIEL_ALLON, 10)],
       meeting: "2013.02.25",
       dcl: "956553114",
     },
     theReversal: {
       title: "The Reversal",
       authorKeys: Person.MICHAEL_CONNELLY,
-      series: SeriesEntry.create(Series.MICKEY_HALLER, 3),
+      series: [SeriesEntry.create(Series.MICKEY_HALLER, 3)],
       meeting: "2012.12.17",
       dcl: "967577114",
     },
@@ -1367,7 +1367,7 @@ const Book = {
     theSecretHistory: {
       title: "The Secret History",
       authorKeys: Person.DONNA_TARTT,
-      series: SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 8),
+      series: [SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 8)],
       lt: "work/7221",
     },
     theShadowTracer: {
@@ -1386,7 +1386,7 @@ const Book = {
     theSnowman: {
       title: "The Snowman",
       authorKeys: Person.JO_NESBO,
-      series: SeriesEntry.create(Series.HARRY_HOLE, 7),
+      series: [SeriesEntry.create(Series.HARRY_HOLE, 7)],
       meeting: "2012.06.25",
       dcl: "990752114",
     },
@@ -1405,7 +1405,7 @@ const Book = {
     theSweetnessAtTheBottomOfThePie: {
       title: "The Sweetness at the Bottom of the Pie",
       authorKeys: Person.ALAN_BRADLEY,
-      series: SeriesEntry.create(Series.FLAVIA_DE_LUCE, 1),
+      series: [SeriesEntry.create(Series.FLAVIA_DE_LUCE, 1)],
       meeting: "2010.01.25",
       dcl: "906895114",
     },
@@ -1437,7 +1437,7 @@ const Book = {
     theWatchman: {
       title: "The Watchman",
       authorKeys: Person.ROBERT_CRAIS,
-      series: SeriesEntry.create(Series.JOE_PIKE, 1),
+      series: [SeriesEntry.create(Series.JOE_PIKE, 1)],
       meeting: "2012.09.24",
       dcl: "787076114",
     },
@@ -1476,7 +1476,7 @@ const Book = {
     theWrongSideOfGoodbye: {
       title: "The Wrong Side of Goodbye",
       authorKeys: Person.MICHAEL_CONNELLY,
-      series: SeriesEntry.create(Series.HARRY_BOSCH, 19),
+      series: [SeriesEntry.create(Series.HARRY_BOSCH, 19)],
       meeting: "2017.09.25",
       dcl: "1337567114",
     },
@@ -1502,7 +1502,7 @@ const Book = {
     twoKindsOfTruth: {
       title: "Two Kinds of Truth",
       authorKeys: Person.MICHAEL_CONNELLY,
-      series: SeriesEntry.create(Series.HARRY_BOSCH, 22),
+      series: [SeriesEntry.create(Series.HARRY_BOSCH, 22)],
       meeting: "2018.08.27",
       dcl: "1412693114",
     },
@@ -1516,28 +1516,28 @@ const Book = {
     vanishingGames: {
       title: "Vanishing Games",
       authorKeys: Person.ROGER_HOBBS,
-      series: SeriesEntry.create(Series.GHOSTMAN, 2),
+      series: [SeriesEntry.create(Series.GHOSTMAN, 2)],
       meeting: "2016.05.23",
       dcl: "1283492114",
     },
     vertigo: {
       title: "Vertigo",
       authorKeys: Person.BOILEAU_NARCEJAC,
-      series: SeriesEntry.create(Series.PETER_SWANSON_SUGGESTS, 1),
+      series: [SeriesEntry.create(Series.PETER_SWANSON_SUGGESTS, 1)],
       gr: "book/show/141328.Vertigo",
       lt: "work/397208",
     },
     victims: {
       title: "Victims",
       authorKeys: Person.JONATHAN_KELLERMAN,
-      series: SeriesEntry.create(Series.ALEX_DELAWARE, 27),
+      series: [SeriesEntry.create(Series.ALEX_DELAWARE, 27)],
       meeting: "2013.07.22",
       dcl: "1030014114",
     },
     waitingForWednesday: {
       title: "Waiting for Wednesday",
       authorKeys: Person.NICCI_FRENCH,
-      series: SeriesEntry.create(Series.FRIEDA_KLEIN, 3),
+      series: [SeriesEntry.create(Series.FRIEDA_KLEIN, 3)],
       meeting: "2014.09.22",
       dcl: "1185773114",
     },
@@ -1563,14 +1563,14 @@ const Book = {
     whispersOfTheDead: {
       title: "Whispers of the Dead",
       authorKeys: Person.SIMON_BECKETT,
-      series: SeriesEntry.create(Series.DAVID_HUNTER, 3),
+      series: [SeriesEntry.create(Series.DAVID_HUNTER, 3)],
       meeting: "2010.03.22",
       lt: "work/7598433",
     },
     wickedPrey: {
       title: "Wicked Prey",
       authorKeys: Person.JOHN_SANDFORD,
-      series: SeriesEntry.create(Series.LUCAS_DAVENPORT, 19),
+      series: [SeriesEntry.create(Series.LUCAS_DAVENPORT, 19)],
       meeting: "2009.12.28",
       dcl: "902064114",
     },
@@ -1593,6 +1593,9 @@ Book.keys = () => Object.keys(Book.properties);
 Book.values = () => Object.values(Book.properties);
 
 // /////////////////////////////////////////////////////////////////////////////
+const seriesKeys = (book) =>
+  book && book.series ? R.map(R.prop("key"), book.series) : [];
+
 Book.authorKeyToBooks = (isMeeting = false) => {
   const books = isMeeting ? Book.valuesWithMeeting() : Book.values();
   const putBook = (accum, authorKey, book) => {
@@ -1634,15 +1637,8 @@ Book.seriesKeyToBooks = (isMeeting = false) => {
     let answer = accum;
 
     if (series) {
-      if (Array.isArray(series)) {
-        let accum2 = accum;
-        R.forEach((key) => {
-          accum2 = putBook(accum2, key, book);
-        }, series);
-        answer = accum2;
-      } else {
-        answer = putBook(accum, series, book);
-      }
+      const reduceFunction2 = (accum2, key) => putBook(accum2, key, book);
+      answer = R.reduce(reduceFunction2, accum, series);
     }
 
     return answer;
@@ -1656,8 +1652,7 @@ Book.valuesBySeries = (seriesKey) => {
 
   if (seriesKey) {
     const books = Object.values(Book.properties);
-    const filterFunction = (book) =>
-      book.series && book.series.key === seriesKey;
+    const filterFunction = (book) => seriesKeys(book).includes(seriesKey);
     answer = R.filter(filterFunction, books);
   }
 

@@ -208,10 +208,10 @@ QUnit.test("createSeriesText() undefined", (assert) => {
 
 QUnit.test("createSeriesText()", (assert) => {
   // Setup.
-  const seriesObj = { key: Series.JACK_REACHER, entry: 12 };
+  const series = [{ key: Series.JACK_REACHER, entry: 12 }];
 
   // Run.
-  const result = Formatter.createSeriesText(seriesObj);
+  const result = Formatter.createSeriesText(series);
 
   // Verify.
   assert.ok(result);

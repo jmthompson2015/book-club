@@ -42,14 +42,14 @@ const createPersonPrefix = (person) => {
   return answer;
 };
 
-const createSeriesLabel = (seriesObj) => {
+const createSeriesLabel = (seriesEntry) => {
   let answer = "";
 
-  if (seriesObj) {
-    const series = Series.properties[seriesObj.key];
+  if (seriesEntry) {
+    const series = Series.properties[seriesEntry.key];
 
-    if (seriesObj.entry) {
-      answer = `${series.title} #${seriesObj.entry}`;
+    if (seriesEntry.entry) {
+      answer = `${series.title} #${seriesEntry.entry}`;
     } else {
       answer = `${series.title}`;
     }
@@ -174,31 +174,20 @@ Formatter.createPersonText = (personObj) => {
   return answer;
 };
 
-Formatter.createSeriesText = (seriesObj) => {
+Formatter.createSeriesText = (seriesArray) => {
   let answer = "";
 
-  if (seriesObj) {
-    if (Array.isArray(seriesObj)) {
-      const mapFunction = (seriesObject) => {
-        const series = Series.properties[seriesObject.key];
-        const seriesLabel = createSeriesLabel(seriesObject);
-        const linkedImages = Formatter.linkedImages(series);
-
-        return labelLinkedImagesTable(seriesLabel, linkedImages);
-      };
-
-      const seriesLinks = R.map(mapFunction, seriesObj);
-      answer = seriesLinks.join(" ");
-    } else if (seriesObj.key) {
-      const series = Series.properties[seriesObj.key];
-      const seriesLabel = createSeriesLabel(seriesObj);
+  if (seriesArray) {
+    const mapFunction = (seriesEntry) => {
+      const series = Series.properties[seriesEntry.key];
+      const seriesLabel = createSeriesLabel(seriesEntry);
       const linkedImages = Formatter.linkedImages(series);
-      answer = labelLinkedImagesTable(seriesLabel, linkedImages);
-    } else {
-      const seriesLabel = createSeriesLabel(seriesObj);
-      const linkedImages = Formatter.linkedImages(seriesObj);
-      answer = labelLinkedImagesTable(seriesLabel, linkedImages);
-    }
+
+      return labelLinkedImagesTable(seriesLabel, linkedImages);
+    };
+
+    const seriesLinks = R.map(mapFunction, seriesArray);
+    answer = seriesLinks.join(" ");
   }
 
   return answer.trim();

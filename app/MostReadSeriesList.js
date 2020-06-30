@@ -4,7 +4,8 @@ const FileWriter = require("../util/FileWriter.js");
 const WikiUtils = require("../util/WikiUtilities.js");
 
 const Book = require("../artifact/Book.js");
-const Series = require("../artifact/Series.js");
+// const Series = require("../artifact/Series.js");
+const SeriesEntry = require("../artifact/SeriesEntry.js");
 
 const Comparator = require("../model/Comparator.js");
 const Formatter = require("../model/Formatter.js");
@@ -28,8 +29,7 @@ const MostReadSeriesList = {
     );
     keys.sort(Comparator.compareByCount(keyToCount));
     const mapFunction = (key) => {
-      const series = Series.properties[key];
-      const value1 = Formatter.createSeriesText(series);
+      const value1 = Formatter.createSeriesText([SeriesEntry.create(key)]);
       const value2 = keyToCount[key];
       const cell1 = WikiUtils.cell(value1);
       const cell2 = WikiUtils.cell(value2, "text-align:right;");

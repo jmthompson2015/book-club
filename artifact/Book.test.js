@@ -296,13 +296,10 @@ QUnit.test("valuesBySeries()", (assert) => {
   // Verify.
   assert.ok(result);
   assert.equal(result.length, 7, `result.length = ${result.length}`);
+  const seriesKeys = R.map(R.prop("key"));
   const forEachFunction = (book) => {
     assert.ok(book.series, `book.series = ${JSON.stringify(book.series)}`);
-    assert.equal(
-      book.series.key,
-      seriesKey,
-      `book.series.key = ${book.series.key}`
-    );
+    assert.equal(seriesKeys(book.series).includes(seriesKey), true);
   };
   R.forEach(forEachFunction, result);
 });

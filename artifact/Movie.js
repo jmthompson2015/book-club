@@ -65,14 +65,14 @@ const Movie = {
       title: "Jack Reacher (2012)",
       castKeys: [Person.TOM_CRUISE, Person.ROSAMUND_PIKE],
       bookKey: Book.ONE_SHOT,
-      series: SeriesEntry.create(Series.JACK_REACHER, 1),
+      series: [SeriesEntry.create(Series.JACK_REACHER, 1)],
       imdb: "title/tt0790724",
     },
     jackReacherNeverGoBack: {
       title: "Jack Reacher: Never Go Back (2016)",
       castKeys: [Person.TOM_CRUISE, Person.COBIE_SMULDERS],
       bookKey: Book.NEVER_GO_BACK,
-      series: SeriesEntry.create(Series.JACK_REACHER, 2),
+      series: [SeriesEntry.create(Series.JACK_REACHER, 2)],
       imdb: "title/tt3393786",
     },
     knivesOut: {
