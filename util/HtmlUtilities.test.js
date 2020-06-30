@@ -16,7 +16,7 @@ QUnit.test("cell()", (assert) => {
   assert.ok(result, "result !== undefined");
   assert.equal(
     result,
-    '<td style="font-weight: bold;">Jack Reacher</td>',
+    '<div style="display: table-cell; font-weight: bold;">Jack Reacher</div>',
     `result = :${result}:`
   );
 });
@@ -33,7 +33,7 @@ QUnit.test("row()", (assert) => {
   assert.ok(result, "result !== undefined");
   assert.equal(
     result,
-    '<tr style="padding: 0px;"><td>Jack Reacher</td><td>Lee Child</td></tr>',
+    '<div style="display: table-row; padding: 0px;"><td>Jack Reacher</td><td>Lee Child</td></div>',
     `result = :${result}:`
   );
 });
@@ -68,7 +68,9 @@ QUnit.test("table()", (assert) => {
   assert.ok(result, "result !== undefined");
   assert.equal(
     result,
-    '<table style="border: 0px;"><tr><td>Jack Reacher</td><td>Lee Child</td></tr></table>',
+    '<div style="display: table; border: 0px;"><div style="display: table-row;">' +
+      '<div style="display: table-cell;">Jack Reacher</div>' +
+      '<div style="display: table-cell;">Lee Child</div></div></div>',
     `result = :${result}:`
   );
 });

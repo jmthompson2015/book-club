@@ -19,20 +19,29 @@ HtmlUtilities.tag = (tag, content, style) => {
 };
 
 // /////////////////////////////////////////////////////////////////////////////
-HtmlUtilities.cell = (content, style) =>
-  HtmlUtilities.tag("td", content, style);
+HtmlUtilities.cell = (content, style) => {
+  const style2 = `display: table-cell;${style ? ` ${style}` : ""}`;
+
+  return HtmlUtilities.div(content, style2);
+};
+
+HtmlUtilities.div = (content, style) =>
+  HtmlUtilities.tag("div", content, style);
 
 HtmlUtilities.row = (cellArray, style) => {
-  const content = cellArray.join("");
+  const style2 = `display: table-row;${style ? ` ${style}` : ""}`;
 
-  return HtmlUtilities.tag("tr", content, style);
+  return HtmlUtilities.div(cellArray.join(""), style2);
 };
 
 HtmlUtilities.span = (content, style) =>
   HtmlUtilities.tag("span", content, style);
 
-HtmlUtilities.table = (rowArray, style) =>
-  HtmlUtilities.tag("table", rowArray.join(""), style);
+HtmlUtilities.table = (rowArray, style) => {
+  const style2 = `display: table;${style ? ` ${style}` : ""}`;
+
+  return HtmlUtilities.div(rowArray.join(""), style2);
+};
 
 Object.freeze(HtmlUtilities);
 

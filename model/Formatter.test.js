@@ -32,7 +32,7 @@ QUnit.test("createBookText()", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    '<table style="width:100%;"><tr><td style="border:0px; padding:0px;">Gone Girl</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:DouglasCountyLibraries418.png|20px|link=https://dcl.bibliocommons.com/item/show/1033248114|Douglas County Libraries]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/work/11234211|LibraryThing]]</td></tr></table></td></tr></table>'
+    '<div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Gone Girl</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:DouglasCountyLibraries418.png|20px|link=https://dcl.bibliocommons.com/item/show/1033248114|Douglas County Libraries]]</div><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/work/11234211|LibraryThing]]</div></div></div></div></div></div>'
   );
 });
 
@@ -106,7 +106,7 @@ QUnit.test("createMovieText()", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    '<table style="width:100%;"><tr><td style="border:0px; padding:0px;">Gone Girl (2014)</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/title/tt2267998|Internet Movie Database]]</td></tr></table></td></tr></table>'
+    '<div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Gone Girl (2014)</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/title/tt2267998|Internet Movie Database]]</div></div></div></div></div></div>'
   );
 });
 
@@ -176,7 +176,7 @@ QUnit.test("createPersonText()", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    'data-sort-value="Child, Lee"| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Lee Child</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/name/nm1676193|Internet Movie Database]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/childlee|LibraryThing]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Lee_Child|Wikipedia]]</td></tr></table></td></tr></table>'
+    'data-sort-value="Child, Lee"| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Lee Child</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/name/nm1676193|Internet Movie Database]]</div><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/childlee|LibraryThing]]</div><div style="display: table-cell;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Lee_Child|Wikipedia]]</div></div></div></div></div></div>'
   );
 });
 
@@ -191,7 +191,7 @@ QUnit.test("createPersonText() array", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    'data-sort-value="Child, Lee"| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Lee Child</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/name/nm1676193|Internet Movie Database]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/childlee|LibraryThing]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Lee_Child|Wikipedia]]</td></tr></table></td></tr></table> <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Jane Harper</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/name/nm7681091|Internet Movie Database]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/harperjane-1|LibraryThing]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Jane_Harper|Wikipedia]]</td></tr></table></td></tr></table>'
+    'data-sort-value="Child, Lee"| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Lee Child</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/name/nm1676193|Internet Movie Database]]</div><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/childlee|LibraryThing]]</div><div style="display: table-cell;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Lee_Child|Wikipedia]]</div></div></div></div></div></div> <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Jane Harper</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/name/nm7681091|Internet Movie Database]]</div><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/harperjane-1|LibraryThing]]</div><div style="display: table-cell;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Jane_Harper|Wikipedia]]</div></div></div></div></div></div>'
   );
 });
 
@@ -217,7 +217,7 @@ QUnit.test("createSeriesText()", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    '<table style="width:100%;"><tr><td style="border:0px; padding:0px;">Jack Reacher #12</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Jack+Reacher|LibraryThing]]</td></tr></table></td></tr></table>'
+    '<div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Jack Reacher #12</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Jack+Reacher|LibraryThing]]</div></div></div></div></div></div>'
   );
 });
 
@@ -243,7 +243,7 @@ QUnit.test("createTVSeriesText()", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    '<table style="width:100%;"><tr><td style="border:0px; padding:0px;">Midsomer Murders (1997-?)</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/title/tt0118401|Internet Movie Database]]</td></tr></table></td></tr></table>'
+    '<div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Midsomer Murders (1997-?)</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/title/tt0118401|Internet Movie Database]]</div></div></div></div></div></div>'
   );
 });
 
@@ -257,7 +257,7 @@ QUnit.test("linkedImages()", (assert) => {
   // Verify.
   assert.equal(
     result,
-    '<table><tr><td style="border:0px; padding:0px;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/name/nm0175093|Internet Movie Database]]</td><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/connellymichael-1|LibraryThing]]</td><td style="border:0px; padding:0px;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Michael_Connelly|Wikipedia]]</td></tr></table>',
+    '<div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:IMDb256.png|20px|link=https://www.imdb.com/name/nm0175093|Internet Movie Database]]</div><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/author/connellymichael-1|LibraryThing]]</div><div style="display: table-cell;">[[Image:Wikipedia128.png|20px|link=https://en.wikipedia.org/wiki/Michael_Connelly|Wikipedia]]</div></div></div>',
     `result = :${result}:`
   );
 });

@@ -59,8 +59,8 @@ const createSeriesLabel = (seriesEntry) => {
 };
 
 const labelLinkedImagesTable = (label, linkedImages) => {
-  const style1 = `border:0px; padding:0px;`;
-  const style2 = `${style1} float: right;`;
+  const style1 = `vertical-align: middle;`;
+  const style2 = `float: right;`;
   const style3 = `width:100%;`;
   const cell1 = HtmlUtils.cell(label, style1);
   const cell2 = HtmlUtils.cell(linkedImages, style2);
@@ -214,13 +214,12 @@ Formatter.linkedImages = (item) => {
     WIKIPEDIA_IMAGE,
     "Wikipedia"
   );
-  const style = "border:0px; padding:0px;";
 
-  const cell1 = dclLink ? HtmlUtils.cell(dclLink, style) : "";
-  const cell2 = grLink ? HtmlUtils.cell(grLink, style) : "";
-  const cell3 = imdbLink ? HtmlUtils.cell(imdbLink, style) : "";
-  const cell4 = ltLink ? HtmlUtils.cell(ltLink, style) : "";
-  const cell5 = wikiLink ? HtmlUtils.cell(wikiLink, style) : "";
+  const cell1 = dclLink ? HtmlUtils.cell(dclLink) : "";
+  const cell2 = grLink ? HtmlUtils.cell(grLink) : "";
+  const cell3 = imdbLink ? HtmlUtils.cell(imdbLink) : "";
+  const cell4 = ltLink ? HtmlUtils.cell(ltLink) : "";
+  const cell5 = wikiLink ? HtmlUtils.cell(wikiLink) : "";
   const row = HtmlUtils.row([cell1, cell2, cell3, cell4, cell5]);
 
   return HtmlUtils.table([row]);

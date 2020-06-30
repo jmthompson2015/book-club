@@ -2,66 +2,66 @@
 ! Series
 ! Book Count
 |-
-| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Harry Bosch</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Harry+Bosch|LibraryThing]]</td></tr></table></td></tr></table>
+| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Harry Bosch</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Harry+Bosch|LibraryThing]]</div></div></div></div></div></div>
 | style="text-align:right;" | 6
 |-
-| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Jack Reacher</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Jack+Reacher|LibraryThing]]</td></tr></table></td></tr></table>
+| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Jack Reacher</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Jack+Reacher|LibraryThing]]</div></div></div></div></div></div>
 | style="text-align:right;" | 6
 |-
-| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Mickey Haller</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Mickey+Haller|LibraryThing]]</td></tr></table></td></tr></table>
+| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Mickey Haller</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Mickey+Haller|LibraryThing]]</div></div></div></div></div></div>
 | style="text-align:right;" | 5
 |-
-| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Dexter</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Dexter|LibraryThing]]</td></tr></table></td></tr></table>
+| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Dexter</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Dexter|LibraryThing]]</div></div></div></div></div></div>
 | style="text-align:right;" | 4
 |-
-| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Gabriel Allon</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Gabriel+Allon|LibraryThing]]</td></tr></table></td></tr></table>
+| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Gabriel Allon</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Gabriel+Allon|LibraryThing]]</div></div></div></div></div></div>
 | style="text-align:right;" | 4
 |-
-| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Evan Smoak</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Evan+Smoak|LibraryThing]]</td></tr></table></td></tr></table>
+| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Evan Smoak</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Evan+Smoak|LibraryThing]]</div></div></div></div></div></div>
 | style="text-align:right;" | 3
 |-
-| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Harry Hole</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Harry+Hole|LibraryThing]]</td></tr></table></td></tr></table>
+| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Harry Hole</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Harry+Hole|LibraryThing]]</div></div></div></div></div></div>
 | style="text-align:right;" | 3
 |-
-| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Millennium</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Millennium|LibraryThing]]</td></tr></table></td></tr></table>
+| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Millennium</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Millennium|LibraryThing]]</div></div></div></div></div></div>
 | style="text-align:right;" | 3
 |-
-| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Aaron Falk</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Aaron+Falk|LibraryThing]]</td></tr></table></td></tr></table>
+| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Aaron Falk</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Aaron+Falk|LibraryThing]]</div></div></div></div></div></div>
 | style="text-align:right;" | 2
 |-
-| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Alex Delaware</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Alex+Delaware|LibraryThing]]</td></tr></table></td></tr></table>
+| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Alex Delaware</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Alex+Delaware|LibraryThing]]</div></div></div></div></div></div>
 | style="text-align:right;" | 2
 |-
-| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Elvis Cole</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Elvis+Cole|LibraryThing]]</td></tr></table></td></tr></table>
+| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Elvis Cole</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Elvis+Cole|LibraryThing]]</div></div></div></div></div></div>
 | style="text-align:right;" | 2
 |-
-| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Ghostman</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Ghostman|LibraryThing]]</td></tr></table></td></tr></table>
+| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Ghostman</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Ghostman|LibraryThing]]</div></div></div></div></div></div>
 | style="text-align:right;" | 2
 |-
-| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Gretchen Lowell</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Gretchen+Lowell|LibraryThing]]</td></tr></table></td></tr></table>
+| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Gretchen Lowell</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Gretchen+Lowell|LibraryThing]]</div></div></div></div></div></div>
 | style="text-align:right;" | 2
 |-
-| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Hercule Poirot</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Hercule+Poirot|LibraryThing]]</td></tr></table></td></tr></table>
+| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Hercule Poirot</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Hercule+Poirot|LibraryThing]]</div></div></div></div></div></div>
 | style="text-align:right;" | 2
 |-
-| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Joe Pickett</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Joe+Pickett|LibraryThing]]</td></tr></table></td></tr></table>
+| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Joe Pickett</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Joe+Pickett|LibraryThing]]</div></div></div></div></div></div>
 | style="text-align:right;" | 2
 |-
-| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Joe Pike</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Joe+Pike|LibraryThing]]</td></tr></table></td></tr></table>
+| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Joe Pike</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Joe+Pike|LibraryThing]]</div></div></div></div></div></div>
 | style="text-align:right;" | 2
 |-
-| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Johnny Merrimon</td><td style="border:0px; padding:0px; float: right;"><table><tr></tr></table></td></tr></table>
+| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Johnny Merrimon</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"></div></div></div></div></div>
 | style="text-align:right;" | 2
 |-
-| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Renée Ballard</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Renée+Ballard|LibraryThing]]</td></tr></table></td></tr></table>
+| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Renée Ballard</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Renée+Ballard|LibraryThing]]</div></div></div></div></div></div>
 | style="text-align:right;" | 2
 |-
-| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Rizzoli & Isles</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Rizzoli+%2526+Isles|LibraryThing]]</td></tr></table></td></tr></table>
+| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Rizzoli & Isles</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Rizzoli+%2526+Isles|LibraryThing]]</div></div></div></div></div></div>
 | style="text-align:right;" | 2
 |-
-| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Sherlock Holmes</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Sherlock+Holmes|LibraryThing]]</td></tr></table></td></tr></table>
+| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Sherlock Holmes</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Sherlock+Holmes|LibraryThing]]</div></div></div></div></div></div>
 | style="text-align:right;" | 2
 |-
-| <table style="width:100%;"><tr><td style="border:0px; padding:0px;">Virgil Flowers</td><td style="border:0px; padding:0px; float: right;"><table><tr><td style="border:0px; padding:0px;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Virgil+Flowers|LibraryThing]]</td></tr></table></td></tr></table>
+| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Virgil Flowers</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing180.png|20px|link=https://www.librarything.com/series/Virgil+Flowers|LibraryThing]]</div></div></div></div></div></div>
 | style="text-align:right;" | 2
 |}
