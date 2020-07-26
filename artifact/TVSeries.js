@@ -52,7 +52,10 @@ const TVSeries = {
         Person.JODIE_WHITTAKER,
       ],
       creatorKeys: [Person.CHRIS_CHIBNALL],
-      series: [SeriesEntry.create(Series.BROADCHURCH)],
+      series: [
+        SeriesEntry.create(Series.BROADCHURCH),
+        SeriesEntry.create(Series.CHRISTINA_Z_SUGGESTS, 2),
+      ],
       dcl: "1210369114",
       imdb: "title/tt2249364",
       wiki: "Broadchurch",
@@ -75,6 +78,7 @@ const TVSeries = {
     doctorFoster: {
       title: "Doctor Foster (2015-?)",
       castKeys: [Person.SURANNE_JONES, Person.BERTIE_CARVEL],
+      series: [SeriesEntry.create(Series.CHRISTINA_Z_SUGGESTS, 4)],
       imdb: "title/tt4602768",
       key: "doctorFoster",
     },
@@ -88,6 +92,7 @@ const TVSeries = {
     hinterland: {
       title: "Hinterland (2013-2016)",
       castKeys: [Person.RICHARD_HARRINGTON],
+      series: [SeriesEntry.create(Series.CHRISTINA_Z_SUGGESTS, 1)],
       imdb: "title/tt2575968",
       wiki: "Hinterland_(TV_series)",
       key: "hinterland",
@@ -104,6 +109,7 @@ const TVSeries = {
       title: "Marcella (2016-?)",
       castKeys: [Person.ANNA_FRIEL],
       creatorKeys: [Person.HANS_ROSENFELDT],
+      series: [SeriesEntry.create(Series.CHRISTINA_Z_SUGGESTS, 3)],
       imdb: "title/tt5269594",
       wiki: "Marcella_(TV_series)",
       key: "marcella",
@@ -118,18 +124,21 @@ const TVSeries = {
     nationalTreasure: {
       title: "National Treasure (2016)",
       castKeys: [Person.ROBBIE_COLTRANE],
+      series: [SeriesEntry.create(Series.CHRISTINA_Z_SUGGESTS, 5)],
       imdb: "title/tt5571524",
       key: "nationalTreasure",
     },
     nationalTreasureKiri: {
       title: "National Treasure: Kiri (2018)",
       castKeys: [Person.SARAH_LANCASHIRE],
+      series: [SeriesEntry.create(Series.CHRISTINA_Z_SUGGESTS, 6)],
       imdb: "title/tt7157494",
       key: "nationalTreasureKiri",
     },
     ozark: {
       title: "Ozark (2017-?)",
       castKeys: [Person.JASON_BATEMAN, Person.LAURA_LINNEY],
+      series: [SeriesEntry.create(Series.CHRISTINA_Z_SUGGESTS, 9)],
       imdb: "title/tt5071412",
       wiki: "Ozark_(TV_series)",
       key: "ozark",
@@ -137,6 +146,7 @@ const TVSeries = {
     peakyBlinders: {
       title: "Peaky Blinders (2013-?)",
       castKeys: [Person.CILLIAN_MURPHY],
+      series: [SeriesEntry.create(Series.CHRISTINA_Z_SUGGESTS, 10)],
       imdb: "title/tt2442560",
       wiki: "Peaky_Blinders_(TV_series)",
       key: "peakyBlinders",
@@ -190,6 +200,7 @@ const TVSeries = {
       title: "The Stranger (2020-?)",
       castKeys: [Person.RICHARD_ARMITAGE],
       creatorKeys: [Person.HARLAN_COBEN],
+      series: [SeriesEntry.create(Series.CHRISTINA_Z_SUGGESTS, 7)],
       imdb: "title/tt9698480",
       key: "theStranger",
     },

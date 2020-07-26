@@ -184,7 +184,7 @@ QUnit.test("seriesKeyToBooks()", (assert) => {
   assert.ok(result, `result !== undefined`);
   const seriesKeys = Object.keys(result);
   assert.ok(seriesKeys, `seriesKeys !== undefined`);
-  const count = 61;
+  const count = 62;
   assert.equal(
     seriesKeys.length,
     count,

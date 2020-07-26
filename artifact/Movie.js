@@ -143,6 +143,7 @@ const Movie = {
       castKeys: [Person.ROBERT_DE_NIRO, Person.AL_PACINO, Person.JOE_PESCI],
       directorKeys: [Person.MARTIN_SCORSESE],
       bookKey: Book.I_HEARD_YOU_PAINT_HOUSES,
+      series: [SeriesEntry.create(Series.CHRISTINA_Z_SUGGESTS, 8)],
       imdb: "title/tt1302006",
       wiki: "The_Irishman",
       key: "theIrishman",

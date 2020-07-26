@@ -141,7 +141,7 @@ Formatter.createPersonLabel = (person) => {
 Formatter.createPersonText = (personArray) => {
   let answer = "";
 
-  if (personArray) {
+  if (personArray && personArray.length > 0) {
     const mapFunction = (personKey) => {
       const person = Person.properties[personKey];
 

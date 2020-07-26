@@ -313,7 +313,10 @@ const Book = {
     bloodOnTheTracks: {
       title: "Blood on the Tracks",
       authorKeys: [Person.BARBARA_NICKLESS],
-      series: [SeriesEntry.create(Series.SYDNEY_ROSE_PARNELL, 1)],
+      series: [
+        SeriesEntry.create(Series.SYDNEY_ROSE_PARNELL, 1),
+        SeriesEntry.create(Series.GAIL_H_SUGGESTS, 2),
+      ],
       dcl: "1359332114",
       lt: "work/18319544",
     },
@@ -909,7 +912,10 @@ const Book = {
     stillLife: {
       title: "Still Life",
       authorKeys: [Person.LOUISE_PENNY],
-      series: [SeriesEntry.create(Series.CHIEF_INSPECTOR_ARMAND_GAMACHE, 1)],
+      series: [
+        SeriesEntry.create(Series.CHIEF_INSPECTOR_ARMAND_GAMACHE, 1),
+        SeriesEntry.create(Series.GAIL_H_SUGGESTS, 1),
+      ],
       lt: "work/544362",
     },
     stoneCold2007: {
