@@ -32,6 +32,7 @@ const Series = {
   HARRY_BOSCH: "harryBosch",
   HARRY_HOLE: "harryHole",
   HERCULE_POIROT: "herculePoirot",
+  INSPECTOR_REBUS: "inspectorRebus",
   JACK_REACHER: "jackReacher",
   JAKE_BRIGANCE: "jakeBrigance",
   JANA_BERZELIUS: "janaBerzelius",
@@ -62,6 +63,7 @@ const Series = {
   SYDNEY_ROSE_PARNELL: "sydneyRoseParnell",
   TEMPERANCE_BRENNAN: "temperanceBrennan",
   THE_CAMEL_CLUB: "theCamelClub",
+  THE_NO_1_LADIES_DETECTIVE_AGENCY: "theNo1LadiesDetectiveAgency",
   VIRGIL_FLOWERS: "virgilFlowers",
   WILL_ROBIE: "willRobie",
   WINE_LOVERS_MYSTERIES: "wineLoversMysteries",
@@ -224,6 +226,13 @@ const Series = {
       lt: "series/Hercule+Poirot",
       key: "herculePoirot",
     },
+    inspectorRebus: {
+      title: "Inspector Rebus",
+      gr: "series/42078-inspector-rebus",
+      lt: "nseries/637/Inspector-Rebus",
+      wiki: "Inspector_Rebus",
+      key: "inspectorRebus",
+    },
     jackReacher: {
       title: "Jack Reacher",
       lt: "series/Jack+Reacher",
@@ -365,6 +374,12 @@ const Series = {
       title: "The Camel Club",
       lt: "series/The+Camel+Club",
       key: "theCamelClub",
+    },
+    theNo1LadiesDetectiveAgency: {
+      title: "The No. 1 Ladies' Detective Agency",
+      lt: "nseries/197/The-No-1-Ladies-Detective-Agency",
+      wiki: "The_No._1_Ladies%27_Detective_Agency",
+      key: "theNo1LadiesDetectiveAgency",
     },
     virgilFlowers: {
       title: "Virgil Flowers",

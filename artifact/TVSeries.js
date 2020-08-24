@@ -6,11 +6,15 @@ const SeriesEntry = require("./SeriesEntry.js");
 
 const TVSeries = {
   A_FATAL_INVERSION: "aFatalInversion",
+  BLOOD_AND_TREASURE: "bloodAndTreasure",
   BOSCH: "bosch",
   BROADCHURCH: "broadchurch",
+  DARK: "dark",
   DEFENDING_JACOB: "defendingJacob",
   DEXTER: "dexter",
   DOCTOR_FOSTER: "doctorFoster",
+  FATHER_BROWN_1974: "fatherBrown1974",
+  FATHER_BROWN_2013: "fatherBrown2013",
   HAPPY_VALLEY: "happyValley",
   HINTERLAND: "hinterland",
   MALICE_AFORETHOUGHT: "maliceAforethought",
@@ -21,12 +25,15 @@ const TVSeries = {
   OZARK: "ozark",
   PEAKY_BLINDERS: "peakyBlinders",
   POIROT: "poirot",
+  REBUS: "rebus",
   SAFE: "safe",
   SHARP_OBJECTS: "sharpObjects",
   THE_ADVENTURES_OF_SHERLOCK_HOLMES: "theAdventuresOfSherlockHolmes",
   THE_FALL: "theFall",
   THE_FIVE: "theFive",
+  THE_NO_1_LADIES_DETECTIVE_AGENCY: "theNo1LadiesDetectiveAgency",
   THE_STRANGER: "theStranger",
+  THE_VICAR_OF_DIBLEY: "theVicarOfDibley",
   WIRE_IN_THE_BLOOD: "wireInTheBlood",
   YOU: "you",
 
@@ -36,6 +43,13 @@ const TVSeries = {
       series: [SeriesEntry.create(Series.A_FATAL_INVERSION)],
       imdb: "title/tt0102126",
       key: "aFatalInversion",
+    },
+    bloodAndTreasure: {
+      title: "Blood & Treasure (2019-?)",
+      castKeys: [Person.MATT_BARR],
+      imdb: "title/tt7712598",
+      wiki: "Blood_%26_Treasure",
+      key: "bloodAndTreasure",
     },
     bosch: {
       title: "Bosch (2014-?)",
@@ -61,6 +75,13 @@ const TVSeries = {
       wiki: "Broadchurch",
       key: "broadchurch",
     },
+    dark: {
+      title: "Dark (2017)",
+      castKeys: [Person.LOUIS_HOFMANN],
+      imdb: "title/tt5753856",
+      wiki: "Dark_(TV_series)",
+      key: "dark",
+    },
     defendingJacob: {
       title: "Defending Jacob (2020)",
       castKeys: [Person.CHRIS_EVANS, Person.MICHELLE_DOCKERY],
@@ -81,6 +102,18 @@ const TVSeries = {
       series: [SeriesEntry.create(Series.CHRISTINA_Z_SUGGESTS, 4)],
       imdb: "title/tt4602768",
       key: "doctorFoster",
+    },
+    fatherBrown1974: {
+      title: "Father Brown (1974)",
+      castKeys: [Person.KENNETH_MORE],
+      imdb: "title/tt0069582",
+      key: "fatherBrown1974",
+    },
+    fatherBrown2013: {
+      title: "Father Brown (2013-?)",
+      castKeys: [Person.MARK_WILLIAMS],
+      imdb: "title/tt2215842",
+      key: "fatherBrown2013",
     },
     happyValley: {
       title: "Happy Valley (2014-?)",
@@ -158,6 +191,14 @@ const TVSeries = {
       imdb: "title/tt0094525",
       key: "poirot",
     },
+    rebus: {
+      title: "Rebus (2000-2004)",
+      castKeys: [Person.KEN_STOTT],
+      series: [SeriesEntry.create(Series.INSPECTOR_REBUS)],
+      imdb: "title/tt0867015",
+      wiki: "Rebus_(TV_series)",
+      key: "rebus",
+    },
     safe: {
       title: "Safe (2018)",
       castKeys: [Person.MICHAEL_C_HALL],
@@ -196,6 +237,14 @@ const TVSeries = {
       imdb: "title/tt4370528",
       key: "theFive",
     },
+    theNo1LadiesDetectiveAgency: {
+      title: "The No. 1 Ladies' Detective Agency (2008)",
+      castKeys: [Person.JILL_SCOTT],
+      series: [SeriesEntry.create(Series.THE_NO_1_LADIES_DETECTIVE_AGENCY)],
+      imdb: "title/tt1356380",
+      wiki: "The_No._1_Ladies%27_Detective_Agency_(TV_series)",
+      key: "theNo1LadiesDetectiveAgency",
+    },
     theStranger: {
       title: "The Stranger (2020-?)",
       castKeys: [Person.RICHARD_ARMITAGE],
@@ -203,6 +252,14 @@ const TVSeries = {
       series: [SeriesEntry.create(Series.CHRISTINA_Z_SUGGESTS, 7)],
       imdb: "title/tt9698480",
       key: "theStranger",
+    },
+    theVicarOfDibley: {
+      title: "The Vicar of Dibley (1994-2015)",
+      castKeys: [Person.DAWN_FRENCH],
+      dcl: "1669345114",
+      imdb: "title/tt0108981",
+      wiki: "The_Vicar_of_Dibley",
+      key: "theVicarOfDibley",
     },
     wireInTheBlood: {
       title: "Wire in the Blood (2002-2009)",
