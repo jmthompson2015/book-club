@@ -106,6 +106,7 @@ const Book = {
   PIECES_OF_HER: "piecesOfHer",
   RECONSTRUCTING_AMELIA: "reconstructingAmelia",
   REDEMPTION_ROAD: "redemptionRoad",
+  RED_DRAGON: "redDragon",
   SHARP_OBJECTS: "sharpObjects",
   SHE_WHO_WAS_NO_MORE: "sheWhoWasNoMore",
   SHIRLEY_VALENTINE: "shirleyValentine",
@@ -151,6 +152,7 @@ const Book = {
   THE_GIRL_WITH_THE_DRAGON_TATTOO: "theGirlWithTheDragonTattoo",
   THE_GODS_OF_GUILT: "theGodsOfGuilt",
   THE_GREEK_COFFIN_MYSTERY: "theGreekCoffinMystery",
+  THE_GUEST_LIST: "theGuestList",
   THE_GUILTY: "theGuilty",
   THE_HEIST: "theHeist",
   THE_HOUND_OF_THE_BASKERVILLES: "theHoundOfTheBaskervilles",
@@ -910,6 +912,14 @@ const Book = {
       meeting: "2016.11.28",
       dcl: "1316552114",
     },
+    redDragon: {
+      title: "Red Dragon",
+      authorKeys: [Person.THOMAS_HARRIS],
+      series: [SeriesEntry.create(Series.HANNIBAL_LECTER, 1)],
+      gr: "book/show/28877.Red_Dragon",
+      lt: "work/5882",
+      wiki: "Red_Dragon_(novel)",
+    },
     sharpObjects: {
       title: "Sharp Objects",
       authorKeys: [Person.GILLIAN_FLYNN],
@@ -1093,6 +1103,7 @@ const Book = {
     theCompleteFatherBrownMysteries: {
       title: "The Complete Father Brown Mysteries",
       authorKeys: [Person.G_K_CHESTERTON],
+      series: [SeriesEntry.create(Series.FATHER_BROWN)],
       gr: "book/show/35491084-the-complete-father-brown-mysteries",
       lt: "work/87702",
     },
@@ -1220,6 +1231,13 @@ const Book = {
       series: [SeriesEntry.create(Series.ELLERY_QUEEN, 4)],
       meeting: "2015.11.23",
       dcl: "1294792114",
+    },
+    theGuestList: {
+      title: "The Guest List",
+      authorKeys: [Person.LUCY_FOLEY],
+      dcl: "1647242114",
+      gr: "book/show/51933429-the-guest-list",
+      lt: "work/23927322",
     },
     theGuilty: {
       title: "The Guilty",

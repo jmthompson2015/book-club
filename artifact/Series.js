@@ -21,6 +21,7 @@ const Series = {
   ELLERY_QUEEN: "elleryQueen",
   ELVIS_COLE: "elvisCole",
   EVAN_SMOAK: "evanSmoak",
+  FATHER_BROWN: "fatherBrown",
   FLAVIA_DE_LUCE: "flaviaDeLuce",
   FRIEDA_KLEIN: "friedaKlein",
   GABRIEL_ALLON: "gabrielAllon",
@@ -29,6 +30,7 @@ const Series = {
   GHOSTMAN: "ghostman",
   GRETCHEN_LOWELL: "gretchenLowell",
   HAMISH_MACBETH: "hamishMacbeth",
+  HANNIBAL_LECTER: "hannibalLecter",
   HARRY_BOSCH: "harryBosch",
   HARRY_HOLE: "harryHole",
   HERCULE_POIROT: "herculePoirot",
@@ -179,6 +181,13 @@ const Series = {
       lt: "series/Evan+Smoak",
       key: "evanSmoak",
     },
+    fatherBrown: {
+      title: "Father Brown",
+      gr: "series/55609-father-brown",
+      lt: "nseries/883/Father-Brown",
+      wiki: "Father_Brown",
+      key: "fatherBrown",
+    },
     flaviaDeLuce: {
       title: "Flavia de Luce",
       lt: "series/Flavia+de+Luce",
@@ -210,6 +219,12 @@ const Series = {
       title: "Hamish Macbeth",
       lt: "series/Hamish+Macbeth",
       key: "hamishMacbeth",
+    },
+    hannibalLecter: {
+      title: "Hannibal Lecter",
+      gr: "series/53252-hannibal-lecter",
+      lt: "nseries/3221/Hannibal-Lecter-Series",
+      key: "hannibalLecter",
     },
     harryBosch: {
       title: "Harry Bosch",

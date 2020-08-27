@@ -15,6 +15,7 @@ const TVSeries = {
   DOCTOR_FOSTER: "doctorFoster",
   FATHER_BROWN_1974: "fatherBrown1974",
   FATHER_BROWN_2013: "fatherBrown2013",
+  HANNIBAL: "hannibal",
   HAPPY_VALLEY: "happyValley",
   HINTERLAND: "hinterland",
   MALICE_AFORETHOUGHT: "maliceAforethought",
@@ -106,14 +107,23 @@ const TVSeries = {
     fatherBrown1974: {
       title: "Father Brown (1974)",
       castKeys: [Person.KENNETH_MORE],
+      series: [SeriesEntry.create(Series.FATHER_BROWN)],
       imdb: "title/tt0069582",
       key: "fatherBrown1974",
     },
     fatherBrown2013: {
       title: "Father Brown (2013-?)",
       castKeys: [Person.MARK_WILLIAMS],
+      series: [SeriesEntry.create(Series.FATHER_BROWN)],
       imdb: "title/tt2215842",
       key: "fatherBrown2013",
+    },
+    hannibal: {
+      title: "Hannibal (2013-2015)",
+      castKeys: [Person.HUGH_DANCY, Person.MADS_MIKKELSEN],
+      series: [SeriesEntry.create(Series.HANNIBAL_LECTER)],
+      imdb: "title/tt2243973",
+      key: "hannibal",
     },
     happyValley: {
       title: "Happy Valley (2014-?)",
@@ -238,7 +248,7 @@ const TVSeries = {
       key: "theFive",
     },
     theNo1LadiesDetectiveAgency: {
-      title: "The No. 1 Ladies' Detective Agency (2008)",
+      title: "The No. 1 Ladies' Detective Agency (2008-2009)",
       castKeys: [Person.JILL_SCOTT],
       series: [SeriesEntry.create(Series.THE_NO_1_LADIES_DETECTIVE_AGENCY)],
       imdb: "title/tt1356380",
