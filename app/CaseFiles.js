@@ -52,11 +52,13 @@ const createNavigationTable = (year) => {
   return WikiUtils.table(null, [row], null, style2);
 };
 
-const createRow = (book) => {
+const createRow = (useSearch) => (book) => {
   const value1 = book ? createDate(book.meeting) : "";
-  const value2 = Formatter.createBookText(book);
-  const value3 = book ? Formatter.createPersonText(book.authorKeys) : "";
-  const value4 = book ? Formatter.createSeriesText(book.series) : "";
+  const value2 = Formatter.createBookText(book, useSearch);
+  const value3 = book
+    ? Formatter.createPersonText(book.authorKeys, useSearch)
+    : "";
+  const value4 = book ? Formatter.createSeriesText(book.series, useSearch) : "";
   const value5 = book ? Formatter.createMeetingText2(book.meeting) : "";
 
   const values = [value1, value2, value3, value4, value5];
@@ -66,10 +68,10 @@ const createRow = (book) => {
 };
 
 const CaseFiles = {
-  report: (year) => {
+  report: (useSearch, year) => {
     const books = Book.valuesByYear(year);
     books.sort(Comparator.compareByMeeting(true));
-    const rows = R.map(createRow, books);
+    const rows = R.map(createRow(useSearch), books);
 
     return `${WikiUtils.table(HEADERS, rows, TABLE_CLASS)}
 
@@ -78,7 +80,9 @@ ${createNavigationTable(year)}
   },
 };
 
-const year = process.argv.length > 2 ? process.argv[2] : 2020;
-const content = CaseFiles.report(year);
+const useSearchString = process.argv.length > 2 ? process.argv[2] : "false";
+const useSearch = useSearchString === "true";
+const year = process.argv.length > 3 ? parseInt(process.argv[3], 10) : 2020;
+const content = CaseFiles.report(useSearch, year);
 const outputFile = `CaseFiles${year}.txt`;
 FileWriter.writeFile(outputFile, content);

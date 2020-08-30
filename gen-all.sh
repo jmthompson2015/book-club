@@ -1,15 +1,19 @@
+export USE_SEARCH1=false
+export USE_SEARCH2=true
+
 mkdir -p dist
 cd dist
 
-node ../app/MasterBookList.js
-node ../app/MasterMovieList.js
-node ../app/MasterPersonList.js
-node ../app/MasterSeriesList.js
-node ../app/MasterTVSeriesList.js
+node ../app/CaseFiles.js ${USE_SEARCH1} 2019
+node ../app/MasterBookList.js ${USE_SEARCH1}
+node ../app/MasterMovieList.js ${USE_SEARCH1}
+node ../app/MasterPersonList.js ${USE_SEARCH1}
+node ../app/MasterSeriesList.js ${USE_SEARCH1}
+node ../app/MasterTVSeriesList.js ${USE_SEARCH1}
 
-node ../app/CaseFiles.js
-node ../app/MostReadAuthorsList.js
-node ../app/MostReadSeriesList.js
-node ../app/MostWantedBooksList.js
-node ../app/MostWantedMoviesList.js
-node ../app/MostWantedTVSeriesList.js
+node ../app/CaseFiles.js ${USE_SEARCH2}
+node ../app/MostReadAuthorsList.js ${USE_SEARCH2}
+node ../app/MostReadSeriesList.js ${USE_SEARCH2}
+node ../app/MostWantedBooksList.js ${USE_SEARCH2}
+node ../app/MostWantedMoviesList.js ${USE_SEARCH2}
+node ../app/MostWantedTVSeriesList.js ${USE_SEARCH2}

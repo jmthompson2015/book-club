@@ -13,11 +13,11 @@ const OUTPUT_FILE = "MasterSeriesList.txt";
 const HEADERS = ["Series", "Author"];
 const TABLE_CLASS = "wikitable sortable";
 
-const createRow = (series) => {
+const createRow = (useSearch) => (series) => {
   const authorKeys = BookUtils.determineAuthor(series.key);
 
-  const value1 = Formatter.createBookText(series);
-  const value2 = Formatter.createPersonText(authorKeys);
+  const value1 = Formatter.createBookText(series, useSearch);
+  const value2 = Formatter.createPersonText(authorKeys, useSearch);
 
   const values = [value1, value2];
   const cells = R.map(WikiUtils.cell, values);
@@ -26,14 +26,16 @@ const createRow = (series) => {
 };
 
 const MasterBookList = {
-  report: () => {
+  report: (useSearch) => {
     const series = Series.values();
     series.sort(Comparator.compareByTitle);
-    const rows = R.map(createRow, series);
+    const rows = R.map(createRow(useSearch), series);
 
     return WikiUtils.table(HEADERS, rows, TABLE_CLASS);
   },
 };
 
-const content = MasterBookList.report();
+const useSearchString = process.argv.length > 2 ? process.argv[2] : "false";
+const useSearch = useSearchString === "true";
+const content = MasterBookList.report(useSearch);
 FileWriter.writeFile(OUTPUT_FILE, content);

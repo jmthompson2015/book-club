@@ -40,5 +40,49 @@ QUnit.test("Person.keys()", (assert) => {
   assert.equal(R.last(result), Person.WILLY_RUSSELL);
 });
 
+QUnit.test("createLabel() undefined", (assert) => {
+  // Setup.
+  const person = undefined;
+
+  // Run.
+  const result = Person.createLabel(person);
+
+  // Verify.
+  assert.equal(result, "", `result = :${result}:`);
+});
+
+QUnit.test("createLabel() first last", (assert) => {
+  // Setup.
+  const person = { first: "Lee", last: "Child" };
+
+  // Run.
+  const result = Person.createLabel(person);
+
+  // Verify.
+  assert.equal(result, "Lee Child", `result = :${result}:`);
+});
+
+QUnit.test("createLabel() first middle last", (assert) => {
+  // Setup.
+  const person = { first: "James", middle: "M.", last: "Cain" };
+
+  // Run.
+  const result = Person.createLabel(person);
+
+  // Verify.
+  assert.equal(result, "James M. Cain", `result = :${result}:`);
+});
+
+QUnit.test("createLabel() last", (assert) => {
+  // Setup.
+  const person = { last: "Boileau-Narcejac" };
+
+  // Run.
+  const result = Person.createLabel(person);
+
+  // Verify.
+  assert.equal(result, "Boileau-Narcejac", `result = :${result}:`);
+});
+
 const PersonTest = {};
 module.exports = PersonTest;

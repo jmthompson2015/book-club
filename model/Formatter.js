@@ -12,11 +12,16 @@ const Formatter = {};
 
 const ICON_SIZE = "20px";
 
-const DCL_IMAGE = "DouglasCountyLibraries418.png";
-const GR_IMAGE = "Goodreads128.png";
-const IMDB_IMAGE = "IMDb256.png";
-const LT_IMAGE = "LibraryThing180.png";
-const WIKIPEDIA_IMAGE = "Wikipedia128.png";
+const DCL_IMAGE = "DouglasCountyLibraries.png";
+const DCL_IMAGE_2 = "DouglasCountyLibraries_2.png";
+const GR_IMAGE = "Goodreads.png";
+const GR_IMAGE_2 = "Goodreads_2.png";
+const IMDB_IMAGE = "IMDb.png";
+const IMDB_IMAGE_2 = "IMDb_2.png";
+const LT_IMAGE = "LibraryThing.png";
+const LT_IMAGE_2 = "LibraryThing_2.png";
+const WIKIPEDIA_IMAGE = "Wikipedia.png";
+const WIKIPEDIA_IMAGE_2 = "Wikipedia_2.png";
 
 const createItemPrefix = (item) => {
   let answer = "";
@@ -72,13 +77,25 @@ const labelLinkedImagesTable = (label, linkedImages) => {
 const wikilinkedImage = (href, image, tooltip) =>
   href ? `[[Image:${image}|${ICON_SIZE}|link=${href}|${tooltip}]]` : "";
 
+const linkedImage = (url1, url2, image1, image2, tooltip) => {
+  let answer = null;
+
+  if (url1) {
+    answer = wikilinkedImage(url1, image1, tooltip);
+  } else if (url2) {
+    answer = wikilinkedImage(url2, image2, tooltip);
+  }
+
+  return answer;
+};
+
 // /////////////////////////////////////////////////////////////////////////////
-Formatter.createItemText = (item) => {
+Formatter.createItemText = (item, useSearch = false) => {
   let answer = "";
 
   if (item) {
     const itemPrefix = createItemPrefix(item);
-    const linkedImages = Formatter.linkedImages(item);
+    const linkedImages = Formatter.linkedImages(item, useSearch);
     const table = labelLinkedImagesTable(item.title, linkedImages);
     answer = `${itemPrefix} ${table}`;
   }
@@ -86,9 +103,12 @@ Formatter.createItemText = (item) => {
   return answer.trim();
 };
 
-Formatter.createBookText = (book) => Formatter.createItemText(book);
-Formatter.createMovieText = (movie) => Formatter.createItemText(movie);
-Formatter.createTVSeriesText = (tvSeries) => Formatter.createItemText(tvSeries);
+Formatter.createBookText = (book, useSearch = false) =>
+  Formatter.createItemText(book, useSearch);
+Formatter.createMovieText = (movie, useSearch = false) =>
+  Formatter.createItemText(movie, useSearch);
+Formatter.createTVSeriesText = (tvSeries, useSearch = false) =>
+  Formatter.createItemText(tvSeries, useSearch);
 
 Formatter.createMeetingText1 = (meeting) => {
   let answer = "";
@@ -110,35 +130,7 @@ Formatter.createMeetingText2 = (meeting) => {
   return answer;
 };
 
-Formatter.createPersonLabel = (person) => {
-  let answer = "";
-
-  if (person) {
-    if (person.first) {
-      answer += person.first;
-    }
-
-    if (person.middle) {
-      if (answer.length > 0) {
-        answer += " ";
-      }
-
-      answer += person.middle;
-    }
-
-    if (person.last) {
-      if (answer.length > 0) {
-        answer += " ";
-      }
-
-      answer += person.last;
-    }
-  }
-
-  return answer;
-};
-
-Formatter.createPersonText = (personArray) => {
+Formatter.createPersonText = (personArray, useSearch = false) => {
   let answer = "";
 
   if (personArray && personArray.length > 0) {
@@ -146,8 +138,8 @@ Formatter.createPersonText = (personArray) => {
       const person = Person.properties[personKey];
 
       if (person) {
-        const personLabel = Formatter.createPersonLabel(person);
-        const linkedImages = Formatter.linkedImages(person);
+        const personLabel = Person.createLabel(person);
+        const linkedImages = Formatter.linkedImages(person, useSearch);
 
         return labelLinkedImagesTable(personLabel, linkedImages);
       }
@@ -163,7 +155,7 @@ Formatter.createPersonText = (personArray) => {
   return answer;
 };
 
-Formatter.createSeriesText = (seriesArray) => {
+Formatter.createSeriesText = (seriesArray, useSearch = false) => {
   let answer = "";
 
   if (seriesArray) {
@@ -172,7 +164,7 @@ Formatter.createSeriesText = (seriesArray) => {
 
       if (series) {
         const seriesLabel = createSeriesLabel(seriesEntry);
-        const linkedImages = Formatter.linkedImages(series);
+        const linkedImages = Formatter.linkedImages(series, useSearch);
 
         return labelLinkedImagesTable(seriesLabel, linkedImages);
       }
@@ -188,30 +180,56 @@ Formatter.createSeriesText = (seriesArray) => {
   return answer.trim();
 };
 
-Formatter.linkedImages = (item) => {
-  const dclLink = wikilinkedImage(
-    UrlGenerator.dclUrl(item),
+Formatter.linkedImages = (item, useSearch = false) => {
+  const dclUrl1 = UrlGenerator.dclUrl(item);
+  const dclUrl2 = useSearch ? UrlGenerator.dclSearchUrl(item) : null;
+  const dclLink = linkedImage(
+    dclUrl1,
+    dclUrl2,
     DCL_IMAGE,
+    DCL_IMAGE_2,
     "Douglas County Libraries"
   );
-  const grLink = wikilinkedImage(
-    UrlGenerator.goodreadsUrl(item),
+  const goodreadsUrl1 = UrlGenerator.goodreadsUrl(item);
+  const goodreadsUrl2 = useSearch
+    ? UrlGenerator.goodreadsSearchUrl(item)
+    : null;
+  const grLink = linkedImage(
+    goodreadsUrl1,
+    goodreadsUrl2,
     GR_IMAGE,
+    GR_IMAGE_2,
     "Goodreads"
   );
-  const imdbLink = wikilinkedImage(
-    UrlGenerator.imdbUrl(item),
+  const imdbUrl1 = UrlGenerator.imdbUrl(item);
+  const imdbUrl2 = useSearch ? UrlGenerator.imdbSearchUrl(item) : null;
+  const imdbLink = linkedImage(
+    imdbUrl1,
+    imdbUrl2,
     IMDB_IMAGE,
+    IMDB_IMAGE_2,
     "Internet Movie Database"
   );
-  const ltLink = wikilinkedImage(
-    UrlGenerator.libraryThingUrl(item),
+  const libraryThingUrl1 = UrlGenerator.libraryThingUrl(item);
+  const libraryThingUrl2 = useSearch
+    ? UrlGenerator.libraryThingSearchUrl(item)
+    : null;
+  const ltLink = linkedImage(
+    libraryThingUrl1,
+    libraryThingUrl2,
     LT_IMAGE,
+    LT_IMAGE_2,
     "LibraryThing"
   );
-  const wikiLink = wikilinkedImage(
-    UrlGenerator.wikipediaUrl(item),
+  const wikipediaUrl1 = UrlGenerator.wikipediaUrl(item);
+  const wikipediaUrl2 = useSearch
+    ? UrlGenerator.wikipediaSearchUrl(item)
+    : null;
+  const wikiLink = linkedImage(
+    wikipediaUrl1,
+    wikipediaUrl2,
     WIKIPEDIA_IMAGE,
+    WIKIPEDIA_IMAGE_2,
     "Wikipedia"
   );
 

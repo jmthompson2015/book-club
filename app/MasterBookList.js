@@ -12,11 +12,13 @@ const OUTPUT_FILE = "MasterBookList.txt";
 const HEADERS = ["Meeting", "Book", "Author", "Series"];
 const TABLE_CLASS = "wikitable sortable";
 
-const createRow = (book) => {
+const createRow = (useSearch) => (book) => {
   const value1 = book ? Formatter.createMeetingText1(book.meeting) : "";
-  const value2 = Formatter.createBookText(book);
-  const value3 = book ? Formatter.createPersonText(book.authorKeys) : "";
-  const value4 = book ? Formatter.createSeriesText(book.series) : "";
+  const value2 = Formatter.createBookText(book, useSearch);
+  const value3 = book
+    ? Formatter.createPersonText(book.authorKeys, useSearch)
+    : "";
+  const value4 = book ? Formatter.createSeriesText(book.series, useSearch) : "";
 
   const values = [value1, value2, value3, value4];
   const cells = R.map(WikiUtils.cell, values);
@@ -25,14 +27,16 @@ const createRow = (book) => {
 };
 
 const MasterBookList = {
-  report: () => {
+  report: (useSearch) => {
     const books = Book.values();
     books.sort(Comparator.compareByMeeting(false));
-    const rows = R.map(createRow, books);
+    const rows = R.map(createRow(useSearch), books);
 
     return WikiUtils.table(HEADERS, rows, TABLE_CLASS);
   },
 };
 
-const content = MasterBookList.report();
+const useSearchString = process.argv.length > 2 ? process.argv[2] : "false";
+const useSearch = useSearchString === "true";
+const content = MasterBookList.report(useSearch);
 FileWriter.writeFile(OUTPUT_FILE, content);

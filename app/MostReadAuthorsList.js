@@ -13,7 +13,7 @@ const HEADERS = ["Author", "Book Count"];
 const TABLE_CLASS = "wikitable sortable";
 
 const MostReadAuthorsList = {
-  report: () => {
+  report: (useSearch) => {
     const keyToBooks = Book.authorKeyToBooks(true);
     const reduceFunction = (accum, key) => {
       const myBooks = keyToBooks[key];
@@ -27,7 +27,7 @@ const MostReadAuthorsList = {
     );
     keys.sort(Comparator.compareByCount(keyToCount));
     const mapFunction = (key) => {
-      const value1 = Formatter.createPersonText([key]);
+      const value1 = Formatter.createPersonText([key], useSearch);
       const value2 = keyToCount[key];
       const cell1 = WikiUtils.cell(value1);
       const cell2 = WikiUtils.cell(value2, "text-align:right;");
@@ -40,5 +40,7 @@ const MostReadAuthorsList = {
   },
 };
 
-const content = MostReadAuthorsList.report();
+const useSearchString = process.argv.length > 2 ? process.argv[2] : "false";
+const useSearch = useSearchString === "true";
+const content = MostReadAuthorsList.report(useSearch);
 FileWriter.writeFile(OUTPUT_FILE, content);

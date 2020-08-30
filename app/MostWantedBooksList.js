@@ -12,10 +12,12 @@ const OUTPUT_FILE = "MostWantedBooksList.txt";
 const HEADERS = ["Book", "Author", "Series"];
 const TABLE_CLASS = "wikitable sortable";
 
-const createRow = (book) => {
-  const value1 = Formatter.createTVSeriesText(book);
-  const value2 = book ? Formatter.createPersonText(book.authorKeys) : "";
-  const value3 = book ? Formatter.createSeriesText(book.series) : "";
+const createRow = (useSearch) => (book) => {
+  const value1 = Formatter.createTVSeriesText(book, useSearch);
+  const value2 = book
+    ? Formatter.createPersonText(book.authorKeys, useSearch)
+    : "";
+  const value3 = book ? Formatter.createSeriesText(book.series, useSearch) : "";
 
   const values = [value1, value2, value3];
   const cells = R.map(WikiUtils.cell, values);
@@ -24,14 +26,16 @@ const createRow = (book) => {
 };
 
 const MostWantedBooksList = {
-  report: () => {
+  report: (useSearch) => {
     const books = Book.valuesWithoutMeeting();
     books.sort(Comparator.compareByTitle);
-    const rows = R.map(createRow, books);
+    const rows = R.map(createRow(useSearch), books);
 
     return WikiUtils.table(HEADERS, rows, TABLE_CLASS);
   },
 };
 
-const content = MostWantedBooksList.report();
+const useSearchString = process.argv.length > 2 ? process.argv[2] : "false";
+const useSearch = useSearchString === "true";
+const content = MostWantedBooksList.report(useSearch);
 FileWriter.writeFile(OUTPUT_FILE, content);

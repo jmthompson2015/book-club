@@ -13,18 +13,22 @@ const OUTPUT_FILE = "MasterTVSeriesList.txt";
 const HEADERS = ["TV Series", "Creator", "Cast", "Book Series", "Author"];
 const TABLE_CLASS = "wikitable sortable";
 
-const createRow = (tvSeries) => {
+const createRow = (useSearch) => (tvSeries) => {
   const authorKeys = tvSeries
     ? BookUtils.authorForSeriesArray(tvSeries.series)
     : undefined;
 
-  const value1 = Formatter.createTVSeriesText(tvSeries);
+  const value1 = Formatter.createTVSeriesText(tvSeries, useSearch);
   const value2 = tvSeries
-    ? Formatter.createPersonText(tvSeries.creatorKeys)
+    ? Formatter.createPersonText(tvSeries.creatorKeys, useSearch)
     : "";
-  const value3 = tvSeries ? Formatter.createPersonText(tvSeries.castKeys) : "";
-  const value4 = tvSeries ? Formatter.createSeriesText(tvSeries.series) : "";
-  const value5 = Formatter.createPersonText(authorKeys);
+  const value3 = tvSeries
+    ? Formatter.createPersonText(tvSeries.castKeys, useSearch)
+    : "";
+  const value4 = tvSeries
+    ? Formatter.createSeriesText(tvSeries.series, useSearch)
+    : "";
+  const value5 = Formatter.createPersonText(authorKeys, useSearch);
 
   const values = [value1, value2, value3, value4, value5];
   const cells = R.map(WikiUtils.cell, values);
@@ -33,14 +37,16 @@ const createRow = (tvSeries) => {
 };
 
 const MasterTVSeriesList = {
-  report: () => {
+  report: (useSearch) => {
     const tvSerieses = TVSeries.values();
     tvSerieses.sort(Comparator.compareByTitle);
-    const rows = R.map(createRow, tvSerieses);
+    const rows = R.map(createRow(useSearch), tvSerieses);
 
     return WikiUtils.table(HEADERS, rows, TABLE_CLASS);
   },
 };
 
-const content = MasterTVSeriesList.report();
+const useSearchString = process.argv.length > 2 ? process.argv[2] : "false";
+const useSearch = useSearchString === "true";
+const content = MasterTVSeriesList.report(useSearch);
 FileWriter.writeFile(OUTPUT_FILE, content);

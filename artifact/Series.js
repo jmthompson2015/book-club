@@ -124,6 +124,7 @@ const Series = {
     christinaZSuggests: {
       title: "Christina Z. Suggests",
       authorKeys: undefined,
+      useSearch: false,
       key: "christinaZSuggests",
     },
     clayEdison: {
@@ -206,6 +207,7 @@ const Series = {
     gailHSuggests: {
       title: "Gail H. Suggests",
       authorKeys: undefined,
+      useSearch: false,
       key: "gailHSuggests",
     },
     georgia: { title: "Georgia", lt: "series/Georgia", key: "georgia" },
@@ -328,11 +330,13 @@ const Series = {
     perfectMurdersList: {
       title: "Perfect Murders List",
       authorKeys: undefined,
+      useSearch: false,
       key: "perfectMurdersList",
     },
     peterSwansonSuggests: {
       title: "Peter Swanson Suggests",
       authorKeys: undefined,
+      useSearch: false,
       key: "peterSwansonSuggests",
     },
     reneeBallard: {
