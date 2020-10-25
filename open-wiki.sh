@@ -1,7 +1,7 @@
 export BASE="https://crimeandbeyond.fandom.com/wiki"
 
-open "${BASE}/Case_Files_2019"
 open "${BASE}/Case_Files_2020"
+open "${BASE}/Case_Files_2021"
 
 open "${BASE}/Master_Book_List"
 open "${BASE}/Master_Movie_List"

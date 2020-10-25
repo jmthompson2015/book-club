@@ -5,6 +5,7 @@ const Person = {
   ALAN_BRADLEY: "alanBradley",
   ALEX_MARWOOD: "alexMarwood",
   ALEX_MICHAELIDES: "alexMichaelides",
+  ALEX_PAVESI: "alexPavesi",
   ALEXANDER_MCCALL_SMITH: "alexanderMcCallSmith",
   ALFRED_HITCHCOCK: "alfredHitchcock",
   ALICE_BLANCHARD: "aliceBlanchard",
@@ -185,10 +186,12 @@ const Person = {
   SANDRA_BROWN: "sandraBrown",
   SARAH_LANCASHIRE: "sarahLancashire",
   SCOTT_B_SMITH: "scottBSmith",
+  SCOTT_TUROW: "scottTurow",
   SHARI_LAPENA: "shariLapena",
   SIDNEY_LUMET: "sidneyLumet",
   SIMON_BECKETT: "simonBeckett",
   SIMON_BRETT: "simonBrett",
+  SOPHIE_HANNAH: "sophieHannah",
   STEPHEN_J_CANNELL: "stephenJCannell",
   STEPHEN_WHITE: "stephenWhite",
   STIEG_LARSSON: "stiegLarsson",
@@ -231,9 +234,16 @@ const Person = {
     alexMichaelides: {
       first: "Alex",
       last: "Michaelides",
+      gr: "author/show/17621440.Alex_Michaelides",
       imdb: "name/nm1955863",
       lt: "author/michaelidesalex",
       wiki: "Alex_Michaelides",
+    },
+    alexPavesi: {
+      first: "Alex",
+      last: "Pavesi",
+      gr: "author/show/19623359.Alex_Pavesi",
+      lt: "author/pavesialex",
     },
     alexanderMcCallSmith: {
       first: "Alexander",
@@ -280,6 +290,7 @@ const Person = {
     anthonyHorowitz: {
       first: "Anthony",
       last: "Horowitz",
+      gr: "author/show/32590.Anthony_Horowitz",
       imdb: "name/nm0395275",
       lt: "author/horowitzanthony",
       wiki: "Anthony_Horowitz",
@@ -368,6 +379,7 @@ const Person = {
     chbKitchin: {
       first: "C.H.B.",
       last: "Kitchin",
+      gr: "author/show/512327.C_H_B_Kitchin",
       lt: "author/kitchinchb",
       wiki: "C._H._B._Kitchin",
     },
@@ -613,6 +625,7 @@ const Person = {
     harlanCoben: {
       first: "Harlan",
       last: "Coben",
+      gr: "author/show/24689.Harlan_Coben",
       imdb: "name/nm1454192",
       lt: "author/cobenharlan",
       wiki: "Harlan_Coben",
@@ -684,6 +697,7 @@ const Person = {
     janeHarper: {
       first: "Jane",
       last: "Harper",
+      gr: "author/show/556546.Jane_Harper",
       imdb: "name/nm7681091",
       lt: "author/harperjane-1",
       wiki: "Jane_Harper",
@@ -742,6 +756,7 @@ const Person = {
     johnGrisham: {
       first: "John",
       last: "Grisham",
+      gr: "author/show/721.John_Grisham",
       imdb: "name/nm0001300",
       lt: "author/grishamjohn",
       wiki: "John_Grisham",
@@ -845,6 +860,7 @@ const Person = {
     lianeMoriarty: {
       first: "Liane",
       last: "Moriarty",
+      gr: "author/show/322069.Liane_Moriarty",
       lt: "author/moriartyliane",
       wiki: "Liane_Moriarty",
     },
@@ -862,6 +878,7 @@ const Person = {
     lisaJewell: {
       first: "Lisa",
       last: "Jewell",
+      gr: "author/show/93504.Lisa_Jewell",
       lt: "author/jewelllisa",
       wiki: "Lisa_Jewell",
     },
@@ -936,7 +953,12 @@ const Person = {
       wiki: "Mavis_Doriel_Hay",
     },
     mcBeaton: { first: "M.C.", last: "Beaton", wiki: "Marion_Chesney" },
-    meganGoldin: { first: "Megan", last: "Goldin", lt: "author/goldinmegan" },
+    meganGoldin: {
+      first: "Megan",
+      last: "Goldin",
+      gr: "author/show/16718134.Megan_Goldin",
+      lt: "author/goldinmegan",
+    },
     megGardiner: {
       first: "Meg",
       last: "Gardiner",
@@ -960,6 +982,7 @@ const Person = {
     michaelConnelly: {
       first: "Michael",
       last: "Connelly",
+      gr: "author/show/12470.Michael_Connelly",
       imdb: "name/nm0175093",
       lt: "author/connellymichael-1",
       wiki: "Michael_Connelly",
@@ -1032,6 +1055,7 @@ const Person = {
     peterSwanson: {
       first: "Peter",
       last: "Swanson",
+      gr: "author/show/7142445.Peter_Swanson",
       lt: "author/swansonpeter-1",
       wiki: "Peter_Swanson",
     },
@@ -1094,6 +1118,7 @@ const Person = {
     ruthWare: {
       first: "Ruth",
       last: "Ware",
+      gr: "author/show/9013543.Ruth_Ware",
       imdb: "name/nm3405121",
       lt: "author/wareruth",
       wiki: "Ruth_Ware",
@@ -1119,6 +1144,13 @@ const Person = {
       lt: "author/smithscott-1",
       wiki: "Scott_Smith_(author)",
     },
+    scottTurow: {
+      first: "Scott",
+      last: "Turow",
+      gr: "author/show/2749.Scott_Turow",
+      lt: "author/turowscott",
+      wiki: "Scott_Turow",
+    },
     shariLapena: { first: "Shari", last: "Lapena", wiki: "Shari_Lapena" },
     sidneyLumet: { first: "Sidney", last: "Lumet", imdb: "name/nm0001486" },
     simonBeckett: {
@@ -1132,6 +1164,13 @@ const Person = {
       last: "Brett",
       lt: "author/brettsimon-1",
       wiki: "Simon_Brett",
+    },
+    sophieHannah: {
+      first: "Sophie",
+      last: "Hannah",
+      gr: "author/show/232473.Sophie_Hannah",
+      lt: "author/hannahsophie",
+      wiki: "Sophie_Hannah",
     },
     stephenJCannell: {
       first: "Stephen",

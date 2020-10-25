@@ -35,6 +35,7 @@ const Series = {
   HARRY_HOLE: "harryHole",
   HERCULE_POIROT: "herculePoirot",
   INSPECTOR_REBUS: "inspectorRebus",
+  JACK_MCEVOY: "jackMcevoy",
   JACK_REACHER: "jackReacher",
   JAKE_BRIGANCE: "jakeBrigance",
   JANA_BERZELIUS: "janaBerzelius",
@@ -44,6 +45,7 @@ const Series = {
   JOE_PIKE: "joePike",
   JOHNNY_MERRIMON: "johnnyMerrimon",
   KICK_LANNIGAN: "kickLannigan",
+  KINDLE_COUNTY: "kindleCounty",
   LINCOLN_RHYME: "lincolnRhyme",
   LUCAS_DAVENPORT: "lucasDavenport",
   MALCOLM_WARREN: "malcolmWarren",
@@ -51,9 +53,11 @@ const Series = {
   MICKEY_HALLER: "mickeyHaller",
   MILLENNIUM: "millennium",
   MYRON_BOLITAR: "myronBolitar",
+  NEW_HERCULE_POIROT: "newHerculePoirot",
   ODD_THOMAS: "oddThomas",
   PERFECT_MURDERS_LIST: "perfectMurdersList",
   PETER_SWANSON_SUGGESTS: "peterSwansonSuggests",
+  RACHEL_WALLING: "rachelWalling",
   RENEE_BALLARD: "reneeBallard",
   RIZZOLI_AND_ISLES: "rizzoliAndIsles",
   RODERICK_ALLEYN: "roderickAlleyn",
@@ -250,6 +254,12 @@ const Series = {
       wiki: "Inspector_Rebus",
       key: "inspectorRebus",
     },
+    jackMcevoy: {
+      title: "Jack McEvoy",
+      gr: "series/40639-jack-mcevoy",
+      lt: "nseries/1553/Jack-McEvoy",
+      key: "jackMcevoy",
+    },
     jackReacher: {
       title: "Jack Reacher",
       lt: "series/Jack+Reacher",
@@ -286,6 +296,12 @@ const Series = {
       title: "Kick Lannigan",
       lt: "series/Kick+Lannigan",
       key: "kickLannigan",
+    },
+    kindleCounty: {
+      title: "Kindle County",
+      gr: "series/52231-kindle-county-legal-thriller",
+      lt: "nseries/2854/Kindle-County",
+      key: "kindleCounty",
     },
     lincolnRhyme: {
       title: "Lincoln Rhyme",
@@ -327,6 +343,12 @@ const Series = {
       lt: "series/Odd+Thomas",
       key: "oddThomas",
     },
+    newHerculePoirot: {
+      title: "New Hercule Poirot",
+      gr: "series/184795-new-hercule-poirot-mysteries",
+      lt: "nseries/7511/New-Hercule-Poirot-Mysteries",
+      key: "newHerculePoirot",
+    },
     perfectMurdersList: {
       title: "Perfect Murders List",
       authorKeys: undefined,
@@ -338,6 +360,11 @@ const Series = {
       authorKeys: undefined,
       useSearch: false,
       key: "peterSwansonSuggests",
+    },
+    rachelWalling: {
+      title: "Rachel Walling",
+      lt: "nseries/1206/Rachel-Walling",
+      key: "rachelWalling",
     },
     reneeBallard: {
       title: "Renée Ballard",
