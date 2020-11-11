@@ -238,9 +238,10 @@ Formatter.linkedImages = (item, useSearch = false) => {
   const cell3 = imdbLink ? HtmlUtils.cell(imdbLink) : "";
   const cell4 = ltLink ? HtmlUtils.cell(ltLink) : "";
   const cell5 = wikiLink ? HtmlUtils.cell(wikiLink) : "";
-  const row = HtmlUtils.row([cell1, cell2, cell3, cell4, cell5]);
+  const row = [cell1, cell2, cell3, cell4, cell5];
+  const style = "justify-content: flex-end;";
 
-  return HtmlUtils.table([row]);
+  return HtmlUtils.flexboxWrap(row, style);
 };
 
 Object.freeze(Formatter);

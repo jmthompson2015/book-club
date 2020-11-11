@@ -28,6 +28,12 @@ HtmlUtilities.cell = (content, style) => {
 HtmlUtilities.div = (content, style) =>
   HtmlUtilities.tag("div", content, style);
 
+HtmlUtilities.flexboxWrap = (rowArray, style) => {
+  const style2 = `display: flex; flex-wrap: wrap;${style ? ` ${style}` : ""}`;
+
+  return HtmlUtilities.div(rowArray.join(""), style2);
+};
+
 HtmlUtilities.row = (cellArray, style) => {
   const style2 = `display: table-row;${style ? ` ${style}` : ""}`;
 
