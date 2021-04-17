@@ -32,7 +32,7 @@ QUnit.test("createBookText()", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    '<div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Gone Girl</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:DouglasCountyLibraries.png|20px|link=https://dcl.bibliocommons.com/item/show/1033248114|Douglas County Libraries]]</div><div style="display: table-cell;">[[Image:LibraryThing.png|20px|link=https://www.librarything.com/work/11234211|LibraryThing]]</div></div></div></div></div></div>'
+    '<div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Gone Girl</div><div style="display: table-cell; float: right;"><div style="display: flex; flex-wrap: wrap; justify-content: flex-end;"><div style="display: table-cell;">[[Image:DouglasCountyLibraries.png|20px|link=https://dcl.bibliocommons.com/item/show/1033248114|Douglas County Libraries]]</div><div style="display: table-cell;">[[Image:LibraryThing.png|20px|link=https://www.librarything.com/work/11234211|LibraryThing]]</div></div></div></div></div>'
   );
 });
 
@@ -47,18 +47,7 @@ QUnit.test("createBookText() use search", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    '<div style="display: table; width:100%;">' +
-      '<div style="display: table-row;">' +
-      '<div style="display: table-cell; vertical-align: middle;">Gone Girl</div>' +
-      '<div style="display: table-cell; float: right;">' +
-      '<div style="display: table;">' +
-      '<div style="display: table-row;">' +
-      '<div style="display: table-cell;">[[Image:DouglasCountyLibraries.png|20px|link=https://dcl.bibliocommons.com/item/show/1033248114|Douglas County Libraries]]</div>' +
-      '<div style="display: table-cell;">[[Image:Goodreads_2.png|20px|link=https://www.goodreads.com/search?q=Gone+Girl|Goodreads]]</div>' +
-      '<div style="display: table-cell;">[[Image:IMDb_2.png|20px|link=https://www.imdb.com/find?s=all&q=Gone+Girl|Internet Movie Database]]</div>' +
-      '<div style="display: table-cell;">[[Image:LibraryThing.png|20px|link=https://www.librarything.com/work/11234211|LibraryThing]]</div>' +
-      '<div style="display: table-cell;">[[Image:Wikipedia_2.png|20px|link=https://en.wikipedia.org/wiki/Gone_Girl|Wikipedia]]</div>' +
-      "</div></div></div></div></div>"
+    '<div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Gone Girl</div><div style="display: table-cell; float: right;"><div style="display: flex; flex-wrap: wrap; justify-content: flex-end;"><div style="display: table-cell;">[[Image:DouglasCountyLibraries.png|20px|link=https://dcl.bibliocommons.com/item/show/1033248114|Douglas County Libraries]]</div><div style="display: table-cell;">[[Image:Goodreads_2.png|20px|link=https://www.goodreads.com/search?q=Gone+Girl|Goodreads]]</div><div style="display: table-cell;">[[Image:IMDb_2.png|20px|link=https://www.imdb.com/find?s=all&q=Gone+Girl|Internet Movie Database]]</div><div style="display: table-cell;">[[Image:LibraryThing.png|20px|link=https://www.librarything.com/work/11234211|LibraryThing]]</div><div style="display: table-cell;">[[Image:Wikipedia_2.png|20px|link=https://en.wikipedia.org/wiki/Gone_Girl|Wikipedia]]</div></div></div></div></div>'
   );
 });
 
@@ -132,7 +121,7 @@ QUnit.test("createMovieText()", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    '<div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Gone Girl (2014)</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:IMDb.png|20px|link=https://www.imdb.com/title/tt2267998|Internet Movie Database]]</div></div></div></div></div></div>'
+    '<div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Gone Girl (2014)</div><div style="display: table-cell; float: right;"><div style="display: flex; flex-wrap: wrap; justify-content: flex-end;"><div style="display: table-cell;">[[Image:IMDb.png|20px|link=https://www.imdb.com/title/tt2267998|Internet Movie Database]]</div></div></div></div></div>'
   );
 });
 
@@ -147,17 +136,7 @@ QUnit.test("createMovieText() use search", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    '<div style="display: table; width:100%;">' +
-      '<div style="display: table-row;">' +
-      '<div style="display: table-cell; vertical-align: middle;">Gone Girl (2014)</div>' +
-      '<div style="display: table-cell; float: right;">' +
-      '<div style="display: table;"><div style="display: table-row;">' +
-      '<div style="display: table-cell;">[[Image:DouglasCountyLibraries_2.png|20px|link=https://dcl.bibliocommons.com/v2/search?searchType=smart&query=Gone+Girl+(2014)|Douglas County Libraries]]</div>' +
-      '<div style="display: table-cell;">[[Image:Goodreads_2.png|20px|link=https://www.goodreads.com/search?q=Gone+Girl+(2014)|Goodreads]]</div>' +
-      '<div style="display: table-cell;">[[Image:IMDb.png|20px|link=https://www.imdb.com/title/tt2267998|Internet Movie Database]]</div>' +
-      '<div style="display: table-cell;">[[Image:LibraryThing_2.png|20px|link=https://www.librarything.com/search.php?search=Gone+Girl+(2014)|LibraryThing]]</div>' +
-      '<div style="display: table-cell;">[[Image:Wikipedia_2.png|20px|link=https://en.wikipedia.org/wiki/Gone_Girl_(2014)|Wikipedia]]</div>' +
-      "</div></div></div></div></div>"
+    '<div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Gone Girl (2014)</div><div style="display: table-cell; float: right;"><div style="display: flex; flex-wrap: wrap; justify-content: flex-end;"><div style="display: table-cell;">[[Image:DouglasCountyLibraries_2.png|20px|link=https://dcl.bibliocommons.com/v2/search?searchType=smart&query=Gone+Girl+(2014)|Douglas County Libraries]]</div><div style="display: table-cell;">[[Image:Goodreads_2.png|20px|link=https://www.goodreads.com/search?q=Gone+Girl+(2014)|Goodreads]]</div><div style="display: table-cell;">[[Image:IMDb.png|20px|link=https://www.imdb.com/title/tt2267998|Internet Movie Database]]</div><div style="display: table-cell;">[[Image:LibraryThing_2.png|20px|link=https://www.librarything.com/search.php?search=Gone+Girl+(2014)|LibraryThing]]</div><div style="display: table-cell;">[[Image:Wikipedia_2.png|20px|link=https://en.wikipedia.org/wiki/Gone_Girl_(2014)|Wikipedia]]</div></div></div></div></div>'
   );
 });
 
@@ -183,7 +162,7 @@ QUnit.test("createPersonText()", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    'data-sort-value="Child, Lee"| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Lee Child</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:IMDb.png|20px|link=https://www.imdb.com/name/nm1676193|Internet Movie Database]]</div><div style="display: table-cell;">[[Image:LibraryThing.png|20px|link=https://www.librarything.com/author/childlee|LibraryThing]]</div><div style="display: table-cell;">[[Image:Wikipedia.png|20px|link=https://en.wikipedia.org/wiki/Lee_Child|Wikipedia]]</div></div></div></div></div></div>'
+    'data-sort-value="Child, Lee"| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Lee Child</div><div style="display: table-cell; float: right;"><div style="display: flex; flex-wrap: wrap; justify-content: flex-end;"><div style="display: table-cell;">[[Image:IMDb.png|20px|link=https://www.imdb.com/name/nm1676193|Internet Movie Database]]</div><div style="display: table-cell;">[[Image:LibraryThing.png|20px|link=https://www.librarything.com/author/childlee|LibraryThing]]</div><div style="display: table-cell;">[[Image:Wikipedia.png|20px|link=https://en.wikipedia.org/wiki/Lee_Child|Wikipedia]]</div></div></div></div></div>'
   );
 });
 
@@ -198,18 +177,7 @@ QUnit.test("createPersonText() use search", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    'data-sort-value="Child, Lee"| <div style="display: table; width:100%;">' +
-      '<div style="display: table-row;">' +
-      '<div style="display: table-cell; vertical-align: middle;">Lee Child</div>' +
-      '<div style="display: table-cell; float: right;">' +
-      '<div style="display: table;">' +
-      '<div style="display: table-row;">' +
-      '<div style="display: table-cell;">[[Image:DouglasCountyLibraries_2.png|20px|link=https://dcl.bibliocommons.com/v2/search?searchType=smart&query=Lee+Child|Douglas County Libraries]]</div>' +
-      '<div style="display: table-cell;">[[Image:Goodreads_2.png|20px|link=https://www.goodreads.com/search?q=Lee+Child|Goodreads]]</div>' +
-      '<div style="display: table-cell;">[[Image:IMDb.png|20px|link=https://www.imdb.com/name/nm1676193|Internet Movie Database]]</div>' +
-      '<div style="display: table-cell;">[[Image:LibraryThing.png|20px|link=https://www.librarything.com/author/childlee|LibraryThing]]</div>' +
-      '<div style="display: table-cell;">[[Image:Wikipedia.png|20px|link=https://en.wikipedia.org/wiki/Lee_Child|Wikipedia]]</div>' +
-      "</div></div></div></div></div>"
+    'data-sort-value="Child, Lee"| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Lee Child</div><div style="display: table-cell; float: right;"><div style="display: flex; flex-wrap: wrap; justify-content: flex-end;"><div style="display: table-cell;">[[Image:DouglasCountyLibraries_2.png|20px|link=https://dcl.bibliocommons.com/v2/search?searchType=smart&query=Lee+Child|Douglas County Libraries]]</div><div style="display: table-cell;">[[Image:Goodreads_2.png|20px|link=https://www.goodreads.com/search?q=Lee+Child|Goodreads]]</div><div style="display: table-cell;">[[Image:IMDb.png|20px|link=https://www.imdb.com/name/nm1676193|Internet Movie Database]]</div><div style="display: table-cell;">[[Image:LibraryThing.png|20px|link=https://www.librarything.com/author/childlee|LibraryThing]]</div><div style="display: table-cell;">[[Image:Wikipedia.png|20px|link=https://en.wikipedia.org/wiki/Lee_Child|Wikipedia]]</div></div></div></div></div>'
   );
 });
 
@@ -224,7 +192,7 @@ QUnit.test("createPersonText() array", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    'data-sort-value="Child, Lee"| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Lee Child</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:IMDb.png|20px|link=https://www.imdb.com/name/nm1676193|Internet Movie Database]]</div><div style="display: table-cell;">[[Image:LibraryThing.png|20px|link=https://www.librarything.com/author/childlee|LibraryThing]]</div><div style="display: table-cell;">[[Image:Wikipedia.png|20px|link=https://en.wikipedia.org/wiki/Lee_Child|Wikipedia]]</div></div></div></div></div></div> <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Jane Harper</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:Goodreads.png|20px|link=https://www.goodreads.com/author/show/556546.Jane_Harper|Goodreads]]</div><div style="display: table-cell;">[[Image:IMDb.png|20px|link=https://www.imdb.com/name/nm7681091|Internet Movie Database]]</div><div style="display: table-cell;">[[Image:LibraryThing.png|20px|link=https://www.librarything.com/author/harperjane-1|LibraryThing]]</div><div style="display: table-cell;">[[Image:Wikipedia.png|20px|link=https://en.wikipedia.org/wiki/Jane_Harper|Wikipedia]]</div></div></div></div></div></div>'
+    'data-sort-value="Child, Lee"| <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Lee Child</div><div style="display: table-cell; float: right;"><div style="display: flex; flex-wrap: wrap; justify-content: flex-end;"><div style="display: table-cell;">[[Image:IMDb.png|20px|link=https://www.imdb.com/name/nm1676193|Internet Movie Database]]</div><div style="display: table-cell;">[[Image:LibraryThing.png|20px|link=https://www.librarything.com/author/childlee|LibraryThing]]</div><div style="display: table-cell;">[[Image:Wikipedia.png|20px|link=https://en.wikipedia.org/wiki/Lee_Child|Wikipedia]]</div></div></div></div></div> <div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Jane Harper</div><div style="display: table-cell; float: right;"><div style="display: flex; flex-wrap: wrap; justify-content: flex-end;"><div style="display: table-cell;">[[Image:Goodreads.png|20px|link=https://www.goodreads.com/author/show/556546.Jane_Harper|Goodreads]]</div><div style="display: table-cell;">[[Image:IMDb.png|20px|link=https://www.imdb.com/name/nm7681091|Internet Movie Database]]</div><div style="display: table-cell;">[[Image:LibraryThing.png|20px|link=https://www.librarything.com/author/harperjane-1|LibraryThing]]</div><div style="display: table-cell;">[[Image:Wikipedia.png|20px|link=https://en.wikipedia.org/wiki/Jane_Harper|Wikipedia]]</div></div></div></div></div>'
   );
 });
 
@@ -250,7 +218,7 @@ QUnit.test("createSeriesText()", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    '<div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Jack Reacher #12</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:LibraryThing.png|20px|link=https://www.librarything.com/series/Jack+Reacher|LibraryThing]]</div></div></div></div></div></div>'
+    '<div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Jack Reacher #12</div><div style="display: table-cell; float: right;"><div style="display: flex; flex-wrap: wrap; justify-content: flex-end;"><div style="display: table-cell;">[[Image:LibraryThing.png|20px|link=https://www.librarything.com/series/Jack+Reacher|LibraryThing]]</div></div></div></div></div>'
   );
 });
 
@@ -265,18 +233,7 @@ QUnit.test("createSeriesText() use search", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    '<div style="display: table; width:100%;">' +
-      '<div style="display: table-row;">' +
-      '<div style="display: table-cell; vertical-align: middle;">Jack Reacher #12</div>' +
-      '<div style="display: table-cell; float: right;">' +
-      '<div style="display: table;">' +
-      '<div style="display: table-row;">' +
-      '<div style="display: table-cell;">[[Image:DouglasCountyLibraries_2.png|20px|link=https://dcl.bibliocommons.com/v2/search?searchType=smart&query=Jack+Reacher|Douglas County Libraries]]</div>' +
-      '<div style="display: table-cell;">[[Image:Goodreads_2.png|20px|link=https://www.goodreads.com/search?q=Jack+Reacher|Goodreads]]</div>' +
-      '<div style="display: table-cell;">[[Image:IMDb_2.png|20px|link=https://www.imdb.com/find?s=all&q=Jack+Reacher|Internet Movie Database]]</div>' +
-      '<div style="display: table-cell;">[[Image:LibraryThing.png|20px|link=https://www.librarything.com/series/Jack+Reacher|LibraryThing]]</div>' +
-      '<div style="display: table-cell;">[[Image:Wikipedia_2.png|20px|link=https://en.wikipedia.org/wiki/Jack_Reacher|Wikipedia]]</div>' +
-      "</div></div></div></div></div>"
+    '<div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Jack Reacher #12</div><div style="display: table-cell; float: right;"><div style="display: flex; flex-wrap: wrap; justify-content: flex-end;"><div style="display: table-cell;">[[Image:DouglasCountyLibraries_2.png|20px|link=https://dcl.bibliocommons.com/v2/search?searchType=smart&query=Jack+Reacher|Douglas County Libraries]]</div><div style="display: table-cell;">[[Image:Goodreads_2.png|20px|link=https://www.goodreads.com/search?q=Jack+Reacher|Goodreads]]</div><div style="display: table-cell;">[[Image:IMDb_2.png|20px|link=https://www.imdb.com/find?s=all&q=Jack+Reacher|Internet Movie Database]]</div><div style="display: table-cell;">[[Image:LibraryThing.png|20px|link=https://www.librarything.com/series/Jack+Reacher|LibraryThing]]</div><div style="display: table-cell;">[[Image:Wikipedia_2.png|20px|link=https://en.wikipedia.org/wiki/Jack_Reacher|Wikipedia]]</div></div></div></div></div>'
   );
 });
 
@@ -302,7 +259,7 @@ QUnit.test("createTVSeriesText()", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    '<div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Midsomer Murders (1997-?)</div><div style="display: table-cell; float: right;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:IMDb.png|20px|link=https://www.imdb.com/title/tt0118401|Internet Movie Database]]</div></div></div></div></div></div>'
+    '<div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Midsomer Murders (1997-?)</div><div style="display: table-cell; float: right;"><div style="display: flex; flex-wrap: wrap; justify-content: flex-end;"><div style="display: table-cell;">[[Image:IMDb.png|20px|link=https://www.imdb.com/title/tt0118401|Internet Movie Database]]</div></div></div></div></div>'
   );
 });
 
@@ -317,18 +274,7 @@ QUnit.test("createTVSeriesText() use search", (assert) => {
   assert.ok(result);
   assert.equal(
     result,
-    '<div style="display: table; width:100%;">' +
-      '<div style="display: table-row;">' +
-      '<div style="display: table-cell; vertical-align: middle;">Midsomer Murders (1997-?)</div>' +
-      '<div style="display: table-cell; float: right;">' +
-      '<div style="display: table;">' +
-      '<div style="display: table-row;">' +
-      '<div style="display: table-cell;">[[Image:DouglasCountyLibraries_2.png|20px|link=https://dcl.bibliocommons.com/v2/search?searchType=smart&query=Midsomer+Murders+(1997-?)|Douglas County Libraries]]</div>' +
-      '<div style="display: table-cell;">[[Image:Goodreads_2.png|20px|link=https://www.goodreads.com/search?q=Midsomer+Murders+(1997-?)|Goodreads]]</div>' +
-      '<div style="display: table-cell;">[[Image:IMDb.png|20px|link=https://www.imdb.com/title/tt0118401|Internet Movie Database]]</div>' +
-      '<div style="display: table-cell;">[[Image:LibraryThing_2.png|20px|link=https://www.librarything.com/search.php?search=Midsomer+Murders+(1997-?)|LibraryThing]]</div>' +
-      '<div style="display: table-cell;">[[Image:Wikipedia_2.png|20px|link=https://en.wikipedia.org/wiki/Midsomer_Murders_(1997-?)|Wikipedia]]</div>' +
-      "</div></div></div></div></div>"
+    '<div style="display: table; width:100%;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;">Midsomer Murders (1997-?)</div><div style="display: table-cell; float: right;"><div style="display: flex; flex-wrap: wrap; justify-content: flex-end;"><div style="display: table-cell;">[[Image:DouglasCountyLibraries_2.png|20px|link=https://dcl.bibliocommons.com/v2/search?searchType=smart&query=Midsomer+Murders+(1997-?)|Douglas County Libraries]]</div><div style="display: table-cell;">[[Image:Goodreads_2.png|20px|link=https://www.goodreads.com/search?q=Midsomer+Murders+(1997-?)|Goodreads]]</div><div style="display: table-cell;">[[Image:IMDb.png|20px|link=https://www.imdb.com/title/tt0118401|Internet Movie Database]]</div><div style="display: table-cell;">[[Image:LibraryThing_2.png|20px|link=https://www.librarything.com/search.php?search=Midsomer+Murders+(1997-?)|LibraryThing]]</div><div style="display: table-cell;">[[Image:Wikipedia_2.png|20px|link=https://en.wikipedia.org/wiki/Midsomer_Murders_(1997-?)|Wikipedia]]</div></div></div></div></div>'
   );
 });
 
@@ -342,7 +288,7 @@ QUnit.test("linkedImages()", (assert) => {
   // Verify.
   assert.equal(
     result,
-    '<div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;">[[Image:Goodreads.png|20px|link=https://www.goodreads.com/author/show/12470.Michael_Connelly|Goodreads]]</div><div style="display: table-cell;">[[Image:IMDb.png|20px|link=https://www.imdb.com/name/nm0175093|Internet Movie Database]]</div><div style="display: table-cell;">[[Image:LibraryThing.png|20px|link=https://www.librarything.com/author/connellymichael-1|LibraryThing]]</div><div style="display: table-cell;">[[Image:Wikipedia.png|20px|link=https://en.wikipedia.org/wiki/Michael_Connelly|Wikipedia]]</div></div></div>',
+    '<div style="display: flex; flex-wrap: wrap; justify-content: flex-end;"><div style="display: table-cell;">[[Image:Goodreads.png|20px|link=https://www.goodreads.com/author/show/12470.Michael_Connelly|Goodreads]]</div><div style="display: table-cell;">[[Image:IMDb.png|20px|link=https://www.imdb.com/name/nm0175093|Internet Movie Database]]</div><div style="display: table-cell;">[[Image:LibraryThing.png|20px|link=https://www.librarything.com/author/connellymichael-1|LibraryThing]]</div><div style="display: table-cell;">[[Image:Wikipedia.png|20px|link=https://en.wikipedia.org/wiki/Michael_Connelly|Wikipedia]]</div></div>',
     `result = :${result}:`
   );
 });
