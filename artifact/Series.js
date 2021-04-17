@@ -14,6 +14,7 @@ const Series = {
   CORMORAN_STRIKE: "cormoranStrike",
   DAVID_HUNTER: "davidHunter",
   DEFENDING_JACOB: "defendingJacob",
+  DETECTIVE_LEW_KIRBY: "detective lew kirby",
   DETECTIVE_VARG: "detectiveVarg",
   DEXTER: "dexter",
   DISMAS_HARDY: "dismasHardy",
@@ -72,6 +73,7 @@ const Series = {
   THE_NO_1_LADIES_DETECTIVE_AGENCY: "theNo1LadiesDetectiveAgency",
   VIRGIL_FLOWERS: "virgilFlowers",
   WILL_ROBIE: "willRobie",
+  WINDSOR_HORNE_LOCKWOOD_III: "windsor horne lockwood iii",
   WINE_LOVERS_MYSTERIES: "wineLoversMysteries",
   YOU: "you",
 
@@ -150,6 +152,10 @@ const Series = {
       title: "Defending Jacob",
       lt: "work/11491573",
       key: "defendingJacob",
+    },
+    "detective lew kirby": {
+      title: "Detective Lew Kirby",
+      key: "detectiveVarg",
     },
     detectiveVarg: {
       title: "Detective Varg",
@@ -436,6 +442,10 @@ const Series = {
       title: "Will Robie",
       lt: "series/Will+Robie",
       key: "willRobie",
+    },
+    "windsor horne lockwood iii": {
+      title: "Windsor Horne Lockwood III",
+      key: "windsor horne lockwood iii",
     },
     wineLoversMysteries: {
       title: "Wine Lovers Mysteries",

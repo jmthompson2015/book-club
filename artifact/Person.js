@@ -172,6 +172,7 @@ const Person = {
   RIAN_JOHNSON: "rianJohnson",
   RICHARD_ARMITAGE: "richardArmitage",
   RICHARD_HARRINGTON: "richardHarrington",
+  RICHARD_OSMAN: "richard osman",
   ROBBIE_COLTRANE: "robbieColtrane",
   ROBERT_CRAIS: "robertCrais",
   ROBERT_DE_NIRO: "robertDeNiro",
@@ -197,6 +198,7 @@ const Person = {
   STIEG_LARSSON: "stiegLarsson",
   STUART_WOODS: "stuartWoods",
   SURANNE_JONES: "suranneJones",
+  S_W_KANE: "sw kane",
   TANA_FRENCH: "tanaFrench",
   TED_DEKKER: "tedDekker",
   TESS_GERRITSEN: "tessGerritsen",
@@ -890,6 +892,7 @@ const Person = {
     lisaUnger: {
       first: "Lisa",
       last: "Unger",
+      gr: "author/show/18445.Lisa_Unger",
       lt: "author/ungerlisa",
       wiki: "Lisa_Unger",
     },
@@ -1003,7 +1006,12 @@ const Person = {
       imdb: "name/nm0662511",
     },
     neilDudgeon: { first: "Neil", last: "Dudgeon", imdb: "name/nm0240072" },
-    ngaioMarsh: { first: "Ngaio", last: "Marsh", wiki: "Ngaio_Marsh" },
+    ngaioMarsh: {
+      first: "Ngaio",
+      last: "Marsh",
+      lt: "author/marshngaio",
+      wiki: "Ngaio_Marsh",
+    },
     nicciFrench: {
       first: "Nicci",
       last: "French",
@@ -1076,6 +1084,14 @@ const Person = {
       first: "Richard",
       last: "Harrington",
       imdb: "name/nm0364348",
+    },
+    "richard osman": {
+      first: "Richard",
+      last: "Osman",
+      gr: "author/show/6173710.Richard_Osman",
+      imdb: "name/nm0652066",
+      lt: "author/osmanrichard",
+      wiki: "Richard_Osman",
     },
     robbieColtrane: {
       first: "Robbie",
@@ -1193,6 +1209,13 @@ const Person = {
     },
     stuartWoods: { first: "Stuart", last: "Woods", wiki: "Stuart_Woods" },
     suranneJones: { first: "Suranne", last: "Jones", imdb: "name/nm1013087" },
+    "sw kane": {
+      first: "S.",
+      middle: "W.",
+      last: "Kane",
+      gr: "author/show/19227228.S_W_Kane",
+      lt: "author/kanesw",
+    },
     tanaFrench: {
       first: "Tana",
       last: "French",
