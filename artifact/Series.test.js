@@ -33,7 +33,7 @@ QUnit.test("Series.keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result.length, 77);
+  assert.equal(result.length, 79);
   assert.equal(R.head(result), Series.AARON_FALK);
   assert.equal(R.last(result), Series.YOU);
 });

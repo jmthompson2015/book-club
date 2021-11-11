@@ -14,6 +14,7 @@ const Series = {
   CORMORAN_STRIKE: "cormoranStrike",
   DAVID_HUNTER: "davidHunter",
   DEFENDING_JACOB: "defendingJacob",
+  DETECTIVE_DANIEL_HAWTHORNE: "detective daniel hawthorne",
   DETECTIVE_LEW_KIRBY: "detective lew kirby",
   DETECTIVE_VARG: "detectiveVarg",
   DEXTER: "dexter",
@@ -72,6 +73,7 @@ const Series = {
   THE_CAMEL_CLUB: "theCamelClub",
   THE_NO_1_LADIES_DETECTIVE_AGENCY: "theNo1LadiesDetectiveAgency",
   VIRGIL_FLOWERS: "virgilFlowers",
+  WILDE: "wilde",
   WILL_ROBIE: "willRobie",
   WINDSOR_HORNE_LOCKWOOD_III: "windsor horne lockwood iii",
   WINE_LOVERS_MYSTERIES: "wineLoversMysteries",
@@ -153,9 +155,13 @@ const Series = {
       lt: "work/11491573",
       key: "defendingJacob",
     },
+    "detective daniel hawthorne": {
+      title: "Detective Daniel Hawthorne",
+      key: "detective daniel hawthorne",
+    },
     "detective lew kirby": {
       title: "Detective Lew Kirby",
-      key: "detectiveVarg",
+      key: "detective lew kirby",
     },
     detectiveVarg: {
       title: "Detective Varg",
@@ -437,6 +443,11 @@ const Series = {
       title: "Virgil Flowers",
       lt: "series/Virgil+Flowers",
       key: "virgilFlowers",
+    },
+    wilde: {
+      title: "Wilde",
+      gr: "series/321974-wilde",
+      key: "wilde",
     },
     willRobie: {
       title: "Will Robie",
