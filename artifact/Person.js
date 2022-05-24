@@ -112,6 +112,7 @@ const Person = {
   JOHN_SANDFORD: "johnSandford",
   JONATHAN_KELLERMAN: "jonathanKellerman",
   JO_NESBO: "joNesbo",
+  JULIE_CLARK: "julieClark",
   KARIN_SLAUGHTER: "karinSlaughter",
   KATE_ATKINSON: "kateAtkinson",
   KATHY_REICHS: "kathyReichs",
@@ -797,6 +798,12 @@ const Person = {
       lt: "author/nesbojo",
       wiki: "Jo_Nesbø",
     },
+    julieClark: {
+      first: "Julie",
+      last: "Clark",
+      gr: "author/show/17323560.Julie_Clark",
+      lt: "author/clarkjulie-5",
+    },
     karinSlaughter: {
       first: "Karin",
       last: "Slaughter",
@@ -955,7 +962,13 @@ const Person = {
       lt: "author/haymavisdoriel",
       wiki: "Mavis_Doriel_Hay",
     },
-    mcBeaton: { first: "M.C.", last: "Beaton", wiki: "Marion_Chesney" },
+    mcBeaton: {
+      first: "M.C.",
+      last: "Beaton",
+      gr: "author/show/1657638.M_C_Beaton",
+      lt: "author/beatonmc",
+      wiki: "Marion_Chesney",
+    },
     meganGoldin: {
       first: "Megan",
       last: "Goldin",

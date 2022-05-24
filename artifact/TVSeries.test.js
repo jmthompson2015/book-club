@@ -58,7 +58,8 @@ QUnit.test("directorKeys", (assert) => {
       const person = Person.properties[movie.directorKeys];
       assert.ok(
         person,
-        `Missing director for movie.title = ${movie.title} movie.directorKeys = ${movie.directorKeys}`
+        `Missing director for movie.title = ${movie.title}` +
+          ` movie.directorKeys = ${movie.directorKeys}`
       );
     }
   };
@@ -111,7 +112,7 @@ QUnit.test("TVSeries.keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result.length, 32);
+  assert.equal(result.length, 33);
   assert.equal(R.head(result), TVSeries.A_FATAL_INVERSION);
   assert.equal(R.last(result), TVSeries.YOU);
 });

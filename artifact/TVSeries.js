@@ -6,6 +6,7 @@ const SeriesEntry = require("./SeriesEntry.js");
 
 const TVSeries = {
   A_FATAL_INVERSION: "aFatalInversion",
+  AGATHA_RAISIN: "agatha raisin",
   BLOOD_AND_TREASURE: "bloodAndTreasure",
   BOSCH: "bosch",
   BROADCHURCH: "broadchurch",
@@ -44,6 +45,13 @@ const TVSeries = {
       series: [SeriesEntry.create(Series.A_FATAL_INVERSION)],
       imdb: "title/tt0102126",
       key: "aFatalInversion",
+    },
+    "agatha raisin": {
+      title: "Agatha Raisin",
+      series: [SeriesEntry.create(Series.AGATHA_RAISIN)],
+      imdb: "title/tt5015548",
+      lt: "nseries/179232/Agatha-Raisin-TV-Series",
+      key: "agatha raisin",
     },
     bloodAndTreasure: {
       title: "Blood & Treasure (2019-?)",

@@ -1,6 +1,7 @@
 const Series = {
   AARON_FALK: "aaronFalk",
   A_FATAL_INVERSION: "aFatalInversion",
+  AGATHA_RAISIN: "agatha raisin",
   ALEX_DELAWARE: "alexDelaware",
   AMOS_DECKER: "amosDecker",
   ANDY_CARPENTER: "andyCarpenter",
@@ -36,6 +37,7 @@ const Series = {
   HARRY_BOSCH: "harryBosch",
   HARRY_HOLE: "harryHole",
   HERCULE_POIROT: "herculePoirot",
+  HOROWITZS_HOLMES: "horowitz's holmes",
   INSPECTOR_REBUS: "inspectorRebus",
   JACK_MCEVOY: "jackMcevoy",
   JACK_REACHER: "jackReacher",
@@ -72,6 +74,7 @@ const Series = {
   TEMPERANCE_BRENNAN: "temperanceBrennan",
   THE_CAMEL_CLUB: "theCamelClub",
   THE_NO_1_LADIES_DETECTIVE_AGENCY: "theNo1LadiesDetectiveAgency",
+  THURSDAY_MURDER_CLUB: "thursday murder club",
   VIRGIL_FLOWERS: "virgilFlowers",
   WILDE: "wilde",
   WILL_ROBIE: "willRobie",
@@ -88,6 +91,12 @@ const Series = {
     aFatalInversion: {
       title: "A Fatal Inversion",
       key: "aFatalInversion",
+    },
+    "agatha raisin": {
+      title: "Agatha Raisin",
+      gr: "series/41464-agatha-raisin",
+      lt: "nseries/1968/Agatha-Raisin",
+      key: "agatha raisin",
     },
     alexDelaware: {
       title: "Alex Delaware",
@@ -157,10 +166,14 @@ const Series = {
     },
     "detective daniel hawthorne": {
       title: "Detective Daniel Hawthorne",
+      gr: "series/238438-hawthorne-and-horowitz-mystery",
+      lt: "nseries/26810/Hawthorne-Horowitz",
       key: "detective daniel hawthorne",
     },
     "detective lew kirby": {
       title: "Detective Lew Kirby",
+      gr: "series/315611-detective-lew-kirby",
+      lt: "nseries/326914/Detective-Lew-Kirby",
       key: "detective lew kirby",
     },
     detectiveVarg: {
@@ -246,6 +259,7 @@ const Series = {
     },
     harryBosch: {
       title: "Harry Bosch",
+      gr: "series/40769-harry-bosch",
       lt: "series/Harry+Bosch",
       key: "harryBosch",
     },
@@ -258,6 +272,12 @@ const Series = {
       title: "Hercule Poirot",
       lt: "series/Hercule+Poirot",
       key: "herculePoirot",
+    },
+    "horowitz's holmes": {
+      title: "Horowitz's Holmes",
+      gr: "series/135888-horowitz-s-holmes",
+      lt: "nseries/9776/Anthony-Horowitzs-Sherlock-Holmes",
+      key: "horowitz's holmes",
     },
     inspectorRebus: {
       title: "Inspector Rebus",
@@ -337,6 +357,7 @@ const Series = {
     },
     mickeyHaller: {
       title: "Mickey Haller",
+      gr: "series/44303-mickey-haller",
       lt: "series/Mickey+Haller",
       key: "mickeyHaller",
     },
@@ -375,6 +396,7 @@ const Series = {
     },
     rachelWalling: {
       title: "Rachel Walling",
+      gr: "",
       lt: "nseries/1206/Rachel-Walling",
       key: "rachelWalling",
     },
@@ -390,6 +412,7 @@ const Series = {
     },
     roderickAlleyn: {
       title: "Roderick Alleyn",
+      gr: "series/50710-roderick-alleyn",
       lt: "series/Roderick+Alleyn",
       key: "roderickAlleyn",
     },
@@ -439,6 +462,12 @@ const Series = {
       wiki: "The_No._1_Ladies%27_Detective_Agency",
       key: "theNo1LadiesDetectiveAgency",
     },
+    "thursday murder club": {
+      title: "Thursday Murder Club",
+      gr: "series/299267-thursday-murder-club",
+      lt: "nseries/315274/Thursday-Murder-Club",
+      key: "thursday murder club",
+    },
     virgilFlowers: {
       title: "Virgil Flowers",
       lt: "series/Virgil+Flowers",
@@ -447,6 +476,7 @@ const Series = {
     wilde: {
       title: "Wilde",
       gr: "series/321974-wilde",
+      lt: "nseries/332803/Wilde",
       key: "wilde",
     },
     willRobie: {
@@ -456,6 +486,8 @@ const Series = {
     },
     "windsor horne lockwood iii": {
       title: "Windsor Horne Lockwood III",
+      gr: "series/306765-windsor-horne-lockwood-iii",
+      lt: "nseries/324513/Windsor-Horne-Lockwood-III",
       key: "windsor horne lockwood iii",
     },
     wineLoversMysteries: {
