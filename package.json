@@ -31,7 +31,7 @@
     "rollup-plugin-terser": "^7.0.2"
   },
   "dependencies": {
-    "node-fetch": "^3.2.4",
+    "node-fetch": "^3.2.10",
     "ramda": "^0.28.0"
   }
 }
