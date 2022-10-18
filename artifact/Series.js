@@ -81,16 +81,15 @@ const Series = {
   WINDSOR_HORNE_LOCKWOOD_III: "windsor horne lockwood iii",
   WINE_LOVERS_MYSTERIES: "wineLoversMysteries",
   YOU: "you",
-
   properties: {
+    aFatalInversion: {
+      title: "A Fatal Inversion",
+      key: "aFatalInversion",
+    },
     aaronFalk: {
       title: "Aaron Falk",
       lt: "series/Aaron+Falk",
       key: "aaronFalk",
-    },
-    aFatalInversion: {
-      title: "A Fatal Inversion",
-      key: "aFatalInversion",
     },
     "agatha raisin": {
       title: "Agatha Raisin",
@@ -239,8 +238,16 @@ const Series = {
       useSearch: false,
       key: "gailHSuggests",
     },
-    georgia: { title: "Georgia", lt: "series/Georgia", key: "georgia" },
-    ghostman: { title: "Ghostman", lt: "series/Ghostman", key: "ghostman" },
+    georgia: {
+      title: "Georgia",
+      lt: "series/Georgia",
+      key: "georgia",
+    },
+    ghostman: {
+      title: "Ghostman",
+      lt: "series/Ghostman",
+      key: "ghostman",
+    },
     gretchenLowell: {
       title: "Gretchen Lowell",
       lt: "series/Gretchen+Lowell",
@@ -322,8 +329,15 @@ const Series = {
       lt: "series/Joe+Pickett",
       key: "joePickett",
     },
-    joePike: { title: "Joe Pike", lt: "series/Joe+Pike", key: "joePike" },
-    johnnyMerrimon: { title: "Johnny Merrimon", key: "johnnyMerrimon" },
+    joePike: {
+      title: "Joe Pike",
+      lt: "series/Joe+Pike",
+      key: "joePike",
+    },
+    johnnyMerrimon: {
+      title: "Johnny Merrimon",
+      key: "johnnyMerrimon",
+    },
     kickLannigan: {
       title: "Kick Lannigan",
       lt: "series/Kick+Lannigan",
@@ -371,16 +385,16 @@ const Series = {
       lt: "series/Myron+Bolitar",
       key: "myronBolitar",
     },
-    oddThomas: {
-      title: "Odd Thomas",
-      lt: "series/Odd+Thomas",
-      key: "oddThomas",
-    },
     newHerculePoirot: {
       title: "New Hercule Poirot",
       gr: "series/184795-new-hercule-poirot-mysteries",
       lt: "nseries/7511/New-Hercule-Poirot-Mysteries",
       key: "newHerculePoirot",
+    },
+    oddThomas: {
+      title: "Odd Thomas",
+      lt: "series/Odd+Thomas",
+      key: "oddThomas",
     },
     perfectMurdersList: {
       title: "Perfect Murders List",

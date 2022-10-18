@@ -34,7 +34,7 @@ QUnit.test("Series.keys()", (assert) => {
   // Verify.
   assert.ok(result);
   assert.equal(result.length, 82);
-  assert.equal(R.head(result), Series.AARON_FALK);
+  assert.equal(R.head(result), Series.A_FATAL_INVERSION);
   assert.equal(R.last(result), Series.YOU);
 });
 

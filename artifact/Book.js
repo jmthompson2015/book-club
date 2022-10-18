@@ -1,7 +1,3 @@
-const Person = require("./Person.js");
-const Series = require("./Series.js");
-const SeriesEntry = require("./SeriesEntry.js");
-
 const Book = {
   _206_BONES: "_206Bones",
   _61_HOURS: "_61Hours",
@@ -238,46 +234,70 @@ const Book = {
   WICKED_PREY: "wickedPrey",
   WIN: "win",
   YOU: "you",
-
   properties: {
     _206Bones: {
       title: "206 Bones",
-      authorKeys: [Person.KATHY_REICHS],
-      series: [SeriesEntry.create(Series.TEMPERANCE_BRENNAN, 12)],
+      authorKeys: ["kathyReichs"],
+      series: [
+        {
+          key: "temperanceBrennan",
+          entry: 12,
+        },
+      ],
       meeting: "2010.04.26",
       dcl: "911690114",
     },
     _61Hours: {
       title: "61 Hours",
-      authorKeys: [Person.LEE_CHILD],
-      series: [SeriesEntry.create(Series.JACK_REACHER, 14)],
+      authorKeys: ["leeChild"],
+      series: [
+        {
+          key: "jackReacher",
+          entry: 14,
+        },
+      ],
       meeting: "2011.03.28",
       dcl: "946941114",
     },
     aChristmasParty: {
       title: "A Christmas Party",
-      authorKeys: [Person.GEORGETTE_HEYER],
+      authorKeys: ["georgetteHeyer"],
       meeting: "2017.12.15",
       dcl: "1444035114",
     },
     aFatalInversion: {
       title: "A Fatal Inversion",
-      authorKeys: [Person.BARBARA_VINE],
-      series: [SeriesEntry.create(Series.PETER_SWANSON_SUGGESTS, 6)],
+      authorKeys: ["barbaraVine"],
+      series: [
+        {
+          key: "peterSwansonSuggests",
+          entry: 6,
+        },
+      ],
       gr: "book/show/420967.A_Fatal_Inversion",
       lt: "work/170886",
     },
     aHighlandChristmas: {
       title: "A Highland Christmas",
-      authorKeys: [Person.MC_BEATON],
-      series: [SeriesEntry.create(Series.HAMISH_MACBETH, 16)],
+      authorKeys: ["mcBeaton"],
+      series: [
+        {
+          key: "hamishMacbeth",
+          entry: 16,
+        },
+      ],
       meeting: "2008.12.22",
       dcl: "1084060114",
     },
     aLineToKill: {
       title: "A Line to Kill",
-      authorKeys: [Person.ANTHONY_HOROWITZ],
-      series: [SeriesEntry.create(Series.DETECTIVE_DANIEL_HAWTHORNE, 3)],
+      authorKeys: ["anthonyHorowitz"],
+      series: [
+        {
+          key: "detective daniel hawthorne",
+          entry: 3,
+        },
+      ],
       meeting: "2022.01.24",
       dcl: "1715575114",
       gr: "book/show/56755487-a-line-to-kill",
@@ -285,106 +305,157 @@ const Book = {
     },
     aManLayDead: {
       title: "A Man Lay Dead",
-      authorKeys: [Person.NGAIO_MARSH],
-      series: [SeriesEntry.create(Series.RODERICK_ALLEYN, 1)],
+      authorKeys: ["ngaioMarsh"],
+      series: [
+        {
+          key: "roderickAlleyn",
+          entry: 1,
+        },
+      ],
       meeting: "2015.12.17",
       dcl: "1294793114",
     },
-    andThenThereWereNone: {
-      title: "And Then There Were None",
-      authorKeys: [Person.AGATHA_CHRISTIE],
-      meeting: "2014.12.18",
-      dcl: "1063049114",
-    },
     aPlagueOfSecrets: {
       title: "A Plague of Secrets",
-      authorKeys: [Person.JOHN_LESCROART],
-      series: [SeriesEntry.create(Series.DISMAS_HARDY, 11)],
+      authorKeys: ["johnLescroart"],
+      series: [
+        {
+          key: "dismasHardy",
+          entry: 11,
+        },
+      ],
       meeting: "2010.02.22",
       dcl: "908384114",
     },
     aSimplePlan: {
       title: "A Simple Plan",
-      authorKeys: [Person.SCOTT_B_SMITH],
-      series: [SeriesEntry.create(Series.PETER_SWANSON_SUGGESTS, 8)],
+      authorKeys: ["scottBSmith"],
+      series: [
+        {
+          key: "peterSwansonSuggests",
+          entry: 8,
+        },
+      ],
       dcl: "1514573114",
       gr: "book/show/21727.A_Simple_Plan",
       lt: "work/150141",
     },
     aStudyInScarlet: {
       title: "A Study in Scarlet",
-      authorKeys: [Person.ARTHUR_CONAN_DOYLE],
-      series: [SeriesEntry.create(Series.SHERLOCK_HOLMES, 1)],
+      authorKeys: ["arthurConanDoyle"],
+      series: [
+        {
+          key: "sherlockHolmes",
+          entry: 1,
+        },
+      ],
       meeting: "2012.02.27",
       dcl: "1250653114",
     },
     aTapOnTheWindow: {
       title: "A Tap on the Window",
-      authorKeys: [Person.LINWOOD_BARCLAY],
+      authorKeys: ["linwoodBarclay"],
       meeting: "2014.04.28",
       dcl: "1153565114",
     },
     aTestOfWills: {
       title: "A Test of Wills",
-      authorKeys: [Person.CHARLES_TODD],
+      authorKeys: ["charlesTodd"],
       meeting: "2007.04.23",
       dcl: "1228464114",
     },
     aToastToMurder: {
       title: "A Toast to Murder",
-      authorKeys: [Person.MICHELE_SCOTT],
-      series: [SeriesEntry.create(Series.WINE_LOVERS_MYSTERIES, 6)],
+      authorKeys: ["micheleScott"],
+      series: [
+        {
+          key: "wineLoversMysteries",
+          entry: 6,
+        },
+      ],
       meeting: "2010.07.26",
       lt: "work/9739948",
     },
     aWantedMan: {
       title: "A Wanted Man",
-      authorKeys: [Person.LEE_CHILD],
-      series: [SeriesEntry.create(Series.JACK_REACHER, 17)],
+      authorKeys: ["leeChild"],
+      series: [
+        {
+          key: "jackReacher",
+          entry: 17,
+        },
+      ],
       meeting: "2014.03.24",
       dcl: "1054861114",
     },
+    andThenThereWereNone: {
+      title: "And Then There Were None",
+      authorKeys: ["agathaChristie"],
+      meeting: "2014.12.18",
+      dcl: "1063049114",
+    },
     bloodOnSnow: {
       title: "Blood On Snow",
-      authorKeys: [Person.JO_NESBO],
+      authorKeys: ["joNesbo"],
       meeting: "2016.01.25",
       dcl: "1251107114",
     },
     bloodOnTheTracks: {
       title: "Blood on the Tracks",
-      authorKeys: [Person.BARBARA_NICKLESS],
+      authorKeys: ["barbaraNickless"],
       series: [
-        SeriesEntry.create(Series.SYDNEY_ROSE_PARNELL, 1),
-        SeriesEntry.create(Series.GAIL_H_SUGGESTS, 2),
+        {
+          key: "sydneyRoseParnell",
+          entry: 1,
+        },
+        {
+          key: "gailHSuggests",
+          entry: 2,
+        },
       ],
       dcl: "1359332114",
       lt: "work/18319544",
     },
     bringMeBack: {
       title: "Bring Me Back",
-      authorKeys: [Person.BA_PARIS],
+      authorKeys: ["baParis"],
       dcl: "1446735114",
       lt: "work/20629560",
       meeting: "2019.02.25",
     },
     broadchurch: {
       title: "Broadchurch",
-      authorKeys: [Person.ERIN_KELLY, Person.CHRIS_CHIBNALL],
-      series: [SeriesEntry.create(Series.BROADCHURCH, 1)],
+      authorKeys: ["erinKelly", "chrisChibnall"],
+      series: [
+        {
+          key: "broadchurch",
+          entry: 1,
+        },
+      ],
       gr: "book/show/19561890-broadchurch",
       lt: "work/14809117",
     },
     broken: {
       title: "Broken",
-      authorKeys: [Person.KARIN_SLAUGHTER],
-      series: [SeriesEntry.create(Series.GEORGIA, 2)],
+      authorKeys: ["karinSlaughter"],
+      series: [
+        {
+          key: "georgia",
+          entry: 2,
+        },
+      ],
       meeting: "2011.10.24",
       dcl: "952803114",
     },
     caminoIsland: {
       title: "Camino Island",
-      authorKeys: [Person.JOHN_GRISHAM],
-      series: [SeriesEntry.create(Series.CAMINO_ISLAND, 1)],
+      authorKeys: ["johnGrisham"],
+      series: [
+        {
+          key: "caminoIsland",
+          entry: 1,
+        },
+      ],
       dcl: "1400185114",
       gr: "book/show/34121119-camino-island",
       lt: "work/19240660",
@@ -392,8 +463,13 @@ const Book = {
     },
     caminoWinds: {
       title: "Camino Winds",
-      authorKeys: [Person.JOHN_GRISHAM],
-      series: [SeriesEntry.create(Series.CAMINO_ISLAND, 2)],
+      authorKeys: ["johnGrisham"],
+      series: [
+        {
+          key: "caminoIsland",
+          entry: 2,
+        },
+      ],
       dcl: "1636922114",
       gr: "book/show/49123131-camino-winds",
       lt: "work/24158942",
@@ -401,20 +477,25 @@ const Book = {
     },
     caught: {
       title: "Caught",
-      authorKeys: [Person.HARLAN_COBEN],
+      authorKeys: ["harlanCoben"],
       meeting: "2011.02.28",
       dcl: "938415114",
     },
     chasingDarkness: {
       title: "Chasing Darkness",
-      authorKeys: [Person.ROBERT_CRAIS],
-      series: [SeriesEntry.create(Series.ELVIS_COLE, 12)],
+      authorKeys: ["robertCrais"],
+      series: [
+        {
+          key: "elvisCole",
+          entry: 12,
+        },
+      ],
       meeting: "2013.05.20",
       dcl: "861205114",
     },
     "confessions on the 7:45": {
       title: "Confessions on the 7:45",
-      authorKeys: [Person.LISA_UNGER],
+      authorKeys: ["lisaUnger"],
       meeting: "2021.07.26",
       dcl: "1663811114",
       gr: "book/show/49374505-confessions-on-the-7",
@@ -422,173 +503,265 @@ const Book = {
     },
     crazyLoveYou: {
       title: "Crazy Love You",
-      authorKeys: [Person.LISA_UNGER],
+      authorKeys: ["lisaUnger"],
       meeting: "2016.02.22",
       dcl: "1251088114",
     },
     crimeAtChristmas: {
       title: "Crime at Christmas",
-      authorKeys: [Person.CHB_KITCHIN],
-      series: [SeriesEntry.create(Series.MALCOLM_WARREN, 2)],
+      authorKeys: ["chbKitchin"],
+      series: [
+        {
+          key: "malcolmWarren",
+          entry: 2,
+        },
+      ],
       lt: "work/997859",
       meeting: "2020.12.18",
     },
     crimeScene: {
       title: "Crime Scene",
-      authorKeys: [Person.JONATHAN_KELLERMAN, Person.JESSE_KELLERMAN],
-      series: [SeriesEntry.create(Series.CLAY_EDISON, 1)],
+      authorKeys: ["jonathanKellerman", "jesseKellerman"],
+      series: [
+        {
+          key: "clayEdison",
+          entry: 1,
+        },
+      ],
       meeting: "2018.05.21",
       dcl: "1407385114",
       lt: "work/18796542",
     },
     darkHarbor: {
       title: "Dark Harbor",
-      authorKeys: [Person.STUART_WOODS],
-      series: [SeriesEntry.create(Series.STONE_BARRINGTON, 12)],
+      authorKeys: ["stuartWoods"],
+      series: [
+        {
+          key: "stoneBarrington",
+          entry: 12,
+        },
+      ],
       meeting: "2009.06.22",
       dcl: "741038114",
     },
-    darklyDreamingDexter: {
-      title: "Darkly Dreaming Dexter",
-      authorKeys: [Person.JEFF_LINDSAY],
-      series: [SeriesEntry.create(Series.DEXTER, 1)],
-      meeting: "2007.02.26",
-      dcl: "656271114",
-      lt: "work/93729",
-    },
     darkOfTheMoon: {
       title: "Dark of the Moon",
-      authorKeys: [Person.JOHN_SANDFORD],
-      series: [SeriesEntry.create(Series.VIRGIL_FLOWERS, 1)],
+      authorKeys: ["johnSandford"],
+      series: [
+        {
+          key: "virgilFlowers",
+          entry: 1,
+        },
+      ],
       meeting: "2011.08.22",
       dcl: "825315114",
     },
     darkPlaces: {
       title: "Dark Places",
-      authorKeys: [Person.GILLIAN_FLYNN],
+      authorKeys: ["gillianFlynn"],
       meeting: "2010.09.27",
       dcl: "906965114",
     },
     darkSacredNight: {
       title: "Dark Sacred Night",
-      authorKeys: [Person.MICHAEL_CONNELLY],
+      authorKeys: ["michaelConnelly"],
       series: [
-        SeriesEntry.create(Series.RENEE_BALLARD, 2),
-        SeriesEntry.create(Series.HARRY_BOSCH, 21),
+        {
+          key: "reneeBallard",
+          entry: 2,
+        },
+        {
+          key: "harryBosch",
+          entry: 21,
+        },
       ],
       dcl: "1475392114",
       lt: "work/21016230",
       meeting: "2019.06.24",
     },
+    darklyDreamingDexter: {
+      title: "Darkly Dreaming Dexter",
+      authorKeys: ["jeffLindsay"],
+      series: [
+        {
+          key: "dexter",
+          entry: 1,
+        },
+      ],
+      meeting: "2007.02.26",
+      dcl: "656271114",
+      lt: "work/93729",
+    },
     dearlyDevotedDexter: {
       title: "Dearly Devoted Dexter",
-      authorKeys: [Person.JEFF_LINDSAY],
-      series: [SeriesEntry.create(Series.DEXTER, 2)],
+      authorKeys: ["jeffLindsay"],
+      series: [
+        {
+          key: "dexter",
+          entry: 2,
+        },
+      ],
       meeting: "2008.02.25",
       dcl: "700955114",
     },
     deathtrap: {
       title: "Deathtrap",
-      authorKeys: [Person.IRA_LEVIN],
-      series: [SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 7)],
+      authorKeys: ["iraLevin"],
+      series: [
+        {
+          key: "perfectMurdersList",
+          entry: 7,
+        },
+      ],
       lt: "work/124068",
     },
     defendingJacob: {
       title: "Defending Jacob",
-      authorKeys: [Person.WILLIAM_LANDAY],
+      authorKeys: ["williamLanday"],
       meeting: "2013.06.24",
       dcl: "1021979114",
     },
     dexterByDesign: {
       title: "Dexter by Design",
-      authorKeys: [Person.JEFF_LINDSAY],
-      series: [SeriesEntry.create(Series.DEXTER, 4)],
+      authorKeys: ["jeffLindsay"],
+      series: [
+        {
+          key: "dexter",
+          entry: 4,
+        },
+      ],
       meeting: "2011.04.25",
       dcl: "925270114",
     },
     dexterInTheDark: {
       title: "Dexter in the Dark",
-      authorKeys: [Person.JEFF_LINDSAY],
-      series: [SeriesEntry.create(Series.DEXTER, 3)],
+      authorKeys: ["jeffLindsay"],
+      series: [
+        {
+          key: "dexter",
+          entry: 3,
+        },
+      ],
       dcl: "811845114",
       lt: "work/1715003",
     },
     dexterIsDead: {
       title: "Dexter is Dead",
-      authorKeys: [Person.JEFF_LINDSAY],
-      series: [SeriesEntry.create(Series.DEXTER, 8)],
+      authorKeys: ["jeffLindsay"],
+      series: [
+        {
+          key: "dexter",
+          entry: 8,
+        },
+      ],
       lt: "work/15687387",
     },
     dexterIsDelicious: {
       title: "Dexter is Delicious",
-      authorKeys: [Person.JEFF_LINDSAY],
-      series: [SeriesEntry.create(Series.DEXTER, 5)],
+      authorKeys: ["jeffLindsay"],
+      series: [
+        {
+          key: "dexter",
+          entry: 5,
+        },
+      ],
       meeting: "2012.05.29",
       dcl: "956551114",
     },
     dextersFinalCut: {
       title: "Dexter's Final Cut",
-      authorKeys: [Person.JEFF_LINDSAY],
-      series: [SeriesEntry.create(Series.DEXTER, 7)],
+      authorKeys: ["jeffLindsay"],
+      series: [
+        {
+          key: "dexter",
+          entry: 7,
+        },
+      ],
       lt: "work/13629497",
     },
     dirtyBlonde: {
       title: "Dirty Blonde",
-      authorKeys: [Person.LISA_SCOTTOLINE],
+      authorKeys: ["lisaScottoline"],
       meeting: "2008.03.24",
       dcl: "742156114",
     },
     divineJustice: {
       title: "Divine Justice",
-      authorKeys: [Person.DAVID_BALDACCI],
-      series: [SeriesEntry.create(Series.THE_CAMEL_CLUB, 4)],
+      authorKeys: ["davidBaldacci"],
+      series: [
+        {
+          key: "theCamelClub",
+          entry: 4,
+        },
+      ],
       lt: "work/5874884",
       wiki: "Divine_Justice_(novel)",
     },
     dontBlink: {
       title: "Don't Blink",
-      authorKeys: [Person.JAMES_PATTERSON],
+      authorKeys: ["jamesPatterson"],
       meeting: "2011.11.28",
       dcl: "959886114",
     },
     doubleDexter: {
       title: "Double Dexter",
-      authorKeys: [Person.JEFF_LINDSAY],
-      series: [SeriesEntry.create(Series.DEXTER, 6)],
+      authorKeys: ["jeffLindsay"],
+      series: [
+        {
+          key: "dexter",
+          entry: 6,
+        },
+      ],
       lt: "work/10844880",
     },
     doubleIndemnity: {
       title: "Double Indemnity",
-      authorKeys: [Person.JAMES_M_CAIN],
-      series: [SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 4)],
+      authorKeys: ["jamesMCain"],
+      series: [
+        {
+          key: "perfectMurdersList",
+          entry: 4,
+        },
+      ],
       lt: "work/5222842",
     },
     eightPerfectMurders: {
       title: "Eight Perfect Murders",
-      authorKeys: [Person.PETER_SWANSON],
+      authorKeys: ["peterSwanson"],
       dcl: "1615636114",
       lt: "work/23575042",
       meeting: "2020.06.22",
     },
     everyLastLie: {
       title: "Every Last Lie",
-      authorKeys: [Person.MARY_KUBICA],
+      authorKeys: ["maryKubica"],
       meeting: "2018.01.22",
       dcl: "1387222114",
       lt: "work/19062304",
     },
     evilAtHeart: {
       title: "Evil at Heart",
-      authorKeys: [Person.CHELSEA_CAIN],
-      series: [SeriesEntry.create(Series.GRETCHEN_LOWELL, 3)],
+      authorKeys: ["chelseaCain"],
+      series: [
+        {
+          key: "gretchenLowell",
+          entry: 3,
+        },
+      ],
       lt: "work/8101893",
     },
     fairWarning: {
       title: "Fair Warning",
-      authorKeys: [Person.MICHAEL_CONNELLY],
+      authorKeys: ["michaelConnelly"],
       series: [
-        SeriesEntry.create(Series.JACK_MCEVOY, 3),
-        SeriesEntry.create(Series.RACHEL_WALLING, 6),
+        {
+          key: "jackMcevoy",
+          entry: 3,
+        },
+        {
+          key: "rachelWalling",
+          entry: 6,
+        },
       ],
       gr: "book/show/48985654-fair-warning",
       lt: "work/23719011",
@@ -596,7 +769,7 @@ const Book = {
     },
     falseWitness: {
       title: "False Witness",
-      authorKeys: [Person.KARIN_SLAUGHTER],
+      authorKeys: ["karinSlaughter"],
       meeting: "2022.04.25",
       dcl: "1702482114",
       gr: "book/show/55809780-false-witness",
@@ -604,79 +777,125 @@ const Book = {
     },
     foolMeOnce: {
       title: "Fool Me Once",
-      authorKeys: [Person.HARLAN_COBEN],
+      authorKeys: ["harlanCoben"],
       dcl: "1300151114",
       meeting: "2017.02.27",
     },
     forceOfNature2012: {
       title: "Force of Nature (2012)",
-      authorKeys: [Person.CJ_BOX],
-      series: [SeriesEntry.create(Series.JOE_PICKETT, 12)],
+      authorKeys: ["cjBox"],
+      series: [
+        {
+          key: "joePickett",
+          entry: 12,
+        },
+      ],
       meeting: "2012.11.26",
       dcl: "1022393114",
     },
     forceOfNature2018: {
       title: "Force of Nature (2018)",
-      authorKeys: [Person.JANE_HARPER],
-      series: [SeriesEntry.create(Series.AARON_FALK, 2)],
+      authorKeys: ["janeHarper"],
+      series: [
+        {
+          key: "aaronFalk",
+          entry: 2,
+        },
+      ],
       dcl: "1430689114",
       lt: "work/19768930",
       meeting: "2020.01.27",
     },
     ghostman: {
       title: "Ghostman",
-      authorKeys: [Person.ROGER_HOBBS],
-      series: [SeriesEntry.create(Series.GHOSTMAN, 1)],
+      authorKeys: ["rogerHobbs"],
+      series: [
+        {
+          key: "ghostman",
+          entry: 1,
+        },
+      ],
       meeting: "2014.07.28",
       dcl: "1218653114",
     },
     goneGirl: {
       title: "Gone Girl",
-      authorKeys: [Person.GILLIAN_FLYNN],
+      authorKeys: ["gillianFlynn"],
       dcl: "1033248114",
       lt: "work/11234211",
     },
     heartsick: {
       title: "Heartsick",
-      authorKeys: [Person.CHELSEA_CAIN],
-      series: [SeriesEntry.create(Series.GRETCHEN_LOWELL, 1)],
+      authorKeys: ["chelseaCain"],
+      series: [
+        {
+          key: "gretchenLowell",
+          entry: 1,
+        },
+      ],
       meeting: "2008.05.26",
       dcl: "816231114",
     },
     heatLightning: {
       title: "Heat Lightning",
-      authorKeys: [Person.JOHN_SANDFORD],
-      series: [SeriesEntry.create(Series.VIRGIL_FLOWERS, 2)],
+      authorKeys: ["johnSandford"],
+      series: [
+        {
+          key: "virgilFlowers",
+          entry: 2,
+        },
+      ],
       meeting: "2012.04.23",
       dcl: "868270114",
     },
     hellbent: {
       title: "Hellbent",
-      authorKeys: [Person.GREGG_HURWITZ],
-      series: [SeriesEntry.create(Series.EVAN_SMOAK, 3)],
+      authorKeys: ["greggHurwitz"],
+      series: [
+        {
+          key: "evanSmoak",
+          entry: 3,
+        },
+      ],
       meeting: "2018.06.25",
       dcl: "1431233114",
     },
     hellsCorner: {
       title: "Hell's Corner",
-      authorKeys: [Person.DAVID_BALDACCI],
-      series: [SeriesEntry.create(Series.THE_CAMEL_CLUB, 5)],
+      authorKeys: ["davidBaldacci"],
+      series: [
+        {
+          key: "theCamelClub",
+          entry: 5,
+        },
+      ],
       lt: "work/9768778",
       wiki: "Hell%27s_Corner",
     },
     herculePoirotsChristmas: {
       title: "Hercule Poirot's Christmas",
-      authorKeys: [Person.AGATHA_CHRISTIE],
-      series: [SeriesEntry.create(Series.HERCULE_POIROT, 19)],
+      authorKeys: ["agathaChristie"],
+      series: [
+        {
+          key: "herculePoirot",
+          entry: 19,
+        },
+      ],
       meeting: "2010.12.27",
       dcl: "975256114",
     },
     hiddenBodies: {
       title: "Hidden Bodies",
-      authorKeys: [Person.CAROLINE_KEPNES],
+      authorKeys: ["carolineKepnes"],
       series: [
-        SeriesEntry.create(Series.YOU, 2),
-        SeriesEntry.create(Series.PETER_SWANSON_SUGGESTS, 5),
+        {
+          key: "you",
+          entry: 2,
+        },
+        {
+          key: "peterSwansonSuggests",
+          entry: 5,
+        },
       ],
       dcl: "1273599114",
       gr: "book/show/29430824-hidden-bodies",
@@ -684,84 +903,114 @@ const Book = {
     },
     home: {
       title: "Home",
-      authorKeys: [Person.HARLAN_COBEN],
-      series: [SeriesEntry.create(Series.MYRON_BOLITAR, 11)],
+      authorKeys: ["harlanCoben"],
+      series: [
+        {
+          key: "myronBolitar",
+          entry: 11,
+        },
+      ],
       meeting: "2017.10.23",
       dcl: "1330605114",
     },
-    iceCold: {
-      title: "Ice Cold",
-      authorKeys: [Person.TESS_GERRITSEN],
-      series: [SeriesEntry.create(Series.RIZZOLI_AND_ISLES, 8)],
-      meeting: "2010.11.22",
-      dcl: "1450069114",
-    },
-    idKnowYouAnywhere: {
-      title: "I'd Know You Anywhere",
-      authorKeys: [Person.LAURA_LIPPMAN],
-      meeting: "2012.01.23",
-      dcl: "959899114",
-    },
     iHeardYouPaintHouses: {
       title: "I Heard You Paint Houses",
-      authorKeys: [Person.CHARLES_BRANDT],
+      authorKeys: ["charlesBrandt"],
       gr: "book/show/934378.I_Heard_You_Paint_Houses",
       lt: "work/154023",
     },
     iKnowASecret: {
       title: "I Know a Secret",
-      authorKeys: [Person.TESS_GERRITSEN],
-      series: [SeriesEntry.create(Series.RIZZOLI_AND_ISLES, 12)],
+      authorKeys: ["tessGerritsen"],
+      series: [
+        {
+          key: "rizzoliAndIsles",
+          entry: 12,
+        },
+      ],
       meeting: "2018.07.23",
       dcl: "1407387114",
     },
-    inADarkDarkWood: {
-      title: "In a Dark, Dark Wood",
-      authorKeys: [Person.RUTH_WARE],
-      meeting: "2017.08.28",
-      dcl: "1278756114",
-    },
-    inkAndBone: {
-      title: "Ink & Bone",
-      authorKeys: [Person.LISA_UNGER],
-      meeting: "2016.12.15",
-      dcl: "1578361114",
-    },
-    inTheBlood: {
-      title: "In The Blood",
-      authorKeys: [Person.LISA_UNGER],
-      meeting: "2015.05.18",
-      dcl: "1176076114",
-    },
-    ironHouse: {
-      title: "Iron House",
-      authorKeys: [Person.JOHN_HART],
-      meeting: "2013.08.26",
-      dcl: "993819114",
-    },
     iSeeYou: {
       title: "I See You",
-      authorKeys: [Person.CLARE_MACKINTOSH],
+      authorKeys: ["clareMackintosh"],
       meeting: "2018.02.26",
       dcl: "1384268114",
     },
+    iceCold: {
+      title: "Ice Cold",
+      authorKeys: ["tessGerritsen"],
+      series: [
+        {
+          key: "rizzoliAndIsles",
+          entry: 8,
+        },
+      ],
+      meeting: "2010.11.22",
+      dcl: "1450069114",
+    },
+    idKnowYouAnywhere: {
+      title: "I'd Know You Anywhere",
+      authorKeys: ["lauraLippman"],
+      meeting: "2012.01.23",
+      dcl: "959899114",
+    },
+    inADarkDarkWood: {
+      title: "In a Dark, Dark Wood",
+      authorKeys: ["ruthWare"],
+      meeting: "2017.08.28",
+      dcl: "1278756114",
+    },
+    inTheBlood: {
+      title: "In The Blood",
+      authorKeys: ["lisaUnger"],
+      meeting: "2015.05.18",
+      dcl: "1176076114",
+    },
+    inkAndBone: {
+      title: "Ink & Bone",
+      authorKeys: ["lisaUnger"],
+      meeting: "2016.12.15",
+      dcl: "1578361114",
+    },
+    ironHouse: {
+      title: "Iron House",
+      authorKeys: ["johnHart"],
+      meeting: "2013.08.26",
+      dcl: "993819114",
+    },
     killFee: {
       title: "Kill Fee",
-      authorKeys: [Person.OWEN_LAUKKANEN],
-      series: [SeriesEntry.create(Series.STEVENS_AND_WINDERMERE, 3)],
+      authorKeys: ["owenLaukkanen"],
+      series: [
+        {
+          key: "stevensAndWindermere",
+          entry: 3,
+        },
+      ],
       meeting: "2015.04.27",
       dcl: "1180980114",
     },
     killYouTwice: {
       title: "Kill You Twice",
-      authorKeys: [Person.CHELSEA_CAIN],
-      series: [SeriesEntry.create(Series.GRETCHEN_LOWELL, 5)],
+      authorKeys: ["chelseaCain"],
+      series: [
+        {
+          key: "gretchenLowell",
+          entry: 5,
+        },
+      ],
       lt: "work/12244209",
     },
     "kissing christmas goodbye": {
       title: "Kissing Christmas Goodbye",
-      authorKeys: [Person.MC_BEATON],
-      series: [SeriesEntry.create(Series.AGATHA_RAISIN, 18)],
+      authorKeys: ["mcBeaton"],
+      series: [
+        {
+          key: "agatha raisin",
+          entry: 18,
+        },
+      ],
       meeting: "2022.12.16",
       dcl: "512471980",
       gr: "book/show/509007.Kissing_Christmas_Goodbye",
@@ -770,137 +1019,202 @@ const Book = {
     },
     knotsAndCrosses: {
       title: "Knots and Crosses",
-      authorKeys: [Person.IAN_RANKIN],
-      series: [SeriesEntry.create(Series.INSPECTOR_REBUS, 1)],
+      authorKeys: ["ianRankin"],
+      series: [
+        {
+          key: "inspectorRebus",
+          entry: 1,
+        },
+      ],
       gr: "book/show/634407.Knots_and_Crosses",
       lt: "work/38602",
       wiki: "Knots_and_Crosses",
     },
+    letMeGo: {
+      title: "Let Me Go",
+      authorKeys: ["chelseaCain"],
+      series: [
+        {
+          key: "gretchenLowell",
+          entry: 6,
+        },
+      ],
+      lt: "work/13216528",
+    },
     lethalWhite: {
       title: "Lethal White",
-      authorKeys: [Person.ROBERT_GALBRAITH],
-      series: [SeriesEntry.create(Series.CORMORAN_STRIKE, 4)],
+      authorKeys: ["robertGalbraith"],
+      series: [
+        {
+          key: "cormoranStrike",
+          entry: 4,
+        },
+      ],
       dcl: "1493220114",
       lt: "work/17525753",
       meeting: "2019.10.28",
     },
-    letMeGo: {
-      title: "Let Me Go",
-      authorKeys: [Person.CHELSEA_CAIN],
-      series: [SeriesEntry.create(Series.GRETCHEN_LOWELL, 6)],
-      lt: "work/13216528",
-    },
     liarsLullaby: {
       title: "Liar's Lullaby",
-      authorKeys: [Person.MEG_GARDINER],
-      series: [SeriesEntry.create(Series.JO_BECKETT, 3)],
+      authorKeys: ["megGardiner"],
+      series: [
+        {
+          key: "joBeckett",
+          entry: 3,
+        },
+      ],
       meeting: "2011.06.27",
       dcl: "955448114",
       lt: "work/9209696",
     },
     lifeSentences: {
       title: "Life Sentences",
-      authorKeys: [Person.ALICE_BLANCHARD],
+      authorKeys: ["aliceBlanchard"],
       meeting: "2008.11.24",
       lt: "work/1359460",
     },
     liveByNight: {
       title: "Live by Night",
-      authorKeys: [Person.DENNIS_LEHANE],
-      series: [SeriesEntry.create(Series.JOE_COUGHLIN, 2)],
+      authorKeys: ["dennisLehane"],
+      series: [
+        {
+          key: "joeCoughlin",
+          entry: 2,
+        },
+      ],
       meeting: "2014.06.23",
       dcl: "1060297114",
     },
     loveKills: {
       title: "Love Kills",
-      authorKeys: [Person.EDNA_BUCHANAN],
+      authorKeys: ["ednaBuchanan"],
       meeting: "2008.08.25",
       dcl: "849764114",
     },
     luckyJim: {
       title: "Lucky Jim",
-      authorKeys: [Person.KINGSLEY_AMIS],
-      series: [SeriesEntry.create(Series.PETER_SWANSON_SUGGESTS, 7)],
+      authorKeys: ["kingsleyAmis"],
+      series: [
+        {
+          key: "peterSwansonSuggests",
+          entry: 7,
+        },
+      ],
       dcl: "1463493114",
       gr: "book/show/395182.Lucky_Jim",
       lt: "work/7166",
     },
     magpieMurders: {
       title: "Magpie Murders",
-      authorKeys: [Person.ANTHONY_HOROWITZ],
+      authorKeys: ["anthonyHorowitz"],
       meeting: "2018.09.24",
       dcl: "1387233114",
     },
     makeMe: {
       title: "Make Me",
-      authorKeys: [Person.LEE_CHILD],
-      series: [SeriesEntry.create(Series.JACK_REACHER, 20)],
+      authorKeys: ["leeChild"],
+      series: [
+        {
+          key: "jackReacher",
+          entry: 20,
+        },
+      ],
       meeting: "2016.06.27",
       dcl: "1311811114",
     },
     malice: {
       title: "Malice",
-      authorKeys: [Person.LISA_JACKSON],
+      authorKeys: ["lisaJackson"],
       meeting: "2009.10.26",
       dcl: "1084081114",
     },
     maliceAforethought: {
       title: "Malice Aforethought",
-      authorKeys: [Person.ANTHONY_BERKELEY_COX],
-      series: [SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 2)],
+      authorKeys: ["anthonyBerkeleyCox"],
+      series: [
+        {
+          key: "perfectMurdersList",
+          entry: 2,
+        },
+      ],
       lt: "work/247583",
     },
     markedForLife: {
       title: "Marked for Life",
-      authorKeys: [Person.EMELIE_SCHEPP],
-      series: [SeriesEntry.create(Series.JANA_BERZELIUS, 1)],
+      authorKeys: ["emelieSchepp"],
+      series: [
+        {
+          key: "janaBerzelius",
+          entry: 1,
+        },
+      ],
       meeting: "2017.03.27",
       dcl: "1329705114",
       lt: "work/15863615",
     },
     meanStreak: {
       title: "Mean Streak",
-      authorKeys: [Person.SANDRA_BROWN],
+      authorKeys: ["sandraBrown"],
       meeting: "2015.01.26",
       dcl: "1215092114",
     },
     missingYou: {
       title: "Missing You",
-      authorKeys: [Person.HARLAN_COBEN],
+      authorKeys: ["harlanCoben"],
       meeting: "2014.10.27",
       dcl: "1615407114",
     },
     murderOnTheOrientExpress: {
       title: "Murder on the Orient Express",
-      authorKeys: [Person.AGATHA_CHRISTIE],
-      series: [SeriesEntry.create(Series.HERCULE_POIROT, 10)],
+      authorKeys: ["agathaChristie"],
+      series: [
+        {
+          key: "herculePoirot",
+          entry: 10,
+        },
+      ],
       dcl: "792491114",
       lt: "work/2742",
     },
     mystery: {
       title: "Mystery",
-      authorKeys: [Person.JONATHAN_KELLERMAN],
-      series: [SeriesEntry.create(Series.ALEX_DELAWARE, 26)],
+      authorKeys: ["jonathanKellerman"],
+      series: [
+        {
+          key: "alexDelaware",
+          entry: 26,
+        },
+      ],
       meeting: "2011.12.12",
       dcl: "1615417114",
     },
     neverGoBack: {
       title: "Never Go Back",
-      authorKeys: [Person.LEE_CHILD],
-      series: [SeriesEntry.create(Series.JACK_REACHER, 18)],
+      authorKeys: ["leeChild"],
+      series: [
+        {
+          key: "jackReacher",
+          entry: 18,
+        },
+      ],
       dcl: "1137507114",
       lt: "work/13480915",
     },
     newTricks: {
       title: "New Tricks",
-      authorKeys: [Person.DAVID_ROSENFELT],
-      series: [SeriesEntry.create(Series.ANDY_CARPENTER, 7)],
+      authorKeys: ["davidRosenfelt"],
+      series: [
+        {
+          key: "andyCarpenter",
+          entry: 7,
+        },
+      ],
       meeting: "2010.05.24",
       dcl: "919355114",
     },
     "nine lives": {
       title: "Nine Lives",
-      authorKeys: [Person.PETER_SWANSON],
+      authorKeys: ["peterSwanson"],
       meeting: "2022.11.28",
       dcl: "1733477114",
       gr: "book/show/58385688-nine-lives",
@@ -908,568 +1222,863 @@ const Book = {
     },
     ninePerfectStrangers: {
       title: "Nine Perfect Strangers",
-      authorKeys: [Person.LIANE_MORIARTY],
+      authorKeys: ["lianeMoriarty"],
       dcl: "1518027114",
       lt: "work/21901086",
       meeting: "2020.10.26",
     },
     nothingToLose: {
       title: "Nothing to Lose",
-      authorKeys: [Person.LEE_CHILD],
-      series: [SeriesEntry.create(Series.JACK_REACHER, 12)],
+      authorKeys: ["leeChild"],
+      series: [
+        {
+          key: "jackReacher",
+          entry: 12,
+        },
+      ],
       meeting: "2009.09.28",
       dcl: "849387114",
     },
     oddThomas: {
       title: "Odd Thomas",
-      authorKeys: [Person.DEAN_KOONTZ],
-      series: [SeriesEntry.create(Series.ODD_THOMAS, 1)],
+      authorKeys: ["deanKoontz"],
+      series: [
+        {
+          key: "oddThomas",
+          entry: 1,
+        },
+      ],
       meeting: "2007.07.23",
       dcl: "1231369114",
     },
     oneGoodTurn: {
       title: "One Good Turn",
-      authorKeys: [Person.KATE_ATKINSON],
+      authorKeys: ["kateAtkinson"],
       meeting: "2008.10.27",
       dcl: "1554992114",
     },
     oneKick: {
       title: "One Kick",
-      authorKeys: [Person.CHELSEA_CAIN],
-      series: [SeriesEntry.create(Series.KICK_LANNIGAN, 1)],
+      authorKeys: ["chelseaCain"],
+      series: [
+        {
+          key: "kickLannigan",
+          entry: 1,
+        },
+      ],
       meeting: "2015.07.27",
       dcl: "1211996114",
     },
     oneShot: {
       title: "One Shot",
-      authorKeys: [Person.LEE_CHILD],
-      series: [SeriesEntry.create(Series.JACK_REACHER, 9)],
+      authorKeys: ["leeChild"],
+      series: [
+        {
+          key: "jackReacher",
+          entry: 9,
+        },
+      ],
       meeting: "2009.03.23",
       dcl: "962840114",
       lt: "work/156525",
     },
     orphanX: {
       title: "Orphan X",
-      authorKeys: [Person.GREGG_HURWITZ],
-      series: [SeriesEntry.create(Series.EVAN_SMOAK, 1)],
+      authorKeys: ["greggHurwitz"],
+      series: [
+        {
+          key: "evanSmoak",
+          entry: 1,
+        },
+      ],
       meeting: "2017.05.22",
       dcl: "1613028114",
     },
     personal: {
       title: "Personal",
-      authorKeys: [Person.LEE_CHILD],
-      series: [SeriesEntry.create(Series.JACK_REACHER, 19)],
+      authorKeys: ["leeChild"],
+      series: [
+        {
+          key: "jackReacher",
+          entry: 19,
+        },
+      ],
       meeting: "2015.08.24",
       dcl: "1381470114",
     },
     phantom: {
       title: "Phantom",
-      authorKeys: [Person.JO_NESBO],
-      series: [SeriesEntry.create(Series.HARRY_HOLE, 9)],
+      authorKeys: ["joNesbo"],
+      series: [
+        {
+          key: "harryHole",
+          entry: 9,
+        },
+      ],
       meeting: "2013.11.25",
       dcl: "1061473114",
     },
     piecesOfHer: {
       title: "Pieces of Her",
-      authorKeys: [Person.KARIN_SLAUGHTER],
+      authorKeys: ["karinSlaughter"],
       dcl: "1460952114",
       lt: "work/20847841",
       meeting: "2019.07.22",
     },
     reconstructingAmelia: {
       title: "Reconstructing Amelia",
-      authorKeys: [Person.KIMBERLY_MCCREIGHT],
+      authorKeys: ["kimberlyMcCreight"],
       meeting: "2015.03.23",
       dcl: "1093239114",
     },
-    redemptionRoad: {
-      title: "Redemption Road",
-      authorKeys: [Person.JOHN_HART],
-      meeting: "2016.11.28",
-      dcl: "1316552114",
-    },
     redDragon: {
       title: "Red Dragon",
-      authorKeys: [Person.THOMAS_HARRIS],
-      series: [SeriesEntry.create(Series.HANNIBAL_LECTER, 1)],
+      authorKeys: ["thomasHarris"],
+      series: [
+        {
+          key: "hannibalLecter",
+          entry: 1,
+        },
+      ],
       gr: "book/show/28877.Red_Dragon",
       lt: "work/5882",
       wiki: "Red_Dragon_(novel)",
     },
+    redemptionRoad: {
+      title: "Redemption Road",
+      authorKeys: ["johnHart"],
+      meeting: "2016.11.28",
+      dcl: "1316552114",
+    },
     sharpObjects: {
       title: "Sharp Objects",
-      authorKeys: [Person.GILLIAN_FLYNN],
+      authorKeys: ["gillianFlynn"],
       dcl: "767353114",
       lt: "work/1117152",
     },
     sheWhoWasNoMore: {
       title: "She Who Was No More",
-      authorKeys: [Person.BOILEAU_NARCEJAC],
-      series: [SeriesEntry.create(Series.PETER_SWANSON_SUGGESTS, 2)],
+      authorKeys: ["boileauNarcejac"],
+      series: [
+        {
+          key: "peterSwansonSuggests",
+          entry: 2,
+        },
+      ],
       gr: "book/show/25241971",
     },
     shirleyValentine: {
       title: "Shirley Valentine",
-      authorKeys: [Person.WILLY_RUSSELL],
+      authorKeys: ["willyRussell"],
       gr: "book/show/315127.Shirley_Valentine",
       lt: "work/147099",
     },
     sixYears: {
       title: "Six Years",
-      authorKeys: [Person.HARLAN_COBEN],
+      authorKeys: ["harlanCoben"],
       meeting: "2013.09.23",
       dcl: "1134102114",
     },
     stayClose: {
       title: "Stay Close",
-      authorKeys: [Person.HARLAN_COBEN],
+      authorKeys: ["harlanCoben"],
       meeting: "2013.01.28",
       dcl: "1022395114",
     },
     stillLife: {
       title: "Still Life",
-      authorKeys: [Person.LOUISE_PENNY],
+      authorKeys: ["louisePenny"],
       series: [
-        SeriesEntry.create(Series.CHIEF_INSPECTOR_ARMAND_GAMACHE, 1),
-        SeriesEntry.create(Series.GAIL_H_SUGGESTS, 1),
+        {
+          key: "chiefInspectorArmandGamache",
+          entry: 1,
+        },
+        {
+          key: "gailHSuggests",
+          entry: 1,
+        },
       ],
       lt: "work/544362",
     },
     stoneCold2007: {
       title: "Stone Cold (2007)",
-      authorKeys: [Person.DAVID_BALDACCI],
-      series: [SeriesEntry.create(Series.THE_CAMEL_CLUB, 3)],
+      authorKeys: ["davidBaldacci"],
+      series: [
+        {
+          key: "theCamelClub",
+          entry: 3,
+        },
+      ],
       lt: "work/3592880",
       wiki: "Stone_Cold_(Baldacci_novel)",
     },
     stoneCold2014: {
       title: "Stone Cold (2014)",
-      authorKeys: [Person.CJ_BOX],
-      series: [SeriesEntry.create(Series.JOE_PICKETT, 14)],
+      authorKeys: ["cjBox"],
+      series: [
+        {
+          key: "joePickett",
+          entry: 14,
+        },
+      ],
       meeting: "2015.09.28",
       dcl: "1180990114",
     },
     strangersOnATrain: {
       title: "Strangers on a Train",
-      authorKeys: [Person.PATRICIA_HIGHSMITH],
-      series: [SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 5)],
+      authorKeys: ["patriciaHighsmith"],
+      series: [
+        {
+          key: "perfectMurdersList",
+          entry: 5,
+        },
+      ],
       lt: "work/126353",
     },
     suspect: {
       title: "Suspect",
-      authorKeys: [Person.ROBERT_CRAIS],
+      authorKeys: ["robertCrais"],
       meeting: "2014.01.27",
       dcl: "1087642114",
     },
-    sweetheart: {
-      title: "Sweetheart",
-      authorKeys: [Person.CHELSEA_CAIN],
-      series: [SeriesEntry.create(Series.GRETCHEN_LOWELL, 2)],
-      lt: "work/8386014",
-    },
     sweetLittleLies: {
       title: "Sweet Little Lies",
-      authorKeys: [Person.CAZ_FREAR],
-      series: [SeriesEntry.create(Series.CAT_KINSELLA, 1)],
+      authorKeys: ["cazFrear"],
+      series: [
+        {
+          key: "catKinsella",
+          entry: 1,
+        },
+      ],
       dcl: "1466868114",
       lt: "work/19582483",
       meeting: "2019.11.18",
     },
+    sweetheart: {
+      title: "Sweetheart",
+      authorKeys: ["chelseaCain"],
+      series: [
+        {
+          key: "gretchenLowell",
+          entry: 2,
+        },
+      ],
+      lt: "work/8386014",
+    },
     sycamoreRow: {
       title: "Sycamore Row",
-      authorKeys: [Person.JOHN_GRISHAM],
-      series: [SeriesEntry.create(Series.JAKE_BRIGANCE, 2)],
+      authorKeys: ["johnGrisham"],
+      series: [
+        {
+          key: "jakeBrigance",
+          entry: 2,
+        },
+      ],
       meeting: "2014.11.24",
       dcl: "1151120114",
       lt: "work/13638462",
     },
     thatNight: {
       title: "That Night",
-      authorKeys: [Person.CHEVY_STEVENS],
+      authorKeys: ["chevyStevens"],
       meeting: "2015.06.22",
       dcl: "1189725114",
     },
     "the 6:20 man": {
       title: "The 6:20 Man",
-      authorKeys: [Person.DAVID_BALDACCI],
+      authorKeys: ["davidBaldacci"],
       meeting: "2022.10.24",
       dcl: "1737654114",
       gr: "book/show/59568612-the-6",
       lt: "work/27695508",
     },
+    "the bone jar": {
+      title: "The Bone Jar",
+      authorKeys: ["sw kane"],
+      series: [
+        {
+          key: "detective lew kirby",
+          entry: 1,
+        },
+      ],
+      meeting: "2021.08.23",
+      gr: "book/show/53714160-the-bone-jar",
+      lt: "work/24860055",
+    },
+    "the house of silk": {
+      title: "The House of Silk",
+      authorKeys: ["anthonyHorowitz"],
+      series: [
+        {
+          key: "horowitz's holmes",
+          entry: 1,
+        },
+      ],
+      meeting: "2022.08.22",
+      dcl: "1008429114",
+      gr: "book/show/11093329-the-house-of-silk",
+      lt: "work/11283652",
+    },
+    "the last flight": {
+      title: "The Last Flight",
+      authorKeys: ["julieClark"],
+      meeting: "2022.09.26",
+      dcl: "1654525114",
+      gr: "book/show/52652923-the-last-flight",
+      lt: "work/24173950",
+    },
+    "the man who died twice": {
+      title: "The Man Who Died Twice",
+      authorKeys: ["richard osman"],
+      series: [
+        {
+          key: "thursday murder club",
+          entry: 2,
+        },
+      ],
+      meeting: "2022.07.25",
+      dcl: "1710733114",
+      gr: "book/show/55457493-the-man-who-died-twice",
+      lt: "work/25398073",
+    },
+    "the survivors": {
+      title: "The Survivors",
+      authorKeys: ["janeHarper"],
+      meeting: "2021.09.27",
+      dcl: "1682493114",
+      gr: "book/show/53305127-the-survivors",
+      lt: "work/24730334",
+    },
+    "the thursday murder club": {
+      title: "The Thursday Murder Club",
+      authorKeys: ["richard osman"],
+      series: [
+        {
+          key: "thursday murder club",
+          entry: 1,
+        },
+      ],
+      meeting: "2021.10.25",
+      dcl: "1672437114",
+      gr: "book/show/46000520-the-thursday-murder-club",
+      lt: "work/23307330",
+      wiki: "The_Thursday_Murder_Club",
+    },
     theAbcMurders: {
       title: "The A.B.C. Murders",
-      authorKeys: [Person.AGATHA_CHRISTIE],
+      authorKeys: ["agathaChristie"],
       series: [
-        SeriesEntry.create(Series.HERCULE_POIROT, 12),
-        SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 3),
+        {
+          key: "herculePoirot",
+          entry: 12,
+        },
+        {
+          key: "perfectMurdersList",
+          entry: 3,
+        },
       ],
       lt: "work/30637",
     },
     theAx: {
       title: "The Ax",
-      authorKeys: [Person.DONALD_E_WESTLAKE],
-      series: [SeriesEntry.create(Series.PETER_SWANSON_SUGGESTS, 3)],
+      authorKeys: ["donaldEWestlake"],
+      series: [
+        {
+          key: "peterSwansonSuggests",
+          entry: 3,
+        },
+      ],
       gr: "book/show/176811.The_Ax",
       lt: "work/177297",
     },
     theBlackEcho: {
       title: "The Black Echo",
-      authorKeys: [Person.MICHAEL_CONNELLY],
-      series: [SeriesEntry.create(Series.HARRY_BOSCH, 1)],
+      authorKeys: ["michaelConnelly"],
+      series: [
+        {
+          key: "harryBosch",
+          entry: 1,
+        },
+      ],
       dcl: "871416114",
       lt: "work/84315",
     },
     theBlackWidow: {
       title: "The Black Widow",
-      authorKeys: [Person.DANIEL_SILVA],
-      series: [SeriesEntry.create(Series.GABRIEL_ALLON, 16)],
+      authorKeys: ["danielSilva"],
+      series: [
+        {
+          key: "gabrielAllon",
+          entry: 16,
+        },
+      ],
       meeting: "2017.06.26",
       dcl: "1317748114",
     },
-    "the bone jar": {
-      title: "The Bone Jar",
-      authorKeys: [Person.S_W_KANE],
-      series: [SeriesEntry.create(Series.DETECTIVE_LEW_KIRBY, 1)],
-      meeting: "2021.08.23",
-      gr: "book/show/53714160-the-bone-jar",
-      lt: "work/24860055",
-    },
     theBoneParade: {
       title: "The Bone Parade",
-      authorKeys: [Person.MARK_NYKANEN],
+      authorKeys: ["markNykanen"],
       meeting: "2007.05.21",
       lt: "work/359059",
     },
     theBoyFromTheWoods: {
       title: "The Boy from the Woods",
-      authorKeys: [Person.HARLAN_COBEN],
-      series: [SeriesEntry.create(Series.WILDE, 1)],
+      authorKeys: ["harlanCoben"],
+      series: [
+        {
+          key: "wilde",
+          entry: 1,
+        },
+      ],
       gr: "book/show/51204046-the-boy-from-the-woods",
       lt: "work/23578793",
       meeting: "2021.03.22",
     },
     theBrassVerdict: {
       title: "The Brass Verdict",
-      authorKeys: [Person.MICHAEL_CONNELLY],
+      authorKeys: ["michaelConnelly"],
       series: [
-        SeriesEntry.create(Series.MICKEY_HALLER, 2),
-        SeriesEntry.create(Series.HARRY_BOSCH, 14),
+        {
+          key: "mickeyHaller",
+          entry: 2,
+        },
+        {
+          key: "harryBosch",
+          entry: 14,
+        },
       ],
       meeting: "2012.03.26",
       dcl: "875367114",
     },
     theBrideCollector: {
       title: "The Bride Collector",
-      authorKeys: [Person.TED_DEKKER],
+      authorKeys: ["tedDekker"],
       meeting: "2010.08.23",
       dcl: "972555114",
     },
     theBrokenWindow: {
       title: "The Broken Window",
-      authorKeys: [Person.JEFFERY_DEAVER],
-      series: [SeriesEntry.create(Series.LINCOLN_RHYME, 8)],
+      authorKeys: ["jefferyDeaver"],
+      series: [
+        {
+          key: "lincolnRhyme",
+          entry: 8,
+        },
+      ],
       meeting: "2009.08.24",
       dcl: "856637114",
     },
     theBrutalTelling: {
       title: "The Brutal Telling",
-      authorKeys: [Person.LOUISE_PENNY],
-      series: [SeriesEntry.create(Series.CHIEF_INSPECTOR_ARMAND_GAMACHE, 5)],
+      authorKeys: ["louisePenny"],
+      series: [
+        {
+          key: "chiefInspectorArmandGamache",
+          entry: 5,
+        },
+      ],
       meeting: "2010.06.28",
       dcl: "932000114",
       lt: "work/8410558",
     },
     theCamelClub: {
       title: "The Camel Club",
-      authorKeys: [Person.DAVID_BALDACCI],
-      series: [SeriesEntry.create(Series.THE_CAMEL_CLUB, 1)],
+      authorKeys: ["davidBaldacci"],
+      series: [
+        {
+          key: "theCamelClub",
+          entry: 1,
+        },
+      ],
       lt: "work/977305",
       wiki: "The_Camel_Club_(novel)",
     },
     theChristmasCrimesAtPuzzelManor: {
       title: "The Christmas Crimes at Puzzel Manor",
-      authorKeys: [Person.SIMON_BRETT],
+      authorKeys: ["simonBrett"],
       meeting: "2018.12.14",
       lt: "work/96153",
     },
     theCollectors: {
       title: "The Collectors",
-      authorKeys: [Person.DAVID_BALDACCI],
-      series: [SeriesEntry.create(Series.THE_CAMEL_CLUB, 2)],
+      authorKeys: ["davidBaldacci"],
+      series: [
+        {
+          key: "theCamelClub",
+          entry: 2,
+        },
+      ],
       lt: "work/990503",
       wiki: "The_Collectors_(novel)",
     },
     theCompleteFatherBrownMysteries: {
       title: "The Complete Father Brown Mysteries",
-      authorKeys: [Person.G_K_CHESTERTON],
-      series: [SeriesEntry.create(Series.FATHER_BROWN)],
+      authorKeys: ["gkChesterton"],
+      series: [
+        {
+          key: "fatherBrown",
+        },
+      ],
       gr: "book/show/35491084-the-complete-father-brown-mysteries",
       lt: "work/87702",
     },
     theCoupleNextDoor: {
       title: "The Couple Next Door",
-      authorKeys: [Person.SHARI_LAPENA],
+      authorKeys: ["shariLapena"],
       meeting: "2018.03.26",
       dcl: "1348740114",
     },
     theCrossing: {
       title: "The Crossing",
-      authorKeys: [Person.MICHAEL_CONNELLY],
-      series: [SeriesEntry.create(Series.HARRY_BOSCH, 18)],
+      authorKeys: ["michaelConnelly"],
+      series: [
+        {
+          key: "harryBosch",
+          entry: 18,
+        },
+      ],
       meeting: "2016.09.26",
       dcl: "1277014114",
     },
     theDeathOfMrsWestaway: {
       title: "The Death of Mrs. Westaway",
-      authorKeys: [Person.RUTH_WARE],
+      authorKeys: ["ruthWare"],
       dcl: "1446736114",
       lt: "work/20792311",
       meeting: "2019.08.26",
     },
     theDepartmentOfSensitiveCrimes: {
       title: "The Department of Sensitive Crimes",
-      authorKeys: [Person.ALEXANDER_MCCALL_SMITH],
-      series: [SeriesEntry.create(Series.DETECTIVE_VARG, 1)],
+      authorKeys: ["alexanderMcCallSmith"],
+      series: [
+        {
+          key: "detectiveVarg",
+          entry: 1,
+        },
+      ],
       dcl: "1535041114",
       lt: "work/22451389",
       meeting: "2020.07.27",
     },
     theDrowner: {
       title: "The Drowner",
-      authorKeys: [Person.JOHN_D_MACDONALD],
-      series: [SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 6)],
+      authorKeys: ["johnDMacdonald"],
+      series: [
+        {
+          key: "perfectMurdersList",
+          entry: 6,
+        },
+      ],
       lt: "work/842541",
     },
     theDry: {
       title: "The Dry",
-      authorKeys: [Person.JANE_HARPER],
-      series: [SeriesEntry.create(Series.AARON_FALK, 1)],
+      authorKeys: ["janeHarper"],
+      series: [
+        {
+          key: "aaronFalk",
+          entry: 1,
+        },
+      ],
       dcl: "1364617114",
       lt: "work/17442790",
       meeting: "2019.03.25",
     },
     theEighthDetective: {
       title: "The Eighth Detective",
-      authorKeys: [Person.ALEX_PAVESI],
+      authorKeys: ["alexPavesi"],
       gr: "book/show/53139064-the-eighth-detective",
       lt: "work/24663224",
       meeting: "2021.01.25",
     },
     theEnglishSpy: {
       title: "The English Spy",
-      authorKeys: [Person.DANIEL_SILVA],
-      series: [SeriesEntry.create(Series.GABRIEL_ALLON, 15)],
+      authorKeys: ["danielSilva"],
+      series: [
+        {
+          key: "gabrielAllon",
+          entry: 15,
+        },
+      ],
       meeting: "2017.04.24",
       dcl: "1466247114",
     },
     theEscapeRoom: {
       title: "The Escape Room",
-      authorKeys: [Person.MEGAN_GOLDIN],
+      authorKeys: ["meganGoldin"],
       dcl: "1565306114",
       lt: "work/22043625",
       meeting: "2020.02.24",
     },
     theExpats: {
       title: "The Expats",
-      authorKeys: [Person.CHRIS_PAVONE],
+      authorKeys: ["chrisPavone"],
       meeting: "2014.02.24",
       dcl: "1028931114",
     },
     theFallen: {
       title: "The Fallen",
-      authorKeys: [Person.DAVID_BALDACCI],
-      series: [SeriesEntry.create(Series.AMOS_DECKER, 4)],
+      authorKeys: ["davidBaldacci"],
+      series: [
+        {
+          key: "amosDecker",
+          entry: 4,
+        },
+      ],
       dcl: "1441565114",
       lt: "work/20582252",
       meeting: "2019.01.28",
     },
     theFamilyUpstairs: {
       title: "The Family Upstairs",
-      authorKeys: [Person.LISA_JEWELL],
+      authorKeys: ["lisaJewell"],
       dcl: "1595383114",
       lt: "work/23187308",
       meeting: "2020.08.24",
     },
     theFifthWitness: {
       title: "The Fifth Witness",
-      authorKeys: [Person.MICHAEL_CONNELLY],
-      series: [SeriesEntry.create(Series.MICKEY_HALLER, 4)],
+      authorKeys: ["michaelConnelly"],
+      series: [
+        {
+          key: "mickeyHaller",
+          entry: 4,
+        },
+      ],
       meeting: "2013.04.22",
       dcl: "985297114",
     },
     theFinalSolution: {
       title: "The Final Solution",
-      authorKeys: [Person.MICHAEL_CHABON],
+      authorKeys: ["michaelChabon"],
       meeting: "2007.03.26",
       lt: "work/8108",
     },
     theGirlWhoKickedTheHornetsNest: {
       title: "The Girl Who Kicked the Hornet's Nest",
-      authorKeys: [Person.STIEG_LARSSON],
-      series: [SeriesEntry.create(Series.MILLENNIUM, 3)],
+      authorKeys: ["stiegLarsson"],
+      series: [
+        {
+          key: "millennium",
+          entry: 3,
+        },
+      ],
       meeting: "2011.07.25",
       dcl: "946979114",
     },
     theGirlWhoPlayedWithFire: {
       title: "The Girl Who Played with Fire",
-      authorKeys: [Person.STIEG_LARSSON],
-      series: [SeriesEntry.create(Series.MILLENNIUM, 2)],
+      authorKeys: ["stiegLarsson"],
+      series: [
+        {
+          key: "millennium",
+          entry: 2,
+        },
+      ],
       meeting: "2010.10.25",
       dcl: "1210737114",
     },
     theGirlWithTheDragonTattoo: {
       title: "The Girl with the Dragon Tattoo",
-      authorKeys: [Person.STIEG_LARSSON],
-      series: [SeriesEntry.create(Series.MILLENNIUM, 1)],
+      authorKeys: ["stiegLarsson"],
+      series: [
+        {
+          key: "millennium",
+          entry: 1,
+        },
+      ],
       meeting: "2009.07.27",
       dcl: "1087244114",
     },
     theGodsOfGuilt: {
       title: "The Gods Of Guilt",
-      authorKeys: [Person.MICHAEL_CONNELLY],
-      series: [SeriesEntry.create(Series.MICKEY_HALLER, 5)],
+      authorKeys: ["michaelConnelly"],
+      series: [
+        {
+          key: "mickeyHaller",
+          entry: 5,
+        },
+      ],
       meeting: "2015.02.23",
       dcl: "1154561114",
     },
     theGreekCoffinMystery: {
       title: "The Greek Coffin Mystery",
-      authorKeys: [Person.ELLERY_QUEEN],
-      series: [SeriesEntry.create(Series.ELLERY_QUEEN, 4)],
+      authorKeys: ["elleryQueen"],
+      series: [
+        {
+          key: "elleryQueen",
+          entry: 4,
+        },
+      ],
       meeting: "2015.11.23",
       dcl: "1294792114",
     },
     theGuestList: {
       title: "The Guest List",
-      authorKeys: [Person.LUCY_FOLEY],
+      authorKeys: ["lucyFoley"],
       dcl: "1647242114",
       gr: "book/show/51933429-the-guest-list",
       lt: "work/23927322",
     },
     theGuilty: {
       title: "The Guilty",
-      authorKeys: [Person.DAVID_BALDACCI],
-      series: [SeriesEntry.create(Series.WILL_ROBIE, 4)],
+      authorKeys: ["davidBaldacci"],
+      series: [
+        {
+          key: "willRobie",
+          entry: 4,
+        },
+      ],
       meeting: "2016.08.22",
       dcl: "1277015114",
       lt: "work/15802151",
     },
     theHeist: {
       title: "The Heist",
-      authorKeys: [Person.DANIEL_SILVA],
-      series: [SeriesEntry.create(Series.GABRIEL_ALLON, 14)],
+      authorKeys: ["danielSilva"],
+      series: [
+        {
+          key: "gabrielAllon",
+          entry: 14,
+        },
+      ],
       meeting: "2015.10.26",
       dcl: "1211991114",
     },
     theHoundOfTheBaskervilles: {
       title: "The Hound of the Baskervilles",
-      authorKeys: [Person.ARTHUR_CONAN_DOYLE],
-      series: [SeriesEntry.create(Series.SHERLOCK_HOLMES, 5)],
+      authorKeys: ["arthurConanDoyle"],
+      series: [
+        {
+          key: "sherlockHolmes",
+          entry: 5,
+        },
+      ],
       meeting: "2007.10.22",
       dcl: "1007856114",
     },
-    "the house of silk": {
-      title: "The House of Silk",
-      authorKeys: [Person.ANTHONY_HOROWITZ],
-      series: [SeriesEntry.create(Series.HOROWITZS_HOLMES, 1)],
-      meeting: "2022.08.22",
-      dcl: "1008429114",
-      gr: "book/show/11093329-the-house-of-silk",
-      lt: "work/11283652",
-    },
     theHuntClub: {
       title: "The Hunt Club",
-      authorKeys: [Person.JOHN_LESCROART],
+      authorKeys: ["johnLescroart"],
       meeting: "2007.09.24",
       lt: "work/554580",
     },
     theHush: {
       title: "The Hush",
-      authorKeys: [Person.JOHN_HART],
-      series: [SeriesEntry.create(Series.JOHNNY_MERRIMON, 2)],
+      authorKeys: ["johnHart"],
+      series: [
+        {
+          key: "johnnyMerrimon",
+          entry: 2,
+        },
+      ],
       meeting: "2018.10.22",
       dcl: "1431235114",
     },
     theInnocentMan: {
       title: "The Innocent Man",
-      authorKeys: [Person.JOHN_GRISHAM],
+      authorKeys: ["johnGrisham"],
       meeting: "2008.01.28",
       dcl: "767190114",
     },
     theKeepsake: {
       title: "The Keepsake",
-      authorKeys: [Person.TESS_GERRITSEN],
+      authorKeys: ["tessGerritsen"],
       meeting: "2009.11.23",
       dcl: "1018803114",
     },
     theKillerNextDoor: {
       title: "The Killer Next Door",
-      authorKeys: [Person.ALEX_MARWOOD],
+      authorKeys: ["alexMarwood"],
       meeting: "2016.03.28",
       dcl: "1233151114",
     },
     theKillingsAtBadgersDrift: {
       title: "The Killings at Badger's Drift",
-      authorKeys: [Person.CAROLINE_GRAHAM],
-      series: [SeriesEntry.create(Series.CHIEF_INSPECTOR_BARNABY_MYSTERIES, 1)],
+      authorKeys: ["carolineGraham"],
+      series: [
+        {
+          key: "chiefInspectorBarnabyMysteries",
+          entry: 1,
+        },
+      ],
       lt: "work/270034",
     },
     theKillingsAtKingfisherHill: {
       title: "The Killings at Kingfisher Hill",
-      authorKeys: [Person.SOPHIE_HANNAH],
-      series: [SeriesEntry.create(Series.NEW_HERCULE_POIROT, 4)],
+      authorKeys: ["sophieHannah"],
+      series: [
+        {
+          key: "newHerculePoirot",
+          entry: 4,
+        },
+      ],
       gr: "book/show/50745012-the-killings-at-kingfisher-hill",
       lt: "work/23858746",
       meeting: "2021.04.26",
     },
     theLadyVanishes: {
       title: "The Lady Vanishes",
-      authorKeys: [Person.ETHEL_LINA_WHITE],
+      authorKeys: ["ethelLinaWhite"],
       gr: "book/show/1024939.The_Lady_Vanishes",
       lt: "work/83416",
     },
     theLastChild: {
       title: "The Last Child",
-      authorKeys: [Person.JOHN_HART],
-      series: [SeriesEntry.create(Series.JOHNNY_MERRIMON, 1)],
+      authorKeys: ["johnHart"],
+      series: [
+        {
+          key: "johnnyMerrimon",
+          entry: 1,
+        },
+      ],
       meeting: "2012.07.23",
       dcl: "1021303114",
     },
-    "the last flight": {
-      title: "The Last Flight",
-      authorKeys: [Person.JULIE_CLARK],
-      meeting: "2022.09.26",
-      dcl: "1654525114",
-      gr: "book/show/52652923-the-last-flight",
-      lt: "work/24173950",
-    },
     theLastPaintingOfSaraDeVos: {
       title: "The Last Painting of Sara de Vos",
-      authorKeys: [Person.DOMINIC_SMITH],
+      authorKeys: ["dominicSmith"],
       meeting: "2017.01.23",
       dcl: "1305320114",
     },
     theLastTrial: {
       title: "The Last Trial",
-      authorKeys: [Person.SCOTT_TUROW],
-      series: [SeriesEntry.create(Series.KINDLE_COUNTY, 11)],
+      authorKeys: ["scottTurow"],
+      series: [
+        {
+          key: "kindleCounty",
+          entry: 11,
+        },
+      ],
       gr: "book/show/51897368-the-last-trial",
       lt: "work/23974436",
       meeting: "2021.02.22",
     },
     theLateShow: {
       title: "The Late Show",
-      authorKeys: [Person.MICHAEL_CONNELLY],
-      series: [SeriesEntry.create(Series.RENEE_BALLARD, 1)],
+      authorKeys: ["michaelConnelly"],
+      series: [
+        {
+          key: "reneeBallard",
+          entry: 1,
+        },
+      ],
       meeting: "2018.04.23",
       dcl: "1402219114",
     },
     theLawOfInnocence: {
       title: "The Law of Innocence",
-      authorKeys: [Person.MICHAEL_CONNELLY],
+      authorKeys: ["michaelConnelly"],
       series: [
-        SeriesEntry.create(Series.MICKEY_HALLER, 7),
-        SeriesEntry.create(Series.HARRY_BOSCH, 34),
+        {
+          key: "mickeyHaller",
+          entry: 7,
+        },
+        {
+          key: "harryBosch",
+          entry: 34,
+        },
       ],
       meeting: "2022.02.28",
       dcl: "1676113114",
@@ -1478,54 +2087,60 @@ const Book = {
     },
     theLeopard: {
       title: "The Leopard",
-      authorKeys: [Person.JO_NESBO],
-      series: [SeriesEntry.create(Series.HARRY_HOLE, 8)],
+      authorKeys: ["joNesbo"],
+      series: [
+        {
+          key: "harryHole",
+          entry: 8,
+        },
+      ],
       meeting: "2013.03.25",
       dcl: "1020521114",
     },
     theLincolnLawyer: {
       title: "The Lincoln Lawyer",
-      authorKeys: [Person.MICHAEL_CONNELLY],
-      series: [SeriesEntry.create(Series.MICKEY_HALLER, 1)],
+      authorKeys: ["michaelConnelly"],
+      series: [
+        {
+          key: "mickeyHaller",
+          entry: 1,
+        },
+      ],
       meeting: "2011.09.26",
       dcl: "985297114",
       lt: "work/25501",
     },
     theLittleFrenchBistro: {
       title: "The Little French Bistro",
-      authorKeys: [Person.NINA_GEORGE],
+      authorKeys: ["ninaGeorge"],
       dcl: "1389237114",
       gr: "book/show/32283424-the-little-french-bistro",
       lt: "work/18782255",
     },
     theLostMan: {
       title: "The Lost Man",
-      authorKeys: [Person.JANE_HARPER],
+      authorKeys: ["janeHarper"],
       dcl: "1523223114",
       lt: "work/21919798",
       meeting: "2020.05.20",
     },
     theMaidens: {
       title: "The Maidens",
-      authorKeys: [Person.ALEX_MICHAELIDES],
+      authorKeys: ["alexMichaelides"],
       meeting: "2022.03.28",
       dcl: "1699785114",
       gr: "book/show/45300567-the-maidens",
       lt: "work/24457481",
     },
-    "the man who died twice": {
-      title: "The Man Who Died Twice",
-      authorKeys: [Person.RICHARD_OSMAN],
-      series: [SeriesEntry.create(Series.THURSDAY_MURDER_CLUB, 2)],
-      meeting: "2022.07.25",
-      dcl: "1710733114",
-      gr: "book/show/55457493-the-man-who-died-twice",
-      lt: "work/25398073",
-    },
     theMatch: {
       title: "The Match",
-      authorKeys: [Person.HARLAN_COBEN],
-      series: [SeriesEntry.create(Series.WILDE, 2)],
+      authorKeys: ["harlanCoben"],
+      series: [
+        {
+          key: "wilde",
+          entry: 2,
+        },
+      ],
       meeting: "2022.06.27",
       dcl: "1724962114",
       gr: "book/show/58363121-the-match",
@@ -1533,43 +2148,63 @@ const Book = {
     },
     theMostDangerousThing: {
       title: "The Most Dangerous Thing",
-      authorKeys: [Person.LAURA_LIPPMAN],
+      authorKeys: ["lauraLippman"],
       meeting: "2012.08.27",
       dcl: "1004847114",
     },
     theMysteriousAffairAtStyles: {
       title: "The Mysterious Affair at Styles",
-      authorKeys: [Person.AGATHA_CHRISTIE],
-      series: [SeriesEntry.create(Series.HERCULE_POIROT, 1)],
+      authorKeys: ["agathaChristie"],
+      series: [
+        {
+          key: "herculePoirot",
+          entry: 1,
+        },
+      ],
       meeting: "2013.12.16",
       dcl: "783597114",
       lt: "work/2921950",
     },
     theNarrows: {
       title: "The Narrows",
-      authorKeys: [Person.MICHAEL_CONNELLY],
-      series: [SeriesEntry.create(Series.HARRY_BOSCH, 10)],
+      authorKeys: ["michaelConnelly"],
+      series: [
+        {
+          key: "harryBosch",
+          entry: 10,
+        },
+      ],
       meeting: "2009.05.18",
       dcl: "648301114",
     },
     theNightSeason: {
       title: "The Night Season",
-      authorKeys: [Person.CHELSEA_CAIN],
-      series: [SeriesEntry.create(Series.GRETCHEN_LOWELL, 4)],
+      authorKeys: ["chelseaCain"],
+      series: [
+        {
+          key: "gretchenLowell",
+          entry: 4,
+        },
+      ],
       meeting: "2012.10.22",
       lt: "work/10349831",
     },
     theNightSwim: {
       title: "The Night Swim",
-      authorKeys: [Person.MEGAN_GOLDIN],
+      authorKeys: ["meganGoldin"],
       gr: "book/show/51169341-the-night-swim",
       lt: "work/24048248",
       meeting: "2021.05.24",
     },
     theNo1LadiesDetectiveAgency: {
       title: "The No. 1 Ladies' Detective Agency",
-      authorKeys: [Person.ALEXANDER_MCCALL_SMITH],
-      series: [SeriesEntry.create(Series.THE_NO_1_LADIES_DETECTIVE_AGENCY, 1)],
+      authorKeys: ["alexanderMcCallSmith"],
+      series: [
+        {
+          key: "theNo1LadiesDetectiveAgency",
+          entry: 1,
+        },
+      ],
       dcl: "529199114",
       gr: "book/show/7061.The_No_1_Ladies_Detective_Agency",
       lt: "work/8267",
@@ -1577,21 +2212,31 @@ const Book = {
     },
     theNowhereMan: {
       title: "The Nowhere Man",
-      authorKeys: [Person.GREGG_HURWITZ],
-      series: [SeriesEntry.create(Series.EVAN_SMOAK, 2)],
+      authorKeys: ["greggHurwitz"],
+      series: [
+        {
+          key: "evanSmoak",
+          entry: 2,
+        },
+      ],
       meeting: "2017.11.27",
       dcl: "1364629114",
     },
     thePallbearers: {
       title: "The Pallbearers",
-      authorKeys: [Person.STEPHEN_J_CANNELL],
-      series: [SeriesEntry.create(Series.SHANE_SCULLY, 9)],
+      authorKeys: ["stephenJCannell"],
+      series: [
+        {
+          key: "shaneScully",
+          entry: 9,
+        },
+      ],
       meeting: "2011.01.24",
       dcl: "946057114",
     },
     theParisApartment: {
       title: "The Paris Apartment",
-      authorKeys: [Person.LUCY_FOLEY],
+      authorKeys: ["lucyFoley"],
       meeting: "2022.05.23",
       dcl: "1727249114",
       gr: "book/show/58468990-the-paris-apartment",
@@ -1599,186 +2244,229 @@ const Book = {
     },
     theProgram: {
       title: "The Program",
-      authorKeys: [Person.STEPHEN_WHITE],
-      series: [SeriesEntry.create(Series.DR_ALAN_GREGORY, 9)],
+      authorKeys: ["stephenWhite"],
+      series: [
+        {
+          key: "drAlanGregory",
+          entry: 9,
+        },
+      ],
       meeting: "2008.06.23",
       dcl: "1382906114",
     },
     thePromise: {
       title: "The Promise",
-      authorKeys: [Person.ROBERT_CRAIS],
+      authorKeys: ["robertCrais"],
       series: [
-        SeriesEntry.create(Series.ELVIS_COLE, 14),
-        SeriesEntry.create(Series.JOE_PIKE, 5),
+        {
+          key: "elvisCole",
+          entry: 14,
+        },
+        {
+          key: "joePike",
+          entry: 5,
+        },
       ],
       meeting: "2016.07.25",
       dcl: "1224417114",
     },
     theRedHouseMystery: {
       title: "The Red House Mystery",
-      authorKeys: [Person.AA_MILNE],
-      series: [SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 1)],
+      authorKeys: ["aaMilne"],
+      series: [
+        {
+          key: "perfectMurdersList",
+          entry: 1,
+        },
+      ],
       lt: "work/247700",
     },
     theRembrandtAffair: {
       title: "The Rembrandt Affair",
-      authorKeys: [Person.DANIEL_SILVA],
-      series: [SeriesEntry.create(Series.GABRIEL_ALLON, 10)],
+      authorKeys: ["danielSilva"],
+      series: [
+        {
+          key: "gabrielAllon",
+          entry: 10,
+        },
+      ],
       meeting: "2013.02.25",
       dcl: "956553114",
     },
     theReversal: {
       title: "The Reversal",
-      authorKeys: [Person.MICHAEL_CONNELLY],
-      series: [SeriesEntry.create(Series.MICKEY_HALLER, 3)],
+      authorKeys: ["michaelConnelly"],
+      series: [
+        {
+          key: "mickeyHaller",
+          entry: 3,
+        },
+      ],
       meeting: "2012.12.17",
       dcl: "967577114",
     },
     theSantaKlausMurder: {
       title: "The Santa Klaus Murder",
-      authorKeys: [Person.MAVIS_DORIEL_HAY],
+      authorKeys: ["mavisDorielHay"],
       lt: "work/14422101",
       meeting: "2019.12.13",
     },
     theSecretHistory: {
       title: "The Secret History",
-      authorKeys: [Person.DONNA_TARTT],
-      series: [SeriesEntry.create(Series.PERFECT_MURDERS_LIST, 8)],
+      authorKeys: ["donnaTartt"],
+      series: [
+        {
+          key: "perfectMurdersList",
+          entry: 8,
+        },
+      ],
       lt: "work/7221",
     },
     theShadowTracer: {
       title: "The Shadow Tracer",
-      authorKeys: [Person.MEG_GARDINER],
+      authorKeys: ["megGardiner"],
       meeting: "2014.05.19",
       dcl: "1129797114",
     },
     theSilentPatient: {
       title: "The Silent Patient",
-      authorKeys: [Person.ALEX_MICHAELIDES],
+      authorKeys: ["alexMichaelides"],
       dcl: "1531671114",
       lt: "work/21942360",
       meeting: "2020.03.23",
     },
     theSnowman: {
       title: "The Snowman",
-      authorKeys: [Person.JO_NESBO],
-      series: [SeriesEntry.create(Series.HARRY_HOLE, 7)],
+      authorKeys: ["joNesbo"],
+      series: [
+        {
+          key: "harryHole",
+          entry: 7,
+        },
+      ],
       meeting: "2012.06.25",
       dcl: "990752114",
     },
     theStranger: {
       title: "The Stranger",
-      authorKeys: [Person.HARLAN_COBEN],
+      authorKeys: ["harlanCoben"],
       meeting: "2016.04.25",
       dcl: "1245665114",
     },
     theStupidestAngel: {
       title: "The Stupidest Angel",
-      authorKeys: [Person.CHRISTOPHER_MOORE],
+      authorKeys: ["christopherMoore"],
       meeting: "2007.12.17",
       dcl: "1257000114",
     },
-    "the survivors": {
-      title: "The Survivors",
-      authorKeys: [Person.JANE_HARPER],
-      meeting: "2021.09.27",
-      dcl: "1682493114",
-      gr: "book/show/53305127-the-survivors",
-      lt: "work/24730334",
-    },
     theSweetnessAtTheBottomOfThePie: {
       title: "The Sweetness at the Bottom of the Pie",
-      authorKeys: [Person.ALAN_BRADLEY],
-      series: [SeriesEntry.create(Series.FLAVIA_DE_LUCE, 1)],
+      authorKeys: ["alanBradley"],
+      series: [
+        {
+          key: "flaviaDeLuce",
+          entry: 1,
+        },
+      ],
       meeting: "2010.01.25",
       dcl: "906895114",
     },
     theThinMan: {
       title: "The Thin Man",
-      authorKeys: [Person.DASHIELL_HAMMETT],
+      authorKeys: ["dashiellHammett"],
       meeting: "2009.02.23",
       dcl: "811460114",
     },
-    "the thursday murder club": {
-      title: "The Thursday Murder Club",
-      authorKeys: [Person.RICHARD_OSMAN],
-      series: [SeriesEntry.create(Series.THURSDAY_MURDER_CLUB, 1)],
-      meeting: "2021.10.25",
-      dcl: "1672437114",
-      gr: "book/show/46000520-the-thursday-murder-club",
-      lt: "work/23307330",
-      wiki: "The_Thursday_Murder_Club",
-    },
     theTravelers: {
       title: "The Travelers",
-      authorKeys: [Person.CHRIS_PAVONE],
+      authorKeys: ["chrisPavone"],
       meeting: "2016.10.24",
       dcl: "1300055114",
     },
     theTurnOfTheKey: {
       title: "The Turn of the Key",
-      authorKeys: [Person.RUTH_WARE],
+      authorKeys: ["ruthWare"],
       dcl: "1576431114",
       lt: "work/22533612",
       meeting: "2020.11.16",
     },
     theTwoMinuteRule: {
       title: "The Two Minute Rule",
-      authorKeys: [Person.ROBERT_CRAIS],
+      authorKeys: ["robertCrais"],
       meeting: "2008.04.28",
       dcl: "1260719114",
     },
     theWatchman: {
       title: "The Watchman",
-      authorKeys: [Person.ROBERT_CRAIS],
-      series: [SeriesEntry.create(Series.JOE_PIKE, 1)],
+      authorKeys: ["robertCrais"],
+      series: [
+        {
+          key: "joePike",
+          entry: 1,
+        },
+      ],
       meeting: "2012.09.24",
       dcl: "787076114",
     },
     theWitchElm: {
       title: "The Witch Elm",
-      authorKeys: [Person.TANA_FRENCH],
+      authorKeys: ["tanaFrench"],
       dcl: "1483240114",
       lt: "work/21676484",
       meeting: "2019.05.20",
     },
     theWomanInCabin10: {
       title: "The Woman in Cabin 10",
-      authorKeys: [Person.RUTH_WARE],
+      authorKeys: ["ruthWare"],
       meeting: "2017.07.24",
       dcl: "1317758114",
     },
     theWomanInTheWindow: {
       title: "The Woman in the Window",
-      authorKeys: [Person.AJ_FINN],
+      authorKeys: ["ajFinn"],
       meeting: "2018.11.26",
       dcl: "1430700114",
     },
     theWoods: {
       title: "The Woods",
-      authorKeys: [Person.HARLAN_COBEN],
+      authorKeys: ["harlanCoben"],
       meeting: "2008.09.22",
       dcl: "1615407114",
     },
     theWordIsMurder: {
       title: "The Word is Murder",
-      authorKeys: [Person.ANTHONY_HOROWITZ],
-      series: [SeriesEntry.create(Series.DETECTIVE_DANIEL_HAWTHORNE, 1)],
+      authorKeys: ["anthonyHorowitz"],
+      series: [
+        {
+          key: "detective daniel hawthorne",
+          entry: 1,
+        },
+      ],
       dcl: "1456731114",
       lt: "work/19570511",
       meeting: "2020.04.27",
     },
     theWrongSideOfGoodbye: {
       title: "The Wrong Side of Goodbye",
-      authorKeys: [Person.MICHAEL_CONNELLY],
-      series: [SeriesEntry.create(Series.HARRY_BOSCH, 19)],
+      authorKeys: ["michaelConnelly"],
+      series: [
+        {
+          key: "harryBosch",
+          entry: 19,
+        },
+      ],
       meeting: "2017.09.25",
       dcl: "1337567114",
     },
     "tied up in tinsel": {
       title: "Tied Up in Tinsel",
-      authorKeys: [Person.NGAIO_MARSH],
-      series: [SeriesEntry.create(Series.RODERICK_ALLEYN, 27)],
+      authorKeys: ["ngaioMarsh"],
+      series: [
+        {
+          key: "roderickAlleyn",
+          entry: 27,
+        },
+      ],
       meeting: "2021.12.17",
       dcl: "1699283114",
       gr: "book/show/280995.Tied_Up_In_Tinsel",
@@ -1787,102 +2475,142 @@ const Book = {
     },
     trailOfBlood: {
       title: "Trail of Blood",
-      authorKeys: [Person.LISA_BLACK],
+      authorKeys: ["lisaBlack"],
       meeting: "2011.05.23",
       dcl: "968608114",
       lt: "work/10216273",
     },
     tripTych: {
       title: "TripTych",
-      authorKeys: [Person.KARIN_SLAUGHTER],
+      authorKeys: ["karinSlaughter"],
       meeting: "2009.01.26",
       dcl: "755715114",
     },
     trueEvil: {
       title: "True Evil",
-      authorKeys: [Person.GREG_ILES],
+      authorKeys: ["gregIles"],
       meeting: "2009.04.27",
       dcl: "1075138114",
     },
     twoKindsOfTruth: {
       title: "Two Kinds of Truth",
-      authorKeys: [Person.MICHAEL_CONNELLY],
-      series: [SeriesEntry.create(Series.HARRY_BOSCH, 22)],
+      authorKeys: ["michaelConnelly"],
+      series: [
+        {
+          key: "harryBosch",
+          entry: 22,
+        },
+      ],
       meeting: "2018.08.27",
       dcl: "1412693114",
     },
     underMySkin: {
       title: "Under My Skin",
-      authorKeys: [Person.LISA_UNGER],
+      authorKeys: ["lisaUnger"],
       dcl: "1483237114",
       lt: "work/21404705",
       meeting: "2019.04.22",
     },
     vanishingGames: {
       title: "Vanishing Games",
-      authorKeys: [Person.ROGER_HOBBS],
-      series: [SeriesEntry.create(Series.GHOSTMAN, 2)],
+      authorKeys: ["rogerHobbs"],
+      series: [
+        {
+          key: "ghostman",
+          entry: 2,
+        },
+      ],
       meeting: "2016.05.23",
       dcl: "1283492114",
     },
     vertigo: {
       title: "Vertigo",
-      authorKeys: [Person.BOILEAU_NARCEJAC],
-      series: [SeriesEntry.create(Series.PETER_SWANSON_SUGGESTS, 1)],
+      authorKeys: ["boileauNarcejac"],
+      series: [
+        {
+          key: "peterSwansonSuggests",
+          entry: 1,
+        },
+      ],
       gr: "book/show/141328.Vertigo",
       lt: "work/397208",
     },
     victims: {
       title: "Victims",
-      authorKeys: [Person.JONATHAN_KELLERMAN],
-      series: [SeriesEntry.create(Series.ALEX_DELAWARE, 27)],
+      authorKeys: ["jonathanKellerman"],
+      series: [
+        {
+          key: "alexDelaware",
+          entry: 27,
+        },
+      ],
       meeting: "2013.07.22",
       dcl: "1030014114",
     },
     waitingForWednesday: {
       title: "Waiting for Wednesday",
-      authorKeys: [Person.NICCI_FRENCH],
-      series: [SeriesEntry.create(Series.FRIEDA_KLEIN, 3)],
+      authorKeys: ["nicciFrench"],
+      series: [
+        {
+          key: "friedaKlein",
+          entry: 3,
+        },
+      ],
       meeting: "2014.09.22",
       dcl: "1185773114",
     },
     whatTheDeadKnow: {
       title: "What the Dead Know",
-      authorKeys: [Person.LAURA_LIPPMAN],
+      authorKeys: ["lauraLippman"],
       meeting: "2008.07.28",
       dcl: "801592114",
     },
     whenTheWindBlows: {
       title: "When the Wind Blows",
-      authorKeys: [Person.JAMES_PATTERSON],
+      authorKeys: ["jamesPatterson"],
       meeting: "2007.10.22",
       dcl: "1243797114",
     },
     whereTheCrawdadsSing: {
       title: "Where the Crawdads Sing",
-      authorKeys: [Person.DELIA_OWENS],
+      authorKeys: ["deliaOwens"],
       dcl: "1485412114",
       lt: "work/21599568",
       meeting: "2019.09.23",
     },
     whispersOfTheDead: {
       title: "Whispers of the Dead",
-      authorKeys: [Person.SIMON_BECKETT],
-      series: [SeriesEntry.create(Series.DAVID_HUNTER, 3)],
+      authorKeys: ["simonBeckett"],
+      series: [
+        {
+          key: "davidHunter",
+          entry: 3,
+        },
+      ],
       meeting: "2010.03.22",
       lt: "work/7598433",
     },
     wickedPrey: {
       title: "Wicked Prey",
-      authorKeys: [Person.JOHN_SANDFORD],
-      series: [SeriesEntry.create(Series.LUCAS_DAVENPORT, 19)],
+      authorKeys: ["johnSandford"],
+      series: [
+        {
+          key: "lucasDavenport",
+          entry: 19,
+        },
+      ],
       meeting: "2009.12.28",
       dcl: "902064114",
     },
     win: {
       title: "Win",
-      authorKeys: [Person.HARLAN_COBEN],
-      series: [SeriesEntry.create(Series.WINDSOR_HORNE_LOCKWOOD_III, 1)],
+      authorKeys: ["harlanCoben"],
+      series: [
+        {
+          key: "windsor horne lockwood iii",
+          entry: 1,
+        },
+      ],
       meeting: "2021.11.22",
       dcl: "1692107114",
       gr: "book/show/53916157-win",
@@ -1890,10 +2618,16 @@ const Book = {
     },
     you: {
       title: "You",
-      authorKeys: [Person.CAROLINE_KEPNES],
+      authorKeys: ["carolineKepnes"],
       series: [
-        SeriesEntry.create(Series.YOU, 1),
-        SeriesEntry.create(Series.PETER_SWANSON_SUGGESTS, 4),
+        {
+          key: "you",
+          entry: 1,
+        },
+        {
+          key: "peterSwansonSuggests",
+          entry: 4,
+        },
       ],
       dcl: "1228707114",
       gr: "book/show/36430011-you",
