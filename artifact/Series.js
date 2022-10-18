@@ -140,7 +140,7 @@ const Series = {
     },
     christinaZSuggests: {
       title: "Christina Z. Suggests",
-      authorKeys: undefined,
+      authorKeys: null,
       useSearch: false,
       key: "christinaZSuggests",
     },
@@ -235,7 +235,7 @@ const Series = {
     },
     gailHSuggests: {
       title: "Gail H. Suggests",
-      authorKeys: undefined,
+      authorKeys: null,
       useSearch: false,
       key: "gailHSuggests",
     },
@@ -384,13 +384,13 @@ const Series = {
     },
     perfectMurdersList: {
       title: "Perfect Murders List",
-      authorKeys: undefined,
+      authorKeys: null,
       useSearch: false,
       key: "perfectMurdersList",
     },
     peterSwansonSuggests: {
       title: "Peter Swanson Suggests",
-      authorKeys: undefined,
+      authorKeys: null,
       useSearch: false,
       key: "peterSwansonSuggests",
     },
