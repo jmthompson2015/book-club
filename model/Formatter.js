@@ -6,6 +6,7 @@ const WikiUtils = require("../util/WikiUtilities.js");
 const Person = require("../artifact/Person.js");
 const Series = require("../artifact/Series.js");
 
+const PersonUtilities = require("./PersonUtilities.js");
 const UrlGenerator = require("./UrlGenerator.js");
 
 const Formatter = {};
@@ -138,7 +139,7 @@ Formatter.createPersonText = (personArray, useSearch = false) => {
       const person = Person.properties[personKey];
 
       if (person) {
-        const personLabel = Person.createLabel(person);
+        const personLabel = PersonUtilities.createLabel(person);
         const linkedImages = Formatter.linkedImages(person, useSearch);
 
         return labelLinkedImagesTable(personLabel, linkedImages);

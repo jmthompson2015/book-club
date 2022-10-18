@@ -3,8 +3,7 @@ const R = require("../node_modules/ramda/dist/ramda.js");
 const FileWriter = require("../util/FileWriter.js");
 const WikiUtils = require("../util/WikiUtilities.js");
 
-const Book = require("../artifact/Book.js");
-
+const BookUtilities = require("../model/BookUtilities.js");
 const Comparator = require("../model/Comparator.js");
 const Formatter = require("../model/Formatter.js");
 
@@ -14,7 +13,7 @@ const TABLE_CLASS = "wikitable sortable";
 
 const MostReadAuthorsList = {
   report: (useSearch) => {
-    const keyToBooks = Book.authorKeyToBooks(true);
+    const keyToBooks = BookUtilities.authorKeyToBooks(true);
     const reduceFunction = (accum, key) => {
       const myBooks = keyToBooks[key];
 

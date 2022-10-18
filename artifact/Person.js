@@ -1290,34 +1290,6 @@ Person.keys = () => Object.keys(Person.properties);
 
 Person.values = () => Object.values(Person.properties);
 
-Person.createLabel = (person) => {
-  let answer = "";
-
-  if (person) {
-    if (person.first) {
-      answer += person.first;
-    }
-
-    if (person.middle) {
-      if (answer.length > 0) {
-        answer += " ";
-      }
-
-      answer += person.middle;
-    }
-
-    if (person.last) {
-      if (answer.length > 0) {
-        answer += " ";
-      }
-
-      answer += person.last;
-    }
-  }
-
-  return answer;
-};
-
 Object.freeze(Person);
 
 module.exports = Person;

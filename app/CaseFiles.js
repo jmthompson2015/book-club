@@ -3,8 +3,7 @@ const R = require("../node_modules/ramda/dist/ramda.js");
 const FileWriter = require("../util/FileWriter.js");
 const WikiUtils = require("../util/WikiUtilities.js");
 
-const Book = require("../artifact/Book.js");
-
+const BookUtilities = require("../model/BookUtilities.js");
 const Comparator = require("../model/Comparator.js");
 const Formatter = require("../model/Formatter.js");
 
@@ -69,7 +68,7 @@ const createRow = (useSearch) => (book) => {
 
 const CaseFiles = {
   report: (useSearch, year) => {
-    const books = Book.valuesByYear(year);
+    const books = BookUtilities.valuesByYear(year);
     books.sort(Comparator.compareByMeeting(true));
     const rows = R.map(createRow(useSearch), books);
 

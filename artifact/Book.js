@@ -1,5 +1,3 @@
-const R = require("../node_modules/ramda/dist/ramda.js");
-
 const Person = require("./Person.js");
 const Series = require("./Series.js");
 const SeriesEntry = require("./SeriesEntry.js");
@@ -1907,88 +1905,6 @@ const Book = {
 Book.keys = () => Object.keys(Book.properties);
 
 Book.values = () => Object.values(Book.properties);
-
-// /////////////////////////////////////////////////////////////////////////////
-const seriesKeys = (book) =>
-  book && book.series ? R.map(R.prop("key"), book.series) : [];
-
-Book.authorKeyToBooks = (isMeeting = false) => {
-  const books = isMeeting ? Book.valuesWithMeeting() : Book.values();
-  const putBook = (accum, authorKey, book) => {
-    const oldBooks = accum[authorKey] || [];
-    const newBooks = R.append(book, oldBooks);
-
-    return R.assoc(authorKey, newBooks, accum);
-  };
-  const reduceFunction = (accum, book) => {
-    const { authorKeys } = book;
-    const reduceFunction2 = (accum2, key) => putBook(accum2, key, book);
-
-    return R.reduce(reduceFunction2, accum, authorKeys);
-  };
-
-  return R.reduce(reduceFunction, {}, books);
-};
-
-Book.seriesKeyToBooks = (isMeeting = false) => {
-  const books = isMeeting ? Book.valuesWithMeeting() : Book.values();
-  const putBook = (accum, series, book) => {
-    const oldBooks = accum[series.key] || [];
-    const newBooks = R.append(book, oldBooks);
-
-    return R.assoc(series.key, newBooks, accum);
-  };
-  const reduceFunction = (accum, book) => {
-    const { series } = book;
-    let answer = accum;
-
-    if (series) {
-      const reduceFunction2 = (accum2, key) => putBook(accum2, key, book);
-      answer = R.reduce(reduceFunction2, accum, series);
-    }
-
-    return answer;
-  };
-
-  return R.reduce(reduceFunction, {}, books);
-};
-
-Book.valuesBySeries = (seriesKey) => {
-  let answer = [];
-
-  if (seriesKey) {
-    const books = Object.values(Book.properties);
-    const filterFunction = (book) => seriesKeys(book).includes(seriesKey);
-    answer = R.filter(filterFunction, books);
-  }
-
-  return answer;
-};
-
-Book.valuesByYear = (year) => {
-  const books = Object.values(Book.properties);
-  const filterFunction = (book) => {
-    const year0 = book.meeting ? parseInt(book.meeting.substring(0, 4), 10) : 0;
-
-    return year0 === year;
-  };
-
-  return R.filter(filterFunction, books);
-};
-
-Book.valuesWithMeeting = () => {
-  const books = Object.values(Book.properties);
-  const filterFunction = (book) => !R.isNil(book.meeting);
-
-  return R.filter(filterFunction, books);
-};
-
-Book.valuesWithoutMeeting = () => {
-  const books = Object.values(Book.properties);
-  const filterFunction = (book) => R.isNil(book.meeting);
-
-  return R.filter(filterFunction, books);
-};
 
 Object.freeze(Book);
 

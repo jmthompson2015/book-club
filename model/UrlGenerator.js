@@ -1,4 +1,4 @@
-const Person = require("../artifact/Person.js");
+const PersonUtilities = require("./PersonUtilities.js");
 
 const UrlGenerator = {};
 
@@ -24,7 +24,7 @@ const searchUrl = (prefix, item, replacement = "+") => {
       const title = item.title.replace(/ /g, replacement);
       answer = `${prefix}${title}`;
     } else if (isPerson(item)) {
-      const name0 = Person.createLabel(item);
+      const name0 = PersonUtilities.createLabel(item);
       const name = name0.replace(/ /g, replacement);
       answer = `${prefix}${name}`;
     }
