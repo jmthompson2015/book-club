@@ -256,7 +256,6 @@ const Person = {
     "Megan Goldin": {
       first: "Megan",
       last: "Goldin",
-      dcl: "1745656114",
       gr: "author/show/16718134.Megan_Goldin",
       lt: "author/goldinmegan",
     },

@@ -274,6 +274,7 @@ const Book = {
       title: "Stay Awake",
       authorKeys: ["Megan Goldin"],
       meeting: "2023.03.27",
+      dcl: "1745656114",
       gr: "book/show/58724748-stay-awake",
       lt: "work/27449352",
     },
