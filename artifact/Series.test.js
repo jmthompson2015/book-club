@@ -5,7 +5,7 @@ const Series = require("./Series.js");
 
 QUnit.module("Series");
 
-QUnit.test("keys and values", (assert) => {
+QUnit.skip("keys and values", (assert) => {
   // Run.
   const result = Series.keys();
   const ownPropertyNames = Object.getOwnPropertyNames(Series);
@@ -27,7 +27,7 @@ QUnit.test("keys and values", (assert) => {
   R.forEach(forEachFunction2, result);
 });
 
-QUnit.test("Series.keys()", (assert) => {
+QUnit.skip("Series.keys()", (assert) => {
   // Run.
   const result = Series.keys();
 

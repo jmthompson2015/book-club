@@ -7,7 +7,7 @@ const Person = require("./Person.js");
 
 QUnit.module("Person");
 
-QUnit.test("keys and values", (assert) => {
+QUnit.skip("keys and values", (assert) => {
   // Run.
   const result = Person.keys();
   const ownPropertyNames = Object.getOwnPropertyNames(Person);
@@ -29,7 +29,7 @@ QUnit.test("keys and values", (assert) => {
   R.forEach(forEachFunction2, result);
 });
 
-QUnit.test("Person.keys()", (assert) => {
+QUnit.skip("Person.keys()", (assert) => {
   // Run.
   const result = Person.keys();
 

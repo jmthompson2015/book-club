@@ -40,7 +40,7 @@ const Series = {
   HOROWITZS_HOLMES: "horowitz's holmes",
   INSPECTOR_REBUS: "inspectorRebus",
   JACK_MCEVOY: "jackMcevoy",
-  JACK_REACHER: "jackReacher",
+  JACK_REACHER: "Jack Reacher",
   JAKE_BRIGANCE: "jakeBrigance",
   JANA_BERZELIUS: "janaBerzelius",
   JO_BECKETT: "joBeckett",
@@ -299,10 +299,10 @@ const Series = {
       lt: "nseries/1553/Jack-McEvoy",
       key: "jackMcevoy",
     },
-    jackReacher: {
+    "Jack Reacher": {
       title: "Jack Reacher",
       lt: "series/Jack+Reacher",
-      key: "jackReacher",
+      key: "Jack Reacher",
     },
     jakeBrigance: {
       title: "Jake Brigance",

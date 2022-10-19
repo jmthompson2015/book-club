@@ -249,10 +249,10 @@ const Book = {
     },
     _61Hours: {
       title: "61 Hours",
-      authorKeys: ["leeChild"],
+      authorKeys: ["Lee Child"],
       series: [
         {
-          key: "jackReacher",
+          key: "Jack Reacher",
           entry: 14,
         },
       ],
@@ -378,10 +378,10 @@ const Book = {
     },
     aWantedMan: {
       title: "A Wanted Man",
-      authorKeys: ["leeChild"],
+      authorKeys: ["Lee Child"],
       series: [
         {
-          key: "jackReacher",
+          key: "Jack Reacher",
           entry: 17,
         },
       ],
@@ -390,7 +390,7 @@ const Book = {
     },
     andThenThereWereNone: {
       title: "And Then There Were None",
-      authorKeys: ["agathaChristie"],
+      authorKeys: ["Agatha Christie"],
       meeting: "2014.12.18",
       dcl: "1063049114",
     },
@@ -874,7 +874,7 @@ const Book = {
     },
     herculePoirotsChristmas: {
       title: "Hercule Poirot's Christmas",
-      authorKeys: ["agathaChristie"],
+      authorKeys: ["Agatha Christie"],
       series: [
         {
           key: "herculePoirot",
@@ -957,7 +957,7 @@ const Book = {
     },
     inADarkDarkWood: {
       title: "In a Dark, Dark Wood",
-      authorKeys: ["ruthWare"],
+      authorKeys: ["Ruth Ware"],
       meeting: "2017.08.28",
       dcl: "1278756114",
     },
@@ -1112,10 +1112,10 @@ const Book = {
     },
     makeMe: {
       title: "Make Me",
-      authorKeys: ["leeChild"],
+      authorKeys: ["Lee Child"],
       series: [
         {
-          key: "jackReacher",
+          key: "Jack Reacher",
           entry: 20,
         },
       ],
@@ -1166,7 +1166,7 @@ const Book = {
     },
     murderOnTheOrientExpress: {
       title: "Murder on the Orient Express",
-      authorKeys: ["agathaChristie"],
+      authorKeys: ["Agatha Christie"],
       series: [
         {
           key: "herculePoirot",
@@ -1190,10 +1190,10 @@ const Book = {
     },
     neverGoBack: {
       title: "Never Go Back",
-      authorKeys: ["leeChild"],
+      authorKeys: ["Lee Child"],
       series: [
         {
-          key: "jackReacher",
+          key: "Jack Reacher",
           entry: 18,
         },
       ],
@@ -1229,10 +1229,10 @@ const Book = {
     },
     nothingToLose: {
       title: "Nothing to Lose",
-      authorKeys: ["leeChild"],
+      authorKeys: ["Lee Child"],
       series: [
         {
-          key: "jackReacher",
+          key: "Jack Reacher",
           entry: 12,
         },
       ],
@@ -1271,10 +1271,10 @@ const Book = {
     },
     oneShot: {
       title: "One Shot",
-      authorKeys: ["leeChild"],
+      authorKeys: ["Lee Child"],
       series: [
         {
-          key: "jackReacher",
+          key: "Jack Reacher",
           entry: 9,
         },
       ],
@@ -1296,10 +1296,10 @@ const Book = {
     },
     personal: {
       title: "Personal",
-      authorKeys: ["leeChild"],
+      authorKeys: ["Lee Child"],
       series: [
         {
-          key: "jackReacher",
+          key: "Jack Reacher",
           entry: 19,
         },
       ],
@@ -1521,7 +1521,7 @@ const Book = {
     },
     "the last flight": {
       title: "The Last Flight",
-      authorKeys: ["julieClark"],
+      authorKeys: ["Julie Clark"],
       meeting: "2022.09.26",
       dcl: "1654525114",
       gr: "book/show/52652923-the-last-flight",
@@ -1529,7 +1529,7 @@ const Book = {
     },
     "the man who died twice": {
       title: "The Man Who Died Twice",
-      authorKeys: ["richard osman"],
+      authorKeys: ["Richard Osman"],
       series: [
         {
           key: "thursday murder club",
@@ -1551,7 +1551,7 @@ const Book = {
     },
     "the thursday murder club": {
       title: "The Thursday Murder Club",
-      authorKeys: ["richard osman"],
+      authorKeys: ["Richard Osman"],
       series: [
         {
           key: "thursday murder club",
@@ -1566,7 +1566,7 @@ const Book = {
     },
     theAbcMurders: {
       title: "The A.B.C. Murders",
-      authorKeys: ["agathaChristie"],
+      authorKeys: ["Agatha Christie"],
       series: [
         {
           key: "herculePoirot",
@@ -1742,7 +1742,7 @@ const Book = {
     },
     theDeathOfMrsWestaway: {
       title: "The Death of Mrs. Westaway",
-      authorKeys: ["ruthWare"],
+      authorKeys: ["Ruth Ware"],
       dcl: "1446736114",
       lt: "work/20792311",
       meeting: "2019.08.26",
@@ -1805,7 +1805,7 @@ const Book = {
     },
     theEscapeRoom: {
       title: "The Escape Room",
-      authorKeys: ["meganGoldin"],
+      authorKeys: ["Megan Goldin"],
       dcl: "1565306114",
       lt: "work/22043625",
       meeting: "2020.02.24",
@@ -2154,7 +2154,7 @@ const Book = {
     },
     theMysteriousAffairAtStyles: {
       title: "The Mysterious Affair at Styles",
-      authorKeys: ["agathaChristie"],
+      authorKeys: ["Agatha Christie"],
       series: [
         {
           key: "herculePoirot",
@@ -2191,7 +2191,7 @@ const Book = {
     },
     theNightSwim: {
       title: "The Night Swim",
-      authorKeys: ["meganGoldin"],
+      authorKeys: ["Megan Goldin"],
       gr: "book/show/51169341-the-night-swim",
       lt: "work/24048248",
       meeting: "2021.05.24",
@@ -2385,7 +2385,7 @@ const Book = {
     },
     theTurnOfTheKey: {
       title: "The Turn of the Key",
-      authorKeys: ["ruthWare"],
+      authorKeys: ["Ruth Ware"],
       dcl: "1576431114",
       lt: "work/22533612",
       meeting: "2020.11.16",
@@ -2417,7 +2417,7 @@ const Book = {
     },
     theWomanInCabin10: {
       title: "The Woman in Cabin 10",
-      authorKeys: ["ruthWare"],
+      authorKeys: ["Ruth Ware"],
       meeting: "2017.07.24",
       dcl: "1317758114",
     },

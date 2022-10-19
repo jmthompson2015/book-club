@@ -28,7 +28,7 @@ QUnit.test("authorKeys", (assert) => {
   R.forEach(forEachFunction, result);
 });
 
-QUnit.test("keys and values", (assert) => {
+QUnit.skip("keys and values", (assert) => {
   // Run.
   const result = Book.keys();
   const ownPropertyNames = Object.getOwnPropertyNames(Book);
@@ -50,7 +50,7 @@ QUnit.test("keys and values", (assert) => {
   R.forEach(forEachFunction2, result);
 });
 
-QUnit.test("Book.keys()", (assert) => {
+QUnit.skip("Book.keys()", (assert) => {
   // Run.
   const result = Book.keys();
 

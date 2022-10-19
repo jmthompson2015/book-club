@@ -1,6 +1,6 @@
 const Person = {
   AA_MILNE: "aaMilne",
-  AGATHA_CHRISTIE: "agathaChristie",
+  AGATHA_CHRISTIE: "Agatha Christie",
   AJ_FINN: "ajFinn",
   ALAN_BRADLEY: "alanBradley",
   ALEX_MARWOOD: "alexMarwood",
@@ -112,7 +112,7 @@ const Person = {
   JOHN_SANDFORD: "johnSandford",
   JONATHAN_KELLERMAN: "jonathanKellerman",
   JO_NESBO: "joNesbo",
-  JULIE_CLARK: "julieClark",
+  JULIE_CLARK: "Julie Clark",
   KARIN_SLAUGHTER: "karinSlaughter",
   KATE_ATKINSON: "kateAtkinson",
   KATHY_REICHS: "kathyReichs",
@@ -124,7 +124,7 @@ const Person = {
   KINGSLEY_AMIS: "kingsleyAmis",
   LAURA_LINNEY: "lauraLinney",
   LAURA_LIPPMAN: "lauraLippman",
-  LEE_CHILD: "leeChild",
+  LEE_CHILD: "Lee Child",
   LENA_OLIN: "lenaOlin",
   LIANE_MORIARTY: "lianeMoriarty",
   LINWOOD_BARCLAY: "linwoodBarclay",
@@ -147,7 +147,7 @@ const Person = {
   MATTHEW_MCCONAUGHEY: "matthewMcConaughey",
   MAVIS_DORIEL_HAY: "mavisDorielHay",
   MC_BEATON: "mcBeaton",
-  MEGAN_GOLDIN: "meganGoldin",
+  MEGAN_GOLDIN: "Megan Goldin",
   MEG_GARDINER: "megGardiner",
   MICHAEL_CAINE: "michaelCaine",
   MICHAEL_CHABON: "michaelChabon",
@@ -182,7 +182,7 @@ const Person = {
   ROBSON_GREEN: "robsonGreen",
   ROGER_HOBBS: "rogerHobbs",
   ROSAMUND_PIKE: "rosamundPike",
-  RUTH_WARE: "ruthWare",
+  RUTH_WARE: "Ruth Ware",
   SALLY_WAINWRIGHT: "sallyWainwright",
   SAM_RAIMI: "samRaimi",
   SANDRA_BROWN: "sandraBrown",
@@ -219,7 +219,7 @@ const Person = {
       lt: "author/milneaa",
       wiki: "A._A._Milne",
     },
-    agathaChristie: {
+    "Agatha Christie": {
       first: "Agatha",
       last: "Christie",
       imdb: "name/nm0002005",
@@ -901,7 +901,7 @@ const Person = {
       lt: "author/kellermanjonathan",
       wiki: "Jonathan_Kellerman",
     },
-    julieClark: {
+    "Julie Clark": {
       first: "Julie",
       last: "Clark",
       gr: "author/show/17323560.Julie_Clark",
@@ -972,7 +972,7 @@ const Person = {
       lt: "author/lippmanlaura-1",
       wiki: "Laura_Lippman",
     },
-    leeChild: {
+    "Lee Child": {
       first: "Lee",
       last: "Child",
       imdb: "name/nm1676193",
@@ -1115,7 +1115,7 @@ const Person = {
       lt: "author/gardinermeg",
       wiki: "Meg_Gardiner",
     },
-    meganGoldin: {
+    "Megan Goldin": {
       first: "Megan",
       last: "Goldin",
       gr: "author/show/16718134.Megan_Goldin",
@@ -1251,7 +1251,7 @@ const Person = {
       last: "Johnson",
       imdb: "name/nm0426059",
     },
-    "richard osman": {
+    "Richard Osman": {
       first: "Richard",
       last: "Osman",
       gr: "author/show/6173710.Richard_Osman",
@@ -1315,7 +1315,7 @@ const Person = {
       imdb: "name/nm0683253",
       wiki: "Rosamund_Pike",
     },
-    ruthWare: {
+    "Ruth Ware": {
       first: "Ruth",
       last: "Ware",
       gr: "author/show/9013543.Ruth_Ware",
