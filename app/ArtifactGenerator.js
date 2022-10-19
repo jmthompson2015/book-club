@@ -9,18 +9,18 @@ const Person = require("../artifact/Person.js");
 const Series = require("../artifact/Series.js");
 
 const LINES = [
-  // "January 23|Suburban Dicks|Fabian Nicieza|Suburban Dicks #1",
-  // "February 27|Daisy Darker|Alice Feeney",
-  // "March 27|Stay Awake|Megan Goldin",
-  // "April 24|The It Girl|Ruth Ware",
-  // "May 22|The Retreat|Sarah Pearse|Detective Elin Warner #2",
-  // "June 26|The Lies I Tell|Julie Clark",
-  // "July 24|The Bullet That Missed|Richard Osman|Thursday Murder Club #3",
-  // "August 28|No Plan B|Lee Child and Andrew Child|Jack Reacher #27",
-  // "September 25|Whatever Happened to Cathy Martin|Mim Eichmann",
-  // "October 23|Are You Sara?|S.C. Lalli",
-  // "November 27|Marple: Twelve New Mysteries",
-  // "December 15|The Christmas Murder Game|Alexandra Benedict",
+  "January 23|Suburban Dicks|Fabian Nicieza|Suburban Dicks #1",
+  "February 27|Daisy Darker|Alice Feeney",
+  "March 27|Stay Awake|Megan Goldin",
+  "April 24|The It Girl|Ruth Ware",
+  "May 22|The Retreat|Sarah Pearse|Detective Elin Warner #2",
+  "June 26|The Lies I Tell|Julie Clark",
+  "July 24|The Bullet That Missed|Richard Osman|Thursday Murder Club #3",
+  "August 28|No Plan B|Lee Child and Andrew Child|Jack Reacher #27",
+  "September 25|Whatever Happened to Cathy Martin|Mim Eichmann",
+  "October 23|Are You Sara?|S.C. Lalli",
+  "November 27|Marple: Twelve New Mysteries|Agatha Christie",
+  "December 15|The Christmas Murder Game|Alexandra Benedict",
 ];
 
 const YEAR = "2023";
@@ -73,16 +73,20 @@ const createBook = (title, authorsString, seriesString, meeting) => {
     authorKeys = R.map(mapFunction, authorParts);
   }
 
-  let series;
+  let seriesKeys;
 
   if (!R.isNil(seriesString)) {
-    const seriesParts = seriesString.split("#");
-    const seriesKey = seriesParts[0].trim();
-    const seriesNum = seriesParts[1].trim();
-    series = { key: seriesKey, entry: seriesNum };
+    const seriesParts = seriesString.split(",");
+    const mapFunction = (series) => {
+      const parts = series.split("#");
+      const seriesKey = parts[0].trim();
+      const seriesNum = parts[1].trim();
+      return { key: seriesKey, entry: seriesNum };
+    };
+    seriesKeys = R.map(mapFunction, seriesParts);
   }
 
-  return { title, authorKeys, series, meeting };
+  return { title, authorKeys, series: seriesKeys, meeting };
 };
 
 const createPerson = (author) => {
@@ -139,15 +143,19 @@ const processLine = (line) => {
   }
 
   if (!R.isNil(seriesString)) {
-    const seriesEntry = createSeries(seriesString);
-    console.log(
-      `seriesEntry "${seriesEntry.key}": ${JSON.stringify(
-        seriesEntry,
-        null,
-        2
-      )}`
-    );
-    maybeSet(seriesEntry.key, seriesEntry, newSeriesProps);
+    const seriesParts = seriesString.split(",");
+    const forEachFunction = (series) => {
+      const seriesEntry = createSeries(series);
+      console.log(
+        `seriesEntry "${seriesEntry.key}": ${JSON.stringify(
+          seriesEntry,
+          null,
+          2
+        )}`
+      );
+      maybeSet(seriesEntry.key, seriesEntry, newSeriesProps);
+    };
+    seriesParts.forEach(forEachFunction);
   }
 
   const bookEntry = createBook(title, authorsString, seriesString, meeting);

@@ -211,6 +211,89 @@ const Person = {
   WILLIAM_LANDAY: "williamLanday",
   WILLY_RUSSELL: "willyRussell",
   properties: {
+    "Agatha Christie": {
+      first: "Agatha",
+      last: "Christie",
+      imdb: "name/nm0002005",
+      lt: "author/christieagatha",
+      wiki: "Agatha_Christie",
+    },
+    "Alexandra Benedict": {
+      first: "Alexandra",
+      last: "Benedict",
+      gr: "author/show/22307202.Alexandra_Benedict",
+      lt: "author/benedictalexandra",
+    },
+    "Alice Feeney": {
+      first: "Alice",
+      last: "Feeney",
+      gr: "author/show/15904689.Alice_Feeney",
+      lt: "author/feeneyalice",
+    },
+    "Andrew Child": {
+      first: "Andrew",
+      last: "Child",
+    },
+    "Fabian Nicieza": {
+      first: "Fabian",
+      last: "Nicieza",
+      gr: "author/show/28126.Fabian_Nicieza",
+      lt: "author/niciezafabian",
+    },
+    "Julie Clark": {
+      first: "Julie",
+      last: "Clark",
+      gr: "author/show/17323560.Julie_Clark",
+      lt: "author/clarkjulie-5",
+    },
+    "Lee Child": {
+      first: "Lee",
+      last: "Child",
+      imdb: "name/nm1676193",
+      lt: "author/childlee",
+      wiki: "Lee_Child",
+    },
+    "Megan Goldin": {
+      first: "Megan",
+      last: "Goldin",
+      dcl: "1745656114",
+      gr: "author/show/16718134.Megan_Goldin",
+      lt: "author/goldinmegan",
+    },
+    "Mim Eichmann": {
+      first: "Mim",
+      last: "Eichmann",
+      gr: "author/show/19987913.Mim_Eichmann",
+      lt: "author/eichmannmim",
+    },
+    "Richard Osman": {
+      first: "Richard",
+      last: "Osman",
+      gr: "author/show/6173710.Richard_Osman",
+      imdb: "name/nm0652066",
+      lt: "author/osmanrichard",
+      wiki: "Richard_Osman",
+    },
+    "Ruth Ware": {
+      first: "Ruth",
+      last: "Ware",
+      gr: "author/show/9013543.Ruth_Ware",
+      imdb: "name/nm3405121",
+      lt: "author/wareruth",
+      wiki: "Ruth_Ware",
+    },
+    "S.C. Lalli": {
+      first: "S.C.",
+      last: "Lalli",
+      gr: "author/show/21804660.S_C_Lalli",
+      lt: "author/lallisc",
+    },
+    "Sarah Pearse": {
+      first: "Sarah",
+      last: "Pearse",
+      gr: "author/show/20458083.Sarah_Pearse",
+      lt: "author/pearsesarah",
+    },
     aaMilne: {
       first: "A.",
       middle: "A.",
@@ -218,13 +301,6 @@ const Person = {
       imdb: "name/nm0590316",
       lt: "author/milneaa",
       wiki: "A._A._Milne",
-    },
-    "Agatha Christie": {
-      first: "Agatha",
-      last: "Christie",
-      imdb: "name/nm0002005",
-      lt: "author/christieagatha",
-      wiki: "Agatha_Christie",
     },
     ajFinn: {
       first: "A.J.",
@@ -901,12 +977,6 @@ const Person = {
       lt: "author/kellermanjonathan",
       wiki: "Jonathan_Kellerman",
     },
-    "Julie Clark": {
-      first: "Julie",
-      last: "Clark",
-      gr: "author/show/17323560.Julie_Clark",
-      lt: "author/clarkjulie-5",
-    },
     karinSlaughter: {
       first: "Karin",
       last: "Slaughter",
@@ -971,13 +1041,6 @@ const Person = {
       imdb: "name/nm2887908",
       lt: "author/lippmanlaura-1",
       wiki: "Laura_Lippman",
-    },
-    "Lee Child": {
-      first: "Lee",
-      last: "Child",
-      imdb: "name/nm1676193",
-      lt: "author/childlee",
-      wiki: "Lee_Child",
     },
     lenaOlin: {
       first: "Lena",
@@ -1115,12 +1178,6 @@ const Person = {
       lt: "author/gardinermeg",
       wiki: "Meg_Gardiner",
     },
-    "Megan Goldin": {
-      first: "Megan",
-      last: "Goldin",
-      gr: "author/show/16718134.Megan_Goldin",
-      lt: "author/goldinmegan",
-    },
     michaelCHall: {
       first: "Michael",
       middle: "C.",
@@ -1251,14 +1308,6 @@ const Person = {
       last: "Johnson",
       imdb: "name/nm0426059",
     },
-    "Richard Osman": {
-      first: "Richard",
-      last: "Osman",
-      gr: "author/show/6173710.Richard_Osman",
-      imdb: "name/nm0652066",
-      lt: "author/osmanrichard",
-      wiki: "Richard_Osman",
-    },
     richardArmitage: {
       first: "Richard",
       last: "Armitage",
@@ -1314,14 +1363,6 @@ const Person = {
       last: "Pike",
       imdb: "name/nm0683253",
       wiki: "Rosamund_Pike",
-    },
-    "Ruth Ware": {
-      first: "Ruth",
-      last: "Ware",
-      gr: "author/show/9013543.Ruth_Ware",
-      imdb: "name/nm3405121",
-      lt: "author/wareruth",
-      wiki: "Ruth_Ware",
     },
     sallyWainwright: {
       first: "Sally",

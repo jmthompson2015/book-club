@@ -52,16 +52,16 @@ QUnit.test("authorForSeries() Jack Reacher", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result, Person.LEE_CHILD);
+  assert.equal(R.head(result), Person.LEE_CHILD);
+  assert.equal(R.last(result), "Andrew Child");
 });
 
 QUnit.test("determineAuthor()", (assert) => {
   // Run / Verify.
   assert.equal(BookUtilities.determineAuthor(Book.MAKE_ME), Person.LEE_CHILD);
-  assert.equal(
-    BookUtilities.determineAuthor(Series.JACK_REACHER),
-    Person.LEE_CHILD
-  );
+  const authors0 = BookUtilities.determineAuthor(Series.JACK_REACHER);
+  assert.equal(R.head(authors0), Person.LEE_CHILD);
+  assert.equal(R.last(authors0), "Andrew Child");
   assert.equal(
     BookUtilities.determineAuthor(Series.SHARP_OBJECTS),
     Person.GILLIAN_FLYNN
@@ -76,7 +76,7 @@ QUnit.test("authorKeyToBooks()", (assert) => {
   assert.ok(result, `result !== undefined`);
   const authorKeys = Object.keys(result);
   assert.ok(authorKeys, `authorKeys !== undefined`);
-  const count = 120;
+  const count = 127;
   assert.equal(
     authorKeys.length,
     count,
@@ -97,10 +97,10 @@ QUnit.test("authorKeyToBooks()", (assert) => {
     );
     assert.equal(
       leeChildBooks.length,
-      7,
+      8,
       `leeChildBooks.length = ${leeChildBooks.length}`
     );
-    assert.equal(R.head(leeChildBooks).title, "61 Hours");
+    assert.equal(R.head(leeChildBooks).title, "No Plan B");
     assert.equal(R.last(leeChildBooks).title, "Personal");
   }
 
@@ -133,7 +133,7 @@ QUnit.test("authorKeyToBooks() meeting only", (assert) => {
   assert.ok(result, `result !== undefined`);
   const authorKeys = Object.keys(result);
   assert.ok(authorKeys, `authorKeys !== undefined`);
-  const count = 96;
+  const count = 103;
   assert.equal(
     authorKeys.length,
     count,
@@ -154,10 +154,10 @@ QUnit.test("authorKeyToBooks() meeting only", (assert) => {
     );
     assert.equal(
       leeChildBooks.length,
-      6,
+      7,
       `leeChildBooks.length = ${leeChildBooks.length}`
     );
-    assert.equal(R.head(leeChildBooks).title, "61 Hours");
+    assert.equal(R.head(leeChildBooks).title, "No Plan B");
     assert.equal(R.last(leeChildBooks).title, "Personal");
   }
 
@@ -190,7 +190,7 @@ QUnit.test("seriesKeyToBooks()", (assert) => {
   assert.ok(result, `result !== undefined`);
   const seriesKeys = Object.keys(result);
   assert.ok(seriesKeys, `seriesKeys !== undefined`);
-  const count = 77;
+  const count = 80;
   assert.equal(
     seriesKeys.length,
     count,
@@ -211,10 +211,10 @@ QUnit.test("seriesKeyToBooks()", (assert) => {
     );
     assert.equal(
       jackReacherBooks.length,
-      7,
+      8,
       `jackReacherBooks.length = ${jackReacherBooks.length}`
     );
-    assert.equal(R.head(jackReacherBooks).title, "61 Hours");
+    assert.equal(R.head(jackReacherBooks).title, "No Plan B");
     assert.equal(R.last(jackReacherBooks).title, "Personal");
   }
 
@@ -245,7 +245,7 @@ QUnit.test("seriesKeyToBooks() meeting only", (assert) => {
   assert.ok(result, `result !== undefined`);
   const seriesKeys = Object.keys(result);
   assert.ok(seriesKeys, `seriesKeys !== undefined`);
-  const count = 65;
+  const count = 68;
   assert.equal(
     seriesKeys.length,
     count,
@@ -266,10 +266,10 @@ QUnit.test("seriesKeyToBooks() meeting only", (assert) => {
     );
     assert.equal(
       jackReacherBooks.length,
-      6,
+      7,
       `jackReacherBooks.length = ${jackReacherBooks.length}`
     );
-    assert.equal(R.head(jackReacherBooks).title, "61 Hours");
+    assert.equal(R.head(jackReacherBooks).title, "No Plan B");
     assert.equal(R.last(jackReacherBooks).title, "Personal");
   }
 
@@ -301,7 +301,7 @@ QUnit.test("valuesBySeries()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result.length, 7, `result.length = ${result.length}`);
+  assert.equal(result.length, 8, `result.length = ${result.length}`);
   const seriesKeys = R.map(R.prop("key"));
   const forEachFunction = (book) => {
     assert.ok(book.series, `book.series = ${JSON.stringify(book.series)}`);

@@ -82,6 +82,23 @@ const Series = {
   WINE_LOVERS_MYSTERIES: "wineLoversMysteries",
   YOU: "you",
   properties: {
+    "Detective Elin Warner": {
+      title: "Detective Elin Warner",
+      key: "Detective Elin Warner",
+    },
+    "Jack Reacher": {
+      title: "Jack Reacher",
+      lt: "series/Jack+Reacher",
+      key: "Jack Reacher",
+    },
+    "Suburban Dicks": {
+      title: "Suburban Dicks",
+      key: "Suburban Dicks",
+    },
+    "Thursday Murder Club": {
+      title: "Thursday Murder Club",
+      key: "Thursday Murder Club",
+    },
     aFatalInversion: {
       title: "A Fatal Inversion",
       key: "aFatalInversion",
@@ -298,11 +315,6 @@ const Series = {
       gr: "series/40639-jack-mcevoy",
       lt: "nseries/1553/Jack-McEvoy",
       key: "jackMcevoy",
-    },
-    "Jack Reacher": {
-      title: "Jack Reacher",
-      lt: "series/Jack+Reacher",
-      key: "Jack Reacher",
     },
     jakeBrigance: {
       title: "Jake Brigance",
