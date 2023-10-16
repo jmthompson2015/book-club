@@ -64,7 +64,7 @@ QUnit.test("determineAuthor()", (assert) => {
   assert.equal(R.last(authors0), "Andrew Child");
   assert.equal(
     BookUtilities.determineAuthor(Series.SHARP_OBJECTS),
-    Person.GILLIAN_FLYNN
+    Person.GILLIAN_FLYNN,
   );
 });
 
@@ -76,11 +76,11 @@ QUnit.test("authorKeyToBooks()", (assert) => {
   assert.ok(result, `result !== undefined`);
   const authorKeys = Object.keys(result);
   assert.ok(authorKeys, `authorKeys !== undefined`);
-  const count = 127;
+  const count = 130;
   assert.equal(
     authorKeys.length,
     count,
-    `authorKeys.length = ${authorKeys.length}`
+    `authorKeys.length = ${authorKeys.length}`,
   );
   const books = Object.values(result);
   assert.ok(books, `books !== undefined`);
@@ -93,12 +93,12 @@ QUnit.test("authorKeyToBooks()", (assert) => {
     assert.equal(
       Array.isArray(leeChildBooks),
       true,
-      `Array.isArray(leeChildBooks) ? ${Array.isArray(leeChildBooks)}`
+      `Array.isArray(leeChildBooks) ? ${Array.isArray(leeChildBooks)}`,
     );
     assert.equal(
       leeChildBooks.length,
       8,
-      `leeChildBooks.length = ${leeChildBooks.length}`
+      `leeChildBooks.length = ${leeChildBooks.length}`,
     );
     assert.equal(R.head(leeChildBooks).title, "No Plan B");
     assert.equal(R.last(leeChildBooks).title, "Personal");
@@ -112,13 +112,13 @@ QUnit.test("authorKeyToBooks()", (assert) => {
       Array.isArray(jonathanKellermanBooks),
       true,
       `Array.isArray(jonathanKellermanBooks) ? ${Array.isArray(
-        jonathanKellermanBooks
-      )}`
+        jonathanKellermanBooks,
+      )}`,
     );
     assert.equal(
       jonathanKellermanBooks.length,
       3,
-      `jonathanKellermanBooks.length = ${jonathanKellermanBooks.length}`
+      `jonathanKellermanBooks.length = ${jonathanKellermanBooks.length}`,
     );
     assert.equal(R.head(jonathanKellermanBooks).title, "Crime Scene");
     assert.equal(R.last(jonathanKellermanBooks).title, "Victims");
@@ -133,11 +133,11 @@ QUnit.test("authorKeyToBooks() meeting only", (assert) => {
   assert.ok(result, `result !== undefined`);
   const authorKeys = Object.keys(result);
   assert.ok(authorKeys, `authorKeys !== undefined`);
-  const count = 103;
+  const count = 106;
   assert.equal(
     authorKeys.length,
     count,
-    `authorKeys.length = ${authorKeys.length}`
+    `authorKeys.length = ${authorKeys.length}`,
   );
   const books = Object.values(result);
   assert.ok(books, `books !== undefined`);
@@ -150,12 +150,12 @@ QUnit.test("authorKeyToBooks() meeting only", (assert) => {
     assert.equal(
       Array.isArray(leeChildBooks),
       true,
-      `Array.isArray(leeChildBooks) ? ${Array.isArray(leeChildBooks)}`
+      `Array.isArray(leeChildBooks) ? ${Array.isArray(leeChildBooks)}`,
     );
     assert.equal(
       leeChildBooks.length,
       7,
-      `leeChildBooks.length = ${leeChildBooks.length}`
+      `leeChildBooks.length = ${leeChildBooks.length}`,
     );
     assert.equal(R.head(leeChildBooks).title, "No Plan B");
     assert.equal(R.last(leeChildBooks).title, "Personal");
@@ -169,13 +169,13 @@ QUnit.test("authorKeyToBooks() meeting only", (assert) => {
       Array.isArray(jonathanKellermanBooks),
       true,
       `Array.isArray(jonathanKellermanBooks) ? ${Array.isArray(
-        jonathanKellermanBooks
-      )}`
+        jonathanKellermanBooks,
+      )}`,
     );
     assert.equal(
       jonathanKellermanBooks.length,
       3,
-      `jonathanKellermanBooks.length = ${jonathanKellermanBooks.length}`
+      `jonathanKellermanBooks.length = ${jonathanKellermanBooks.length}`,
     );
     assert.equal(R.head(jonathanKellermanBooks).title, "Crime Scene");
     assert.equal(R.last(jonathanKellermanBooks).title, "Victims");
@@ -194,7 +194,7 @@ QUnit.test("seriesKeyToBooks()", (assert) => {
   assert.equal(
     seriesKeys.length,
     count,
-    `seriesKeys.length = ${seriesKeys.length}`
+    `seriesKeys.length = ${seriesKeys.length}`,
   );
   const books = Object.values(result);
   assert.ok(books, `books !== undefined`);
@@ -207,12 +207,12 @@ QUnit.test("seriesKeyToBooks()", (assert) => {
     assert.equal(
       Array.isArray(jackReacherBooks),
       true,
-      `Array.isArray(jackReacherBooks) ? ${Array.isArray(jackReacherBooks)}`
+      `Array.isArray(jackReacherBooks) ? ${Array.isArray(jackReacherBooks)}`,
     );
     assert.equal(
       jackReacherBooks.length,
       8,
-      `jackReacherBooks.length = ${jackReacherBooks.length}`
+      `jackReacherBooks.length = ${jackReacherBooks.length}`,
     );
     assert.equal(R.head(jackReacherBooks).title, "No Plan B");
     assert.equal(R.last(jackReacherBooks).title, "Personal");
@@ -225,12 +225,12 @@ QUnit.test("seriesKeyToBooks()", (assert) => {
     assert.equal(
       Array.isArray(harryBoschBooks),
       true,
-      `Array.isArray(harryBoschBooks) ? ${Array.isArray(harryBoschBooks)}`
+      `Array.isArray(harryBoschBooks) ? ${Array.isArray(harryBoschBooks)}`,
     );
     assert.equal(
       harryBoschBooks.length,
       8,
-      `harryBoschBooks.length = ${harryBoschBooks.length}`
+      `harryBoschBooks.length = ${harryBoschBooks.length}`,
     );
     assert.equal(R.head(harryBoschBooks).title, "Dark Sacred Night");
     assert.equal(R.last(harryBoschBooks).title, "Two Kinds of Truth");
@@ -249,7 +249,7 @@ QUnit.test("seriesKeyToBooks() meeting only", (assert) => {
   assert.equal(
     seriesKeys.length,
     count,
-    `seriesKeys.length = ${seriesKeys.length}`
+    `seriesKeys.length = ${seriesKeys.length}`,
   );
   const books = Object.values(result);
   assert.ok(books, `books !== undefined`);
@@ -262,12 +262,12 @@ QUnit.test("seriesKeyToBooks() meeting only", (assert) => {
     assert.equal(
       Array.isArray(jackReacherBooks),
       true,
-      `Array.isArray(jackReacherBooks) ? ${Array.isArray(jackReacherBooks)}`
+      `Array.isArray(jackReacherBooks) ? ${Array.isArray(jackReacherBooks)}`,
     );
     assert.equal(
       jackReacherBooks.length,
       7,
-      `jackReacherBooks.length = ${jackReacherBooks.length}`
+      `jackReacherBooks.length = ${jackReacherBooks.length}`,
     );
     assert.equal(R.head(jackReacherBooks).title, "No Plan B");
     assert.equal(R.last(jackReacherBooks).title, "Personal");
@@ -280,12 +280,12 @@ QUnit.test("seriesKeyToBooks() meeting only", (assert) => {
     assert.equal(
       Array.isArray(harryBoschBooks),
       true,
-      `Array.isArray(harryBoschBooks) ? ${Array.isArray(harryBoschBooks)}`
+      `Array.isArray(harryBoschBooks) ? ${Array.isArray(harryBoschBooks)}`,
     );
     assert.equal(
       harryBoschBooks.length,
       7,
-      `harryBoschBooks.length = ${harryBoschBooks.length}`
+      `harryBoschBooks.length = ${harryBoschBooks.length}`,
     );
     assert.equal(R.head(harryBoschBooks).title, "Dark Sacred Night");
     assert.equal(R.last(harryBoschBooks).title, "Two Kinds of Truth");

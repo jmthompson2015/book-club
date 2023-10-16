@@ -7,7 +7,7 @@ const Person = require("./Person.js");
 
 QUnit.module("Person");
 
-QUnit.skip("keys and values", (assert) => {
+QUnit.test("keys and values", (assert) => {
   // Run.
   const result = Person.keys();
   const ownPropertyNames = Object.getOwnPropertyNames(Person);
@@ -29,14 +29,14 @@ QUnit.skip("keys and values", (assert) => {
   R.forEach(forEachFunction2, result);
 });
 
-QUnit.skip("Person.keys()", (assert) => {
+QUnit.test("Person.keys()", (assert) => {
   // Run.
   const result = Person.keys();
 
   // Verify.
   assert.ok(result);
-  assert.equal(result.length, 211);
-  assert.equal(R.head(result), Person.AA_MILNE);
+  assert.equal(result.length, 221);
+  assert.equal(R.head(result), Person.AGATHA_CHRISTIE);
   assert.equal(R.last(result), Person.WILLY_RUSSELL);
 });
 

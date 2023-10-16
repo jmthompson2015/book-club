@@ -15,12 +15,12 @@ QUnit.test("bookKey", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const forEachFunction = (movie) => {
-    if (Object.prototype.hasOwnProperty.call(movie, "bookKey")) {
-      const book = Book.properties[movie.bookKey];
+  const forEachFunction = (tvSeries) => {
+    if (Object.prototype.hasOwnProperty.call(tvSeries, "bookKey")) {
+      const book = Book.properties[tvSeries.bookKey];
       assert.ok(
         book,
-        `Missing book for movie.title = ${movie.title} movie.bookKey = ${movie.bookKey}`
+        `Missing book for tvSeries.title = ${tvSeries.title} tvSeries.bookKey = ${tvSeries.bookKey}`,
       );
     }
   };
@@ -33,13 +33,13 @@ QUnit.test("castKeys", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const forEachFunction = (movie) => {
-    if (Object.prototype.hasOwnProperty.call(movie, "castKeys")) {
-      movie.castKeys.forEach((castKey, i) => {
+  const forEachFunction = (tvSeries) => {
+    if (Object.prototype.hasOwnProperty.call(tvSeries, "castKeys")) {
+      tvSeries.castKeys.forEach((castKey, i) => {
         const person = Person.properties[castKey];
         assert.ok(
           person,
-          `Missing cast ${i} for movie.title = ${movie.title} castKey = ${castKey}`
+          `Missing cast ${i} for tvSeries.title = ${tvSeries.title} castKey = ${castKey}`,
         );
       });
     }
@@ -53,15 +53,45 @@ QUnit.test("directorKeys", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const forEachFunction = (movie) => {
-    if (Object.prototype.hasOwnProperty.call(movie, "directorKeys")) {
-      const person = Person.properties[movie.directorKeys];
+  const forEachFunction = (tvSeries) => {
+    if (Object.prototype.hasOwnProperty.call(tvSeries, "directorKeys")) {
+      const person = Person.properties[tvSeries.directorKeys];
       assert.ok(
         person,
-        `Missing director for movie.title = ${movie.title}` +
-          ` movie.directorKeys = ${movie.directorKeys}`
+        `Missing director for tvSeries.title = ${tvSeries.title}` +
+          ` tvSeries.directorKeys = ${tvSeries.directorKeys}`,
       );
     }
+  };
+  R.forEach(forEachFunction, result);
+});
+
+QUnit.test("key", (assert) => {
+  // Run.
+  const result = TVSeries.values();
+
+  // Verify.
+  assert.ok(result);
+  const forEachFunction = (tvSeries) => {
+    assert.ok(
+      tvSeries.key,
+      `Missing key for tvSeries.title = ${tvSeries.title} tvSeries.key = ${tvSeries.key}`,
+    );
+  };
+  R.forEach(forEachFunction, result);
+});
+
+QUnit.test("title", (assert) => {
+  // Run.
+  const result = TVSeries.values();
+
+  // Verify.
+  assert.ok(result);
+  const forEachFunction = (tvSeries) => {
+    assert.ok(
+      tvSeries.title,
+      `Missing title for tvSeries.key = ${tvSeries.key} tvSeries.title = ${tvSeries.title}`,
+    );
   };
   R.forEach(forEachFunction, result);
 });
@@ -72,12 +102,12 @@ QUnit.test("writerKeys", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const forEachFunction = (movie) => {
-    if (Object.prototype.hasOwnProperty.call(movie, "writerKeys")) {
-      const person = Person.properties[movie.writerKeys];
+  const forEachFunction = (tvSeries) => {
+    if (Object.prototype.hasOwnProperty.call(tvSeries, "writerKeys")) {
+      const person = Person.properties[tvSeries.writerKeys];
       assert.ok(
         person,
-        `Missing book for movie.title = ${movie.title} movie.bookKey = ${movie.bookKey}`
+        `Missing writer for tvSeries.title = ${tvSeries.title} tvSeries.bookKey = ${tvSeries.bookKey}`,
       );
     }
   };
@@ -113,7 +143,7 @@ QUnit.test("TVSeries.keys()", (assert) => {
   // Verify.
   assert.ok(result);
   assert.equal(result.length, 33);
-  assert.equal(R.head(result), TVSeries.A_FATAL_INVERSION);
+  assert.equal(R.head(result), TVSeries.AGATHA_RAISIN);
   assert.equal(R.last(result), TVSeries.YOU);
 });
 

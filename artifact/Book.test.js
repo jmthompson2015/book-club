@@ -21,14 +21,44 @@ QUnit.test("authorKeys", (assert) => {
       const author = Person.properties[book.authorKeys];
       assert.ok(
         author,
-        `Missing author for book.title = ${book.title} book.authorKeys = ${book.authorKeys}`
+        `Missing author for book.title = ${book.title} book.authorKeys = ${book.authorKeys}`,
       );
     }
   };
   R.forEach(forEachFunction, result);
 });
 
-QUnit.skip("keys and values", (assert) => {
+QUnit.test("key", (assert) => {
+  // Run.
+  const result = Book.values();
+
+  // Verify.
+  assert.ok(result);
+  const forEachFunction = (book) => {
+    assert.ok(
+      book.key,
+      `Missing key for book.title = ${book.title} book.key = ${book.key}`,
+    );
+  };
+  R.forEach(forEachFunction, result);
+});
+
+QUnit.test("title", (assert) => {
+  // Run.
+  const result = Book.values();
+
+  // Verify.
+  assert.ok(result);
+  const forEachFunction = (book) => {
+    assert.ok(
+      book.title,
+      `Missing title for book.key = ${book.key} book.title = ${book.title}`,
+    );
+  };
+  R.forEach(forEachFunction, result);
+});
+
+QUnit.test("keys and values", (assert) => {
   // Run.
   const result = Book.keys();
   const ownPropertyNames = Object.getOwnPropertyNames(Book);
@@ -50,14 +80,14 @@ QUnit.skip("keys and values", (assert) => {
   R.forEach(forEachFunction2, result);
 });
 
-QUnit.skip("Book.keys()", (assert) => {
+QUnit.test("Book.keys()", (assert) => {
   // Run.
   const result = Book.keys();
 
   // Verify.
   assert.ok(result);
-  assert.equal(result.length, 235);
-  assert.equal(R.head(result), Book._206_BONES);
+  assert.equal(result.length, 254);
+  assert.equal(R.head(result), Book.ARE_YOU_SARA);
   assert.equal(R.last(result), Book.YOU);
 });
 

@@ -1,3 +1,5 @@
+const R = require("../node_modules/ramda/dist/ramda.js");
+
 const Person = {
   AA_MILNE: "aaMilne",
   AGATHA_CHRISTIE: "Agatha Christie",
@@ -7,14 +9,17 @@ const Person = {
   ALEX_MICHAELIDES: "alexMichaelides",
   ALEX_PAVESI: "alexPavesi",
   ALEXANDER_MCCALL_SMITH: "alexanderMcCallSmith",
+  ALEXANDRA_BENEDICT: "Alexandra Benedict",
   ALFRED_HITCHCOCK: "alfredHitchcock",
   ALICE_BLANCHARD: "aliceBlanchard",
+  ALICE_FEENEY: "Alice Feeney",
   ALLAN_CUBITT: "allanCubitt",
   AL_PACINO: "alPacino",
   AMY_ADAMS: "amyAdams",
+  ANDREW_CHILD: "Andrew Child",
   ANNA_FRIEL: "annaFriel",
   ANTHONY_BERKELEY_COX: "anthonyBerkeleyCox",
-  ANTHONY_HOROWITZ: "anthonyHorowitz",
+  ANTHONY_HOROWITZ: "Anthony Horowitz",
   ARTHUR_CONAN_DOYLE: "arthurConanDoyle",
   BA_PARIS: "baParis",
   BARBARA_NICKLESS: "barbaraNickless",
@@ -68,6 +73,7 @@ const Person = {
   ERIC_BANA: "ericBana",
   ERIN_KELLY: "erinKelly",
   ETHEL_LINA_WHITE: "ethelLinaWhite",
+  FABIAN_NICIEZA: "Fabian Nicieza",
   FARLEY_GRANGER: "farleyGranger",
   FRED_MACMURRAY: "fredMacmurray",
   GABRIEL_BYRNE: "gabrielByrne",
@@ -75,12 +81,12 @@ const Person = {
   GEORGETTE_HEYER: "georgetteHeyer",
   GILLIAN_ANDERSON: "gillianAnderson",
   GILLIAN_FLYNN: "gillianFlynn",
-  G_K_CHESTERTON: "gkChesterton",
+  GK_CHESTERTON: "G.K. Chesterton",
   GREG_BERLANTI: "gregBerlanti",
   GREGG_HURWITZ: "greggHurwitz",
   GREG_ILES: "gregIles",
   HANS_ROSENFELDT: "hansRosenfeldt",
-  HARLAN_COBEN: "harlanCoben",
+  HARLAN_COBEN: "Harlan Coben",
   HARVEY_KEITEL: "harveyKeitel",
   HUGH_DANCY: "hughDancy",
   HUGH_FRASER: "hughFraser",
@@ -94,7 +100,7 @@ const Person = {
   JAMES_STEWART: "jamesStewart",
   JAMIE_DORNAN: "jamieDornan",
   JAMIE_HECTOR: "jamieHector",
-  JANE_HARPER: "janeHarper",
+  JANE_HARPER: "Jane Harper",
   JASON_BATEMAN: "jasonBateman",
   JEFF_LINDSAY: "jeffLindsay",
   JEFFERY_DEAVER: "jefferyDeaver",
@@ -141,6 +147,7 @@ const Person = {
   MARISA_TOMEI: "marisaTomei",
   MARK_NYKANEN: "markNykanen",
   MARK_WILLIAMS: "markWilliams",
+  MARTHA_GRIMES: "Martha Grimes",
   MARTIN_SCORSESE: "martinScorsese",
   MARY_KUBICA: "maryKubica",
   MATT_BARR: "mattBarr",
@@ -152,14 +159,16 @@ const Person = {
   MICHAEL_CAINE: "michaelCaine",
   MICHAEL_CHABON: "michaelChabon",
   MICHAEL_C_HALL: "michaelCHall",
-  MICHAEL_CONNELLY: "michaelConnelly",
+  MICHAEL_CONNELLY: "Michael Connelly",
   MICHELE_SCOTT: "micheleScott",
   MICHELLE_DOCKERY: "michelleDockery",
+  MIM_EICHMANN: "Mim Eichmann",
   NATHANIEL_PARKER: "nathanielParker",
   NEIL_DUDGEON: "neilDudgeon",
   NGAIO_MARSH: "ngaioMarsh",
   NICCI_FRENCH: "nicciFrench",
   NINA_GEORGE: "ninaGeorge",
+  NINA_SIMON: "Nina Simon",
   OLIVIA_COLMAN: "oliviaColman",
   OWEN_LAUKKANEN: "owenLaukkanen",
   PATRICIA_CLARKSON: "patriciaClarkson",
@@ -173,7 +182,8 @@ const Person = {
   RIAN_JOHNSON: "rianJohnson",
   RICHARD_ARMITAGE: "richardArmitage",
   RICHARD_HARRINGTON: "richardHarrington",
-  RICHARD_OSMAN: "richard osman",
+  RICHARD_OSMAN: "Richard Osman",
+  RILEY_SAGER: "Riley Sager",
   ROBBIE_COLTRANE: "robbieColtrane",
   ROBERT_CRAIS: "robertCrais",
   ROBERT_DE_NIRO: "robertDeNiro",
@@ -187,8 +197,10 @@ const Person = {
   SAM_RAIMI: "samRaimi",
   SANDRA_BROWN: "sandraBrown",
   SARAH_LANCASHIRE: "sarahLancashire",
+  SARAH_PEARSE: "Sarah Pearse",
   SCOTT_B_SMITH: "scottBSmith",
   SCOTT_TUROW: "scottTurow",
+  SC_LALLI: "S.C. Lalli",
   SHARI_LAPENA: "shariLapena",
   SIDNEY_LUMET: "sidneyLumet",
   SIMON_BECKETT: "simonBeckett",
@@ -199,7 +211,7 @@ const Person = {
   STIEG_LARSSON: "stiegLarsson",
   STUART_WOODS: "stuartWoods",
   SURANNE_JONES: "suranneJones",
-  S_W_KANE: "sw kane",
+  SW_KANE: "S.W. Kane",
   TANA_FRENCH: "tanaFrench",
   TED_DEKKER: "tedDekker",
   TESS_GERRITSEN: "tessGerritsen",
@@ -213,61 +225,118 @@ const Person = {
 };
 
 Person.properties = {
-  "Agatha Christie": {
+  [Person.AGATHA_CHRISTIE]: {
     first: "Agatha",
     last: "Christie",
+    gr: "author/show/123715.Agatha_Christie",
     imdb: "name/nm0002005",
     lt: "author/christieagatha",
     wiki: "Agatha_Christie",
   },
-  "Alexandra Benedict": {
+  [Person.ALEXANDRA_BENEDICT]: {
     first: "Alexandra",
     last: "Benedict",
     gr: "author/show/22307202.Alexandra_Benedict",
     lt: "author/benedictalexandra",
   },
-  "Alice Feeney": {
+  [Person.ALICE_FEENEY]: {
     first: "Alice",
     last: "Feeney",
     gr: "author/show/15904689.Alice_Feeney",
     lt: "author/feeneyalice",
   },
-  "Andrew Child": {
+  [Person.ANDREW_CHILD]: {
     first: "Andrew",
     last: "Child",
+    gr: "author/show/19939004.Andrew_Child",
   },
-  "Fabian Nicieza": {
+  [Person.ANTHONY_HOROWITZ]: {
+    first: "Anthony",
+    last: "Horowitz",
+    gr: "author/show/32590.Anthony_Horowitz",
+    imdb: "name/nm0395275",
+    lt: "author/horowitzanthony",
+    wiki: "Anthony_Horowitz",
+  },
+  [Person.FABIAN_NICIEZA]: {
     first: "Fabian",
     last: "Nicieza",
     gr: "author/show/28126.Fabian_Nicieza",
     lt: "author/niciezafabian",
   },
-  "Julie Clark": {
+  [Person.GK_CHESTERTON]: {
+    first: "G.",
+    middle: "K.",
+    last: "Chesterton",
+    gr: "author/show/7014283.G_K_Chesterton",
+    imdb: "name/nm0156363",
+    lt: "author/chestertongk",
+    wiki: "G._K._Chesterton",
+  },
+  [Person.HARLAN_COBEN]: {
+    first: "Harlan",
+    last: "Coben",
+    gr: "author/show/24689.Harlan_Coben",
+    imdb: "name/nm1454192",
+    lt: "author/cobenharlan",
+    wiki: "Harlan_Coben",
+  },
+  [Person.JANE_HARPER]: {
+    first: "Jane",
+    last: "Harper",
+    gr: "author/show/556546.Jane_Harper",
+    imdb: "name/nm7681091",
+    lt: "author/harperjane-1",
+    wiki: "Jane_Harper",
+  },
+  [Person.JULIE_CLARK]: {
     first: "Julie",
     last: "Clark",
     gr: "author/show/17323560.Julie_Clark",
     lt: "author/clarkjulie-5",
   },
-  "Lee Child": {
+  [Person.LEE_CHILD]: {
     first: "Lee",
     last: "Child",
+    gr: "author/show/5091.Lee_Child",
     imdb: "name/nm1676193",
     lt: "author/childlee",
     wiki: "Lee_Child",
   },
-  "Megan Goldin": {
+  [Person.MARTHA_GRIMES]: {
+    first: "Martha",
+    last: "Grimes",
+    gr: "author/show/14150.Martha_Grimes",
+    lt: "author/grimesmartha",
+    wiki: "Martha_Grimes",
+  },
+  [Person.MEGAN_GOLDIN]: {
     first: "Megan",
     last: "Goldin",
     gr: "author/show/16718134.Megan_Goldin",
     lt: "author/goldinmegan",
   },
-  "Mim Eichmann": {
+  [Person.MICHAEL_CONNELLY]: {
+    first: "Michael",
+    last: "Connelly",
+    gr: "author/show/12470.Michael_Connelly",
+    imdb: "name/nm0175093",
+    lt: "author/connellymichael-1",
+    wiki: "Michael_Connelly",
+  },
+  [Person.MIM_EICHMANN]: {
     first: "Mim",
     last: "Eichmann",
     gr: "author/show/19987913.Mim_Eichmann",
     lt: "author/eichmannmim",
   },
-  "Richard Osman": {
+  [Person.NINA_SIMON]: {
+    first: "Nina",
+    last: "Simon",
+    gr: "author/show/3408558.Nina_Simon",
+    lt: "author/simonnina",
+  },
+  [Person.RICHARD_OSMAN]: {
     first: "Richard",
     last: "Osman",
     gr: "author/show/6173710.Richard_Osman",
@@ -275,7 +344,14 @@ Person.properties = {
     lt: "author/osmanrichard",
     wiki: "Richard_Osman",
   },
-  "Ruth Ware": {
+  [Person.RILEY_SAGER]: {
+    first: "Riley",
+    last: "Sager",
+    gr: "author/show/15263414.Riley_Sager",
+    lt: "author/sagerriley",
+    wiki: "Riley_Sager",
+  },
+  [Person.RUTH_WARE]: {
     first: "Ruth",
     last: "Ware",
     gr: "author/show/9013543.Ruth_Ware",
@@ -283,17 +359,25 @@ Person.properties = {
     lt: "author/wareruth",
     wiki: "Ruth_Ware",
   },
-  "S.C. Lalli": {
-    first: "S.C.",
-    last: "Lalli",
-    gr: "author/show/21804660.S_C_Lalli",
-    lt: "author/lallisc",
-  },
-  "Sarah Pearse": {
+  [Person.SARAH_PEARSE]: {
     first: "Sarah",
     last: "Pearse",
     gr: "author/show/20458083.Sarah_Pearse",
     lt: "author/pearsesarah",
+  },
+  [Person.SC_LALLI]: {
+    first: "S.",
+    middle: "C.",
+    last: "Lalli",
+    gr: "author/show/21804660.S_C_Lalli",
+    lt: "author/lallisc",
+  },
+  [Person.SW_KANE]: {
+    first: "S.",
+    middle: "W.",
+    last: "Kane",
+    gr: "author/show/19227228.S_W_Kane",
+    lt: "author/kanesw",
   },
   aaMilne: {
     first: "A.",
@@ -381,14 +465,6 @@ Person.properties = {
     imdb: "name/nm0075324",
     lt: "author/berkeleyanthony",
     wiki: "Anthony_Berkeley_Cox",
-  },
-  anthonyHorowitz: {
-    first: "Anthony",
-    last: "Horowitz",
-    gr: "author/show/32590.Anthony_Horowitz",
-    imdb: "name/nm0395275",
-    lt: "author/horowitzanthony",
-    wiki: "Anthony_Horowitz",
   },
   arthurConanDoyle: {
     first: "Arthur",
@@ -744,15 +820,6 @@ Person.properties = {
     lt: "author/flynngillian",
     wiki: "Gillian_Flynn",
   },
-  gkChesterton: {
-    first: "G.",
-    middle: "K.",
-    last: "Chesterton",
-    gr: "author/show/7014283.G_K_Chesterton",
-    imdb: "name/nm0156363",
-    lt: "author/chestertongk",
-    wiki: "G._K._Chesterton",
-  },
   gregBerlanti: {
     first: "Greg",
     last: "Berlanti",
@@ -776,14 +843,6 @@ Person.properties = {
     last: "Rosenfeldt",
     imdb: "name/nm0742577",
     wiki: "Hans_Rosenfeldt",
-  },
-  harlanCoben: {
-    first: "Harlan",
-    last: "Coben",
-    gr: "author/show/24689.Harlan_Coben",
-    imdb: "name/nm1454192",
-    lt: "author/cobenharlan",
-    wiki: "Harlan_Coben",
   },
   harveyKeitel: {
     first: "Harvey",
@@ -864,14 +923,6 @@ Person.properties = {
     last: "Hector",
     imdb: "name/nm0373100",
     wiki: "Jamie_Hector",
-  },
-  janeHarper: {
-    first: "Jane",
-    last: "Harper",
-    gr: "author/show/556546.Jane_Harper",
-    imdb: "name/nm7681091",
-    lt: "author/harperjane-1",
-    wiki: "Jane_Harper",
   },
   jasonBateman: {
     first: "Jason",
@@ -1196,14 +1247,6 @@ Person.properties = {
     lt: "author/chabonmichael",
     wiki: "Michael_Chabon",
   },
-  michaelConnelly: {
-    first: "Michael",
-    last: "Connelly",
-    gr: "author/show/12470.Michael_Connelly",
-    imdb: "name/nm0175093",
-    lt: "author/connellymichael-1",
-    wiki: "Michael_Connelly",
-  },
   micheleScott: {
     first: "Michele",
     last: "Scott",
@@ -1327,6 +1370,7 @@ Person.properties = {
   robertCrais: {
     first: "Robert",
     last: "Crais",
+    gr: "author/show/8944.Robert_Crais",
     imdb: "name/nm0186101",
     lt: "author/craisrobert",
     wiki: "Robert_Crais",
@@ -1459,13 +1503,6 @@ Person.properties = {
     last: "Jones",
     imdb: "name/nm1013087",
   },
-  "sw kane": {
-    first: "S.",
-    middle: "W.",
-    last: "Kane",
-    gr: "author/show/19227228.S_W_Kane",
-    lt: "author/kanesw",
-  },
   tanaFrench: {
     first: "Tana",
     last: "French",
@@ -1533,6 +1570,17 @@ Person.properties = {
 Person.keys = () => Object.keys(Person.properties);
 
 Person.values = () => Object.values(Person.properties);
+
+{
+  const forEachFunction = (key) => {
+    const value = Person.properties[key];
+
+    if (R.isNil(value.key)) {
+      value.key = key;
+    }
+  };
+  R.forEach(forEachFunction, Person.keys());
+}
 
 Object.freeze(Person);
 

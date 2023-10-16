@@ -1,7 +1,9 @@
+const R = require("../node_modules/ramda/dist/ramda.js");
+
 const Series = {
-  AARON_FALK: "aaronFalk",
+  AARON_FALK: "Aaron Falk",
   A_FATAL_INVERSION: "aFatalInversion",
-  AGATHA_RAISIN: "agatha raisin",
+  AGATHA_RAISIN: "Agatha Raisin",
   ALEX_DELAWARE: "alexDelaware",
   AMOS_DECKER: "amosDecker",
   ANDY_CARPENTER: "andyCarpenter",
@@ -15,8 +17,9 @@ const Series = {
   CORMORAN_STRIKE: "cormoranStrike",
   DAVID_HUNTER: "davidHunter",
   DEFENDING_JACOB: "defendingJacob",
-  DETECTIVE_DANIEL_HAWTHORNE: "detective daniel hawthorne",
-  DETECTIVE_LEW_KIRBY: "detective lew kirby",
+  DETECTIVE_DANIEL_HAWTHORNE: "Detective Daniel Hawthorne",
+  DETECTIVE_ELIN_WARNER: "Detective Elin Warner",
+  DETECTIVE_LEW_KIRBY: "Detective Lew Kirby",
   DETECTIVE_VARG: "detectiveVarg",
   DEXTER: "dexter",
   DISMAS_HARDY: "dismasHardy",
@@ -37,7 +40,7 @@ const Series = {
   HARRY_BOSCH: "harryBosch",
   HARRY_HOLE: "harryHole",
   HERCULE_POIROT: "herculePoirot",
-  HOROWITZS_HOLMES: "horowitz's holmes",
+  HOROWITZS_HOLMES: "Horowitz's Holmes",
   INSPECTOR_REBUS: "inspectorRebus",
   JACK_MCEVOY: "jackMcevoy",
   JACK_REACHER: "Jack Reacher",
@@ -61,8 +64,10 @@ const Series = {
   ODD_THOMAS: "oddThomas",
   PERFECT_MURDERS_LIST: "perfectMurdersList",
   PETER_SWANSON_SUGGESTS: "peterSwansonSuggests",
+  RACHEL_KRALL: "Rachel Krall",
   RACHEL_WALLING: "rachelWalling",
   RENEE_BALLARD: "reneeBallard",
+  RICHARD_JURY: "Richard Jury",
   RIZZOLI_AND_ISLES: "rizzoliAndIsles",
   RODERICK_ALLEYN: "roderickAlleyn",
   SHANE_SCULLY: "shaneScully",
@@ -70,469 +75,403 @@ const Series = {
   SHERLOCK_HOLMES: "sherlockHolmes",
   STEVENS_AND_WINDERMERE: "stevensAndWindermere",
   STONE_BARRINGTON: "stoneBarrington",
+  SUBURBAN_DICKS: "Suburban Dicks",
   SYDNEY_ROSE_PARNELL: "sydneyRoseParnell",
   TEMPERANCE_BRENNAN: "temperanceBrennan",
   THE_CAMEL_CLUB: "theCamelClub",
   THE_NO_1_LADIES_DETECTIVE_AGENCY: "theNo1LadiesDetectiveAgency",
-  THURSDAY_MURDER_CLUB: "thursday murder club",
+  THURSDAY_MURDER_CLUB: "Thursday Murder Club",
   VIRGIL_FLOWERS: "virgilFlowers",
   WILDE: "wilde",
   WILL_ROBIE: "willRobie",
-  WINDSOR_HORNE_LOCKWOOD_III: "windsor horne lockwood iii",
+  WINDSOR_HORNE_LOCKWOOD_III: "Windsor Horne Lockwood III",
   WINE_LOVERS_MYSTERIES: "wineLoversMysteries",
   YOU: "you",
 };
 
 Series.properties = {
-  "Detective Elin Warner": {
-    title: "Detective Elin Warner",
-    key: "Detective Elin Warner",
+  [Series.AARON_FALK]: {
+    gr: "series/197462-aaron-falk",
+    lt: "nseries/11845/Aaron-Falk",
   },
-  "Jack Reacher": {
-    title: "Jack Reacher",
-    lt: "series/Jack+Reacher",
-    key: "Jack Reacher",
+  [Series.AGATHA_RAISIN]: {
+    gr: "series/41464-agatha-raisin",
+    lt: "nseries/1968/Agatha-Raisin",
   },
-  "Suburban Dicks": {
-    title: "Suburban Dicks",
-    key: "Suburban Dicks",
+  [Series.DETECTIVE_DANIEL_HAWTHORNE]: {
+    gr: "series/238438-hawthorne-and-horowitz-mystery",
+    lt: "nseries/26810/Hawthorne-Horowitz",
   },
-  "Thursday Murder Club": {
-    title: "Thursday Murder Club",
-    key: "Thursday Murder Club",
+  [Series.DETECTIVE_ELIN_WARNER]: {
+    gr: "series/323928-detective-elin-warner",
+    lt: "nseries/344807/Detective-Elin-Warner",
+  },
+  [Series.DETECTIVE_LEW_KIRBY]: {
+    gr: "series/315611-detective-lew-kirby",
+    lt: "nseries/326914/Detective-Lew-Kirby",
+  },
+  [Series.HOROWITZS_HOLMES]: {
+    gr: "series/135888-horowitz-s-holmes",
+    lt: "nseries/9776/Anthony-Horowitzs-Sherlock-Holmes",
+  },
+  [Series.JACK_REACHER]: {
+    gr: "series/40549-jack-reacher",
+    lt: "nseries/102/Jack-Reacher",
+    wiki: "Jack_Reacher",
+  },
+  [Series.RACHEL_KRALL]: {
+    gr: "series/357929-rachel-krall",
+    lt: "nseries/360099/Rachel-Krall",
+  },
+  [Series.RICHARD_JURY]: {
+    gr: "series/49632-richard-jury",
+    lt: "nseries/2298/Richard-Jury",
+  },
+  [Series.SUBURBAN_DICKS]: {
+    gr: "series/334785-suburban-dicks",
+  },
+  [Series.THURSDAY_MURDER_CLUB]: {
+    gr: "series/299267-thursday-murder-club",
+    lt: "nseries/315274/Thursday-Murder-Club",
+  },
+  [Series.WINDSOR_HORNE_LOCKWOOD_III]: {
+    gr: "series/306765-windsor-horne-lockwood-iii",
+    lt: "nseries/324513/Windsor-Horne-Lockwood-III",
   },
   aFatalInversion: {
     title: "A Fatal Inversion",
-    key: "aFatalInversion",
-  },
-  aaronFalk: {
-    title: "Aaron Falk",
-    lt: "series/Aaron+Falk",
-    key: "aaronFalk",
-  },
-  "agatha raisin": {
-    title: "Agatha Raisin",
-    gr: "series/41464-agatha-raisin",
-    lt: "nseries/1968/Agatha-Raisin",
-    key: "agatha raisin",
   },
   alexDelaware: {
     title: "Alex Delaware",
     lt: "series/Alex+Delaware",
-    key: "alexDelaware",
   },
   amosDecker: {
     title: "Amos Decker",
     lt: "series/Amos+Decker",
-    key: "amosDecker",
   },
   andyCarpenter: {
     title: "Andy Carpenter",
     lt: "series/Andy+Carpenter",
-    key: "andyCarpenter",
   },
   broadchurch: {
     title: "Broadchurch",
     lt: "nseries/45966/Broadchurch",
-    key: "broadchurch",
   },
   caminoIsland: {
     title: "Camino Island",
     lt: "series/Camino+Island",
-    key: "caminoIsland",
   },
   catKinsella: {
     title: "Cat Kinsella",
     lt: "series/Cat+Kinsella",
-    key: "catKinsella",
   },
   chiefInspectorArmandGamache: {
     title: "Chief Inspector Armand Gamache",
     lt: "series/Chief+Inspector+Armand+Gamache",
-    key: "chiefInspectorArmandGamache",
   },
   chiefInspectorBarnabyMysteries: {
     title: "Chief Inspector Barnaby Mysteries",
     lt: "series/Chief+Inspector+Barnaby+Mysteries",
-    key: "chiefInspectorBarnabyMysteries",
   },
   christinaZSuggests: {
     title: "Christina Z. Suggests",
     authorKeys: null,
     useSearch: false,
-    key: "christinaZSuggests",
   },
   clayEdison: {
     title: "Clay Edison",
     lt: "series/Clay+Edison",
-    key: "clayEdison",
   },
   cormoranStrike: {
     title: "Cormoran Strike",
     lt: "series/Cormoran+Strike",
-    key: "cormoranStrike",
   },
   davidHunter: {
     title: "David Hunter",
     lt: "series/David+Hunter",
-    key: "davidHunter",
   },
   defendingJacob: {
     title: "Defending Jacob",
     lt: "work/11491573",
-    key: "defendingJacob",
-  },
-  "detective daniel hawthorne": {
-    title: "Detective Daniel Hawthorne",
-    gr: "series/238438-hawthorne-and-horowitz-mystery",
-    lt: "nseries/26810/Hawthorne-Horowitz",
-    key: "detective daniel hawthorne",
-  },
-  "detective lew kirby": {
-    title: "Detective Lew Kirby",
-    gr: "series/315611-detective-lew-kirby",
-    lt: "nseries/326914/Detective-Lew-Kirby",
-    key: "detective lew kirby",
   },
   detectiveVarg: {
     title: "Detective Varg",
     lt: "series/Detective+Varg",
-    key: "detectiveVarg",
   },
   dexter: {
     title: "Dexter",
+    gr: "series/44928-dexter",
     lt: "series/Dexter",
-    key: "dexter",
   },
   dismasHardy: {
     title: "Dismas Hardy",
     lt: "series/Dismas+Hardy",
-    key: "dismasHardy",
   },
   drAlanGregory: {
     title: "Dr. Alan Gregory",
     lt: "series/Dr.+Alan+Gregory",
-    key: "drAlanGregory",
   },
   elleryQueen: {
     title: "Ellery Queen",
     lt: "series/Ellery+Queen",
-    key: "elleryQueen",
   },
   elvisCole: {
     title: "Elvis Cole",
     lt: "series/Elvis+Cole",
-    key: "elvisCole",
   },
   evanSmoak: {
     title: "Evan Smoak",
     lt: "series/Evan+Smoak",
-    key: "evanSmoak",
   },
   fatherBrown: {
     title: "Father Brown",
     gr: "series/55609-father-brown",
     lt: "nseries/883/Father-Brown",
     wiki: "Father_Brown",
-    key: "fatherBrown",
   },
   flaviaDeLuce: {
     title: "Flavia de Luce",
     lt: "series/Flavia+de+Luce",
-    key: "flaviaDeLuce",
   },
   friedaKlein: {
     title: "Frieda Klein",
     lt: "series/Frieda+Klein",
-    key: "friedaKlein",
   },
   gabrielAllon: {
     title: "Gabriel Allon",
     lt: "series/Gabriel+Allon",
-    key: "gabrielAllon",
   },
   gailHSuggests: {
     title: "Gail H. Suggests",
     authorKeys: null,
     useSearch: false,
-    key: "gailHSuggests",
   },
   georgia: {
     title: "Georgia",
     lt: "series/Georgia",
-    key: "georgia",
   },
   ghostman: {
     title: "Ghostman",
     lt: "series/Ghostman",
-    key: "ghostman",
   },
   gretchenLowell: {
     title: "Gretchen Lowell",
     lt: "series/Gretchen+Lowell",
-    key: "gretchenLowell",
   },
   hamishMacbeth: {
     title: "Hamish Macbeth",
     lt: "series/Hamish+Macbeth",
-    key: "hamishMacbeth",
   },
   hannibalLecter: {
     title: "Hannibal Lecter",
     gr: "series/53252-hannibal-lecter",
     lt: "nseries/3221/Hannibal-Lecter-Series",
-    key: "hannibalLecter",
   },
   harryBosch: {
     title: "Harry Bosch",
     gr: "series/40769-harry-bosch",
     lt: "series/Harry+Bosch",
-    key: "harryBosch",
   },
   harryHole: {
     title: "Harry Hole",
     lt: "series/Harry+Hole",
-    key: "harryHole",
   },
   herculePoirot: {
     title: "Hercule Poirot",
     lt: "series/Hercule+Poirot",
-    key: "herculePoirot",
-  },
-  "horowitz's holmes": {
-    title: "Horowitz's Holmes",
-    gr: "series/135888-horowitz-s-holmes",
-    lt: "nseries/9776/Anthony-Horowitzs-Sherlock-Holmes",
-    key: "horowitz's holmes",
   },
   inspectorRebus: {
     title: "Inspector Rebus",
     gr: "series/42078-inspector-rebus",
     lt: "nseries/637/Inspector-Rebus",
     wiki: "Inspector_Rebus",
-    key: "inspectorRebus",
   },
   jackMcevoy: {
     title: "Jack McEvoy",
     gr: "series/40639-jack-mcevoy",
     lt: "nseries/1553/Jack-McEvoy",
-    key: "jackMcevoy",
   },
   jakeBrigance: {
     title: "Jake Brigance",
     lt: "series/Jake+Brigance",
-    key: "jakeBrigance",
   },
   janaBerzelius: {
     title: "Jana Berzelius",
     lt: "series/Jana+Berzelius",
-    key: "janaBerzelius",
   },
   joBeckett: {
     title: "Jo Beckett",
     lt: "series/Jo+Beckett",
-    key: "joBeckett",
   },
   joeCoughlin: {
     title: "Joe Coughlin",
     lt: "series/Joe+Coughlin",
-    key: "joeCoughlin",
   },
   joePickett: {
     title: "Joe Pickett",
     lt: "series/Joe+Pickett",
-    key: "joePickett",
   },
   joePike: {
     title: "Joe Pike",
     lt: "series/Joe+Pike",
-    key: "joePike",
   },
   johnnyMerrimon: {
     title: "Johnny Merrimon",
-    key: "johnnyMerrimon",
   },
   kickLannigan: {
     title: "Kick Lannigan",
     lt: "series/Kick+Lannigan",
-    key: "kickLannigan",
   },
   kindleCounty: {
     title: "Kindle County",
     gr: "series/52231-kindle-county-legal-thriller",
     lt: "nseries/2854/Kindle-County",
-    key: "kindleCounty",
   },
   lincolnRhyme: {
     title: "Lincoln Rhyme",
     lt: "series/Lincoln+Rhyme",
-    key: "lincolnRhyme",
   },
   lucasDavenport: {
     title: "Lucas Davenport",
     lt: "series/Lucas+Davenport",
-    key: "lucasDavenport",
   },
   malcolmWarren: {
     title: "Malcolm Warren",
     lt: "series/Malcolm+Warren",
-    key: "malcolmWarren",
   },
   maliceAforethought: {
     title: "Malice Aforethought",
     lt: "work/247583",
-    key: "maliceAforethought",
   },
   mickeyHaller: {
     title: "Mickey Haller",
     gr: "series/44303-mickey-haller",
     lt: "series/Mickey+Haller",
-    key: "mickeyHaller",
   },
   millennium: {
     title: "Millennium",
-    lt: "series/Millennium",
-    key: "millennium",
+    gr: "series/44598-millennium",
+    lt: "nseries/23/Millennium",
   },
   myronBolitar: {
     title: "Myron Bolitar",
     lt: "series/Myron+Bolitar",
-    key: "myronBolitar",
   },
   newHerculePoirot: {
     title: "New Hercule Poirot",
     gr: "series/184795-new-hercule-poirot-mysteries",
     lt: "nseries/7511/New-Hercule-Poirot-Mysteries",
-    key: "newHerculePoirot",
   },
   oddThomas: {
     title: "Odd Thomas",
     lt: "series/Odd+Thomas",
-    key: "oddThomas",
   },
   perfectMurdersList: {
     title: "Perfect Murders List",
     authorKeys: null,
     useSearch: false,
-    key: "perfectMurdersList",
   },
   peterSwansonSuggests: {
     title: "Peter Swanson Suggests",
     authorKeys: null,
     useSearch: false,
-    key: "peterSwansonSuggests",
   },
   rachelWalling: {
     title: "Rachel Walling",
     gr: "",
     lt: "nseries/1206/Rachel-Walling",
-    key: "rachelWalling",
   },
   reneeBallard: {
     title: "Renée Ballard",
     lt: "series/Renée+Ballard",
-    key: "reneeBallard",
   },
   rizzoliAndIsles: {
     title: "Rizzoli & Isles",
     lt: "series/Rizzoli+%2526+Isles",
-    key: "rizzoliAndIsles",
   },
   roderickAlleyn: {
     title: "Roderick Alleyn",
     gr: "series/50710-roderick-alleyn",
     lt: "series/Roderick+Alleyn",
-    key: "roderickAlleyn",
   },
   shaneScully: {
     title: "Shane Scully",
     lt: "series/Shane+Scully",
-    key: "shaneScully",
   },
   sharpObjects: {
     title: "Sharp Objects",
     lt: "work/1117152",
-    key: "sharpObjects",
   },
   sherlockHolmes: {
     title: "Sherlock Holmes",
     lt: "series/Sherlock+Holmes",
-    key: "sherlockHolmes",
   },
   stevensAndWindermere: {
     title: "Stevens & Windermere",
     lt: "series/Stevens+and+Windermere",
-    key: "stevensAndWindermere",
   },
   stoneBarrington: {
     title: "Stone Barrington",
     lt: "series/Stone+Barrington",
-    key: "stoneBarrington",
   },
   sydneyRoseParnell: {
     title: "Sydney Rose Parnell",
     lt: "nseries/48681/Sydney-Rose-Parnell",
-    key: "sydneyRoseParnell",
   },
   temperanceBrennan: {
     title: "Temperance Brennan",
     lt: "series/Temperance+Brennan",
-    key: "temperanceBrennan",
   },
   theCamelClub: {
     title: "The Camel Club",
     lt: "series/The+Camel+Club",
-    key: "theCamelClub",
   },
   theNo1LadiesDetectiveAgency: {
     title: "The No. 1 Ladies' Detective Agency",
     lt: "nseries/197/The-No-1-Ladies-Detective-Agency",
     wiki: "The_No._1_Ladies%27_Detective_Agency",
-    key: "theNo1LadiesDetectiveAgency",
-  },
-  "thursday murder club": {
-    title: "Thursday Murder Club",
-    gr: "series/299267-thursday-murder-club",
-    lt: "nseries/315274/Thursday-Murder-Club",
-    key: "thursday murder club",
   },
   virgilFlowers: {
     title: "Virgil Flowers",
     lt: "series/Virgil+Flowers",
-    key: "virgilFlowers",
   },
   wilde: {
     title: "Wilde",
     gr: "series/321974-wilde",
     lt: "nseries/332803/Wilde",
-    key: "wilde",
   },
   willRobie: {
     title: "Will Robie",
     lt: "series/Will+Robie",
-    key: "willRobie",
-  },
-  "windsor horne lockwood iii": {
-    title: "Windsor Horne Lockwood III",
-    gr: "series/306765-windsor-horne-lockwood-iii",
-    lt: "nseries/324513/Windsor-Horne-Lockwood-III",
-    key: "windsor horne lockwood iii",
   },
   wineLoversMysteries: {
     title: "Wine Lovers Mysteries",
     lt: "series/Wine+Lovers+Mysteries",
-    key: "wineLoversMysteries",
   },
   you: {
     title: "You",
     lt: "nseries/19732",
-    key: "you",
   },
 };
 
 Series.keys = () => Object.keys(Series.properties);
 
 Series.values = () => Object.values(Series.properties);
+
+{
+  const forEachFunction = (key) => {
+    const value = Series.properties[key];
+
+    if (R.isNil(value.title)) {
+      value.title = key;
+    }
+
+    if (R.isNil(value.key)) {
+      value.key = key;
+    }
+  };
+  R.forEach(forEachFunction, Series.keys());
+}
 
 Object.freeze(Series);
 

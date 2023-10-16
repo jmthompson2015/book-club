@@ -5,7 +5,37 @@ const Series = require("./Series.js");
 
 QUnit.module("Series");
 
-QUnit.skip("keys and values", (assert) => {
+QUnit.test("key", (assert) => {
+  // Run.
+  const result = Series.values();
+
+  // Verify.
+  assert.ok(result);
+  const forEachFunction = (series) => {
+    assert.ok(
+      series.key,
+      `Missing key for series.title = ${series.title} series.key = ${series.key}`,
+    );
+  };
+  R.forEach(forEachFunction, result);
+});
+
+QUnit.test("title", (assert) => {
+  // Run.
+  const result = Series.values();
+
+  // Verify.
+  assert.ok(result);
+  const forEachFunction = (series) => {
+    assert.ok(
+      series.title,
+      `Missing title for series.key = ${series.key} series.title = ${series.title}`,
+    );
+  };
+  R.forEach(forEachFunction, result);
+});
+
+QUnit.test("keys and values", (assert) => {
   // Run.
   const result = Series.keys();
   const ownPropertyNames = Object.getOwnPropertyNames(Series);
@@ -27,14 +57,14 @@ QUnit.skip("keys and values", (assert) => {
   R.forEach(forEachFunction2, result);
 });
 
-QUnit.skip("Series.keys()", (assert) => {
+QUnit.test("Series.keys()", (assert) => {
   // Run.
   const result = Series.keys();
 
   // Verify.
   assert.ok(result);
-  assert.equal(result.length, 82);
-  assert.equal(R.head(result), Series.A_FATAL_INVERSION);
+  assert.equal(result.length, 86);
+  assert.equal(R.head(result), Series.AARON_FALK);
   assert.equal(R.last(result), Series.YOU);
 });
 
