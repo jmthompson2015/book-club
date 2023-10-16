@@ -9,7 +9,7 @@ const BookUtils = require("../model/BookUtilities.js");
 const Comparator = require("../model/Comparator.js");
 const Formatter = require("../model/Formatter.js");
 
-const OUTPUT_FILE = "MasterTVSeriesList.txt";
+const OUTPUT_FILE = "MasterTVSeriesList.wiki";
 const HEADERS = ["TV Series", "Creator", "Cast", "Book Series", "Author"];
 const TABLE_CLASS = "wikitable sortable";
 

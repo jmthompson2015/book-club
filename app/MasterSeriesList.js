@@ -9,7 +9,7 @@ const BookUtils = require("../model/BookUtilities.js");
 const Comparator = require("../model/Comparator.js");
 const Formatter = require("../model/Formatter.js");
 
-const OUTPUT_FILE = "MasterSeriesList.txt";
+const OUTPUT_FILE = "MasterSeriesList.wiki";
 const HEADERS = ["Series", "Author"];
 const TABLE_CLASS = "wikitable sortable";
 

@@ -7,7 +7,7 @@ const BookUtilities = require("../model/BookUtilities.js");
 const Comparator = require("../model/Comparator.js");
 const Formatter = require("../model/Formatter.js");
 
-const OUTPUT_FILE = "MostWantedBooksList.txt";
+const OUTPUT_FILE = "MostWantedBooksList.wiki";
 const HEADERS = ["Book", "Author", "Series"];
 const TABLE_CLASS = "wikitable sortable";
 

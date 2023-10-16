@@ -8,7 +8,7 @@ const Book = require("../artifact/Book.js");
 const Comparator = require("../model/Comparator.js");
 const Formatter = require("../model/Formatter.js");
 
-const OUTPUT_FILE = "MasterBookList.txt";
+const OUTPUT_FILE = "MasterBookList.wiki";
 const HEADERS = ["Meeting", "Book", "Author", "Series"];
 const TABLE_CLASS = "wikitable sortable";
 

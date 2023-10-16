@@ -9,7 +9,7 @@ const Movie = require("../artifact/Movie.js");
 const Comparator = require("../model/Comparator.js");
 const Formatter = require("../model/Formatter.js");
 
-const OUTPUT_FILE = "MostWantedMoviesList.txt";
+const OUTPUT_FILE = "MostWantedMoviesList.wiki";
 const HEADERS1 = ["Movie", "Cast", "Meeting", "Book", "Author"];
 const HEADERS2 = ["Movie", "Director", "Writer", "Cast"];
 const TABLE_CLASS = "wikitable sortable";
@@ -80,5 +80,5 @@ ${content1}
 
 ==Other Movies Mentioned in Club==
 ${content2}
-`
+`,
 );

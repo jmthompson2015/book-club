@@ -7,7 +7,7 @@ const BookUtilities = require("../model/BookUtilities.js");
 const Comparator = require("../model/Comparator.js");
 const Formatter = require("../model/Formatter.js");
 
-const OUTPUT_FILE = "MostReadAuthorsList.txt";
+const OUTPUT_FILE = "MostReadAuthorsList.wiki";
 const HEADERS = ["Author", "Book Count"];
 const TABLE_CLASS = "wikitable sortable";
 
@@ -22,7 +22,7 @@ const MostReadAuthorsList = {
     const keyToCount = R.reduce(reduceFunction, {}, Object.keys(keyToBooks));
     const keys = R.filter(
       (key) => keyToCount[key] > 1,
-      Object.keys(keyToCount)
+      Object.keys(keyToCount),
     );
     keys.sort(Comparator.compareByCount(keyToCount));
     const mapFunction = (key) => {

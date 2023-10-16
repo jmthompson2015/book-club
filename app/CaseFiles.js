@@ -39,11 +39,11 @@ const createNavigationTable = (year) => {
   const next = `Case Files ${year + 1}`;
   const cell1 = WikiUtils.cell(
     `[[${previous} | &larr; ${previous}]]`,
-    "text-align: left;"
+    "text-align: left;",
   );
   const cell2 = WikiUtils.cell(
     `[[${next} | ${next} &rarr;]]`,
-    "text-align: right;"
+    "text-align: right;",
   );
   const row = cell1 + cell2;
   const style2 = "width: 100%;";
@@ -83,5 +83,5 @@ const useSearchString = process.argv.length > 2 ? process.argv[2] : "false";
 const useSearch = useSearchString === "true";
 const year = process.argv.length > 3 ? parseInt(process.argv[3], 10) : 2020;
 const content = CaseFiles.report(useSearch, year);
-const outputFile = `CaseFiles${year}.txt`;
+const outputFile = `CaseFiles${year}.wiki`;
 FileWriter.writeFile(outputFile, content);

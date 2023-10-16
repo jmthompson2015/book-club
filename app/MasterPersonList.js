@@ -8,7 +8,7 @@ const Person = require("../artifact/Person.js");
 const Comparator = require("../model/Comparator.js");
 const Formatter = require("../model/Formatter.js");
 
-const OUTPUT_FILE = "MasterPersonList.txt";
+const OUTPUT_FILE = "MasterPersonList.wiki";
 const HEADERS = ["Person"];
 const TABLE_CLASS = "wikitable sortable";
 

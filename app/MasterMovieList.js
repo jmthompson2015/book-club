@@ -9,7 +9,7 @@ const Movie = require("../artifact/Movie.js");
 const Comparator = require("../model/Comparator.js");
 const Formatter = require("../model/Formatter.js");
 
-const OUTPUT_FILE = "MasterMovieList.txt";
+const OUTPUT_FILE = "MasterMovieList.wiki";
 const HEADERS = ["Movie", "Writer", "Cast", "Meeting", "Book", "Author"];
 const TABLE_CLASS = "wikitable sortable";
 
