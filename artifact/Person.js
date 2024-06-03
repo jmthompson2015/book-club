@@ -16,6 +16,7 @@ const Person = {
   ALLAN_CUBITT: "allanCubitt",
   AL_PACINO: "alPacino",
   AMY_ADAMS: "amyAdams",
+  AMY_TINTERA: "Amy Tintera",
   ANDREW_CHILD: "Andrew Child",
   ANNA_FRIEL: "annaFriel",
   ANTHONY_BERKELEY_COX: "anthonyBerkeleyCox",
@@ -169,6 +170,7 @@ const Person = {
   NICCI_FRENCH: "nicciFrench",
   NINA_GEORGE: "ninaGeorge",
   NINA_SIMON: "Nina Simon",
+  NITA_PROSE: "Nita Prose",
   OLIVIA_COLMAN: "oliviaColman",
   OWEN_LAUKKANEN: "owenLaukkanen",
   PATRICIA_CLARKSON: "patriciaClarkson",
@@ -244,6 +246,12 @@ Person.properties = {
     last: "Feeney",
     gr: "author/show/15904689.Alice_Feeney",
     lt: "author/feeneyalice",
+  },
+  [Person.AMY_TINTERA]: {
+    first: "Amy",
+    last: "Tintera",
+    gr: "author/show/5768611.Amy_Tintera",
+    lt: "author/tinteraamy",
   },
   [Person.ANDREW_CHILD]: {
     first: "Andrew",
@@ -335,6 +343,12 @@ Person.properties = {
     last: "Simon",
     gr: "author/show/3408558.Nina_Simon",
     lt: "author/simonnina",
+  },
+  [Person.NITA_PROSE]: {
+    first: "Nita",
+    last: "Prose",
+    gr: "author/show/20650250.Nita_Prose",
+    lt: "author/prosenita",
   },
   [Person.RICHARD_OSMAN]: {
     first: "Richard",

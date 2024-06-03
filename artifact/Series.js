@@ -59,6 +59,7 @@ const Series = {
   MALICE_AFORETHOUGHT: "maliceAforethought",
   MICKEY_HALLER: "mickeyHaller",
   MILLENNIUM: "millennium",
+  MOLLY_THE_MAID: "Molly the Maid",
   MYRON_BOLITAR: "myronBolitar",
   NEW_HERCULE_POIROT: "newHerculePoirot",
   ODD_THOMAS: "oddThomas",
@@ -118,6 +119,10 @@ Series.properties = {
     gr: "series/40549-jack-reacher",
     lt: "nseries/102/Jack-Reacher",
     wiki: "Jack_Reacher",
+  },
+  [Series.MOLLY_THE_MAID]: {
+    gr: "series/370889-molly-the-maid",
+    lt: "nseries/358839/Molly-the-Maid",
   },
   [Series.RACHEL_KRALL]: {
     gr: "series/357929-rachel-krall",

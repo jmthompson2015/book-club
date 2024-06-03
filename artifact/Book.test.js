@@ -9,6 +9,14 @@ const Person = require("./Person.js");
 
 QUnit.module("Book");
 
+const verifyAuthor = (assert, title, authorKey) => {
+  const author = Person.properties[authorKey];
+  assert.ok(
+    author,
+    `Missing author for book.title = ${title} authorKey = ${authorKey}`,
+  );
+};
+
 QUnit.test("authorKeys", (assert) => {
   // Run.
   const result = Book.values();
@@ -17,12 +25,13 @@ QUnit.test("authorKeys", (assert) => {
   assert.ok(result);
   const forEachFunction = (book) => {
     assert.ok(book.authorKeys, `book.authorKeys = ${book.authorKeys}`);
-    if (!Array.isArray(book.authorKeys)) {
-      const author = Person.properties[book.authorKeys];
-      assert.ok(
-        author,
-        `Missing author for book.title = ${book.title} book.authorKeys = ${book.authorKeys}`,
-      );
+    if (Array.isArray(book.authorKeys)) {
+      const forEachFunction2 = (authorKey) => {
+        verifyAuthor(assert, book.title, authorKey);
+      };
+      R.forEach(forEachFunction2, book.authorKeys);
+    } else {
+      verifyAuthor(assert, book.title, book.authorKeys);
     }
   };
   R.forEach(forEachFunction, result);
@@ -86,7 +95,7 @@ QUnit.test("Book.keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result.length, 254);
+  assert.equal(result.length, 259);
   assert.equal(R.head(result), Book.ARE_YOU_SARA);
   assert.equal(R.last(result), Book.YOU);
 });
