@@ -294,6 +294,8 @@ Book.properties = {
     authorKeys: [Person.JANE_HARPER],
     series: [SeriesEntry.create(Series.AARON_FALK, 3)],
     meeting: "2024.04.22",
+    dcl: "1753392114",
+    gr: "book/show/60784359-exiles",
     lt: "work/28366705",
   },
   [Book.I_WILL_FIND_YOU]: {

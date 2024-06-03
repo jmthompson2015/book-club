@@ -88,26 +88,33 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/jmthompson/Documents/Software Development/git/book-club",
-		"/Users/jmthompson/Documents/Software Development/git/book-club/artifact"
+		"/Users/jmthompson/Documents/Software Development/git/book-club"
 	],
 	"file_history":
 	[
+		"/Users/jmthompson/Documents/Software Development/git/book-club/app/CaseFiles.js",
+		"/Users/jmthompson/Documents/Software Development/git/book-club/gen-all.sh",
+		"/Users/jmthompson/Documents/Software Development/git/book-club/app/MasterBookList.js",
+		"/Users/jmthompson/Documents/Software Development/git/book-club/app/MasterMovieList.js",
+		"/Users/jmthompson/Documents/Software Development/git/book-club/app/MasterPersonList.js",
+		"/Users/jmthompson/Documents/Software Development/git/book-club/app/MasterSeriesList.js",
+		"/Users/jmthompson/Documents/Software Development/git/book-club/app/MasterTVSeriesList.js",
+		"/Users/jmthompson/Documents/Software Development/git/book-club/app/MostReadAuthorsList.js",
+		"/Users/jmthompson/Documents/Software Development/git/book-club/app/MostReadSeriesList.js",
+		"/Users/jmthompson/Documents/Software Development/git/book-club/app/MostWantedBooksList.js",
+		"/Users/jmthompson/Documents/Software Development/git/book-club/app/MostWantedMoviesList.js",
+		"/Users/jmthompson/Documents/Software Development/git/book-club/app/MostWantedTVSeriesList.js",
 		"/Users/jmthompson/Documents/Software Development/git/book-club/artifact/Book.js",
 		"/Users/jmthompson/Documents/Software Development/git/book-club/artifact/Series.js",
 		"/Users/jmthompson/Documents/Software Development/git/book-club/artifact/Person.js",
 		"/Users/jmthompson/Documents/Software Development/git/book-club/artifact/TVSeries.js",
-		"/Users/jmthompson/Documents/Software Development/git/book-club/app/MostReadSeriesList.js",
-		"/Users/jmthompson/Documents/Software Development/git/book-club/app/MostReadAuthorsList.js",
 		"/Users/jmthompson/Documents/Software Development/git/book-club/model/Formatter.js",
 		"/Users/jmthompson/Documents/Software Development/git/book-club/artifact/Series.test.js",
 		"/Users/jmthompson/Documents/Software Development/git/book-club/artifact/Book.test.js",
-		"/Users/jmthompson/Documents/Software Development/git/book-club/app/MasterBookList.js",
 		"/Users/jmthompson/Documents/Software Development/git/book-club/artifact/Person.test.js",
 		"/Users/jmthompson/Documents/Software Development/git/book-club/artifact/TVSeries.test.js",
 		"/Users/jmthompson/Documents/Software Development/git/book-club/artifact/Movie.test.js",
 		"/Users/jmthompson/Documents/Software Development/git/book-club/artifact/Movie.js",
-		"/Users/jmthompson/Documents/Software Development/git/book-club/gen-all.sh",
 		"/Users/jmthompson/Documents/Software Development/git/book-club/artifact/SeriesEntry.js",
 		"/Users/jmthompson/Documents/Software Development/git/book-club/model/Formatter.test.js",
 		"/Users/jmthompson/Documents/Software Development/git/book-club/model/BookUtilities.test.js",
@@ -123,13 +130,14 @@
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
 		"height": 98.0,
 		"where_history":
 		[
+			"/Users/jmthompson/Documents/Software Development/git/book-club/app,<project filters>",
 			"/Users/jmthompson/Documents/Software Development/git/book-club,<project filters>"
 		]
 	},
@@ -138,6 +146,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			".txt",
+			".txt\"",
 			"\"wilde\"",
 			"\"virgilFlowers\"",
 			"MurderClub",
@@ -231,6 +241,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			".wiki\"",
 			"Series.WILDE",
 			"Series.VIRGIL_FLOWERS",
 			"Series.SHERLOCK_HOLMES",
@@ -353,7 +364,7 @@
 	"project": "book-club.sublime-project",
 	"replace":
 	{
-		"height": 68.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
