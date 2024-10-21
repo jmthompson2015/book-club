@@ -26,6 +26,7 @@ const Series = {
   DR_ALAN_GREGORY: "drAlanGregory",
   ELLERY_QUEEN: "elleryQueen",
   ELVIS_COLE: "elvisCole",
+  ERNEST_CUNNINGHAM: "Ernest Cunningham",
   EVAN_SMOAK: "evanSmoak",
   FATHER_BROWN: "fatherBrown",
   FLAVIA_DE_LUCE: "flaviaDeLuce",
@@ -83,6 +84,7 @@ const Series = {
   THE_NO_1_LADIES_DETECTIVE_AGENCY: "theNo1LadiesDetectiveAgency",
   THURSDAY_MURDER_CLUB: "Thursday Murder Club",
   VIRGIL_FLOWERS: "virgilFlowers",
+  WE_SOLVE_MURDERS: "We Solve Murders",
   WILDE: "wilde",
   WILL_ROBIE: "willRobie",
   WINDSOR_HORNE_LOCKWOOD_III: "Windsor Horne Lockwood III",
@@ -111,6 +113,9 @@ Series.properties = {
     gr: "series/315611-detective-lew-kirby",
     lt: "nseries/326914/Detective-Lew-Kirby",
   },
+  [Series.ERNEST_CUNNINGHAM]: {
+    gr: "series/357394-ernest-cunningham",
+  },
   [Series.HOROWITZS_HOLMES]: {
     gr: "series/135888-horowitz-s-holmes",
     lt: "nseries/9776/Anthony-Horowitzs-Sherlock-Holmes",
@@ -138,6 +143,9 @@ Series.properties = {
   [Series.THURSDAY_MURDER_CLUB]: {
     gr: "series/299267-thursday-murder-club",
     lt: "nseries/315274/Thursday-Murder-Club",
+  },
+  [Series.WE_SOLVE_MURDERS]: {
+    gr: "series/400755-we-solve-murders",
   },
   [Series.WINDSOR_HORNE_LOCKWOOD_III]: {
     gr: "series/306765-windsor-horne-lockwood-iii",

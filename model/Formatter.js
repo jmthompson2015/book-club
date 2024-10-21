@@ -170,7 +170,7 @@ Formatter.createSeriesText = (seriesArray, useSearch = false) => {
         return labelLinkedImagesTable(seriesLabel, linkedImages);
       }
       throw new Error(
-        `Missing series for seriesEntry: ${JSON.stringify(seriesEntry)}`
+        `Missing series for seriesEntry: ${JSON.stringify(seriesEntry)}`,
       );
     };
 
@@ -189,7 +189,7 @@ Formatter.linkedImages = (item, useSearch = false) => {
     dclUrl2,
     DCL_IMAGE,
     DCL_IMAGE_2,
-    "Douglas County Libraries"
+    "Douglas County Libraries",
   );
   const goodreadsUrl1 = UrlGenerator.goodreadsUrl(item);
   const goodreadsUrl2 = useSearch
@@ -200,27 +200,27 @@ Formatter.linkedImages = (item, useSearch = false) => {
     goodreadsUrl2,
     GR_IMAGE,
     GR_IMAGE_2,
-    "Goodreads"
+    "Goodreads",
   );
   const imdbUrl1 = UrlGenerator.imdbUrl(item);
-  const imdbUrl2 = useSearch ? UrlGenerator.imdbSearchUrl(item) : null;
+  // const imdbUrl2 = useSearch ? UrlGenerator.imdbSearchUrl(item) : null;
   const imdbLink = linkedImage(
     imdbUrl1,
-    imdbUrl2,
+    null, // imdbUrl2,
     IMDB_IMAGE,
     IMDB_IMAGE_2,
-    "Internet Movie Database"
+    "Internet Movie Database",
   );
   const libraryThingUrl1 = UrlGenerator.libraryThingUrl(item);
-  const libraryThingUrl2 = useSearch
-    ? UrlGenerator.libraryThingSearchUrl(item)
-    : null;
+  // const libraryThingUrl2 = useSearch
+  //   ? UrlGenerator.libraryThingSearchUrl(item)
+  //   : null;
   const ltLink = linkedImage(
     libraryThingUrl1,
-    libraryThingUrl2,
+    null, // libraryThingUrl2,
     LT_IMAGE,
     LT_IMAGE_2,
-    "LibraryThing"
+    "LibraryThing",
   );
   const wikipediaUrl1 = UrlGenerator.wikipediaUrl(item);
   const wikipediaUrl2 = useSearch
@@ -231,7 +231,7 @@ Formatter.linkedImages = (item, useSearch = false) => {
     wikipediaUrl2,
     WIKIPEDIA_IMAGE,
     WIKIPEDIA_IMAGE_2,
-    "Wikipedia"
+    "Wikipedia",
   );
 
   const cell1 = dclLink ? HtmlUtils.cell(dclLink) : "";

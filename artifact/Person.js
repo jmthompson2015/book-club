@@ -27,6 +27,7 @@ const Person = {
   BARBARA_STANWYCK: "barbaraStanwyck",
   BARBARA_VINE: "barbaraVine",
   BEN_AFFLECK: "benAffleck",
+  BENJAMIN_STEVENSON: "Benjamin Stevenson",
   BERTIE_CARVEL: "bertieCarvel",
   BILL_PAXTON: "billPaxton",
   BILLY_BOB_THORNTON: "billyBobThornton",
@@ -265,6 +266,11 @@ Person.properties = {
     imdb: "name/nm0395275",
     lt: "author/horowitzanthony",
     wiki: "Anthony_Horowitz",
+  },
+  [Person.BENJAMIN_STEVENSON]: {
+    first: "Benjamin",
+    last: "Stevenson",
+    gr: "author/show/18206333.Benjamin_Stevenson",
   },
   [Person.FABIAN_NICIEZA]: {
     first: "Fabian",
