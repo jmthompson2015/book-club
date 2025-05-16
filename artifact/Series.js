@@ -66,6 +66,7 @@ const Series = {
   ODD_THOMAS: "oddThomas",
   PERFECT_MURDERS_LIST: "perfectMurdersList",
   PETER_SWANSON_SUGGESTS: "peterSwansonSuggests",
+  PRESUMED_INNOCENT: "Presumed Innocent",
   RACHEL_KRALL: "Rachel Krall",
   RACHEL_WALLING: "rachelWalling",
   RENEE_BALLARD: "reneeBallard",
@@ -78,6 +79,7 @@ const Series = {
   STEVENS_AND_WINDERMERE: "stevensAndWindermere",
   STONE_BARRINGTON: "stoneBarrington",
   SUBURBAN_DICKS: "Suburban Dicks",
+  SUSAN_RYELAND: "Susan Ryeland",
   SYDNEY_ROSE_PARNELL: "sydneyRoseParnell",
   TEMPERANCE_BRENNAN: "temperanceBrennan",
   THE_CAMEL_CLUB: "theCamelClub",
@@ -129,6 +131,9 @@ Series.properties = {
     gr: "series/370889-molly-the-maid",
     lt: "nseries/358839/Molly-the-Maid",
   },
+  [Series.PRESUMED_INNOCENT]: {
+    gr: "series/411958-presumed-innocent",
+  },
   [Series.RACHEL_KRALL]: {
     gr: "series/357929-rachel-krall",
     lt: "nseries/360099/Rachel-Krall",
@@ -139,6 +144,9 @@ Series.properties = {
   },
   [Series.SUBURBAN_DICKS]: {
     gr: "series/334785-suburban-dicks",
+  },
+  [Series.SUSAN_RYELAND]: {
+    gr: "series/278932-susan-ryeland",
   },
   [Series.THURSDAY_MURDER_CLUB]: {
     gr: "series/299267-thursday-murder-club",

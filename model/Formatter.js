@@ -19,8 +19,6 @@ const GR_IMAGE = "Goodreads.png";
 const GR_IMAGE_2 = "Goodreads_2.png";
 const IMDB_IMAGE = "IMDb.png";
 const IMDB_IMAGE_2 = "IMDb_2.png";
-const LT_IMAGE = "LibraryThing.png";
-const LT_IMAGE_2 = "LibraryThing_2.png";
 const WIKIPEDIA_IMAGE = "Wikipedia.png";
 const WIKIPEDIA_IMAGE_2 = "Wikipedia_2.png";
 
@@ -211,24 +209,11 @@ Formatter.linkedImages = (item, useSearch = false) => {
     IMDB_IMAGE_2,
     "Internet Movie Database",
   );
-  const libraryThingUrl1 = UrlGenerator.libraryThingUrl(item);
-  // const libraryThingUrl2 = useSearch
-  //   ? UrlGenerator.libraryThingSearchUrl(item)
-  //   : null;
-  const ltLink = linkedImage(
-    libraryThingUrl1,
-    null, // libraryThingUrl2,
-    LT_IMAGE,
-    LT_IMAGE_2,
-    "LibraryThing",
-  );
   const wikipediaUrl1 = UrlGenerator.wikipediaUrl(item);
-  const wikipediaUrl2 = useSearch
-    ? UrlGenerator.wikipediaSearchUrl(item)
-    : null;
+  // const wikipediaUrl2 = useSearch ? UrlGenerator.wikipediaSearchUrl(item) : null;
   const wikiLink = linkedImage(
     wikipediaUrl1,
-    wikipediaUrl2,
+    null, // wikipediaUrl2,
     WIKIPEDIA_IMAGE,
     WIKIPEDIA_IMAGE_2,
     "Wikipedia",
@@ -237,9 +222,8 @@ Formatter.linkedImages = (item, useSearch = false) => {
   const cell1 = dclLink ? HtmlUtils.cell(dclLink) : "";
   const cell2 = grLink ? HtmlUtils.cell(grLink) : "";
   const cell3 = imdbLink ? HtmlUtils.cell(imdbLink) : "";
-  const cell4 = ltLink ? HtmlUtils.cell(ltLink) : "";
-  const cell5 = wikiLink ? HtmlUtils.cell(wikiLink) : "";
-  const row = [cell1, cell2, cell3, cell4, cell5];
+  const cell4 = wikiLink ? HtmlUtils.cell(wikiLink) : "";
+  const row = [cell1, cell2, cell3, cell4];
   const style = "justify-content: flex-end;";
 
   return HtmlUtils.flexboxWrap(row, style);

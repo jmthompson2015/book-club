@@ -8,6 +8,11 @@ export books=(
  'Here One Moment by Liane Moriarty'
  'Beautiful Ugly by Alice Feeney'
  'The Waiting by Michael Connelly'
+ 'Famous Last Words by Gillian McAllister'
+ 'No Lie Lasts Forever by Mark Stevens'
+ 'Presumed Guilty by Scott Turow'
+ 'Marble Hall Murders by Anthony Horowitz'
+ 'With a Vengeance by Riley Sager'
  'Everyone This Christmas Has a Secret by Benjamin Stevenson'
 )
 

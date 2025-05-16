@@ -63,6 +63,7 @@ const Book = {
   EXILES: "Exiles",
   FAIR_WARNING: "fairWarning",
   FALSE_WITNESS: "falseWitness",
+  FAMOUS_LAST_WORDS: "Famous Last Words",
   FOOL_ME_ONCE: "foolMeOnce",
   FORCE_OF_NATURE_2012: "forceOfNature2012",
   FORCE_OF_NATURE_2018: "forceOfNature2018",
@@ -102,6 +103,7 @@ const Book = {
   MAKE_ME: "makeMe",
   MALICE: "malice",
   MALICE_AFORETHOUGHT: "maliceAforethought",
+  MARBLE_HALL_MURDERS: "Marble Hall Murders",
   MARKED_FOR_LIFE: "markedForLife",
   MARPLE_TWELVE_NEW_MYSTERIES: "Marple: Twelve New Mysteries",
   MEAN_STREAK: "meanStreak",
@@ -114,6 +116,7 @@ const Book = {
   NEW_TRICKS: "newTricks",
   NINE_LIVES: "Nine Lives",
   NINE_PERFECT_STRANGERS: "ninePerfectStrangers",
+  NO_LIE_LASTS_FOREVER: "No Lie Lasts Forever",
   NO_PLAN_B: "No Plan B",
   NOTHING_TO_LOSE: "nothingToLose",
   ODD_THOMAS: "oddThomas",
@@ -124,6 +127,7 @@ const Book = {
   PERSONAL: "personal",
   PHANTOM: "phantom",
   PIECES_OF_HER: "piecesOfHer",
+  PRESUMED_GUILTY: "Presumed Guilty",
   RECONSTRUCTING_AMELIA: "reconstructingAmelia",
   REDEMPTION_ROAD: "redemptionRoad",
   RED_DRAGON: "redDragon",
@@ -270,6 +274,7 @@ const Book = {
   WHISPERS_OF_THE_DEAD: "whispersOfTheDead",
   WICKED_PREY: "wickedPrey",
   WIN: "win",
+  WITH_A_VENGEANCE: "With a Vengeance",
   YOU: "you",
 };
 
@@ -317,7 +322,7 @@ Book.properties = {
   [Book.EVERYONE_THIS_CHRISTMAS_HAS_A_SECRET]: {
     authorKeys: [Person.BENJAMIN_STEVENSON],
     series: [SeriesEntry.create(Series.ERNEST_CUNNINGHAM, 3)],
-    meeting: "2025.12.12",
+    meeting: "2025.12.19",
     dcl: "S114C1794556",
     gr: "book/show/206005312-everyone-this-christmas-has-a-secret",
   },
@@ -328,6 +333,12 @@ Book.properties = {
     dcl: "1753392114",
     gr: "book/show/60784359-exiles",
     lt: "work/28366705",
+  },
+  [Book.FAMOUS_LAST_WORDS]: {
+    authorKeys: [Person.GILLIAN_MCALLISTER],
+    meeting: "2025.07.28",
+    dcl: "S114C1796040",
+    gr: "book/show/212421066-famous-last-words",
   },
   [Book.HERE_ONE_MOMENT]: {
     authorKeys: [Person.LIANE_MORIARTY],
@@ -358,6 +369,13 @@ Book.properties = {
     gr: "book/show/127279000",
     lt: "work/30476819",
   },
+  [Book.MARBLE_HALL_MURDERS]: {
+    authorKeys: [Person.ANTHONY_HOROWITZ],
+    series: [SeriesEntry.create(Series.SUSAN_RYELAND, 3)],
+    meeting: "2025.10.27",
+    dcl: "S114C1810899",
+    gr: "book/show/217432789-marble-hall-murders",
+  },
   [Book.MARPLE_TWELVE_NEW_MYSTERIES]: {
     authorKeys: [Person.AGATHA_CHRISTIE],
     meeting: "2023.11.27",
@@ -384,12 +402,25 @@ Book.properties = {
     gr: "book/show/58385688-nine-lives",
     lt: "work/26898155",
   },
+  [Book.NO_LIE_LASTS_FOREVER]: {
+    authorKeys: [Person.MARK_STEVENS],
+    meeting: "2025.08.25",
+    dcl: "S114C1811618",
+    gr: "book/show/219290163-no-lie-lasts-forever",
+  },
   [Book.NO_PLAN_B]: {
     authorKeys: [Person.LEE_CHILD, Person.ANDREW_CHILD],
     series: [SeriesEntry.create(Series.JACK_REACHER, 27)],
     meeting: "2023.08.28",
     gr: "book/show/60166014-no-plan-b",
     lt: "work/27532709",
+  },
+  [Book.PRESUMED_GUILTY]: {
+    authorKeys: [Person.SCOTT_TUROW],
+    series: [SeriesEntry.create(Series.PRESUMED_INNOCENT, 3)],
+    meeting: "2025.09.22",
+    dcl: "S114C1796055",
+    gr: "book/show/213890792-presumed-guilty",
   },
   [Book.RESURRECTION_WALK]: {
     authorKeys: [Person.MICHAEL_CONNELLY],
@@ -574,6 +605,12 @@ Book.properties = {
     meeting: "2025.01.27",
     dcl: "S114C1785713",
     gr: "book/show/203956647-we-solve-murders",
+  },
+  [Book.WITH_A_VENGEANCE]: {
+    authorKeys: [Person.RILEY_SAGER],
+    meeting: "2025.11.24",
+    dcl: "S114C1811363",
+    gr: "book/show/219603177-with-a-vengeance",
   },
   _206Bones: {
     title: "206 Bones",

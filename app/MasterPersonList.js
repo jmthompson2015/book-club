@@ -3,10 +3,9 @@ const R = require("../node_modules/ramda/dist/ramda.js");
 const FileWriter = require("../util/FileWriter.js");
 const WikiUtils = require("../util/WikiUtilities.js");
 
-const Person = require("../artifact/Person.js");
-
 const Comparator = require("../model/Comparator.js");
 const Formatter = require("../model/Formatter.js");
+const PersonUtilities = require("../model/PersonUtilities.js");
 
 const OUTPUT_FILE = "MasterPersonList.wiki";
 const HEADERS = ["Person"];
@@ -21,7 +20,7 @@ const createRow = (useSearch) => (personKey) => {
 
 const MasterBookList = {
   report: (useSearch) => {
-    const personKeys = Person.keys();
+    const personKeys = PersonUtilities.keysWithMeeting();
     personKeys.sort(Comparator.comparePersonKey);
     const rows = R.map(createRow(useSearch), personKeys);
 

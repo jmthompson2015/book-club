@@ -83,6 +83,7 @@ const Person = {
   GEORGETTE_HEYER: "georgetteHeyer",
   GILLIAN_ANDERSON: "gillianAnderson",
   GILLIAN_FLYNN: "gillianFlynn",
+  GILLIAN_MCALLISTER: "Gillian McAllister",
   GK_CHESTERTON: "G.K. Chesterton",
   GREG_BERLANTI: "gregBerlanti",
   GREGG_HURWITZ: "greggHurwitz",
@@ -148,6 +149,7 @@ const Person = {
   MADS_MIKKELSEN: "madsMikkelsen",
   MARISA_TOMEI: "marisaTomei",
   MARK_NYKANEN: "markNykanen",
+  MARK_STEVENS: "Mark Stevens",
   MARK_WILLIAMS: "markWilliams",
   MARTHA_GRIMES: "Martha Grimes",
   MARTIN_SCORSESE: "martinScorsese",
@@ -278,6 +280,12 @@ Person.properties = {
     gr: "author/show/28126.Fabian_Nicieza",
     lt: "author/niciezafabian",
   },
+  [Person.GILLIAN_MCALLISTER]: {
+    first: "Gillian",
+    last: "McAllister",
+    gr: "author/show/15967497.Gillian_McAllister",
+    wiki: "Gillian_McAllister",
+  },
   [Person.GK_CHESTERTON]: {
     first: "G.",
     middle: "K.",
@@ -316,6 +324,11 @@ Person.properties = {
     imdb: "name/nm1676193",
     lt: "author/childlee",
     wiki: "Lee_Child",
+  },
+  [Person.MARK_STEVENS]: {
+    first: "Mark",
+    last: "Stevens",
+    gr: "author/show/1746.Mark_Stevens",
   },
   [Person.MARTHA_GRIMES]: {
     first: "Martha",

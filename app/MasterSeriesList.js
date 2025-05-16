@@ -8,6 +8,7 @@ const Series = require("../artifact/Series.js");
 const BookUtils = require("../model/BookUtilities.js");
 const Comparator = require("../model/Comparator.js");
 const Formatter = require("../model/Formatter.js");
+const SeriesUtilities = require("../model/SeriesUtilities.js");
 
 const OUTPUT_FILE = "MasterSeriesList.wiki";
 const HEADERS = ["Series", "Author"];
@@ -25,9 +26,9 @@ const createRow = (useSearch) => (series) => {
   return WikiUtils.row(cells);
 };
 
-const MasterBookList = {
+const MasterSeriesList = {
   report: (useSearch) => {
-    const series = Series.values();
+    const series = SeriesUtilities.valuesWithMeeting();
     series.sort(Comparator.compareByTitle);
     const rows = R.map(createRow(useSearch), series);
 
@@ -37,5 +38,5 @@ const MasterBookList = {
 
 const useSearchString = process.argv.length > 2 ? process.argv[2] : "false";
 const useSearch = useSearchString === "true";
-const content = MasterBookList.report(useSearch);
+const content = MasterSeriesList.report(useSearch);
 FileWriter.writeFile(OUTPUT_FILE, content);

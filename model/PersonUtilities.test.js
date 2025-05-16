@@ -1,4 +1,5 @@
 const QUnit = require("../node_modules/qunit/qunit/qunit.js");
+const R = require("../node_modules/ramda/dist/ramda.js");
 
 const PersonUtilities = require("./PersonUtilities.js");
 
@@ -46,6 +47,38 @@ QUnit.test("createLabel() last", (assert) => {
 
   // Verify.
   assert.equal(result, "Boileau-Narcejac", `result = :${result}:`);
+});
+
+QUnit.test("keysWithMeeting()", (assert) => {
+  // Run.
+  const result = PersonUtilities.keysWithMeeting();
+
+  // Verify.
+  assert.ok(result);
+  assert.equal(result.length, 111);
+  const personHead = R.head(result);
+  assert.ok(personHead);
+  assert.equal(personHead, "S.C. Lalli");
+  const personLast = R.last(result);
+  assert.ok(personLast);
+  assert.equal(personLast, "simonBeckett");
+});
+
+QUnit.test("valuesWithMeeting()", (assert) => {
+  // Run.
+  const result = PersonUtilities.valuesWithMeeting();
+
+  // Verify.
+  assert.ok(result);
+  assert.equal(result.length, 111);
+  const personHead = R.head(result);
+  assert.ok(personHead);
+  assert.equal(personHead.first, "Agatha");
+  assert.equal(personHead.last, "Christie");
+  const personLast = R.last(result);
+  assert.ok(personLast);
+  assert.equal(personLast.first, "William");
+  assert.equal(personLast.last, "Landay");
 });
 
 const PersonUtilitiesTest = {};
