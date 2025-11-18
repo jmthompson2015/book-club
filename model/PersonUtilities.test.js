@@ -55,7 +55,7 @@ QUnit.test("keysWithMeeting()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result.length, 111);
+  assert.equal(result.length, 112);
   const personHead = R.head(result);
   assert.ok(personHead);
   assert.equal(personHead, "S.C. Lalli");
@@ -70,7 +70,7 @@ QUnit.test("valuesWithMeeting()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result.length, 111);
+  assert.equal(result.length, 112);
   const personHead = R.head(result);
   assert.ok(personHead);
   assert.equal(personHead.first, "Agatha");

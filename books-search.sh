@@ -1,19 +1,13 @@
 export GR="https://www.goodreads.com/search?q="
 
-# 2025
+# 2026
 export books=( 
- 'We Solve Murders by Richard Osman'
- 'The New Couple in 5B by Lisa Unger'
- 'Middle of the Night by Riley Sager'
- 'Here One Moment by Liane Moriarty'
- 'Beautiful Ugly by Alice Feeney'
- 'The Waiting by Michael Connelly'
- 'Famous Last Words by Gillian McAllister'
- 'No Lie Lasts Forever by Mark Stevens'
- 'Presumed Guilty by Scott Turow'
- 'Marble Hall Murders by Anthony Horowitz'
- 'With a Vengeance by Riley Sager'
- 'Everyone This Christmas Has a Secret by Benjamin Stevenson'
+ 'The Ghostwriter by Julie Clark'
+ 'The Impossible Fortune by Richard Osman'
+ 'The Proving Ground by Michael Connelly'
+ 'Gone Before Goodbye by Reese Witherspoon & Harlan Coben'
+ 'My Husbands Wife by Alice Feeney'
+ 'The Widow by John Grisham'
 )
 
 for b in "${books[@]}"; do

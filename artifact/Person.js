@@ -184,6 +184,7 @@ const Person = {
   PETER_MOSS: "peterMoss",
   PETER_SWANSON: "peterSwanson",
   RAYMOND_CHANDLER: "raymondChandler",
+  REESE_WITHERSPOON: "Reese Witherspoon",
   RIAN_JOHNSON: "rianJohnson",
   RICHARD_ARMITAGE: "richardArmitage",
   RICHARD_HARRINGTON: "richardHarrington",
@@ -368,6 +369,13 @@ Person.properties = {
     last: "Prose",
     gr: "author/show/20650250.Nita_Prose",
     lt: "author/prosenita",
+  },
+  [Person.REESE_WITHERSPOON]: {
+    first: "Reese",
+    last: "Witherspoon",
+    gr: "author/show/692794.Reese_Witherspoon",
+    imdb: "name/nm0000702",
+    wiki: "Reese_Witherspoon",
   },
   [Person.RICHARD_OSMAN]: {
     first: "Richard",

@@ -95,7 +95,7 @@ QUnit.test("Book.keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result.length, 271);
+  assert.equal(result.length, 277);
   assert.equal(R.head(result), Book.ARE_YOU_SARA);
   assert.equal(R.last(result), Book.YOU);
 });

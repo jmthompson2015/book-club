@@ -16,4 +16,4 @@ node ../app/MostWantedBooksList.js ${USE_SEARCH2}
 # node ../app/MostWantedMoviesList.js ${USE_SEARCH2}
 # node ../app/MostWantedTVSeriesList.js ${USE_SEARCH2}
 
-node ../app/CaseFiles.js ${USE_SEARCH2} 2025
+node ../app/CaseFiles.js ${USE_SEARCH2} 2026
