@@ -349,7 +349,6 @@ Book.properties = {
   [Book.GONE_BEFORE_GOODBYE]: {
     authorKeys: [Person.REESE_WITHERSPOON, Person.HARLAN_COBEN],
     meeting: "2026.04.27",
-    dcl: "S980C11256123",
     gr: "book/show/219385951-gone-before-goodbye",
   },
   [Book.HERE_ONE_MOMENT]: {
@@ -410,7 +409,6 @@ Book.properties = {
   [Book.MY_HUSBANDS_WIFE]: {
     authorKeys: [Person.ALICE_FEENEY],
     meeting: "2026.05.18",
-    dcl: "S114C1828189",
     gr: "book/show/231127462-my-husband-s-wife",
   },
   [Book.NINE_LIVES]: {
@@ -495,7 +493,6 @@ Book.properties = {
   [Book.THE_GHOSTWRITER]: {
     authorKeys: [Person.JULIE_CLARK],
     meeting: "2026.01.26",
-    dcl: "S114C1814511",
     gr: "book/show/217506549-the-ghostwriter",
   },
   [Book.THE_HOUSE_OF_SILK]: {
@@ -510,7 +507,6 @@ Book.properties = {
     authorKeys: [Person.RICHARD_OSMAN],
     series: [SeriesEntry.create(Series.THURSDAY_MURDER_CLUB, 5)],
     meeting: "2026.02.23",
-    dcl: "S114C1820052",
     gr: "book/show/222292420-the-impossible-fortune",
   },
   [Book.THE_IT_GIRL]: {
@@ -581,7 +577,6 @@ Book.properties = {
     authorKeys: [Person.MICHAEL_CONNELLY],
     series: [SeriesEntry.create(Series.MICKEY_HALLER, 8)],
     meeting: "2026.03.23",
-    dcl: "S114C1821469",
     gr: "book/show/228646211-the-proving-ground",
   },
   [Book.THE_RETREAT]: {
@@ -625,7 +620,6 @@ Book.properties = {
   [Book.THE_WIDOW]: {
     authorKeys: [Person.JOHN_GRISHAM],
     meeting: "2026.06.22",
-    dcl: "S114C1821472",
     gr: "book/show/229004506-the-widow",
   },
   [Book.TIED_UP_IN_TINSEL]: {
