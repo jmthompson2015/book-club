@@ -11,10 +11,10 @@ QUnit.test("keysWithMeeting()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result.length, 73);
+  assert.equal(result.length, 75);
   const personHead = R.head(result);
   assert.ok(personHead);
-  assert.equal(personHead, "Rachel Krall");
+  assert.equal(personHead, "Murder She Wrote");
   const personLast = R.last(result);
   assert.ok(personLast);
   assert.equal(personLast, "Windsor Horne Lockwood III");
@@ -26,7 +26,7 @@ QUnit.test("valuesWithMeeting()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result.length, 73);
+  assert.equal(result.length, 75);
   const seriesHead = R.head(result);
   assert.ok(seriesHead);
   assert.equal(seriesHead.title, "Aaron Falk");

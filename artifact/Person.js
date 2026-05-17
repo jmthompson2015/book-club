@@ -110,6 +110,7 @@ const Person = {
   JENNIFER_CARPENTER: "jenniferCarpenter",
   JEREMY_BRETT: "jeremyBrett",
   JESSE_KELLERMAN: "jesseKellerman",
+  JESSICA_FLETCHER: "Jessica Fletcher",
   JILL_SCOTT: "jillScott",
   JODIE_WHITTAKER: "jodieWhittaker",
   JOE_PESCI: "joePesci",
@@ -220,17 +221,27 @@ const Person = {
   SW_KANE: "S.W. Kane",
   TANA_FRENCH: "tanaFrench",
   TED_DEKKER: "tedDekker",
+  TERRIE_FARLEY_MORAN: "Terrie Farley Moran",
   TESS_GERRITSEN: "tessGerritsen",
   THOMAS_HARRIS: "thomasHarris",
   TITUS_WELLIVER: "titusWelliver",
   TOM_CONTI: "tomConti",
   TOM_CRUISE: "tomCruise",
   TUPPENCE_MIDDLETON: "tuppenceMiddleton",
+  VIOLA_DAVIS: "Viola Davis",
   WILLIAM_LANDAY: "williamLanday",
   WILLY_RUSSELL: "willyRussell",
 };
 
 Person.properties = {
+  [Person.AA_MILNE]: {
+    first: "A.",
+    middle: "A.",
+    last: "Milne",
+    imdb: "name/nm0590316",
+    lt: "author/milneaa",
+    wiki: "A._A._Milne",
+  },
   [Person.AGATHA_CHRISTIE]: {
     first: "Agatha",
     last: "Christie",
@@ -311,6 +322,12 @@ Person.properties = {
     imdb: "name/nm7681091",
     lt: "author/harperjane-1",
     wiki: "Jane_Harper",
+  },
+  [Person.JESSICA_FLETCHER]: {
+    first: "Jessica",
+    last: "Fletcher",
+    gr: "author/show/46714.Jessica_Fletcher",
+    wiki: "Jessica_Fletcher",
   },
   [Person.JULIE_CLARK]: {
     first: "Julie",
@@ -420,13 +437,18 @@ Person.properties = {
     gr: "author/show/19227228.S_W_Kane",
     lt: "author/kanesw",
   },
-  aaMilne: {
-    first: "A.",
-    middle: "A.",
-    last: "Milne",
-    imdb: "name/nm0590316",
-    lt: "author/milneaa",
-    wiki: "A._A._Milne",
+  [Person.TERRIE_FARLEY_MORAN]: {
+    first: "Terrie",
+    middle: "Farley",
+    last: "Moran",
+    gr: "author/show/3452048.Terrie_Farley_Moran",
+  },
+  [Person.VIOLA_DAVIS]: {
+    first: "Viola",
+    last: "Davis",
+    gr: "author/show/3262562.Viola_Davis",
+    imdb: "name/nm0205626",
+    wiki: "Viola_Davis",
   },
   ajFinn: {
     first: "A.J.",

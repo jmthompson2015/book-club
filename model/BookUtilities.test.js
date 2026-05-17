@@ -76,7 +76,7 @@ QUnit.test("authorKeyToBooks()", (assert) => {
   assert.ok(result, `result !== undefined`);
   const authorKeys = Object.keys(result);
   assert.ok(authorKeys, `authorKeys !== undefined`);
-  const count = 136;
+  const count = 139;
   assert.equal(
     authorKeys.length,
     count,
@@ -133,7 +133,7 @@ QUnit.test("authorKeyToBooks() meeting only", (assert) => {
   assert.ok(result, `result !== undefined`);
   const authorKeys = Object.keys(result);
   assert.ok(authorKeys, `authorKeys !== undefined`);
-  const count = 112;
+  const count = 115;
   assert.equal(
     authorKeys.length,
     count,
@@ -190,7 +190,7 @@ QUnit.test("seriesKeyToBooks()", (assert) => {
   assert.ok(result, `result !== undefined`);
   const seriesKeys = Object.keys(result);
   assert.ok(seriesKeys, `seriesKeys !== undefined`);
-  const count = 85;
+  const count = 87;
   assert.equal(
     seriesKeys.length,
     count,
@@ -245,7 +245,7 @@ QUnit.test("seriesKeyToBooks() meeting only", (assert) => {
   assert.ok(result, `result !== undefined`);
   const seriesKeys = Object.keys(result);
   assert.ok(seriesKeys, `seriesKeys !== undefined`);
-  const count = 73;
+  const count = 75;
   assert.equal(
     seriesKeys.length,
     count,

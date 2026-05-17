@@ -61,7 +61,9 @@ const Series = {
   MICKEY_HALLER: "mickeyHaller",
   MILLENNIUM: "millennium",
   MOLLY_THE_MAID: "Molly the Maid",
+  MURDER_SHE_WROTE: "Murder, She Wrote",
   MYRON_BOLITAR: "myronBolitar",
+  NORTH_FALLS: "North Falls",
   NEW_HERCULE_POIROT: "newHerculePoirot",
   ODD_THOMAS: "oddThomas",
   PERFECT_MURDERS_LIST: "perfectMurdersList",
@@ -130,6 +132,15 @@ Series.properties = {
   [Series.MOLLY_THE_MAID]: {
     gr: "series/370889-molly-the-maid",
     lt: "nseries/358839/Molly-the-Maid",
+  },
+  [Series.MURDER_SHE_WROTE]: {
+    gr: "series/50842-murder-she-wrote",
+    imdb: "tt0086765",
+    wiki: "Murder,_She_Wrote",
+  },
+  [Series.NORTH_FALLS]: {
+    gr: "series/415983-north-falls",
+    wiki: "Karin_Slaughter#North_Falls_series_(2025_to_present)",
   },
   [Series.PRESUMED_INNOCENT]: {
     gr: "series/411958-presumed-innocent",

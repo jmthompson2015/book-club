@@ -10,6 +10,7 @@ const Book = {
   A_CHRISTMAS_PARTY: "aChristmasParty",
   A_FATAL_INVERSION: "aFatalInversion",
   A_HIGHLAND_CHRISTMAS: "aHighlandChristmas",
+  A_KILLER_CHRISTMAS: "A Killer Christmas",
   A_LINE_TO_KILL: "aLineToKill",
   A_MAN_LAY_DEAD: "aManLayDead",
   AND_THEN_THERE_WERE_NONE: "andThenThereWereNone",
@@ -88,10 +89,12 @@ const Book = {
   IRON_HOUSE: "ironHouse",
   I_SEE_YOU: "iSeeYou",
   I_WILL_FIND_YOU: "I Will Find You",
+  JUDGE_STONE: "Judge Stone",
   KILL_FEE: "killFee",
   KILL_YOU_TWICE: "killYouTwice",
   KISSING_CHRISTMAS_GOODBYE: "Kissing Christmas Goodbye",
   KNOTS_AND_CROSSES: "knotsAndCrosses",
+  LAST_ONE_OUT: "Last One Out",
   LETHAL_WHITE: "lethalWhite",
   LET_ME_GO: "letMeGo",
   LIARS_LULLABY: "liarsLullaby",
@@ -253,6 +256,7 @@ const Book = {
   THE_TURN_OF_THE_KEY: "theTurnOfTheKey",
   THE_TWIST_OF_A_KNIFE: "The Twist of a Knife",
   THE_TWO_MINUTE_RULE: "theTwoMinuteRule",
+  THE_UNKNOWN: "The Unknown",
   THE_WAITING: "The Waiting",
   THE_WATCHMAN: "theWatchman",
   THE_WIDOW: "The Widow",
@@ -272,6 +276,8 @@ const Book = {
   VERTIGO: "vertigo",
   VICTIMS: "victims",
   WAITING_FOR_WEDNESDAY: "waitingForWednesday",
+  WE_ARE_ALL_GUILTY_HERE: "We Are All Guilty Here",
+  WE_CHASE_SHADOWS: "We Chase Shadows",
   WE_SOLVE_MURDERS: "We Solve Murders",
   WHATEVER_HAPPENED_TO_CATHY_MARTIN: "Whatever Happened to Cathy Martin",
   WHAT_THE_DEAD_KNOW: "whatTheDeadKnow",
@@ -285,6 +291,13 @@ const Book = {
 };
 
 Book.properties = {
+  [Book.A_KILLER_CHRISTMAS]: {
+    authorKeys: [Person.JESSICA_FLETCHER, Person.TERRIE_FARLEY_MORAN],
+    series: [SeriesEntry.create(Series.MURDER_SHE_WROTE, 59)],
+    meeting: "2026.12.18",
+    dcl: "S114C1791283",
+    gr: "book/show/205062810-a-killer-christmas",
+  },
   [Book.ARE_YOU_SARA]: {
     authorKeys: [Person.SC_LALLI],
     meeting: "2023.10.23",
@@ -364,6 +377,12 @@ Book.properties = {
     gr: "book/show/61392437-i-will-find-you",
     lt: "work/28556680",
   },
+  [Book.JUDGE_STONE]: {
+    authorKeys: [Person.VIOLA_DAVIS, Person.JAMES_PATTERSON],
+    meeting: "2026.07.27",
+    dcl: "S980C12403750",
+    gr: "book/show/242445212-judge-stone",
+  },
   [Book.KISSING_CHRISTMAS_GOODBYE]: {
     authorKeys: [Person.MC_BEATON],
     series: [SeriesEntry.create(Series.AGATHA_RAISIN, 18)],
@@ -372,6 +391,12 @@ Book.properties = {
     gr: "book/show/509007.Kissing_Christmas_Goodbye",
     imdb: "title/tt13317050",
     lt: "work/2840934",
+  },
+  [Book.LAST_ONE_OUT]: {
+    authorKeys: [Person.JANE_HARPER],
+    meeting: "2026.08.24",
+    dcl: "S114C1832055",
+    gr: "book/show/231387279-last-one-out",
   },
   [Book.LISTEN_FOR_THE_LIE]: {
     authorKeys: [Person.AMY_TINTERA],
@@ -611,6 +636,12 @@ Book.properties = {
     gr: "book/show/60461888-the-twist-of-a-knife",
     lt: "work/27829864",
   },
+  [Book.THE_UNKNOWN]: {
+    authorKeys: [Person.RILEY_SAGER],
+    meeting: "2026.10.26",
+    dcl: "S114C1836243",
+    gr: "book/show/243596193-the-unknown",
+  },
   [Book.THE_WAITING]: {
     authorKeys: [Person.MICHAEL_CONNELLY],
     meeting: "2025.06.23",
@@ -631,11 +662,19 @@ Book.properties = {
     lt: "work/83504",
     wiki: "Tied_Up_in_Tinsel",
   },
-  [Book.WHATEVER_HAPPENED_TO_CATHY_MARTIN]: {
-    authorKeys: [Person.MIM_EICHMANN],
-    meeting: "2023.09.25",
-    gr: "book/show/60637027-whatever-happened-to-cathy-martin",
-    lt: "work/28516705",
+  [Book.WE_ARE_ALL_GUILTY_HERE]: {
+    authorKeys: [Person.KARIN_SLAUGHTER],
+    series: [SeriesEntry.create(Series.NORTH_FALLS, 1)],
+    meeting: "2026.09.28",
+    dcl: "S114C1815381",
+    gr: "book/show/221544394-we-are-all-guilty-here",
+  },
+  [Book.WE_CHASE_SHADOWS]: {
+    authorKeys: [Person.RICHARD_OSMAN],
+    series: [SeriesEntry.create(Series.WE_SOLVE_MURDERS, 2)],
+    meeting: "2026.11.16",
+    dcl: "S114C1838056",
+    gr: "book/show/248986323-we-chase-shadows",
   },
   [Book.WE_SOLVE_MURDERS]: {
     authorKeys: [Person.RICHARD_OSMAN],
@@ -643,6 +682,12 @@ Book.properties = {
     meeting: "2025.01.27",
     dcl: "S114C1785713",
     gr: "book/show/203956647-we-solve-murders",
+  },
+  [Book.WHATEVER_HAPPENED_TO_CATHY_MARTIN]: {
+    authorKeys: [Person.MIM_EICHMANN],
+    meeting: "2023.09.25",
+    gr: "book/show/60637027-whatever-happened-to-cathy-martin",
+    lt: "work/28516705",
   },
   [Book.WITH_A_VENGEANCE]: {
     authorKeys: [Person.RILEY_SAGER],
